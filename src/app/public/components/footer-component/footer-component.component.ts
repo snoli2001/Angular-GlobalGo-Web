@@ -1,9 +1,13 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { IconFieldModule } from 'primeng/iconfield';
+import { InputIconModule } from 'primeng/inputicon';
+import { InputTextModule } from 'primeng/inputtext';
+
 @Component({
   selector: 'app-footer-component',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,IconFieldModule,InputIconModule,InputTextModule],
   templateUrl: './footer-component.component.html',
   styleUrl: './footer-component.component.css'
 })

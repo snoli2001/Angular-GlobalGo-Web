@@ -1,66 +1,102 @@
-<footer class="footer">
-    <img src="https://globalgo.com.pe/wp-content/uploads/2023/08/Global-Go_Logo-06-1.png" class="logo" />
-  
-    <div class="info">
-      <div class="info-item">
-        <i class="pi pi-check"></i>
-        <span>FÁCIL Y RÁPIDO</span>
-      </div>
-      <div class="info-item">
-        <i class="pi pi-check"></i>
-        <span>FÁCIL Y RÁPIDO</span>
-      </div>
-      <div class="info-item">
-        <i class="pi pi-check"></i>
-        <span>FÁCIL Y RÁPIDO</span>
-      </div>
-    </div>
-  
-    <div class="brands">
-      <a *ngFor="let brand of brands" href="#">{{ brand }}</a>
-    </div>
-  
-    <div class="content">
-      <div class="section">
-        <h6>Nosotros</h6>
-        <p>Somos el primer portal web especializado en motos que cuenta con información detallada y actualizada de toda la oferta de motos nuevas en Perú.</p>
-        <a routerLink="/home">Más de Nosotros</a>
-      </div>
-  
-      <div class="section">
-        <h6>Soporte</h6>
-        <a routerLink="/home">Políticas y Privacidad</a>
-        <a routerLink="/home">Términos y Condiciones</a>
-        <a routerLink="/home">Libro de Reclamaciones</a>
-        <a routerLink="/home">Talleres Autorizados</a>
-      </div>
-  
-      <div class="section">
-        <h6>Contacto</h6>
-        <div class="social">
-          <a routerLink="/home"><i class="pi pi-facebook"></i></a>
-          <a routerLink="/home"><i class="pi pi-youtube"></i></a>
-          <a routerLink="/home"><i class="pi pi-instagram"></i></a>
+<footer class="p-4 flex flex-col gap-4 justify-center items-center font-semibold" style="background-color: #232336">
+    <img src="https://globalgo.com.pe/wp-content/uploads/2023/08/Global-Go_Logo-06-1.png" class="max-w-md p-5" />
+
+    <div class="sm:hidden flex flex-row gap-4">
+        <div class="flex flex-row gap-3">
+            <i class="pi pi-check text-yellow-400"></i>
+            <span class="Primary-font text-white">FACIL Y RÁPIDO</span>
         </div>
-        <div class="address">
-          <span>Encuéntranos</span>
-          <p>Jr. Arquimedes 159,</p>
-          <p>Urb. La Campiña,</p>
-          <p>Chorrillos, Lima, Lima, Perú</p>
+        <div class="flex flex-row gap-3">
+            <i class="pi pi-check text-yellow-400"></i>
+            <span class="Primary-font text-white">FACIL Y RÁPIDO</span>
         </div>
-      </div>
-  
-      <div class="section">
-        <h6>Contáctanos</h6>
-        <div class="email-input">
-          <i class="pi pi-envelope"></i>
-          <input type="text" placeholder="Ingrese email" />
+        <div class="flex flex-row gap-3">
+            <i class="pi pi-check text-yellow-400"></i>
+            <span class="Primary-font text-white">FACIL Y RÁPIDO</span>
         </div>
-      </div>
-  
-      <div class="section advertise">
-        <a routerLink="/home">Anuncia Aquí :3</a>
-      </div>
     </div>
-  </footer>
-  
+
+    <div class="mt-4 flex flex-row flex-wrap gap-5 font-normal max-w-7xl justify-center">
+        <a *ngFor="let brand of brands; let i = index" href="#"
+            class="text-gray-500 hover:text-yellow-500 font-normal Primary-font">{{ brand }}</a>
+    </div>
+
+    <div class="mt-10 max-w-full flex sm:flex-col md:flex-row gap-10">
+        <div class="flex flex-col gap-4 max-w-sm">
+            <h6 class="Primary-font uppercase text-lg text-gray-500">Nosotros</h6>
+            <a class="text-white Roboto-Font">Somos el primer portal web especializado en motos que cuenta con
+                información detallada y actualizada de toda la oferta de motos nuevas en
+                Perú.</a>
+
+            <a to="/home" class="Primary-font">
+                <a class="text-yellow-300"> Más de Nosotros </a>
+            </a>
+        </div>
+
+        <div class="flex flex-col gap-4 max-w-sm Roboto-Font">
+            <h6 class="uppercase Primary-font text-lg text-slate-500">Soporte</h6>
+            <a to="/home" class="text-white hover:text-yellow-600">
+                <p>Politicas y Privacidad</p>
+            </a>
+            <a to="/home" class="text-white hover:text-yellow-600">
+                <p>Terminos y Condiciones</p>
+            </a>
+            <a to="/home" class="text-white hover:text-yellow-600">
+                <p>Libro de Reclamaciones</p>
+            </a>
+            <a to="/home" class="text-white hover:text-yellow-600">
+                <p>Talleres Autorizados</p>
+            </a>
+        </div>
+
+        <div class="flex flex-col gap-4 max-w-sm text-white Primary-font">
+            <h6 class="uppercase text-slate-500">Contacto</h6>
+            <div class="flex flex-row items-center gap-5">
+                <a to="/home">
+                    <button class="text-white hover:text-yellow-600">
+                        <i class="pi pi-facebook" style="font-size: 20px"></i>
+                    </button>
+                </a>
+                <a to="/home">
+                    <button class="text-white hover:text-yellow-600">
+                        <i class="pi pi-youtube" style="font-size: 20px"></i>
+                    </button>
+                </a>
+                <a to="/home">
+                    <button class="text-white hover:text-yellow-600">
+                        <i class="pi pi-instagram" style="font-size: 20px"></i>
+                    </button>
+                </a>
+            </div>
+
+            <div class="flex flex-col gap-4">
+                <span class="uppercase Primary-font text-slate-500">Encuentranos</span>
+                <div class="space-y-1">
+                    <p>Jr. Arquimedes 159,</p>
+                    <p>Urb. La Campiña,</p>
+                    <p>Chorrillos, Lima, Lima, Perú</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col gap-4 max-w-sm">
+            <h6 class="uppercase Primary-font text-lg text-white">Contact Us</h6>
+            <!-- <IconField iconPosition="left">
+              <InputIcon>
+                  <i class="pi pi-envelope" style="color: black" />
+              </InputIcon>
+              <InputText placeholder="Ingrese email" />
+          </IconField> -->
+            <p-iconField iconPosition="left">
+                <p-inputIcon styleClass="pi pi-search" />
+                <input type="text" pInputText placeholder="Search" />
+            </p-iconField>
+        </div>
+
+        <div class="sm:hidden md:hidden xl:flex flex-col gap-4 max-w-sm">
+            <a to="/home">
+                <a class="text-white hover:text-yellow-600 Primary-font">Anuncia Aqui :3</a>
+            </a>
+        </div>
+    </div>
+</footer>
