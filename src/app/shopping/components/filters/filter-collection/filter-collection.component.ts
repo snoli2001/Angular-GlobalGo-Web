@@ -10,10 +10,11 @@ import { FilterByFuelSystemComponent } from '../filter-by-fuel-system/filter-by-
 import { FilterByPerformanceComponent } from '../filter-by-performance/filter-by-performance.component';
 import { FilterByPowerComponent } from '../filter-by-power/filter-by-power.component';
 import { FilterByPriceAndCoinComponent } from '../filter-by-price-and-coin/filter-by-price-and-coin.component';
+import { FilterByStyleComponent } from '../filter-by-style/filter-by-style.component';
 @Component({
   selector: 'app-filter-collection',
   standalone: true,
-  imports: [FilterByPriceAndCoinComponent,FilterByPowerComponent,FilterByDrivingPositionComponent,FilterByPerformanceComponent,FilterByFuelSystemComponent,FilterByBrakesComponent,ClearFilterComponent,FilterByBrandComponent,FilterByColorsComponent,FilterByCylindersComponent,FilterByDisplacementComponent],
+  imports: [FilterByStyleComponent,FilterByPriceAndCoinComponent,FilterByPowerComponent,FilterByDrivingPositionComponent,FilterByPerformanceComponent,FilterByFuelSystemComponent,FilterByBrakesComponent,ClearFilterComponent,FilterByBrandComponent,FilterByColorsComponent,FilterByCylindersComponent,FilterByDisplacementComponent],
   templateUrl: './filter-collection.component.html',
   styleUrl: './filter-collection.component.css'
 })

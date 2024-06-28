@@ -1,1 +1,7 @@
-<p>filter-by-style works!</p>
+<p-accordion [activeIndex]="1" class="w-full Primary-font">
+    <p-accordionTab header="Estilo">
+        <div class="p-4 flex flex-col gap-4">
+            <p-dropdown [(ngModel)]="stylesSelected" [options]="styles" optionLabel="name" placeholder="Estilos" class="w-full md:w-56" />
+        </div>
+    </p-accordionTab>
+</p-accordion>
