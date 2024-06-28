@@ -3,11 +3,11 @@ import { FilterByBrakesComponent } from '../filter-by-brakes/filter-by-brakes.co
 import { ClearFilterComponent } from '../clear-filter/clear-filter.component';
 import { FilterByBrandComponent } from '../filter-by-brand/filter-by-brand.component';
 import { FilterByColorsComponent } from '../filter-by-colors/filter-by-colors.component';
-
+import { FilterByCylindersComponent } from '../filter-by-cylinders/filter-by-cylinders.component';
 @Component({
   selector: 'app-filter-collection',
   standalone: true,
-  imports: [FilterByBrakesComponent,ClearFilterComponent,FilterByBrandComponent,FilterByColorsComponent],
+  imports: [FilterByBrakesComponent,ClearFilterComponent,FilterByBrandComponent,FilterByColorsComponent,FilterByCylindersComponent],
   templateUrl: './filter-collection.component.html',
   styleUrl: './filter-collection.component.css'
 })

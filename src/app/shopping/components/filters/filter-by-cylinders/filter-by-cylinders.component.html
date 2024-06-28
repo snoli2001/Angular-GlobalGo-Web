@@ -1,1 +1,45 @@
-<p>filter-by-cylinders works!</p>
+<p-accordion [activeIndex]="1" class="w-full Primary-font">
+  <p-accordionTab header="Nro. Cilindros">
+    <div class="p-4 flex flex-col gap-4">
+      <div class="flex items-center">
+        <p-checkbox
+            formControlName="Cylinder1" 
+            value="1" 
+            inputId="Cylinder1"
+        />
+        <label for="Cylinder1" class="ml-2"> 1 </label>
+      </div>
+
+      <div class="flex items-center">
+        <p-checkbox
+            formControlName="Cylinder2" 
+            value="2" 
+            inputId="Cylinder2"
+        />
+        <label for="Cylinder2" class="ml-2"> 2 </label>
+      </div>
+
+      <div class="flex items-center">
+        <p-checkbox
+        formControlName="Cylinder3" 
+        value="3" 
+        inputId="Cylinder3"
+        />
+        <label for="Cylinder3" class="ml-2"> 3 </label>
+      </div>
+
+      <div class="flex items-center">
+        <p-checkbox
+            formControlName="Cylinder4" 
+            value="4" 
+            inputId="Cylinder4"
+        />
+        <label for="Cylinder4" class="ml-2"> 4 </label>
+      </div>
+
+      <div class="flex flex-row justify-between">
+        <button>LIMPIAR FILTRO</button>
+      </div>
+    </div>
+  </p-accordionTab>
+</p-accordion>
