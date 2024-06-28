@@ -1,0 +1,11 @@
+.slider-container {
+  position: relative;
+  width: 100%;
+}
+
+.custom-badge {
+  position: absolute;
+  top: -20px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+}

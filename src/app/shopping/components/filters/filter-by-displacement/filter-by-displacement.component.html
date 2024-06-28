@@ -1,1 +1,22 @@
-<p>filter-by-displacement works!</p>
+<p-accordion [activeIndex]="1" class="w-full Primary-font">
+  <p-accordionTab header="Cilindrada">
+    <div class="p-4 flex flex-col gap-4">
+        <div class="slider-container">
+            <p-slider
+                type="number"
+                pInputText  
+                [(ngModel)]="displacement"
+                class="w-full"
+                #slider>
+            </p-slider>
+            <span pBadge [value]="displacement" class="custom-badge"></span>
+          </div>
+          
+      <input [(ngModel)]="displacement"/>
+
+      <div class="flex flex-row justify-between">
+        <app-clear-filter custom_style=" font-bold Primary-font text-xs " />
+      </div>
+    </div>
+  </p-accordionTab>
+</p-accordion>
