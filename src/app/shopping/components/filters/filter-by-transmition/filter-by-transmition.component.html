@@ -1,1 +1,28 @@
-<p>filter-by-transmition works!</p>
+<p-accordion [activeIndex]="1" class="w-full Primary-font">
+    <p-accordionTab header="Tipo de Transmición">
+        <div class="p-4 flex flex-col gap-4">
+
+            <div class="flex items-center">
+                <p-checkbox [(ngModel)]="transmition" inputId="Mecanica" name="Mecanica" value="Mecanica"/>
+                <label for="Mecanica" class="ml-2"> Mecanica </label>
+            </div>
+
+            <div class="flex items-center">
+                <p-checkbox [(ngModel)]="transmition" inputId="automatica" name="automatica" value="automatica"/>
+                <label for="automatica" class="ml-2"> Automatica </label>
+            </div>
+
+            <div class="flex items-center">
+                <p-checkbox [(ngModel)]="transmition" inputId="semi-automatica" name="semi-automatica" value="semiAutomatica" />
+                <label for="semi-automatica" class="ml-2"> SemiAutomatica </label>
+            </div>
+
+            <div class="flex flex-row justify-between">
+                <app-clear-filter custome_style=" font-bold Primary-font text-xs "/>
+            </div>
+
+            <!-- <Button @lick="test">ACA</Button> -->
+
+        </div>
+    </p-accordionTab>
+</p-accordion>
