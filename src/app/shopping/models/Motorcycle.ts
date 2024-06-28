@@ -36,7 +36,7 @@ interface IColor{
     color:string;
 }
 
-interface IMotorcycle {
+export interface IMotorcycle {
     id: number;
     make: string;
     model: string;

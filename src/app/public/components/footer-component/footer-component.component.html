@@ -17,55 +17,36 @@
     </div>
 
     <div class="mt-4 flex flex-row flex-wrap gap-5 font-normal max-w-7xl justify-center">
-        <a *ngFor="let brand of brands; let i = index" href="#"
-            class="text-gray-500 hover:text-yellow-500 font-normal Primary-font">{{ brand }}</a>
+        <a *ngFor="let brand of brands; let i = index" href="#" class="text-gray-500 hover:text-yellow-500 font-normal Primary-font">{{ brand }}</a>
     </div>
 
     <div class="mt-10 max-w-full flex sm:flex-col md:flex-row gap-10">
         <div class="flex flex-col gap-4 max-w-sm">
             <h6 class="Primary-font uppercase text-lg text-gray-500">Nosotros</h6>
-            <a class="text-white Roboto-Font">Somos el primer portal web especializado en motos que cuenta con
-                información detallada y actualizada de toda la oferta de motos nuevas en
-                Perú.</a>
+            <p class="text-white Roboto-Font">Somos el primer portal web especializado en motos que cuenta con información detallada y actualizada de toda la oferta de motos nuevas en Perú.</p>
 
-            <a to="/home" class="Primary-font">
-                <a class="text-yellow-300"> Más de Nosotros </a>
-            </a>
+            <a href="/home" class="Primary-font text-yellow-300"> Más de Nosotros </a>
         </div>
 
         <div class="flex flex-col gap-4 max-w-sm Roboto-Font">
             <h6 class="uppercase Primary-font text-lg text-slate-500">Soporte</h6>
-            <a to="/home" class="text-white hover:text-yellow-600">
-                <p>Politicas y Privacidad</p>
-            </a>
-            <a to="/home" class="text-white hover:text-yellow-600">
-                <p>Terminos y Condiciones</p>
-            </a>
-            <a to="/home" class="text-white hover:text-yellow-600">
-                <p>Libro de Reclamaciones</p>
-            </a>
-            <a to="/home" class="text-white hover:text-yellow-600">
-                <p>Talleres Autorizados</p>
-            </a>
+            <a href="/home" class="text-white hover:text-yellow-600">Politicas y Privacidad</a>
+            <a href="/home" class="text-white hover:text-yellow-600">Terminos y Condiciones</a>
+            <a href="/home" class="text-white hover:text-yellow-600">Libro de Reclamaciones</a>
+            <a href="/home" class="text-white hover:text-yellow-600">Talleres Autorizados</a>
         </div>
 
         <div class="flex flex-col gap-4 max-w-sm text-white Primary-font">
             <h6 class="uppercase text-slate-500">Contacto</h6>
             <div class="flex flex-row items-center gap-5">
-                <a to="/home">
-                    <button class="text-white hover:text-yellow-600">
-                        <i class="pi pi-facebook" style="font-size: 20px"></i>
-                    </button>
+                <a href="/home" class="text-white hover:text-yellow-600">
+                    <i class="pi pi-facebook" style="font-size: 20px"></i>
                 </a>
-                <a to="/home">
-                    <button class="text-white hover:text-yellow-600">
-                        <i class="pi pi-youtube" style="font-size: 20px"></i>
-                    </button>
+                <a href="/home" class="text-white hover:text-yellow-600">
+                    <i class="pi pi-youtube" style="font-size: 20px"></i>
                 </a>
-                <a to="/home">
-                    <button class="text-white hover:text-yellow-600">
-                        <i class="pi pi-instagram" style="font-size: 20px"></i>
-                    </button>
+                <a href="/home" class="text-white hover:text-yellow-600">
+                    <i class="pi pi-instagram" style="font-size: 20px"></i>
                 </a>
             </div>
 
@@ -81,21 +62,23 @@
 
         <div class="flex flex-col gap-4 max-w-sm">
             <h6 class="uppercase Primary-font text-lg text-white">Contact Us</h6>
+            <!-- Aquí deberías decidir qué elemento utilizar para la búsqueda, ya que no está claro en el código proporcionado -->
             <!-- <IconField iconPosition="left">
-              <InputIcon>
-                  <i class="pi pi-envelope" style="color: black" />
-              </InputIcon>
-              <InputText placeholder="Ingrese email" />
-          </IconField> -->
-            <p-iconField iconPosition="left">
+                <InputIcon>
+                    <i class="pi pi-envelope" style="color: black" />
+                </InputIcon>
+                <InputText placeholder="Ingrese email" />
+            </IconField> -->
+            <!-- Este código de búsqueda está comentado, asegúrate de descomentar y configurarlo correctamente -->
+            <!-- <p-iconField iconPosition="left">
                 <p-inputIcon styleClass="pi pi-search" />
                 <input type="text" pInputText placeholder="Search" />
-            </p-iconField>
+            </p-iconField> -->
         </div>
 
         <div class="sm:hidden md:hidden xl:flex flex-col gap-4 max-w-sm">
-            <a to="/home">
-                <a class="text-white hover:text-yellow-600 Primary-font">Anuncia Aqui :3</a>
+            <a href="/home">
+                <span class="text-white hover:text-yellow-600 Primary-font">Anuncia Aqui :3</span>
             </a>
         </div>
     </div>
