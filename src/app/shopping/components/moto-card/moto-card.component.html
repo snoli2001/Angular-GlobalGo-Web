@@ -4,9 +4,7 @@
     <ng-template pTemplate="header">
         <div class="relative bg-gray-200 p-3 flex justify-center">
             <div class="relative">
-                <p-image [src]="data?.url" class="w-full"></p-image>
-                <!-- <p-image src="https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg" [preview]="true" /> -->
-                
+                <p-image [src]="data?.url" class="w-full" [preview]="true"></p-image>               
                 <div class="Primary-font font-semibold absolute flex flex-row items-center gap-4 top-0 right-0">
                     <p>{{ data?.engine?.displacement }} cc</p>
                 </div>

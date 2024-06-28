@@ -4,6 +4,7 @@
 /* averiguar que es ? */
 @import "primeng/resources/primeng.css";
 
+@import "primeicons/primeicons.css";
 
 @tailwind base;
 @tailwind components;

@@ -1,1 +1,15 @@
-<p>filter-by-colors works!</p>
+<p-accordion [activeIndex]="1" class="w-full Primary-font">
+    <p-accordionTab header="Colors">
+        <div class="p-4 flex flex-col gap-4">
+
+            <div class="flex gap-3">
+                <app-button-check [_background]="'green'" />
+                <app-button-check [_background]="'lightblue'" />
+                <app-button-check [_background]="'red'"  />
+                <app-button-check [_background]="'black'" />
+                <app-button-check [_background]="'orange'" />
+            </div>                 
+
+        </div>
+    </p-accordionTab>
+</p-accordion>
