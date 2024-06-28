@@ -1,1 +1,20 @@
-<p>filter-by-warranty works!</p>
+<p-accordion [activeIndex]="1" class="w-full Primary-font">
+    <p-accordionTab header="Garantia">
+        <div class="p-4 flex flex-col gap-4">
+
+            <div class="flex flex-col gap-3">
+                <p>La cantidad mínima de km de garantía que deseas:</p>
+                <p-slider [(ngModel)]="kilometers" :min="0" :max="20000" class="w-full"/>
+                <span>Minimo {{ kilometers }} km</span>
+            </div>
+
+            <div class="flex flex-col gap-3">
+                <p>La cantidad mínima de meses de garantía que deseas:</p>
+                <p-slider [(ngModel)]="months" :min="0" :max="32" class="w-full"/>
+                <span>Minimo {{ months }} meses</span>
+            </div>                 
+
+
+        </div>
+    </p-accordionTab>
+</p-accordion>

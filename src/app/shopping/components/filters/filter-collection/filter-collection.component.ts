@@ -13,10 +13,11 @@ import { FilterByPriceAndCoinComponent } from '../filter-by-price-and-coin/filte
 import { FilterByStyleComponent } from '../filter-by-style/filter-by-style.component';
 import { FilterByTransmitionComponent } from '../filter-by-transmition/filter-by-transmition.component';
 import { FilterByTypeMotorCycleComponent } from '../filter-by-type-motor-cycle/filter-by-type-motor-cycle.component';
+import { FilterByWarrantyComponent } from '../filter-by-warranty/filter-by-warranty.component';
 @Component({
   selector: 'app-filter-collection',
   standalone: true,
-  imports: [FilterByTypeMotorCycleComponent,FilterByTransmitionComponent,FilterByStyleComponent,FilterByPriceAndCoinComponent,FilterByPowerComponent,FilterByDrivingPositionComponent,FilterByPerformanceComponent,FilterByFuelSystemComponent,FilterByBrakesComponent,ClearFilterComponent,FilterByBrandComponent,FilterByColorsComponent,FilterByCylindersComponent,FilterByDisplacementComponent],
+  imports: [FilterByWarrantyComponent,FilterByTypeMotorCycleComponent,FilterByTransmitionComponent,FilterByStyleComponent,FilterByPriceAndCoinComponent,FilterByPowerComponent,FilterByDrivingPositionComponent,FilterByPerformanceComponent,FilterByFuelSystemComponent,FilterByBrakesComponent,ClearFilterComponent,FilterByBrandComponent,FilterByColorsComponent,FilterByCylindersComponent,FilterByDisplacementComponent],
   templateUrl: './filter-collection.component.html',
   styleUrl: './filter-collection.component.css'
 })
