@@ -1,1 +1,14 @@
-<p>filter-by-fuel-system works!</p>
+<p-accordion [activeIndex]="1" class="w-full Primary-font">
+    <p-accordionTab header="Sistema de Combustible">
+        <div class="p-4 flex flex-col gap-4">
+            <div class="flex items-center">
+                <p-checkbox [(ngModel)]="systema_combustible" inputId="IE" name="IE" value="IE" />
+                <label for="IE" class="ml-2"> Inyección Electronica </label>
+            </div>
+            <div class="flex items-center">
+                <p-checkbox  [(ngModel)]="systema_combustible" inputId="DC" name="pizza" value="DC" />
+                <label for="DC" class="ml-2"> Distribución por carburador </label>
+            </div>         
+        </div>
+    </p-accordionTab>
+</p-accordion>
