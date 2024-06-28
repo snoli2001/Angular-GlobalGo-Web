@@ -1,1 +1,33 @@
-<p>filter-by-brakes works!</p>
+<p-accordion [activeIndex]="1" class="w-full Primary-font">
+    <p-accordionTab header="Tipos de Frenos">
+        <div class="p-4 flex flex-col gap-4">
+            
+            <div class="flex items-center">
+                <!-- <p-checkbox  value="brakes" inputId="dobles" name="dobles" value="dobles" @change="handleFilter()"/> -->
+                <p-checkbox  [(ngModel)]="brakes" inputId="dobles" name="dobles" value="dobles"/>
+                <label for="dobles" class="ml-2"> Discos Dobles </label>
+            </div>
+            
+            <div class="flex items-center">
+                <p-checkbox  [(ngModel)]="brakes" inputId="disco" name="disco" value="disco"/>
+                <label for="disco" class="ml-2"> Disco </label>
+            </div>
+            
+            <div class="flex items-center">
+                <p-checkbox  [(ngModel)]="brakes" inputId="tambor" name="tambor" value="tambor"/>
+                <label for="tambor" class="ml-2"> Tambor </label>
+            </div>
+            
+            <div class="flex items-center">
+                <p-checkbox  [(ngModel)]="brakes" inputId="abs" name="abs" value="abs"/>
+                <label for="abs" class="ml-2"> ABS </label>
+            </div>
+            
+            <div class="flex flex-row justify-between">
+                <app-clear-filter></app-clear-filter>
+                <!-- <clear_filters custome_style=" font-bold Primary-font text-xs "/> -->
+            </div>
+            
+        </div>
+    </p-accordionTab>
+</p-accordion>
