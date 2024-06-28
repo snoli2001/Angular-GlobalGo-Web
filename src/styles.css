@@ -1,29 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
-/*  estilo de colores de primeNG */
-
-@import "primeng/resources/themes/lara-light-blue/theme.css";
-/* averiguar que es ? */
-@import "primeng/resources/primeng.css";
-
-@import "primeicons/primeicons.css";
-
+@import url("./assets/styles/1-settings/prime-ng.css");
+@import url("./assets/styles/1-settings/prime-icons.css");
 @import url("./assets/custom-icons/flaticon_mi_colección_de.css");
+@import url("./assets/styles/1-settings/fontsFamilies.css");
+@import url("./assets/styles/1-settings/tailwind.css");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
-
-
-/* .Primary-font{
-    font-family: roboto condensed, sans-serif;
-}
-
-.Roboto-Font{
-    font-family: roboto, sans-serif;
-}
-
-.Oswaldo-Font{
-    font-family: "Oswald", sans-serif;
-} */
