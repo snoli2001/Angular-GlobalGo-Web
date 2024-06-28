@@ -1,0 +1,39 @@
+<!-- moto-card.component.html -->
+
+<p-card class="max-w-xs shadow-2xl">
+    <ng-template pTemplate="header">
+        <div class="relative bg-gray-200 p-3 flex justify-center">
+            <div class="relative">
+                <p-image [src]="data?.url" class="w-full"></p-image>
+                <div class="Primary-font font-semibold absolute flex flex-row items-center gap-4 top-0 right-0">
+                    <p>{{ data?.engine?.displacement }} cc</p>
+                </div>
+                <div class="absolute flex flex-row gap-4 top-0 left-0">
+                    <a href="#">
+                        <button class="font-sans font-bold">
+                            <p>$ {{ data?.price }}</p>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+
+    <ng-template pTemplate="footer">
+        <div class="p-2 flex flex-col">
+            <h4 class="font-bold font-sans">{{ data?.model }}</h4>
+            <span class="font-bold text-slate-600">{{ data?.year }}</span>
+            <div></div>
+            <div class="flex justify-between items-center mt-1 border-t-2 Primary-font font-semibold border-gray-300 pt-3">
+                <div class="flex flex-col gap-1">
+                    <span>Cilindrada</span>
+                    {{ data?.engine?.displacement }}
+                </div>
+                <div class="flex flex-col">
+                    <span>Rendimiento</span>
+                    <p>{{ data?.engine?.power }}-hp</p>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+</p-card>
