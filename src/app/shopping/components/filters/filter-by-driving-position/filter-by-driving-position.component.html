@@ -1,1 +1,16 @@
-<p>filter-by-driving-position works!</p>
+<p-accordion [activeIndex]="1" class="w-full Primary-font">
+    <p-accordionTab header="Posición de Manejo">
+        <div class="p-4 grid grid-cols-2 gap-4 items-center justify-center">
+            <!-- <div v-for="(icon, index) in icons" :key="index" class=" flex flex-col justify-center items-center"> -->
+            <div *ngFor="let icon of icons" class=" flex flex-col justify-center items-center">
+                <div class="icon-circle">
+                    <!-- <button @click="filter(icon.label)"> -->
+                    <button>
+                        <i :class="icon.class"></i>
+                    </button>
+                </div>
+                <span class="icon-text Primary-font font-semibold">{{icon.label}}</span>
+            </div>
+        </div>
+    </p-accordionTab>
+</p-accordion>
