@@ -4,6 +4,7 @@ import { SliderModule } from 'primeng/slider';
 import { ClearFilterComponent } from '../clear-filter/clear-filter.component';
 import { FormsModule } from '@angular/forms';
 import { BadgeModule } from 'primeng/badge';
+import { InputTextModule } from 'primeng/inputtext';
 
 @Component({
   selector: 'app-filter-by-displacement',
@@ -14,6 +15,7 @@ import { BadgeModule } from 'primeng/badge';
     SliderModule,
     ClearFilterComponent,
     BadgeModule,
+    InputTextModule
   ],
   templateUrl: './filter-by-displacement.component.html',
   styleUrl: './filter-by-displacement.component.css',

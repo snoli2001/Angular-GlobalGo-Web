@@ -1,1 +1,12 @@
-<p>filter-by-power works!</p>
+<p-accordion [activeIndex]="1" class="w-full Primary-font">
+    <p-accordionTab header="Potencia">
+        <div class="p-4 flex flex-col gap-4">
+            <p-slider [(ngModel)]="power" max=250 range>
+            </p-slider>
+            <span>{{ power }}</span>
+            <div class="flex flex-row justify-between">
+                <app-clear-filter custome_style=" font-bold Primary-font text-xs "/>
+            </div>
+        </div>
+    </p-accordionTab>
+</p-accordion>
