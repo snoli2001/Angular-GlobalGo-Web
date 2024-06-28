@@ -1,1 +1,16 @@
-<p>filter-by-type-motor-cycle works!</p>
+<p-accordion [activeIndex]="1" class="Primary-font">
+    <p-accordionTab header="Tipo de Moto">
+      <div class="p-4 grid grid-cols-2 gap-4 items-center justify-center">
+        <div *ngFor="let icon of icons" class="flex flex-col justify-center items-center">
+          <div class="icon-circle">
+            <!-- <button (click)="orderByTypeMotorcycle(icon.label)"> -->
+            <button>
+              <i [ngClass]="icon.class"></i>
+            </button>
+          </div>
+          <span class="icon-text Primary-font font-semibold">{{ icon.label }}</span>
+        </div>
+      </div>
+    </p-accordionTab>
+  </p-accordion>
+  
