@@ -1,0 +1,66 @@
+<footer class="footer">
+    <img src="https://globalgo.com.pe/wp-content/uploads/2023/08/Global-Go_Logo-06-1.png" class="logo" />
+  
+    <div class="info">
+      <div class="info-item">
+        <i class="pi pi-check"></i>
+        <span>FÁCIL Y RÁPIDO</span>
+      </div>
+      <div class="info-item">
+        <i class="pi pi-check"></i>
+        <span>FÁCIL Y RÁPIDO</span>
+      </div>
+      <div class="info-item">
+        <i class="pi pi-check"></i>
+        <span>FÁCIL Y RÁPIDO</span>
+      </div>
+    </div>
+  
+    <div class="brands">
+      <a *ngFor="let brand of brands" href="#">{{ brand }}</a>
+    </div>
+  
+    <div class="content">
+      <div class="section">
+        <h6>Nosotros</h6>
+        <p>Somos el primer portal web especializado en motos que cuenta con información detallada y actualizada de toda la oferta de motos nuevas en Perú.</p>
+        <a routerLink="/home">Más de Nosotros</a>
+      </div>
+  
+      <div class="section">
+        <h6>Soporte</h6>
+        <a routerLink="/home">Políticas y Privacidad</a>
+        <a routerLink="/home">Términos y Condiciones</a>
+        <a routerLink="/home">Libro de Reclamaciones</a>
+        <a routerLink="/home">Talleres Autorizados</a>
+      </div>
+  
+      <div class="section">
+        <h6>Contacto</h6>
+        <div class="social">
+          <a routerLink="/home"><i class="pi pi-facebook"></i></a>
+          <a routerLink="/home"><i class="pi pi-youtube"></i></a>
+          <a routerLink="/home"><i class="pi pi-instagram"></i></a>
+        </div>
+        <div class="address">
+          <span>Encuéntranos</span>
+          <p>Jr. Arquimedes 159,</p>
+          <p>Urb. La Campiña,</p>
+          <p>Chorrillos, Lima, Lima, Perú</p>
+        </div>
+      </div>
+  
+      <div class="section">
+        <h6>Contáctanos</h6>
+        <div class="email-input">
+          <i class="pi pi-envelope"></i>
+          <input type="text" placeholder="Ingrese email" />
+        </div>
+      </div>
+  
+      <div class="section advertise">
+        <a routerLink="/home">Anuncia Aquí :3</a>
+      </div>
+    </div>
+  </footer>
+  

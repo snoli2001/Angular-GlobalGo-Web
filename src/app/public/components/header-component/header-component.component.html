@@ -1,0 +1,84 @@
+<header [ngStyle]="{'background-color': '#160f27'}" class="p-4 md:hidden sm:flex justify-between items-center">
+    <div>
+        <img src="https://globalgo.com.pe/wp-content/uploads/2023/08/Global-Go_Logo-06-1.png" class="max-w-60 h-12" />
+    </div>
+
+    <div class="ml-auto mr-5">
+        <i class="pi pi-search font-bold text-xl text-white hover:text-yellow-500 transition-colors duration-300 ease-in-out"></i>
+    </div>
+
+    <div>
+        <i class="pi pi-align-justify font-bold text-xl text-white hover:text-yellow-500 transition-colors duration-300 ease-in-out"></i>
+    </div>
+</header>
+
+<header [ngStyle]="{'background-color': '#160f27'}" class="p-4 sm:hidden xl:hidden md:flex justify-between items-center Primary-font font-semibold">
+    <div>
+        <img src="https://globalgo.com.pe/wp-content/uploads/2023/08/Global-Go_Logo-06-1.png" class="max-w-60 h-12" />
+    </div>
+
+    <div class="ml-auto mr-5 flex items-center gap-5">
+        <i class="pi pi-search font-bold text-white hover:text-yellow-500 transition-colors duration-300 ease-in-out" style="font-size: 20px;"></i>
+        <a routerLink="">
+            <button class="uppercase text-white hover:text-yellow-400 transition-colors duration-300 ease-in-out">
+                Comparador
+            </button>
+        </a>
+    </div>
+
+    <div>
+        <i class="pi pi-align-justify font-bold text-xl text-white hover:text-yellow-500 transition-colors duration-300 ease-in-out"></i>
+    </div>
+</header>
+
+<header [ngStyle]="{'background-color': '#160f27'}" class="hidden p-4 xl:flex justify-center gap-60 items-center Primary-font font-semibold">
+    <div class="text-white flex flex-row justify-center items-center gap-9">
+        <img src="https://globalgo.com.pe/wp-content/uploads/2023/08/Global-Go_Logo-06-1.png" class="max-w-md p-5" />
+
+        <ul class="flex flex-row gap-4">
+            <a routerLink="moto-detail-page">
+                <button class="uppercase text-white hover:text-yellow-400 transition-colors duration-300 ease-in-out">
+                    INICIO
+                </button>
+            </a>
+
+            <a routerLink="moto-detail-page">
+                <button class="uppercase text-white hover:text-yellow-400 transition-colors duration-300 ease-in-out">
+                    Catalogo De Motos
+                </button>
+            </a>
+
+            <a routerLink="moto-detail-page">
+                <button class="uppercase text-white hover:text-yellow-400 transition-colors duration-300 ease-in-out">
+                    Accesorios
+                </button>
+            </a>
+
+            <a routerLink="moto-detail-page">
+                <button class="uppercase text-white hover:text-yellow-400 transition-colors duration-300 ease-in-out">
+                    Financiamiento
+                </button>
+            </a>
+
+            <a routerLink="moto-detail-page">
+                <button class="uppercase text-white hover:text-yellow-400 transition-colors duration-300 ease-in-out">
+                    Ventas Corporativas
+                </button>
+            </a>
+        </ul>
+    </div>
+
+    <div class="flex flex-row gap-4 text-white items-center">
+        <i class="pi pi-search font-bold text-xl hover:text-yellow-500 transition-colors duration-300 ease-in-out"></i>
+        <a routerLink="">
+            <button class="uppercase text-white hover:text-yellow-400 transition-colors duration-300 ease-in-out">
+                Comparador
+            </button>
+        </a>
+        <a routerLink="">
+            <button class="uppercase text-white hover:text-yellow-400 transition-colors duration-300 ease-in-out">
+                INICIAR SESIÓN
+            </button>
+        </a>
+    </div>
+</header>
