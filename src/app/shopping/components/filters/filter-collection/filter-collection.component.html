@@ -2,19 +2,23 @@
     <section class="flex flex-col gap-4 p-4">
 
         <app-clear-filter [custom_style]="'text-start text-xs font-semibold bg-white py-4 px-4'"></app-clear-filter>
-        <app-filter-by-brakes/>
-        <app-filter-by-brand/>
-        <app-filter-by-colors/>
-        <app-filter-by-cylinders/>
+        <app-filter-by-type-motor-cycle/>
+        <app-filter-by-price-and-coin/>
         <app-filter-by-displacement/>
         <app-filter-by-driving-position/>
-        <app-filter-by-fuel-system/>
-        <app-filter-by-performance/>
+        <app-category-separator category="MECANICA" />
         <app-filter-by-power/>
-        <app-filter-by-price-and-coin/>
-        <app-filter-by-style/>
         <app-filter-by-transmition/>
-        <app-filter-by-type-motor-cycle/>
+        <app-filter-by-brakes/>
+        <app-filter-by-cylinders/>
+        <app-category-separator category="COMBUSTIBLE" />
+        <app-filter-by-performance/>
+        <app-filter-by-fuel-system/>
+        <app-category-separator category="" />
+        <app-filter-by-brand/>
+        <app-filter-by-style/>
         <app-filter-by-warranty/>
+        <app-filter-by-colors/>
+        
     </section>
 </div>

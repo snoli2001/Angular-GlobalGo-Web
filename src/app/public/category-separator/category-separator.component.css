@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.title {
+  white-space: nowrap;
+}
+
+.line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #000;
+}
