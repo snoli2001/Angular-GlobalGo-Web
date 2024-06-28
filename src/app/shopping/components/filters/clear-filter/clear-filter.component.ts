@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './clear-filter.component.css'
 })
 export class ClearFilterComponent {
+  @Input() custom_style: string|undefined;
 }
