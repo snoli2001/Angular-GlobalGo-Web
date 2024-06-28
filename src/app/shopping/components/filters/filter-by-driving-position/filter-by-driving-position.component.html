@@ -4,9 +4,8 @@
             <!-- <div v-for="(icon, index) in icons" :key="index" class=" flex flex-col justify-center items-center"> -->
             <div *ngFor="let icon of icons" class=" flex flex-col justify-center items-center">
                 <div class="icon-circle">
-                    <!-- <button @click="filter(icon.label)"> -->
                     <button>
-                        <i :class="icon.class"></i>
+                        <i [ngClass]="icon.class"></i>
                     </button>
                 </div>
                 <span class="icon-text Primary-font font-semibold">{{icon.label}}</span>

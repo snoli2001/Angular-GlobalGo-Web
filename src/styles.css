@@ -7,7 +7,7 @@
 
 @import "primeicons/primeicons.css";
 
-/* @import url("./assets/custom-icons/flaticon_mi_colección_de.css"); */
+@import url("./assets/custom-icons/flaticon_mi_colección_de.css");
 
 @tailwind base;
 @tailwind components;
