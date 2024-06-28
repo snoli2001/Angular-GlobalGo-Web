@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { MotoCardComponent } from '../moto-card/moto-card.component';
 import { MotorCycleService } from '../../services/motorcycles.service';
 import { IMotorcycle } from '../../models/Motorcycle';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-list-motos',
   standalone: true,
-  imports: [MotoCardComponent],
+  imports: [CommonModule,MotoCardComponent, MotoCardComponent],
   templateUrl: './list-motos.component.html',
   styleUrl: './list-motos.component.css'
 })
@@ -20,12 +21,13 @@ export class ListMotosComponent {
 
   ngOnInit(): void {
     this.getMotorCycles();
-    console.log(this.motorCycles);
   }
 
   async getMotorCycles(): Promise<void> {
     try {
+      console.log("Pre-> ",this.motorCycles);
       this.motorCycles = await this.service.getMotorCycles(); 
+      console.log("Afhter --> ",this.motorCycles);
     } catch (error) {
       console.error('Error fetching motorcycles:', error); 
     }
