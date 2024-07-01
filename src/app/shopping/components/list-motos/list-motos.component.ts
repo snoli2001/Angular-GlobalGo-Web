@@ -4,10 +4,11 @@ import { MotorCycleService } from '../../services/motorcycles.service';
 import { IMotorcycle } from '../../models/Motorcycle';
 import { CommonModule } from '@angular/common';
 import { FilterByDisplacementAndPriceComponent } from '../filters/filter-by-displacement-and-price/filter-by-displacement-and-price.component';
+import { AdvertisingComponent } from '../../../public/components/advertising/advertising.component';
 @Component({
   selector: 'app-list-motos',
   standalone: true,
-  imports: [CommonModule,MotoCardComponent, MotoCardComponent,FilterByDisplacementAndPriceComponent],
+  imports: [CommonModule,MotoCardComponent, MotoCardComponent,FilterByDisplacementAndPriceComponent,AdvertisingComponent],
   templateUrl: './list-motos.component.html',
   styleUrl: './list-motos.component.css'
 })
