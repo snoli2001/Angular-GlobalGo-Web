@@ -3,10 +3,12 @@ import { MotoCardComponent } from '../moto-card/moto-card.component';
 import { MotorCycleService } from '../../services/motorcycles.service';
 import { IMotorcycle } from '../../models/Motorcycle';
 import { CommonModule } from '@angular/common';
+import { ScrollPanelModule } from 'primeng/scrollpanel';
+
 @Component({
   selector: 'app-list-motos',
   standalone: true,
-  imports: [CommonModule,MotoCardComponent, MotoCardComponent],
+  imports: [CommonModule,MotoCardComponent, MotoCardComponent,ScrollPanelModule],
   templateUrl: './list-motos.component.html',
   styleUrl: './list-motos.component.css'
 })
