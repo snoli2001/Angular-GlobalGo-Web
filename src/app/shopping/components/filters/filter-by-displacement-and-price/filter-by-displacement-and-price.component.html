@@ -1,0 +1,48 @@
+<div class="flex bg-white items-center justify-between w-full Primary-font shadow-lg sm:py-4 sm:px-3 xl:p-0">
+    <!-- <span class="ml-3 font-semibold">{{ totalMotorcycles }} motos encontradas </span> hasta que tenga la logica -->
+    <span class="ml-3 font-semibold"> 245 motos encontradas </span>
+
+
+    <div class="hidden sm:flex justify-center card">
+        <p-sidebar [(ngModel)] = "visible" >
+            <app-filter-collection/>
+        </p-sidebar>
+        <button (click)="toggleSideBard()">
+            <div
+                class="sm:flex gap-4 md:hidden border-2 border-black p-1 hover:text-slate-400 hover:border-slate-400">
+                <i class="pi pi-sliders-h "></i>
+                <span class="Primary-font text-sm font-bold">Filters</span>
+            </div>
+        </button>
+    </div>
+
+    <button class="sm:hidden xl:hidden md:flex gap-4 items-center">
+        <div class="flex flex-row gap-2">
+            <i class="pi pi-table text-slate-500 hover:text-black" style="font-size:20px;"></i>
+            <i class="pi pi-table text-slate-500 hover:text-black" style="font-size:20px;"></i>
+            <i class="pi pi-table text-slate-500 hover:text-black" style="font-size:20px;"></i>
+        </div>
+        <div class="sm:hidden gap-4 md:flex border-2 border-black p-1 hover:text-slate-400 hover:border-slate-400">
+            <i class="pi pi-sliders-h"></i>
+            <span class="Primary-font text-sm font-bold">Filters</span>
+        </div>
+    </button>
+
+
+    <div class="sm:hidden xl:flex flex-row items-center gap-4 p-3">
+        <div class="flex flex-row gap-2">
+            <i class="pi pi-table text-slate-500 hover:text-black" style="font-size: 20px;"></i>
+            <i class="pi pi-microsoft text-slate-500 hover:text-black" style="font-size: 20px;"></i>
+            <i class="pi pi-list-check text-slate-500 hover:text-black" style="font-size: 20px;"></i>
+        </div>
+
+        <div class="flex flex-row gap-3 items-center">
+            <span>Ordenar por: </span>
+            <p-dropdown [(ngModel)]="optionsSelected" [options]="orderBy" optionLabel="name" placeholder="Precios"
+                class="w-full md:w-[14rem]" />
+        </div>
+    </div>
+
+
+
+</div>
