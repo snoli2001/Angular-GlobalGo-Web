@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
+import { AdvertisingComponent } from '../../../../public/components/advertising/advertising.component';
+import { FilterByDisplacementAndPriceComponent } from '../../filters/filter-by-displacement-and-price/filter-by-displacement-and-price.component';
 import { ListMotosComponent } from '../list-motos/list-motos.component';
-import { AdvertisingComponent } from '../../../public/components/advertising/advertising.component';
-import { FilterByDisplacementAndPriceComponent } from '../filters/filter-by-displacement-and-price/filter-by-displacement-and-price.component';
 @Component({
   selector: 'app-motorcycle-section',
   standalone: true,

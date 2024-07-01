@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { CardModule } from 'primeng/card';
 import { ImageModule } from 'primeng/image';
-import { IMotorcycle } from '../../models/Motorcycle';
+import { IMotorcycle } from '../../../models/Motorcycle';
 
 @Component({
   selector: 'app-moto-card',

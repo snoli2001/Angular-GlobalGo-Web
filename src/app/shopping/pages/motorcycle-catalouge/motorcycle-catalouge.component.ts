@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FilterCollectionComponent } from '../../components/filters/filter-collection/filter-collection.component';
-import { MotorcycleSectionComponent } from '../../components/motorcycle-section/motorcycle-section.component';
+import { MotorcycleSectionComponent } from '../../components/motorcycles/motorcycle-section/motorcycle-section.component';
 @Component({
   selector: 'app-motorcycle-catalouge',
   standalone: true,

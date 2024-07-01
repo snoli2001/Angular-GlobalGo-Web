@@ -14,7 +14,7 @@ import { FilterByStyleComponent } from '../filter-by-style/filter-by-style.compo
 import { FilterByTransmitionComponent } from '../filter-by-transmition/filter-by-transmition.component';
 import { FilterByTypeMotorCycleComponent } from '../filter-by-type-motor-cycle/filter-by-type-motor-cycle.component';
 import { FilterByWarrantyComponent } from '../filter-by-warranty/filter-by-warranty.component';
-import { CategorySeparatorComponent } from '../../../../public/category-separator/category-separator.component';
+import { CategorySeparatorComponent } from '../../../../public/components/category-separator/category-separator.component';
 @Component({
   selector: 'app-filter-collection',
   standalone: true,

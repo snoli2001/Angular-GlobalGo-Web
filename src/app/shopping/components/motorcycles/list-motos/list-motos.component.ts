@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { MotoCardComponent } from '../moto-card/moto-card.component';
-import { MotorCycleService } from '../../services/motorcycles.service';
-import { IMotorcycle } from '../../models/Motorcycle';
+import { IMotorcycle } from '../../../models/Motorcycle';
 import { CommonModule } from '@angular/common';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
+import { MotorCycleService } from '../../../services/motorcycles.service';
 
 @Component({
   selector: 'app-list-motos',
@@ -26,9 +26,7 @@ export class ListMotosComponent {
 
   async getMotorCycles(): Promise<void> {
     try {
-      console.log("Pre-> ",this.motorCycles);
       this.motorCycles = await this.service.getMotorCycles(); 
-      console.log("Afhter --> ",this.motorCycles);
     } catch (error) {
       console.error('Error fetching motorcycles:', error); 
     }

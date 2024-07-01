@@ -13,7 +13,6 @@ export class MotorCycleService {
         throw new Error("Failed to fetch motorcycles");
       }
       const data = await response.json();
-      console.log(data);
       return data as IMotorcycle[]; // Asegúrate de que los datos se devuelvan como un array de IMotorcycle
     } catch (error) {
       console.error("Error fetching motorcycles:", error);
