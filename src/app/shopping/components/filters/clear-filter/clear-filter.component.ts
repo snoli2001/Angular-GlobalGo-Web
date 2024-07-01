@@ -9,4 +9,6 @@ import { Component, Input } from '@angular/core';
 })
 export class ClearFilterComponent {
   @Input() custom_style: string|undefined;
+
+
 }
