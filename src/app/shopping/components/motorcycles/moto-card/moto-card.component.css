@@ -1,0 +1,26 @@
+/* .p-tag-value{
+    background-color: black;
+} */
+
+.p-tag{
+    background-color: black;
+    border-radius: 0px;
+    font-family: 'Roboto';
+    font-size: 400px;
+    border-style: none;
+}
+
+.p-component{
+    border-style: none;
+    background-color: black;
+    border-radius: 0px;
+    font-size: 400px;
+}
+
+.p-tag-success{
+    background-color: black;
+    border-radius: 0px;
+    font-size: 400px;
+    border-style: none;
+}
+
