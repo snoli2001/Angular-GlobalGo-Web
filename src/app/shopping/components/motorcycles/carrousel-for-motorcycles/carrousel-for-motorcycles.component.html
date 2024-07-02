@@ -9,7 +9,7 @@
                 [numVisible]="5" 
                 [containerStyle]="{ 'max-width': '640px' }">
                     <ng-template pTemplate="item" let-item>
-                        <img [src]="item.itemImageSrc" style="width: 100%; display: block;" />
+                        <img [src]="item.itemImageSrc" style="width: 100%; display: block;" class="pointer-events-none"  />
                     </ng-template>
                     <ng-template pTemplate="thumbnail" let-item>
                         <div class="grid grid-nogutter justify-content-center">
@@ -211,5 +211,5 @@
 
         </div>
     </div>
-    <img src="../../../../../assets/gifs/dance.gif" class="absolute max-w-20" style="left: 90%;">
+    <img src="../../../../../assets/gifs/dance.gif" class="absolute max-w-20 pointer-events-none" style="left: 90%;">
 </section>

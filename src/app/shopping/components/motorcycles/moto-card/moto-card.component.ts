@@ -1,12 +1,12 @@
 import { Component, Input } from '@angular/core';
-import { CardModule } from 'primeng/card';
 import { ImageModule } from 'primeng/image';
 import { IMotorcycle } from '../../../models/Motorcycle';
+import { TagModule } from 'primeng/tag';
 
 @Component({
   selector: 'app-moto-card',
   standalone: true,
-  imports: [CardModule,ImageModule],
+  imports: [TagModule,ImageModule],
   templateUrl: './moto-card.component.html',
   styleUrl: './moto-card.component.css'
 })
