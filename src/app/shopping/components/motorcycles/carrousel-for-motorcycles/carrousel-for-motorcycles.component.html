@@ -1,22 +1,31 @@
 <section class="sm:px-8 py-10 w-full flex items-center justify-center bg-white mb-24 relative">
     <div class="flex sm:flex-col md:flex-row justify-center gap-4">
-        <div class="card">
+        <div class="card hidden xl:block">
             <p-galleria [value]="images" [showItemNavigators]="true" [responsiveOptions]="responsiveOptions"
                 [circular]="true" [numVisible]="5" [containerStyle]="{ 'max-width': '640px' }">
                 <ng-template pTemplate="item" let-item>
                     <img [src]="item.itemImageSrc" style="width: 100%; display: block" class="pointer-events-none" />
                 </ng-template>
-        
-                <div class="hidden xl:flex">                    
-                    <ng-template pTemplate="thumbnail" let-item>
-                        <div class="grid grid-nogutter justify-content-center">
-                            <img [src]="item.thumbnailImageSrc" style="display: block" />
-                        </div>
-                    </ng-template>
-                </div>
-        
+                <ng-template pTemplate="thumbnail" let-item>
+                    <div class="grid grid-nogutter justify-content-center">
+                        <img [src]="item.thumbnailImageSrc" style="display: block" />
+                    </div>
+                </ng-template>
             </p-galleria>
-        
+        </div>
+
+        <div class="card sm:flex xl:hidden">
+            <p-galleria [value]="images" [showItemNavigators]="true" [responsiveOptions]="responsiveOptions"
+                [circular]="true" [numVisible]="5" [containerStyle]="{ 'max-width': '640px' }">
+                <ng-template pTemplate="item" let-item>
+                    <img [src]="item.itemImageSrc" style="width: 100%; display: block" class="pointer-events-none" />
+                </ng-template>
+                <!-- <ng-template pTemplate="thumbnail" let-item>
+                    <div class="grid grid-nogutter justify-content-center">
+                        <img [src]="item.thumbnailImageSrc" style="display: block" />
+                    </div>
+                </ng-template> -->
+            </p-galleria>
         </div>
 
         <div class="flex flex-col justify-center gap-5 p-3">
@@ -34,7 +43,7 @@
                         <div class="grid grid-cols-2 justify-between gap-10 p-4">
                             <div class="p-2 flex flex-row gap-5 items-center">
                                 <div class="flex flex-row">
-                                    <i class="flaticon-pistons sm:text-3xl xl:text-6xl" ></i>
+                                    <i class="flaticon-pistons sm:text-3xl xl:text-6xl"></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
                                     <h1 class="Ruso-Font sm:text-sm xl:text-xl font-semibold text-blue-700">
@@ -46,7 +55,7 @@
 
                             <div class="p-2 flex flex-row gap-5 items-center">
                                 <div class="flex flex-row">
-                                    <i class="flaticon-motor-del-coche sm:text-3xl xl:text-6xl" ></i>
+                                    <i class="flaticon-motor-del-coche sm:text-3xl xl:text-6xl"></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
                                     <h1 class="Ruso-Font sm:text-sm xl:text-xl font-semibold text-blue-700">
@@ -58,7 +67,7 @@
 
                             <div class="p-2 flex flex-row gap-5 items-center">
                                 <div class="flex flex-row">
-                                    <i class="flaticon-velocimetro sm:text-3xl xl:text-6xl" ></i>
+                                    <i class="flaticon-velocimetro sm:text-3xl xl:text-6xl"></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
                                     <h1 class="Ruso-Font sm:text-sm xl:text-xl font-semibold text-blue-700">
@@ -73,7 +82,7 @@
                         <div class="grid grid-cols-2 justify-between gap-2 p-4">
                             <div class="p-2 flex flex-row gap-5 items-center">
                                 <div class="flex flex-row">
-                                    <i class="flaticon-combustible sm:text-3xl xl:text-6xl" ></i>
+                                    <i class="flaticon-combustible sm:text-3xl xl:text-6xl"></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
                                     <h1 class="Ruso-Font sm:text-sm xl:text-xl font-semibold text-blue-700">
@@ -85,7 +94,7 @@
 
                             <div class="p-2 flex flex-row gap-5 items-center">
                                 <div class="flex flex-row">
-                                    <i class="flaticon-gas-tank sm:text-3xl xl:text-6xl" ></i>
+                                    <i class="flaticon-gas-tank sm:text-3xl xl:text-6xl"></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
                                     <h1 class="Ruso-Font sm:text-sm xl:text-xl font-semibold text-blue-700">
@@ -97,7 +106,7 @@
 
                             <div class="p-2 flex flex-row gap-5 items-center">
                                 <div class="flex flex-row">
-                                    <i class="flaticon-bajo-rendimiento sm:text-3xl xl:text-6xl" ></i>
+                                    <i class="flaticon-bajo-rendimiento sm:text-3xl xl:text-6xl"></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
                                     <h1 class="Ruso-Font sm:text-sm xl:text-xl font-semibold text-blue-700">
@@ -109,7 +118,7 @@
 
                             <div class="p-2 flex flex-row gap-5 items-center">
                                 <div class="flex flex-row">
-                                    <i class="flaticon-velocimetro-1 sm:text-3xl xl:text-6xl" ></i>
+                                    <i class="flaticon-velocimetro-1 sm:text-3xl xl:text-6xl"></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
                                     <h1 class="Ruso-Font sm:text-sm xl:text-xl font-semibold text-blue-700">
@@ -124,7 +133,7 @@
                         <div class="grid grid-cols-2 justify-between gap-2 p-4">
                             <div class="p-2 flex flex-row gap-5 items-center">
                                 <div class="flex flex-row">
-                                    <i class="flaticon-freno-de-disco sm:text-3xl xl:text-6xl" ></i>
+                                    <i class="flaticon-freno-de-disco sm:text-3xl xl:text-6xl"></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
                                     <h1 class="Ruso-Font sm:text-sm xl:text-xl font-semibold text-blue-700">
@@ -136,7 +145,7 @@
 
                             <div class="p-2 flex flex-row gap-5 items-center">
                                 <div class="flex flex-row">
-                                    <i class="flaticon-freno-de-disco sm:text-3xl xl:text-6xl" ></i>
+                                    <i class="flaticon-freno-de-disco sm:text-3xl xl:text-6xl"></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
                                     <h1 class="Ruso-Font sm:text-sm xl:text-xl font-semibold text-blue-700">
@@ -148,7 +157,7 @@
 
                             <div class="p-2 flex flex-row gap-5 items-center">
                                 <div class="flex flex-row">
-                                    <i class="flaticon-suspension sm:text-3xl xl:text-6xl" ></i>
+                                    <i class="flaticon-suspension sm:text-3xl xl:text-6xl"></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
                                     <h1 class="Ruso-Font sm:text-sm xl:text-xl font-semibold text-blue-700">
@@ -160,13 +169,14 @@
 
                             <div class="p-2 flex flex-row gap-5 items-center">
                                 <div class="flex flex-row">
-                                    <i class="flaticon-suspension sm:text-3xl xl:text-6xl" ></i>
+                                    <i class="flaticon-suspension sm:text-3xl xl:text-6xl"></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
                                     <h1 class="Ruso-Font sm:text-sm xl:text-xl font-semibold text-blue-700">
                                         Suspensión Posterior
                                     </h1>
-                                    <span class="sm:text-xs xl:text-sm xl:font-semibold">Doble amortiguador lateral con gas Nitrox</span>
+                                    <span class="sm:text-xs xl:text-sm xl:font-semibold">Doble amortiguador lateral con
+                                        gas Nitrox</span>
                                 </div>
                             </div>
                         </div>
@@ -175,7 +185,7 @@
                         <div class="grid grid-cols-2 justify-between gap-2 p-4">
                             <div class="p-2 flex flex-row gap-5 items-center">
                                 <div class="flex flex-row">
-                                    <i class="flaticon-caja-de-cambios sm:text-3xl xl:text-6xl" ></i>
+                                    <i class="flaticon-caja-de-cambios sm:text-3xl xl:text-6xl"></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
                                     <h1 class="Ruso-Font sm:text-sm xl:text-xl font-semibold text-blue-700">
@@ -187,7 +197,7 @@
 
                             <div class="p-2 flex flex-row gap-5 items-center">
                                 <div class="flex flex-row">
-                                    <i class="flaticon-velocimetro sm:text-3xl xl:text-6xl" ></i>
+                                    <i class="flaticon-velocimetro sm:text-3xl xl:text-6xl"></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
                                     <h1 class="Ruso-Font sm:text-sm xl:text-xl font-semibold text-blue-700">
@@ -202,7 +212,7 @@
                         <div class="grid grid-cols-2 justify-between gap-2 p-4">
                             <div class="p-2 flex flex-row gap-5 items-center">
                                 <div class="flex flex-row">
-                                    <i class="flaticon-peso sm:text-3xl xl:text-6xl" ></i>
+                                    <i class="flaticon-peso sm:text-3xl xl:text-6xl"></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
                                     <h1 class="Ruso-Font sm:text-sm xl:text-xl font-semibold text-blue-700">
@@ -214,21 +224,21 @@
 
                             <div class="p-2 flex flex-row gap-5 items-center">
                                 <div class="flex flex-row">
-                                    <i class="flaticon-pistons sm:text-3xl xl:text-6xl" ></i>
+                                    <i class="flaticon-pistons sm:text-3xl xl:text-6xl"></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
                                     <h1 class="Ruso-Font sm:text-sm xl:text-xl font-semibold text-blue-700">
                                         Dimensiones (CM)
                                     </h1>
-                                    <span class="sm:text-xs xl:text-sm xl:font-semibold">199.5x76.5x80 (LargoxAnchoxAlto)</span>
+                                    <span class="sm:text-xs xl:text-sm xl:font-semibold">199.5x76.5x80
+                                        (LargoxAnchoxAlto)</span>
                                 </div>
                             </div>
                         </div>
                     </p-tabPanel>
                 </p-tabView>
             </footer>
-        </div> 
+        </div>
     </div>
     <!-- <img src="../../../../../assets/gifs/dance.gif" class="absolute max-w-20 pointer-events-none" style="left: 90%;"> -->
 </section>
-
