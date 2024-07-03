@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './filter-by-displacement-and-price.component.css',
 })
 export class FilterByDisplacementAndPriceComponent {
+  public changeList: boolean = true;
   public orderBy: any = [
     { name: 'Precio más bajo', function: 'orderByLowestPrice' },
     { name: 'Precio más alto', function: 'orderByHighestPrice' },
@@ -22,6 +23,11 @@ export class FilterByDisplacementAndPriceComponent {
 
   public toggleSideBard(){
     this.visible =  !this.visible;
+  }
+
+  public toggleList(){
+    // this.changeList = !this.changeList;
+    // window.alert(this.changeList);
   }
 
 }
