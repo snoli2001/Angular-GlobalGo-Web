@@ -1,4 +1,4 @@
-<section class="py-10 w-full flex items-center justify-center bg-white mb-24 relative">
+<section class="sm:px-8 py-10 w-full flex items-center justify-center bg-white mb-24 relative">
     <div class="flex sm:flex-col md:flex-row justify-center gap-4">
         <div class="card">
             <p-galleria [value]="images" [showItemNavigators]="true" [responsiveOptions]="responsiveOptions"
@@ -7,7 +7,7 @@
                     <img [src]="item.itemImageSrc" style="width: 100%; display: block" class="pointer-events-none" />
                 </ng-template>
         
-                <div class="hidden xl:block">                    
+                <div class="hidden xl:flex">                    
                     <ng-template pTemplate="thumbnail" let-item>
                         <div class="grid grid-nogutter justify-content-center">
                             <img [src]="item.thumbnailImageSrc" style="display: block" />
@@ -27,43 +27,44 @@
                 </p>
             </header>
 
-            <footer class="p-3">
+            <footer class="p-3 sm:max-w-sm xl:max-w-6xl">
                 <p-tabView>
                     <p-tabPanel header="Motor">
+
                         <div class="grid grid-cols-2 justify-between gap-2 p-4">
                             <div class="p-2 flex flex-row gap-5 items-center">
                                 <div class="flex flex-row">
-                                    <i class="flaticon-pistons" style="font-size: 3rem"></i>
+                                    <i class="flaticon-pistons sm:text-3xl" ></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
-                                    <h1 class="Ruso-Font text-2xl font-semibold text-blue-700">
+                                    <h1 class="Ruso-Font sm:text-sm font-semibold text-blue-700">
                                         Cilindrada
                                     </h1>
-                                    <span>124.4cc</span>
+                                    <span class="sm:text-xs">124.4cc</span>
                                 </div>
                             </div>
 
                             <div class="p-2 flex flex-row gap-5 items-center">
                                 <div class="flex flex-row">
-                                    <i class="flaticon-motor-del-coche" style="font-size: 3rem"></i>
+                                    <i class="flaticon-motor-del-coche sm:text-3xl" ></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
-                                    <h1 class="Ruso-Font text-2xl font-semibold text-blue-700">
+                                    <h1 class="Ruso-Font sm:text-sm font-semibold text-blue-700">
                                         Cilindrada
                                     </h1>
-                                    <span>124.4cc</span>
+                                    <span class="sm:text-xs">124.4cc</span>
                                 </div>
                             </div>
 
                             <div class="p-2 flex flex-row gap-5 items-center">
                                 <div class="flex flex-row">
-                                    <i class="flaticon-velocimetro" style="font-size: 3rem"></i>
+                                    <i class="flaticon-velocimetro sm:text-3xl" ></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
-                                    <h1 class="Ruso-Font text-2xl font-semibold text-blue-700">
+                                    <h1 class="Ruso-Font sm:text-sm font-semibold text-blue-700">
                                         Cilindrada
                                     </h1>
-                                    <span>124.4cc</span>
+                                    <span class="sm:text-xs">124.4cc</span>
                                 </div>
                             </div>
                         </div>
@@ -72,49 +73,49 @@
                         <div class="grid grid-cols-2 justify-between gap-2 p-4">
                             <div class="p-2 flex flex-row gap-5 items-center">
                                 <div class="flex flex-row">
-                                    <i class="flaticon-combustible" style="font-size: 3rem"></i>
+                                    <i class="flaticon-combustible sm:text-3xl" ></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
-                                    <h1 class="Ruso-Font text-2xl font-semibold text-blue-700">
+                                    <h1 class="Ruso-Font sm:text-sm font-semibold text-blue-700">
                                         Cilindrada
                                     </h1>
-                                    <span>124.4cc</span>
+                                    <span class="sm:text-xs">124.4cc</span>
                                 </div>
                             </div>
 
                             <div class="p-2 flex flex-row gap-5 items-center">
                                 <div class="flex flex-row">
-                                    <i class="flaticon-gas-tank" style="font-size: 3rem"></i>
+                                    <i class="flaticon-gas-tank sm:text-3xl" ></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
-                                    <h1 class="Ruso-Font text-2xl font-semibold text-blue-700">
+                                    <h1 class="Ruso-Font sm:text-sm font-semibold text-blue-700">
                                         Cilindrada
                                     </h1>
-                                    <span>124.4cc</span>
+                                    <span class="sm:text-xs">124.4cc</span>
                                 </div>
                             </div>
 
                             <div class="p-2 flex flex-row gap-5 items-center">
                                 <div class="flex flex-row">
-                                    <i class="flaticon-bajo-rendimiento" style="font-size: 3rem"></i>
+                                    <i class="flaticon-bajo-rendimiento sm:text-3xl" ></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
-                                    <h1 class="Ruso-Font text-2xl font-semibold text-blue-700">
+                                    <h1 class="Ruso-Font sm:text-sm font-semibold text-blue-700">
                                         Cilindrada
                                     </h1>
-                                    <span>124.4cc</span>
+                                    <span class="sm:text-xs">124.4cc</span>
                                 </div>
                             </div>
 
                             <div class="p-2 flex flex-row gap-5 items-center">
                                 <div class="flex flex-row">
-                                    <i class="flaticon-velocimetro-1" style="font-size: 3rem"></i>
+                                    <i class="flaticon-velocimetro-1 sm:text-3xl" ></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
-                                    <h1 class="Ruso-Font text-2xl font-semibold text-blue-700">
+                                    <h1 class="Ruso-Font sm:text-sm font-semibold text-blue-700">
                                         Cilindrada
                                     </h1>
-                                    <span>124.4cc</span>
+                                    <span class="sm:text-xs">124.4cc</span>
                                 </div>
                             </div>
                         </div>
@@ -123,49 +124,49 @@
                         <div class="grid grid-cols-2 justify-between gap-2 p-4">
                             <div class="p-2 flex flex-row gap-5 items-center">
                                 <div class="flex flex-row">
-                                    <i class="flaticon-freno-de-disco" style="font-size: 3rem"></i>
+                                    <i class="flaticon-freno-de-disco sm:text-3xl" ></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
-                                    <h1 class="Ruso-Font text-2xl font-semibold text-blue-700">
+                                    <h1 class="Ruso-Font sm:text-sm font-semibold text-blue-700">
                                         Freno delantero
                                     </h1>
-                                    <span>Disco Ventilado (ABS)</span>
+                                    <span class="sm:text-xs">Disco Ventilado (ABS)</span>
                                 </div>
                             </div>
 
                             <div class="p-2 flex flex-row gap-5 items-center">
                                 <div class="flex flex-row">
-                                    <i class="flaticon-freno-de-disco" style="font-size: 3rem"></i>
+                                    <i class="flaticon-freno-de-disco sm:text-3xl" ></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
-                                    <h1 class="Ruso-Font text-2xl font-semibold text-blue-700">
+                                    <h1 class="Ruso-Font sm:text-sm font-semibold text-blue-700">
                                         Suspensión Delantera
                                     </h1>
-                                    <span>Horquillas telescópicas</span>
+                                    <span class="sm:text-xs">Horquillas telescópicas</span>
                                 </div>
                             </div>
 
                             <div class="p-2 flex flex-row gap-5 items-center">
                                 <div class="flex flex-row">
-                                    <i class="flaticon-suspension" style="font-size: 3rem"></i>
+                                    <i class="flaticon-suspension sm:text-3xl" ></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
-                                    <h1 class="Ruso-Font text-2xl font-semibold text-blue-700">
+                                    <h1 class="Ruso-Font sm:text-sm font-semibold text-blue-700">
                                         Freno Posterior
                                     </h1>
-                                    <span>Tambor Mecánico</span>
+                                    <span class="sm:text-xs">Tambor Mecánico</span>
                                 </div>
                             </div>
 
                             <div class="p-2 flex flex-row gap-5 items-center">
                                 <div class="flex flex-row">
-                                    <i class="flaticon-suspension" style="font-size: 3rem"></i>
+                                    <i class="flaticon-suspension sm:text-3xl" ></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
-                                    <h1 class="Ruso-Font text-2xl font-semibold text-blue-700">
+                                    <h1 class="Ruso-Font sm:text-sm font-semibold text-blue-700">
                                         Suspensión Posterior
                                     </h1>
-                                    <span>Doble amortiguador lateral con gas Nitrox</span>
+                                    <span class="sm:text-xs">Doble amortiguador lateral con gas Nitrox</span>
                                 </div>
                             </div>
                         </div>
@@ -174,25 +175,25 @@
                         <div class="grid grid-cols-2 justify-between gap-2 p-4">
                             <div class="p-2 flex flex-row gap-5 items-center">
                                 <div class="flex flex-row">
-                                    <i class="flaticon-caja-de-cambios" style="font-size: 3rem"></i>
+                                    <i class="flaticon-caja-de-cambios sm:text-3xl" ></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
-                                    <h1 class="Ruso-Font text-2xl font-semibold text-blue-700">
+                                    <h1 class="Ruso-Font sm:text-sm font-semibold text-blue-700">
                                         Transmisión
                                     </h1>
-                                    <span>Mecánica</span>
+                                    <span class="sm:text-xs">Mecánica</span>
                                 </div>
                             </div>
 
                             <div class="p-2 flex flex-row gap-5 items-center">
                                 <div class="flex flex-row">
-                                    <i class="flaticon-velocimetro" style="font-size: 3rem"></i>
+                                    <i class="flaticon-velocimetro sm:text-3xl" ></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
-                                    <h1 class="Ruso-Font text-2xl font-semibold text-blue-700">
+                                    <h1 class="Ruso-Font sm:text-sm font-semibold text-blue-700">
                                         Velocidad
                                     </h1>
-                                    <span>100Km/h</span>
+                                    <span class="sm:text-xs">100Km/h</span>
                                 </div>
                             </div>
                         </div>
@@ -201,25 +202,25 @@
                         <div class="grid grid-cols-2 justify-between gap-2 p-4">
                             <div class="p-2 flex flex-row gap-5 items-center">
                                 <div class="flex flex-row">
-                                    <i class="flaticon-peso" style="font-size: 3rem"></i>
+                                    <i class="flaticon-peso sm:text-3xl" ></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
-                                    <h1 class="Ruso-Font text-2xl font-semibold text-blue-700">
+                                    <h1 class="Ruso-Font sm:text-sm font-semibold text-blue-700">
                                         Peso
                                     </h1>
-                                    <span>125Kg</span>
+                                    <span class="sm:text-xs">125Kg</span>
                                 </div>
                             </div>
 
                             <div class="p-2 flex flex-row gap-5 items-center">
                                 <div class="flex flex-row">
-                                    <i class="flaticon-pistons" style="font-size: 3rem"></i>
+                                    <i class="flaticon-pistons sm:text-3xl" ></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
-                                    <h1 class="Ruso-Font text-2xl font-semibold text-blue-700">
+                                    <h1 class="Ruso-Font sm:text-sm font-semibold text-blue-700">
                                         Dimensiones (CM)
                                     </h1>
-                                    <span>199.5x76.5x80 (LargoxAnchoxAlto)</span>
+                                    <span class="sm:text-xs">199.5x76.5x80 (LargoxAnchoxAlto)</span>
                                 </div>
                             </div>
                         </div>
