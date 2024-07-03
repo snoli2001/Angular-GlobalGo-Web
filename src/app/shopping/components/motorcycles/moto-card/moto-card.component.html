@@ -1,4 +1,4 @@
-<div class="shadow-xl rounded-2xl max-w-xs relative Primary-font overflow-hidden max-h-[360px]">
+<div class="shadow-xl rounded-2xl max-w-xs relative Primary-font overflow-hidden max-h-[400px]">
     <header class="relative p-2 bg-gray-200 rounded-t-xl flex justify-center">
         <div class="relative">
             <p-image [src]="data?.url" class="w-full pointer-events-none" [preview]="true"></p-image>
@@ -15,11 +15,15 @@
         </div>
         <p-tag severity="info" value="Cafe Racer" class=" absolute right-2 pointer-events-none" />
     </header>
-    <main class="p-4 bg-white flex flex-col gap-4 transition-transform transform translate-y-0 hover:translate-y-[-60px]">
+    <main class="p-4 bg-white flex flex-col gap-7 transition-transform transform translate-y-0 hover:translate-y-[-60px]">
         <div>
-            <h4 class="font-bold font-sans">{{ data?.model }}</h4>
-            <span class="font-bold text-slate-600">{{ data?.year }}</span>
-            <div></div>
+            <div class="flex gap-4 justify-between items-center">
+                <section class="flex flex-col gap-0">
+                    <h4 class="font-bold font-sans">{{ data?.model }}</h4>
+                    <span class="font-bold text-slate-600">{{ data?.year }}</span>
+                </section>
+                <img src="../../../../../assets/imgs/logos/benelli.svg" class="max-w-20" alt="">    
+            </div>
             <div
                 class="flex justify-between items-center mt-1 border-t-2 Primary-font font-semibold border-gray-300 pt-3">
                 <div class="flex flex-col gap-1">
