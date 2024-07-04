@@ -1,0 +1,10 @@
+<p-accordion [activeIndex]="1" class="w-full Primary-font">
+    <p-accordionTab header="Ratings">
+        <div class="p-4 flex flex-col gap-4">
+            <div *ngFor="let rating of ratings; let i = index" class="flex items-center">
+                <p-checkbox [(ngModel)]="rating.selected" inputId="{{rating.name}}" name="{{rating.name}}" [value]="rating.name" />
+                <label for="{{rating.name}}" class="ml-2"> {{ rating.name }} </label>
+            </div>
+        </div>
+    </p-accordionTab>
+</p-accordion>
