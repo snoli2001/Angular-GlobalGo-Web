@@ -1,0 +1,19 @@
+<p-accordion [activeIndex]="1" class="w-full Primary-font">
+    <p-accordionTab header="Ratings">
+        <div class="p-4 flex flex-col gap-4">
+            <div *ngFor="let origin of origins; let i = index" class="flex items-center">
+                <div class="flex flex-row justify-between">
+                    <div class="flex gap-0">
+                        <input class="customerCheckBox " type="checkbox" name="{{origin.name}}" id="{{origin.name}}">
+                        <label for="{{origin.name}}" class="ml-2"> {{ origin.name }} </label>
+                    </div>
+                    <!-- <div>
+                        <span class="bg-red-400">1233</span>
+                    </div> -->
+                </div>
+
+            </div>
+
+        </div>
+    </p-accordionTab>
+</p-accordion>

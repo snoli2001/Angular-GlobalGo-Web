@@ -1,0 +1,41 @@
+.customerCheckBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #d1d5db;
+    background-color: #ffffff;
+    color: #4b5563;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.customerCheckBox input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.customerCheckBox::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    background-color: transparent;
+    transition: background-color 0.2s;
+}
+
+.customerCheckBox input[type="checkbox"]:checked + label .customerCheckBox::before {
+    background-color: #3B82F6;
+}
+
+.customerCheckBox:hover {
+    border-color: #3B82F6;
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+}
+
+.customerCheckBox input[type="checkbox"]:checked + label {
+    color: #3B82F6;
+}
