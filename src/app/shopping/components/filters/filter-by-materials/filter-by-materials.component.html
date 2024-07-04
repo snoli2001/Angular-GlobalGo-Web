@@ -1,0 +1,12 @@
+<p-accordion [activeIndex]="1" class="w-full Primary-font">
+    <p-accordionTab header="Material">
+        <div class="p-4 flex flex-col gap-4">
+            <div *ngFor="let material of materials; let i = index" class="flex items-center">
+                <div class="flex gap-0">
+                    <p-checkbox [(ngModel)]="material.selected" inputId="{{material.name}}" name="{{material.name}}" [value]="material.name" />
+                    <label for="{{material.name}}" class="ml-2"> {{ material.name }} </label>
+                </div>
+            </div>
+        </div>
+    </p-accordionTab>
+</p-accordion>

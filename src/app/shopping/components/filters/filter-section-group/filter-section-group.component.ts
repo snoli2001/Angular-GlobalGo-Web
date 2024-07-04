@@ -7,10 +7,11 @@ import { FilterByManufacturesComponent } from '../filter-by-manufactures/filter-
 import { FilterByColorsComponent } from '../filter-by-colors/filter-by-colors.component';
 import { FilterByOriginComponent } from '../filter-by-origin/filter-by-origin.component';
 import { FilterByDiameterComponent } from '../filter-by-diameter/filter-by-diameter.component';
+import { FilterByMaterialsComponent } from '../filter-by-materials/filter-by-materials.component';
 @Component({
   selector: 'app-filter-section-group',
   standalone: true,
-  imports: [FilterByDiameterComponent,FilterByOriginComponent,FilterByColorsComponent,FilterByManufacturesComponent,FilterByRatingComponent,FilterByBrandComponent,AccordionModule, FilterByPriceAndCoinComponent],
+  imports: [FilterByMaterialsComponent,FilterByDiameterComponent,FilterByOriginComponent,FilterByColorsComponent,FilterByManufacturesComponent,FilterByRatingComponent,FilterByBrandComponent,AccordionModule, FilterByPriceAndCoinComponent],
   templateUrl: './filter-section-group.component.html',
   styleUrl: './filter-section-group.component.css'
 })
