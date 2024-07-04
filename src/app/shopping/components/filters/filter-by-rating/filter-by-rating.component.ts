@@ -19,13 +19,6 @@ export class FilterByRatingComponent {
     { name: "Dorman", selected: false },
     { name: "Brigdestone", selected: false },
     { name: "Michelin", selected: false },
-    { name: "Castrol", selected: false },
-    { name: "Wruth", selected: false },
-    { name: "Bosch", selected: false },
-    { name: "Varta", selected: false },
-    { name: "Dorman", selected: false },
-    { name: "Brigdestone", selected: false },
-    { name: "Michelin", selected: false },
     { name: "Castrol", selected: false }
 ];
 
