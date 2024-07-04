@@ -13,12 +13,12 @@ import { CheckboxModule } from 'primeng/checkbox';
 })
 export class FilterByManufacturesComponent {
   public manufacturers: any[] = [
-    { name: 'Wruth', selected: false },
-    { name: 'Bosch', selected: false },
-    { name: 'Varta', selected: false },
-    { name: 'Dorman', selected: false },
-    { name: 'Brigdestone', selected: false },
-    { name: 'Michelin', selected: false },
-    { name: 'Castrol', selected: false },
+    { id:"wruth",name: 'Wruth', selected: false },
+    { id:"bosch",name: 'Bosch', selected: false },
+    { id:"varta",name: 'Varta', selected: false },
+    { id:"dorman",name: 'Dorman', selected: false },
+    { id:"brigdestone",name: 'Brigdestone', selected: false },
+    { id:"michelin",name: 'Michelin', selected: false },
+    { id:"castrol",name: 'Castrol', selected: false },
   ];
 }

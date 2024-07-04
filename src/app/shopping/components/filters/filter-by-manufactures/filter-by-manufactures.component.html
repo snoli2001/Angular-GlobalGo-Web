@@ -2,8 +2,8 @@
     <p-accordionTab header="Manufacture">
         <div class="p-4 flex flex-col gap-4">
             <div *ngFor="let manufacture of manufacturers; let i = index" class="flex items-center">
-                <p-checkbox [(ngModel)]="manufacture.selected" inputId="{{manufacture.name}}" name="{{manufacture.name}}" [value]="manufacture.name" />
-                <label for="{{manufacture.name}}" class="ml-2"> {{ manufacture.name }} </label>
+                <p-checkbox [(ngModel)]="manufacture.selected" inputId="{{manufacture.id}}" name="{{manufacture.name}}" [value]="manufacture.name" />
+                <label for="{{manufacture.id}}" class="ml-2"> {{ manufacture.name }} </label>
             </div>
         </div>
     </p-accordionTab>
