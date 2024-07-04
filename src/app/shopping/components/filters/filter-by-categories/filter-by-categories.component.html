@@ -1,0 +1,45 @@
+<p-accordion [activeIndex]="0" class="w-full Primary-font">
+    <p-accordionTab header="Categorias">
+        <div class="p-4 flex flex-col gap-4">
+            <div class="flex flex-col gap-4 items-start">
+                <button class="font-semibold hover:text-blue-400">
+                    All Categories
+                </button>
+                <button class="font-semibold hover:text-blue-400">Auto Parts</button>
+                <button class="font-semibold hover:text-blue-400">Car Care</button>
+                <button class="font-semibold hover:text-blue-400">
+                    Fluids & Chemicals
+                </button>
+                <button class="font-semibold hover:text-blue-400">Oils</button>
+                <button class="font-semibold hover:text-blue-400">
+                    Tools & Supplies
+                </button>
+            </div>
+
+            <div>
+                <p-accordion [activeIndex]="1" class="w-auto">
+                    <p-accordionTab header="wheels & tires">
+                        <div class="flex flex-col items-start gap-4">
+                            <button class="font-semibold hover:text-blue-400">Tire</button>
+                            <button class="font-semibold hover:text-blue-400">wheels</button>
+                            <button class="font-semibold hover:text-blue-400">Tires</button>
+                        </div>
+                    </p-accordionTab>
+                </p-accordion>
+            </div>
+
+            <div>
+                <p-accordion [activeIndex]="1" class="w-auto">
+                    <p-accordionTab header="tires">
+                        <div class="flex flex-col items-start gap-4">
+                            <button class="font-semibold hover:text-blue-400">Tire</button>
+                            <button class="font-semibold hover:text-blue-400">wheels</button>
+                            <button class="font-semibold hover:text-blue-400">Tires</button>
+                        </div>
+                    </p-accordionTab>
+                </p-accordion>
+            </div>
+            <app-clear-filter custom_style="font-bold Primary-font text-xs"></app-clear-filter>
+        </div>
+    </p-accordionTab>
+</p-accordion>
