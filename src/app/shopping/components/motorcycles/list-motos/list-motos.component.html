@@ -1,64 +1,30 @@
-<!-- <section class="flex flex-col justify-center items-center gap-5">
+<section class="flex flex-col justify-center items-center gap-5">
     <p-scrollPanel [style]="{ width: '100%', height: '1100px' }" styleClass="custombar1">
-        <p-dataView #dv [value]="motorCycles" [rows]="8" [paginator]="true">
-            <ng-template pTemplate="listItem" let-moto let-i="index">
-                <div class="p-4 sm:flex sm:flex-col sm:justify-center sm:items-center md:grid md:grid-cols-2 xl:grid xl:grid-cols-3 gap-8"> 
-                     <div *ngFor="let moto of motorCycles; let first = first" class="col-12" >
-                        <app-moto-card [data]="moto"></app-moto-card>
-                     </div>
+        <p-dataView #dv [value]="motorCycles" [rows]="6" [paginator]="true">
+            <ng-template pTemplate="header">
+                <div class="flex justify-content-end">
+                    <p-dataViewLayoutOptions  />
+                </div>
+            </ng-template>
+            <ng-template pTemplate="list" let-products>
+                <div class="p-4 sm:flex sm:flex-col sm:justify-center sm:items-center md:grid md:grid-cols-2 xl:grid xl:grid-cols-3 gap-8">
+                    <div *ngFor="let item of products; let first = first">
+                        <app-moto-card [data]="item" [option]="1"></app-moto-card>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template let-product pTemplate="grid" let-products>
+                <div class="grid grid-nogutter">
+                    <div class="col-12 sm:col-6 md:col-4 xl:col-6 p-4" *ngFor="let product of products">
+                        <app-moto-card [data]="product" [option]="2"></app-moto-card>
+
+                    </div>
                 </div>
             </ng-template>
         </p-dataView>
+        
     </p-scrollPanel>
 </section>
- -->
 
 
- <p-dataView #dv [value]="motorCycles" [rows]="10" [paginator]="true">
-    <ng-template pTemplate="header">
-        <div class="flex justify-content-end">
-            <p-dataViewLayoutOptions  />
-        </div>
-    </ng-template>
-    <ng-template pTemplate="list" let-products>
-        <div class="p-4 sm:flex sm:flex-col sm:justify-center sm:items-center md:grid md:grid-cols-2 xl:grid xl:grid-cols-3 gap-8">
-            <div *ngFor="let item of products; let first = first">
-                <app-moto-card [data]="item"></app-moto-card>
-            </div>
-        </div>
-    </ng-template>
-    <ng-template let-product pTemplate="grid" let-products>
-        <div class="grid grid-nogutter">
-            <div class="col-12 sm:col-6 md:col-4 xl:col-6 p-2" *ngFor="let product of products">
-                <div class="p-4 border-1 surface-border surface-card border-round flex flex-column">
-                    <div class="surface-50 flex justify-content-center border-round p-3">
-                        <div class="relative mx-auto">
-                            <img class="block xl:block mx-auto border-round w-full" [src]="product.url" />
-                        </div>
-                    </div>
-                    <div class="pt-4">
-                        <div class="flex flex-row justify-content-between align-items-start gap-2">
-                            <div>
-                                <span class="font-medium text-secondary text-sm">{{ product.category }}</span>
-                                <div class="text-lg font-medium text-900 mt-1">{{ product.name }}</div>
-                            </div>
-                            <div class="surface-100 p-1" style="border-radius: 30px">
-                                <div class="surface-0 flex align-items-center gap-2 justify-content-center py-1 px-2" style="border-radius: 30px; box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.04), 0px 1px 2px 0px rgba(0, 0, 0, 0.06)">
-                                    <span class="text-900 font-medium text-sm">{{ product.rating }}</span>
-                                    <i class="pi pi-star-fill text-yellow-500"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-column gap-4 mt-4">
-                            <span class="text-2xl font-semibold">{{ '$' + product.price }}</span>
-                            <div class="flex gap-2">
-                                <button icon="pi pi-shopping-cart" class="flex-auto md:flex-initial white-space-nowrap">da</button>
-                                <button icon="pi pi-heart"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </ng-template>
-</p-dataView>
+
