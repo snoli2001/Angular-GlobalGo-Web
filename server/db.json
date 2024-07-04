@@ -583,6 +583,114 @@
           }
         }
       ]
+    },{
+      "id": "12",
+      "make": "Yamaha",
+      "model": "Interceptor 650",
+      "colors":["black","lightblue"],
+      "year": 2021,
+      "cylinders": "1",
+      "style":"Aventurero",
+      "driving_position": "recostada",
+      "brakes": "abs",
+      "warranty":{
+        "km":"19000",
+        "months":"24"
+      },
+      "engine": {
+        "type": "Air-cooled",
+        "displacement": "648",
+        "power": "47",
+        "torque": "52 Nm",
+        "transmission": "semiAutomatica",
+        "powerByGallon": "220"
+      },
+      "dimensions": {
+        "length": "2122 mm",
+        "width": "789 mm",
+        "height": "1165 mm",
+        "wheelbase": "1400 mm"
+      },
+      "weight": "202 kg",
+      "price": "7399",
+      "url": "https://flux.somosmoto.pe/r/https://somosmoto.pe/images/models/thumbnails/colors/yamaha-yzf-r3-abs-2024-negro-b5a604.png?width=336",
+      "type": "chopper",
+      "stores": [
+        {
+          "name": "Moto Store U",
+          "address": "1818 Peach St",
+          "district": "Centro",
+          "phone": "456-789-0123",
+          "coordinates": {
+            "latitude": -12.16,
+            "longitude": -77.093
+          }
+        },
+        {
+          "name": "Moto Store V",
+          "address": "1919 Grapefruit St",
+          "district": "Este",
+          "phone": "789-012-3456",
+          "coordinates": {
+            "latitude": -12.1654,
+            "longitude": -77.0965
+          }
+        }
+      ]
+    },{
+      "id": "13",
+      "make": "Toyota",
+      "model": "Street Triple RS",
+      "colors":["green","black"],
+      "year": 2021,
+      "cylinders": "2",
+      "style":"Aventurero",
+      "driving_position": "recostada",
+      "brakes": "tambor",
+      "warranty":{
+        "km":"12000",
+        "months":"25"
+      },
+      "engine": {
+        "type": "Liquid-cooled",
+        "displacement": "765",
+        "power": "121",
+        "torque": "79 Nm",
+        "transmission": "automatica",
+        "powerByGallon": "150"
+      },
+      "dimensions": {
+        "length": "2066 mm",
+        "width": "735 mm",
+        "height": "1060 mm",
+        "wheelbase": "1405 mm"
+      },
+      "weight": "166 kg",
+      "price": "12550",
+      "url": "https://flux.somosmoto.pe/r/https://somosmoto.pe/images/models/thumbnails/colors/royal-enfield-meteor-350-stellar-2024-rojo-6f6462.png?width=336",
+      "type": "deportiva",
+      "stores": [
+        {
+          "name": "Moto Store Q",
+          "address": "1414 Lime St",
+          "district": "Centro",
+          "phone": "890-123-4567",
+          "coordinates": {
+            "latitude": -12.14,
+            "longitude": -77.081
+          }
+        },
+        {
+          "name": "Moto Store R",
+          "address": "1515 Kiwi St",
+          "district": "Sur",
+          "phone": "123-098-4567",
+          "coordinates": {
+            "latitude": -12.1454,
+            "longitude": -77.0845
+          }
+        }
+      ]
     }
   ],
 
