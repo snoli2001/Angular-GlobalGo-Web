@@ -1,12 +1,35 @@
 <p-accordion [activeIndex]="1" class="w-full Primary-font">
     <p-accordionTab header="Precio y Moneda">
-        <div class="p-4 flex flex-col gap-4">
-            <p-slider [(ngModel)]="price" :max=20000 class="w-full" />
-            <!-- <InputText v-model.number="value" /> -->
-            <input type="number" pInputText [(ngModel)]="price" class="p-2">
-            <div class="flex flex-row justify-between">
-                <app-clear-filter custome_style=" font-bold Primary-font text-xs "/>
+        
+        <div class="p-4 flex flex-col gap-10">
+            
+            <div class="flex flex-row gap-5 justify-center items-center">
+                <p-floatLabel>
+                    <input class="max-w-20 p-4" id="$ min" type="number" pInputText [(ngModel)]="rangeValues[0]" />
+                    <label for="$ min">$ min</label>
+                </p-floatLabel>
+
+                <p-floatLabel>
+                    <input class="max-w-20 p-4" id="$ max" type="number" pInputText [(ngModel)]="rangeValues[1]" />
+                    <label for="$ max">$ max</label>
+                </p-floatLabel>
+
+                <button class="bg-blue-700 hover:bg-black text-white px-5 py-4 Ruso-Font rounded-sm transition-colors duration-500 ease-in-out">GO</button>
             </div>
+            <p-slider [(ngModel)]="rangeValues" [range]="true" styleClass="w-14rem" />
+
+            <!-- 
+            
+            <input type="number" pInputText [(ngModel)]="price" class="p-2">
+            
+            <div class="flex flex-row justify-between">
+                <app-clear-filter custome_style=" font-bold Primary-font text-xs hover:text-blue-500"/>
+            </div> -->
+
+
+
+
         </div>
+
     </p-accordionTab>
 </p-accordion>
