@@ -1,7 +1,7 @@
 <p-accordion [activeIndex]="0" [activeIndex]="1" class="w-full Primary-font">
     <p-accordionTab header="Marca">
         <div class="p-4 flex flex-col gap-4">
-            <p-dropdown [options]="brands" [(ngModel)]="selectedBrand" optionLabel="name"
+            <p-dropdown [options]="brands" [(ngModel)]="selectedBrand" optionLabel="name" [filter]="true" filterBy="name" [showClear]="true"  
                 placeholder="Selecciona la marca" class="w-full md:w-56"/>
         </div>
     </p-accordionTab>

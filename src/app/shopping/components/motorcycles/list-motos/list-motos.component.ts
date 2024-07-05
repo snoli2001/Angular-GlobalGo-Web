@@ -17,7 +17,7 @@ export class ListMotosComponent {
   cardData: string = "Datos de la tarjeta"; // Aquí asigna los datos que deseas pasar al componente hijo
   motorCycles: IMotorcycle[] = []; 
   layout: string = 'list';
-
+  first = 0;
   constructor(private service:MotorCycleService){
 
   }
