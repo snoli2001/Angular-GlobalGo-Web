@@ -8,19 +8,15 @@ import { IMotorcycle } from '../models/Motorcycle';
 })
 export class MotoStateService {
   private motosSubject = new BehaviorSubject<IMotorcycle[]>([]);
-  private filterSubject = new BehaviorSubject<any>(null);
+  private originalMotos: IMotorcycle[] = []; // Para almacenar la lista original de motos
 
   motos$: Observable<IMotorcycle[]> = this.motosSubject.asObservable();
-  filter$: Observable<any> = this.filterSubject.asObservable();
 
   constructor() {}
 
-  setMotos(motos: any[]) {
+  setMotos(motos: IMotorcycle[]) {
+    this.originalMotos = motos; // Almacenar la lista original
     this.motosSubject.next(motos);
-  }
-
-  setFilter(filter: any) {
-    this.filterSubject.next(filter);
   }
 
   async getMotorCyclesFromAPI() {
@@ -30,14 +26,29 @@ export class MotoStateService {
         throw new Error("Failed to fetch motorcycles");
       }
       const data = await response.json();
-      this.motosSubject.next(data as IMotorcycle[]);
-      console.log("desde el state: ",this.motos$);
-
+      this.setMotos(data as IMotorcycle[]);
+      console.log("desde el state: ", this.motos$);
     } catch (error) {
       console.error("Error fetching motorcycles:", error);
       throw error;
     }
   }
 
- 
+  orderByLowestPrice() {
+    const sortedMotos = [...this.motosSubject.getValue()].sort((a, b) => {
+      return parseFloat(a.engine.displacement) - parseFloat(b.engine.displacement);
+    });
+    this.motosSubject.next(sortedMotos);
+  }
+
+  orderByBrand(make: string) {
+    const filteredMotos = this.originalMotos.filter(
+      (moto) => moto.make.toLowerCase() === make.toLowerCase()
+    );
+    this.motosSubject.next(filteredMotos);
+  }
+
+  resetFilters() {
+    this.motosSubject.next(this.originalMotos);
+  }
 }

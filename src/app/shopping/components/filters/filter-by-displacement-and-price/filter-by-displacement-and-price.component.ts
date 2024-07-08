@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { IMotorcycle } from '../../../models/Motorcycle';
 import { Console } from 'node:console';
 import { EventEmitter } from 'node:stream';
+import { MotoStateService } from '../../../states/moto.state.service';
 @Component({
   selector: 'app-filter-by-displacement-and-price',
   standalone: true,
@@ -18,7 +19,6 @@ export class FilterByDisplacementAndPriceComponent {
   public sortedMotorcycles: IMotorcycle[] = [];
   public changeList: boolean = true;
 
-
   public orderBy: any = [
     { name: 'Precio más bajo', function: 'orderByLowestPrice' },
     { name: 'Precio más alto', function: 'orderByHighestPrice' },
@@ -28,6 +28,7 @@ export class FilterByDisplacementAndPriceComponent {
   public visible: boolean = false;
   public optionsSelected: any = null;
 
+  constructor(private motoStateService:MotoStateService){}
 
   public toggleSideBard(){
     this.visible =  !this.visible;
@@ -35,6 +36,10 @@ export class FilterByDisplacementAndPriceComponent {
 
   orderbyLowestOrHighestPrice(type: any) {
     
+  }
+
+  orderByLowestPrice() {
+    this.motoStateService.orderByLowestPrice();
   }
 
   onDropdownChange(event: any) {
