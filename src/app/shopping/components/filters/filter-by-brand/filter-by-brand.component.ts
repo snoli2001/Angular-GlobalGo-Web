@@ -2,6 +2,7 @@ import { Component, Output,EventEmitter  } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AccordionModule } from 'primeng/accordion';
 import { DropdownModule } from 'primeng/dropdown';
+import { MotoStateService } from '../../../states/moto.state.service';
 
 @Component({
   selector: 'app-filter-by-brand',
@@ -19,10 +20,18 @@ export class FilterByBrandComponent {
     { name: 'Honda', code: 'HN' },
     { name: 'Toyota', code: 'TY' }
   ];
-  @Output() filterByBrand: EventEmitter<String> = new EventEmitter<String>();
   
-  brandFilter(){
-    this.filterByBrand.emit(this.selectedBrand);
+  constructor(private motoSerivceState:MotoStateService){}
+
+  orderByBrand(event: any){    
+    if (event.value && event.value.name) {
+      console.log('Selected brand:', event.value.name);
+      this.motoSerivceState.orderByBrand(event.value.name)
+    } else {
+      console.log('No brand selected');
+      this.motoSerivceState.resetFilters();  
+    }
+
   }
 
 }

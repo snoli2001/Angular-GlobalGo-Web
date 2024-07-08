@@ -35,6 +35,8 @@ export class FilterByDisplacementAndPriceComponent {
   onDropdownChange(event: any) {
     if (event.value) {
       this.motoStateService.orderbyLowestOrHighestPrice(event.value.function);
+    }else{
+      console.log("no hay brand")
     }
   }
 
