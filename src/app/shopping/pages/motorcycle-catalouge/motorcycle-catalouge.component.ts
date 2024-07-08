@@ -3,6 +3,7 @@ import { FilterCollectionComponent } from '../../components/filters/filter-colle
 import { MotorcycleSectionComponent } from '../../components/motorcycles/motorcycle-section/motorcycle-section.component';
 import { IMotorcycle } from '../../models/Motorcycle';
 import { MotorCycleService } from '../../services/motorcycles.service';
+import { MotoStateService } from '../../states/moto.state.service';
 @Component({
   selector: 'app-motorcycle-catalouge',
   standalone: true,
@@ -11,37 +12,34 @@ import { MotorCycleService } from '../../services/motorcycles.service';
   styleUrl: './motorcycle-catalouge.component.css'
 })
 export class MotorcycleCatalougeComponent {
-  motorCycles: IMotorcycle[] = []; 
-  motorcyclesAux: IMotorcycle[] = [];
-  constructor(private service:MotorCycleService){}
+  motorCycles: IMotorcycle[] = [];
+
+  constructor(private motoStateService: MotoStateService) {}
 
   ngOnInit(): void {
-    this.getMotorCycles();
-    
-  }
-
-  async getMotorCycles(): Promise<void> {
-    try {
-      this.motorCycles = await this.service.getMotorCycles(); 
-    } catch (error) {
-      console.error('Error fetching motorcycles:', error); 
-    }
-  }
-
-  orderByLowestPrice(){
-    this.motorcyclesAux = this.motorCycles;
-    this.motorCycles = this.motorCycles.sort((a, b) => {
-      return (parseFloat(a.engine.displacement) - parseFloat(b.engine.displacement));
+    this.motoStateService.getMotorCyclesFromAPI();
+    this.motoStateService.motos$.subscribe({
+      next: (motos) => { this.motorCycles = motos; },
+      error: (err) => {
+        console.error('Error fetching motorcycles:', err);
+      }
     });
   }
 
-  orderByBrand(make: string) {
-    // this.motorCycles = [...this.motorcyclesAux];
-    const filteredMotorcycles = this.motorCycles.filter(
-      (moto) => moto.make.toLowerCase() === make.toLowerCase()
-    );
-    this.motorCycles = filteredMotorcycles;
-    console.log(this.motorCycles);
-  }
+  // orderByLowestPrice(){
+  //   this.motorcyclesAux = this.motorCycles;
+  //   this.motorCycles = this.motorCycles.sort((a, b) => {
+  //     return (parseFloat(a.engine.displacement) - parseFloat(b.engine.displacement));
+  //   });
+  // }
+
+  // orderByBrand(make: string) {
+  //   // this.motorCycles = [...this.motorcyclesAux];
+  //   const filteredMotorcycles = this.motorCycles.filter(
+  //     (moto) => moto.make.toLowerCase() === make.toLowerCase()
+  //   );
+  //   this.motorCycles = filteredMotorcycles;
+  //   console.log(this.motorCycles);
+  // }
 
 }
