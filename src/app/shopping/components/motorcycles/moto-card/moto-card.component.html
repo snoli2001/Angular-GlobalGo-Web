@@ -1,6 +1,6 @@
 <ng-container *ngIf="option === 1; else showAlternative">
-    <div class="shadow-xl rounded-2xl max-w-xs relative Primary-font overflow-hidden max-h-[400px]">
-        <header class="relative p-2 bg-gray-200 rounded-t-xl flex justify-center">
+    <div class="shadow-xl rounded-sm max-w-xs relative Primary-font overflow-hidden max-h-[400px]">
+        <header class="relative p-2 bg-gray-200 rounded-t-sm flex justify-center">
             <div class="relative">
                 <p-image [src]="data?.url" class="w-full pointer-events-none" [preview]="true"></p-image>
                 <div class="Primary-font font-semibold absolute flex flex-row items-center gap-4 top-0 right-0">
@@ -47,22 +47,9 @@
 </ng-container>
 
 <ng-template #showAlternative>
-    <div class="flex gap-4 ml-5 shadow-xl rounded-3xl max-w-5xl Primary-font overflow-hidden max-h-[400px]">
-        <header class="p-2 bg-gray-200 rounded-t-xl flex justify-center items-center">
-            
+    <div class="flex gap-4 ml-5 shadow-xl rounded-sm max-w-5xl Primary-font overflow-hidden max-h-[400px]">
+        <header class="p-2 bg-gray-200 rounded-t-sm flex justify-center items-center">
             <p-image [src]="data?.url" class="pointer-events-none max-w-80" [preview]="true"></p-image>
-            <!-- <div class="Primary-font font-semibold absolute flex flex-row items-center gap-4 top-0 right-0">
-                <p>{{ data?.engine?.displacement }} cc</p>
-            </div> -->
-            <!-- <div class="absolute flex flex-row gap-4 top-0 left-0">
-                <a href="#">
-                    <button class="font-sans font-bold">
-                        <p>$ {{ data?.price }}</p>
-                    </button>
-                </a>
-            </div> -->
-            
-            <!-- <p-tag severity="info" value="Cafe Racer" class=" absolute right-2 pointer-events-none" /> -->
         </header>
         <main class="p-4 bg-white flex flex-col gap-7">
             <header class="flex gap-4 justify-between items-center">
@@ -77,20 +64,12 @@
             </main>
             <footer>
                 <a href="/moto-detail">
-                    <button class="w-full uppercase bg-blue-600 font-semibold text-center text-white py-2 rounded-lg hover:bg-black">La Quiero</button>
+                    <button class=" p-3 max-w-60 uppercase bg-blue-600 font-semibold text-center text-white py-2 rounded-lg hover:bg-black">La Quiero</button>
                 </a>
             </footer>
         </main>
-
-        <!-- <footer class="flex flex-col gap-10 items-center justify-center">
-            <h4 class="text-2xl font-semibold Roboto-Font">$ {{data?.price}}</h4>
-            <button
-                class="Roboto-Font font-semibold text-lg rounded-md px-4 py-6 bg-yellow-500 text-white hover:bg-black hover:text-white">Ver
-                Ficha</button>
-        </footer> -->
     </div>
 </ng-template>
 
 
 
-<!--  aca CORRIGE EL tEMA DE ReSPONSIVE -->

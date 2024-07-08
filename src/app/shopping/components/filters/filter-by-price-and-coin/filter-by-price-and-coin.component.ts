@@ -14,6 +14,6 @@ import { FloatLabelModule } from 'primeng/floatlabel';
   styleUrl: './filter-by-price-and-coin.component.css'
 })
 export class FilterByPriceAndCoinComponent {
-  public rangeValues: number[] = [20, 80];
+  public rangeValues: number[] = [20, 120];
 
 }
