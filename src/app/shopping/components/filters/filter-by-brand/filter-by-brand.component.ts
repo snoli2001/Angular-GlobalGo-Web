@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output,EventEmitter  } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AccordionModule } from 'primeng/accordion';
 import { DropdownModule } from 'primeng/dropdown';
@@ -11,7 +11,7 @@ import { DropdownModule } from 'primeng/dropdown';
   styleUrl: './filter-by-brand.component.css'
 })
 export class FilterByBrandComponent {
-  public selectedBrand:String = "";
+  public selectedBrand:any = null;
   public brands: any[] = [
     { name: 'Yamaha', code: 'YM' },
     { name: 'Patagonia', code: 'PG' },
@@ -19,4 +19,10 @@ export class FilterByBrandComponent {
     { name: 'Honda', code: 'HN' },
     { name: 'Toyota', code: 'TY' }
   ];
+  @Output() filterByBrand: EventEmitter<String> = new EventEmitter<String>();
+  
+  brandFilter(){
+    this.filterByBrand.emit(this.selectedBrand);
+  }
+
 }

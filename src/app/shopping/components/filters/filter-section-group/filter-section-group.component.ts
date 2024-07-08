@@ -16,5 +16,7 @@ import { FilterByMaterialsComponent } from '../filter-by-materials/filter-by-mat
   styleUrl: './filter-section-group.component.css'
 })
 export class FilterSectionGroupComponent {
-
+  quiqui(type:String){
+    console.log(type);
+  }
 }

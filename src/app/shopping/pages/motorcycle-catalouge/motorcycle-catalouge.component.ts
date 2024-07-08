@@ -36,7 +36,7 @@ export class MotorcycleCatalougeComponent {
   }
 
   orderByBrand(make: string) {
-    this.motorCycles = [...this.motorcyclesAux];
+    // this.motorCycles = [...this.motorcyclesAux];
     const filteredMotorcycles = this.motorCycles.filter(
       (moto) => moto.make.toLowerCase() === make.toLowerCase()
     );
