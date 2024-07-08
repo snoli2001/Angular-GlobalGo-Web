@@ -1,4 +1,3 @@
-// src/app/state/moto-state.service.ts
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { IMotorcycle } from '../models/Motorcycle';
@@ -8,14 +7,13 @@ import { IMotorcycle } from '../models/Motorcycle';
 })
 export class MotoStateService {
   private motosSubject = new BehaviorSubject<IMotorcycle[]>([]);
-  private originalMotos: IMotorcycle[] = []; // Para almacenar la lista original de motos
-
+  private originalMotos: IMotorcycle[] = [];
   motos$: Observable<IMotorcycle[]> = this.motosSubject.asObservable();
 
   constructor() {}
 
   setMotos(motos: IMotorcycle[]) {
-    this.originalMotos = motos; // Almacenar la lista original
+    this.originalMotos = motos;
     this.motosSubject.next(motos);
   }
 
@@ -46,6 +44,28 @@ export class MotoStateService {
       (moto) => moto.make.toLowerCase() === make.toLowerCase()
     );
     this.motosSubject.next(filteredMotos);
+  }
+
+  orderbyLowestOrHighestPrice(orderBy: string) {
+    const sortedMotos = [...this.motosSubject.getValue()];
+    if (orderBy === 'priceHigh') {
+      sortedMotos.sort((a, b) => {
+        return parseFloat(b.price) - parseFloat(a.price);
+      });
+    } else if (orderBy === 'priceLow') {
+      sortedMotos.sort((a, b) => {
+        return parseFloat(a.price) - parseFloat(b.price);
+      });
+    } else if (orderBy === 'displacementHigh') {
+      sortedMotos.sort((a, b) => {
+        return parseFloat(b.engine.displacement) - parseFloat(a.engine.displacement);
+      });
+    } else if (orderBy === 'displacementLow') {
+      sortedMotos.sort((a, b) => {
+        return parseFloat(a.engine.displacement) - parseFloat(b.engine.displacement);
+      });
+    }
+    this.motosSubject.next(sortedMotos);
   }
 
   resetFilters() {

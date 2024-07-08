@@ -4,8 +4,6 @@ import { SidebarModule } from 'primeng/sidebar';
 import { FilterCollectionComponent } from '../filter-collection/filter-collection.component';
 import { FormsModule } from '@angular/forms';
 import { IMotorcycle } from '../../../models/Motorcycle';
-import { Console } from 'node:console';
-import { EventEmitter } from 'node:stream';
 import { MotoStateService } from '../../../states/moto.state.service';
 @Component({
   selector: 'app-filter-by-displacement-and-price',
@@ -20,10 +18,10 @@ export class FilterByDisplacementAndPriceComponent {
   public changeList: boolean = true;
 
   public orderBy: any = [
-    { name: 'Precio más bajo', function: 'orderByLowestPrice' },
-    { name: 'Precio más alto', function: 'orderByHighestPrice' },
-    { name: 'Cilindrada más alta', function: 'orderByHighestDisplacement' },
-    { name: 'Cilindrada más baja', function: 'orderByLowestDisplacement' },
+    { name: 'Precio más bajo', function: 'priceLow' },
+    { name: 'Precio más alto', function: 'priceHigh' },
+    { name: 'Cilindrada más alta', function: 'displacementHigh' },
+    { name: 'Cilindrada más baja', function: 'displacementLow' },
   ];
   public visible: boolean = false;
   public optionsSelected: any = null;
@@ -34,17 +32,9 @@ export class FilterByDisplacementAndPriceComponent {
     this.visible =  !this.visible;
   }
 
-  orderbyLowestOrHighestPrice(type: any) {
-    
-  }
-
-  orderByLowestPrice() {
-    this.motoStateService.orderByLowestPrice();
-  }
-
   onDropdownChange(event: any) {
     if (event.value) {
-      this.orderbyLowestOrHighestPrice(event.value);
+      this.motoStateService.orderbyLowestOrHighestPrice(event.value.function);
     }
   }
 
