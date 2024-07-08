@@ -12,17 +12,17 @@ import { MotorCycleService } from '../../services/motorcycles.service';
 })
 export class MotorcycleCatalougeComponent {
   motorCycles: IMotorcycle[] = []; 
-  layout: string = 'list';
-  first = 0;
-  constructor(private service:MotorCycleService){
+  
 
-  }
+
+
+
+
+  constructor(private service:MotorCycleService){}
 
   ngOnInit(): void {
     this.getMotorCycles();
   }
-
-
 
   async getMotorCycles(): Promise<void> {
     try {

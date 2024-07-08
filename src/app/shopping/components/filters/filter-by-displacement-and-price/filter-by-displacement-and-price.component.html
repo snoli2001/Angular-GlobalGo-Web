@@ -26,25 +26,15 @@
 
 
     <div class="sm:hidden xl:flex flex-row items-center gap-4 p-3">
-        <div class="flex flex-row gap-2">
-            <!-- <i class="pi pi-table text-slate-500 hover:text-black" style="font-size: 20px;"></i> -->
-            <!-- <button class="p-2 bg-orange-600 rounded-md">
-                <i class="pi pi-th-large text-white" style="font-size: 20px;"  (click)="toggleList()" ></i>
-            </button>
-
-            <button class="p-2 bg-orange-600 rounded-md">
-                <i class="pi pi-list-check text-white" style="font-size: 20px;" (click)="toggleList()" ></i>
-            </button> -->
-
-        </div>
-
+    
         <div class="flex flex-row gap-3 items-center">
             <span>Ordenar por: </span>
-            <p-dropdown [(ngModel)]="optionsSelected" [options]="orderBy" optionLabel="name" placeholder="Precios"
-                class="" />
+            <p-dropdown [(ngModel)]="optionsSelected" [options]="orderBy" optionLabel="name" placeholder="Precios" (onChange)="onDropdownChange($event)" />
         </div>
     </div>
 
+
+    
 
 
 </div>

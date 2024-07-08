@@ -11,5 +11,5 @@ import { IMotorcycle } from '../../../models/Motorcycle';
   styleUrl: './motorcycle-section.component.css'
 })
 export class MotorcycleSectionComponent {
-  @Input() listMotos: IMotorcycle[] | undefined;
+  @Input() listMotos: IMotorcycle[] = [];
 }
