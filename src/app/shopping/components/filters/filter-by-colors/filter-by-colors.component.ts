@@ -22,6 +22,6 @@ export class FilterByColorsComponent {
       this.colors.push(color);
     }
     console.log(this.colors);
-    this.motoStateService.orderByColors(this.colors);
+    // this.motoStateService.orderByColors(this.colors);
   }
 }

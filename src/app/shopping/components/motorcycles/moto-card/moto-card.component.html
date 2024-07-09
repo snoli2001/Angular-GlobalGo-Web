@@ -2,14 +2,15 @@
     <div class="shadow-xl rounded-sm max-w-xs relative Primary-font overflow-hidden max-h-[400px]">
         <header class="relative p-2 bg-gray-200 rounded-t-sm flex justify-center">
             <div class="relative">
-                <p-image [src]="data?.url" class="w-full pointer-events-none" [preview]="true"></p-image>
+                <!-- <p-image [src]="data?.imagen" class="w-full pointer-events-none" [preview]="true"></p-image> -->
+                <p-image src="https://flux.somosmoto.pe/r/https://somosmoto.pe/images/models/thumbnails/colors/royal-enfield-hunter-350-rebel-2024-negro-63d022.png?width=336" class="w-full pointer-events-none" [preview]="true"></p-image>
                 <div class="Primary-font font-semibold absolute flex flex-row items-center gap-4 top-0 right-0">
-                    <p>{{ data?.engine?.displacement }} cc</p>
+                    <p>{{ data?.cilindrada }} cc</p>
                 </div>
                 <div class="absolute flex flex-row gap-4 top-0 left-0">
                     <a href="#">
                         <button class="font-sans font-bold">
-                            <p>$ {{ data?.price }}</p>
+                            <p>$ {{ data?.precio }}</p>
                         </button>
                     </a>
                 </div>
@@ -21,8 +22,8 @@
             <div>
                 <div class="flex gap-4 justify-between items-center">
                     <section class="flex flex-col gap-0">
-                        <h4 class="font-bold font-sans">{{ data?.model }}</h4>
-                        <span class="font-bold text-slate-600">{{ data?.year }}</span>
+                        <h4 class="font-bold font-sans">{{ data?.modelo }}</h4>
+                        <span class="font-bold text-slate-600">{{ data?.potencia }}</span>
                     </section>
                     <img src="../../../../../assets/imgs/logos/benelli.svg" class="max-w-20" alt="">
                 </div>
@@ -30,11 +31,11 @@
                     class="flex justify-between items-center mt-1 border-t-2 Primary-font font-semibold border-gray-300 pt-3">
                     <div class="flex flex-col gap-1">
                         <span>Cilindrada</span>
-                        {{ data?.engine?.displacement }}
+                        {{ data?.cilindrada }}
                     </div>
                     <div class="flex flex-col">
                         <span>Rendimiento</span>
-                        <p>{{ data?.engine?.power }}-hp</p>
+                        <p>{{ data?.potencia }}-hp</p>
                     </div>
                 </div>
 
@@ -49,13 +50,13 @@
 <ng-template #showAlternative>
     <div class="flex gap-4 ml-5 shadow-xl rounded-sm max-w-5xl Primary-font overflow-hidden max-h-[400px]">
         <header class="p-2 bg-gray-200 rounded-t-sm flex justify-center items-center">
-            <p-image [src]="data?.url" class="pointer-events-none max-w-80" [preview]="true"></p-image>
+            <p-image [src]="data?.imagen" class="pointer-events-none max-w-80" [preview]="true"></p-image>
         </header>
         <main class="p-4 bg-white flex flex-col gap-7">
             <header class="flex gap-4 justify-between items-center">
                 <section class="flex flex-col gap-0">
-                    <h4 class="font-bold font-sans text-2xl">{{ data?.model }}</h4>
-                    <span class="font-bold text-slate-600">{{ data?.year }}</span>
+                    <h4 class="font-bold font-sans text-2xl">{{ data?.modelo }}</h4>
+                    <span class="font-bold text-slate-600">{{ data?.autonomia }}</span>
                 </section>
                 <img src="../../../../../assets/imgs/logos/benelli.svg" class=" max-w-20" alt="">
             </header>

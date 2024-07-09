@@ -13,19 +13,5 @@ import { IMotorcycle } from '../../../models/Motorcycle';
 export class MotorcycleSectionComponent {
   @Input() listMotos: IMotorcycle[] = [];
 
-  orderByLowestPrice(){
-    console.log(this.listMotos[0].price);
-    
-    
-    this.listMotos = this.listMotos;
-    this.listMotos = this.listMotos.sort((a, b) => {
-      return (
-        parseFloat(b.engine.displacement) -
-        parseFloat(a.engine.displacement)
-      );
-    });
 
-    console.log(this.listMotos[0].price);
-
-  }
 }

@@ -19,8 +19,8 @@ export class MotoStateService {
 
   async getMotorCyclesFromAPI() {
     try {
-      // const response = await fetch("http://localhost:3000/motorcycles");
-      const response = await fetch(`${environment.apiUrl}/motorcycles`);
+      const response = await fetch("https://localhost:7092/api/Motorcycle/getMotorcycles");
+      // const response = await fetch(`${environment.apiUrl}/motorcycles`);
       if (!response.ok) {
         throw new Error("Failed to fetch motorcycles");
       }
@@ -34,14 +34,14 @@ export class MotoStateService {
 
   orderByLowestPrice() {
     const sortedMotos = [...this.motosSubject.getValue()].sort((a, b) => {
-      return parseFloat(a.engine.displacement) - parseFloat(b.engine.displacement);
+      return parseFloat(a.cilindrada) - parseFloat(b.cilindrada);
     });
     this.motosSubject.next(sortedMotos);
   }
 
   orderByBrand(make: string) {
     const filteredMotos = this.originalMotos.filter(
-      (moto) => moto.make.toLowerCase() === make.toLowerCase()
+      (moto) => moto.marca.toLowerCase() === make.toLowerCase()
     );
     this.motosSubject.next(filteredMotos);
   }
@@ -50,34 +50,34 @@ export class MotoStateService {
     const sortedMotos = [...this.motosSubject.getValue()];
     if (orderBy === 'priceHigh') {
       sortedMotos.sort((a, b) => {
-        return parseFloat(b.price) - parseFloat(a.price);
+        return b.precio - a.precio;
       });
     } else if (orderBy === 'priceLow') {
       sortedMotos.sort((a, b) => {
-        return parseFloat(a.price) - parseFloat(b.price);
+        return a.precio - b.precio;
       });
     } else if (orderBy === 'displacementHigh') {
       sortedMotos.sort((a, b) => {
-        return parseFloat(b.engine.displacement) - parseFloat(a.engine.displacement);
+        return parseFloat(b.cilindrada) - parseFloat(a.cilindrada);
       });
     } else if (orderBy === 'displacementLow') {
       sortedMotos.sort((a, b) => {
-        return parseFloat(a.engine.displacement) - parseFloat(b.engine.displacement);
+        return parseFloat(a.cilindrada) - parseFloat(b.cilindrada);
       });
     }
     this.motosSubject.next(sortedMotos);
   }
 
-  orderByColors(colors: string[]) {
-    const filteredMotorcycles = this.originalMotos.filter((moto) =>
-      moto.colors.some((motoColor) => colors.includes(motoColor.color))
-    );
-    this.motosSubject.next(filteredMotorcycles);
-  }
+  // orderByColors(colors: string[]) {
+  //   const filteredMotorcycles = this.originalMotos.filter((moto) =>
+  //     moto.colors.some((motoColor) => colors.includes(motoColor.color))
+  //   );
+  //   this.motosSubject.next(filteredMotorcycles);
+  // }
 
   orderByPrice(min: number, max: number) {
     const filteredMotorcycles = this.originalMotos.filter(
-      (moto) => parseFloat(moto.price) > min && parseFloat(moto.price) <= max
+      (moto) => moto.precio > min && moto.precio <= max
     );
     this.motosSubject.next(filteredMotorcycles);
   }
