@@ -25,7 +25,6 @@ export class MotoStateService {
       }
       const data = await response.json();
       this.setMotos(data as IMotorcycle[]);
-      console.log("desde el state: ", this.motos$);
     } catch (error) {
       console.error("Error fetching motorcycles:", error);
       throw error;
@@ -71,10 +70,15 @@ export class MotoStateService {
   orderByColors(colors: string[]) {
     const filteredMotorcycles = this.originalMotos.filter((moto) =>
       moto.colors.some((motoColor) => colors.includes(motoColor.color))
-
     );
     this.motosSubject.next(filteredMotorcycles);
-    console.log(this.motosSubject);  
+  }
+
+  orderByPrice(min: number, max: number) {
+    const filteredMotorcycles = this.originalMotos.filter(
+      (moto) => parseFloat(moto.price) > min && parseFloat(moto.price) <= max
+    );
+    this.motosSubject.next(filteredMotorcycles);
   }
 
   resetFilters() {

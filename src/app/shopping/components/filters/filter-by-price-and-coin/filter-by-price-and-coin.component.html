@@ -5,18 +5,18 @@
             
             <div class="flex flex-row gap-5 justify-center items-center">
                 <p-floatLabel>
-                    <input class="max-w-20 p-4" id="$ min" type="number" pInputText [(ngModel)]="rangeValues[0]" />
+                    <input class="max-w-20 px-2 py-3" id="$ min" type="number" pInputText [(ngModel)]="rangeValues[0]" />
                     <label for="$ min">$ min</label>
                 </p-floatLabel>
 
                 <p-floatLabel>
-                    <input class="max-w-20 p-4" id="$ max" type="number" pInputText [(ngModel)]="rangeValues[1]" />
+                    <input class="max-w-20 px-2 py-3" id="$ max" type="number" pInputText [(ngModel)]="rangeValues[1]" />
                     <label for="$ max">$ max</label>
                 </p-floatLabel>
 
                 <button class="bg-blue-700 hover:bg-black text-white px-5 py-4 Ruso-Font rounded-sm transition-colors duration-500 ease-in-out">GO</button>
             </div>
-            <p-slider [(ngModel)]="rangeValues" [range]="true" styleClass="w-14rem" />
+            <p-slider [(ngModel)]="rangeValues" [range]="true" [max]="18000" styleClass="w-14rem" (onChange)="filterByPrice()"/>
 
         </div>
 
