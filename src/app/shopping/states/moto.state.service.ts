@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { IMotorcycle } from '../models/Motorcycle';
-
+import { environment } from '../../../../enviroment';
 @Injectable({
   providedIn: 'root'
 })
@@ -19,7 +19,8 @@ export class MotoStateService {
 
   async getMotorCyclesFromAPI() {
     try {
-      const response = await fetch("http://localhost:3000/motorcycles");
+      // const response = await fetch("http://localhost:3000/motorcycles");
+      const response = await fetch(`${environment.apiUrl}/motorcycles`);
       if (!response.ok) {
         throw new Error("Failed to fetch motorcycles");
       }
