@@ -20,9 +20,7 @@ export class FilterByBrandComponent {
     { name: 'Honda', code: 'HN' },
     { name: 'Toyota', code: 'TY' }
   ];
-  
   constructor(private motoSerivceState:MotoStateService){}
-
   orderByBrand(event: any){    
     if (event.value && event.value.name) {
       console.log('Selected brand:', event.value.name);
@@ -31,7 +29,5 @@ export class FilterByBrandComponent {
       console.log('No brand selected');
       this.motoSerivceState.resetFilters();  
     }
-
   }
-
 }

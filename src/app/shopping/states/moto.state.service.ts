@@ -68,6 +68,15 @@ export class MotoStateService {
     this.motosSubject.next(sortedMotos);
   }
 
+  orderByColors(colors: string[]) {
+    const filteredMotorcycles = this.originalMotos.filter((moto) =>
+      moto.colors.some((motoColor) => colors.includes(motoColor.color))
+
+    );
+    this.motosSubject.next(filteredMotorcycles);
+    console.log(this.motosSubject);  
+  }
+
   resetFilters() {
     this.motosSubject.next(this.originalMotos);
   }
