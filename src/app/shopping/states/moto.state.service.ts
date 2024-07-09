@@ -32,6 +32,20 @@ export class MotoStateService {
     }
   }
 
+  // async getBrandsFromAPi(){
+  //   try {
+  //     const response = await fetch("https://localhost:7092/api/Motorcycle/getMotorcycles");
+  //     if (!response.ok) {
+  //       throw new Error("Failed to fetch motorcycles");
+  //     }
+  //     const data = await response.json();
+  //     this.setMotos(data as IMotorcycle[]);
+  //   } catch (error) {
+  //     console.error("Error fetching motorcycles:", error);
+  //     throw error;
+  //   }
+  // }
+
   orderByLowestPrice() {
     const sortedMotos = [...this.motosSubject.getValue()].sort((a, b) => {
       return parseFloat(a.cilindrada) - parseFloat(b.cilindrada);
