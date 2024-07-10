@@ -3,13 +3,13 @@
     
     
     <!-- <div class="absolute text-black p-4 hidden xl:block xl:top-[15%] xl:left-[5%] lg:top-[10%] lg:left-[4%] md:top-[8%] md:left-[3%] sm:top-[6%] sm:left-[2%]"> -->
-    <div class="absolute hidden 2xl:flex text-black p-4 top-[7%] left-[5%] max-w-64 overflow-hidden">
+    <div class="absolute hidden 2xl:flex text-black p-4 top-[7%] left-[5%] max-w-96 overflow-hidden">
         <section class="flex flex-col gap-3">
             <img src="../../../../../assets/imgs/logos/benelli.svg">
-            <span class="text-white text-5xl Ruso-Font">{{motorcycle?.precio}} $</span>    
+            <span class="text-white text-5xl Ruso-Font ">{{ motorcycle?.precio | currency: 'USD':'symbol':'1.0-0' }}</span>    
             <div class="flex flex-col gap-2">
                 <span class="pl-2 py-5 bg-white font-semibold text-blue-700 text-5xl text-left Ruso-Font ">
-                    S/ {{motorcycle?.precio}}
+                    {{ motorcycle?.precio | currency: 'S/':'symbol':'1.0-0' }}
                 </span>
                 <p class="text-white text-2xl Primary-font">Precio Referecial al {{today.getDate()}}/{{today.getMonth()}}/{{today.getFullYear()}} </p>
             </div>    
