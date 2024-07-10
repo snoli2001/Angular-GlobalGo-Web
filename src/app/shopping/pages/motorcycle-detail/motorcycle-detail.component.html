@@ -1,7 +1,7 @@
 <section class="fade-in" *ngIf="motorCycle">  
     <app-moto-header-detail [motorcycle]="motorCycle"/>
     <app-moto-technical-specification/>
-    <app-chispa-information/>
+    <app-chispa-information [motorcycle]="motorCycle"/>
     <app-carrousel-for-motorcycles/>
 </section>
 

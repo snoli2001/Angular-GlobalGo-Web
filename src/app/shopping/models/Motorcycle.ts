@@ -80,4 +80,7 @@ export interface IMotorcycle {
     largo: string;
     ancho: string;
     alto: string;
+    texto:string;
+    categoria:string;
+    icono:string;  
 }

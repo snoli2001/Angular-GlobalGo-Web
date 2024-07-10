@@ -10,4 +10,9 @@ import { IMotorcycle } from '../../../models/Motorcycle';
 })
 export class MotoHeaderDetailComponent {
   @Input() motorcycle: IMotorcycle | undefined;
+  public today:Date;
+
+  constructor(){
+    this.today = new Date;
+  }
 }
