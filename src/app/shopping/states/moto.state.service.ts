@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { IMotorcycle } from '../models/Motorcycle';
 import { environment } from '../../../../enviroment';
+import { MotorCycleService } from '../services/motorcycles.service';
 @Injectable({
   providedIn: 'root'
 })
@@ -9,9 +10,14 @@ export class MotoStateService {
   private motosSubject = new BehaviorSubject<IMotorcycle[]>([]);
   private originalMotos: IMotorcycle[] = [];
   motos$: Observable<IMotorcycle[]> = this.motosSubject.asObservable();
+  
+  private motoSubject = new BehaviorSubject<IMotorcycle | null>(null);
+  moto$: Observable<IMotorcycle | null> = this.motoSubject.asObservable();
 
-  constructor() {}
+  
 
+  constructor(private motoService:MotorCycleService) {}
+  
   setMotos(motos: IMotorcycle[]) {
     this.originalMotos = motos;
     this.motosSubject.next(motos);
@@ -19,14 +25,20 @@ export class MotoStateService {
 
   async getMotorCyclesFromAPI() {
     try {
-      const response = await fetch(`${environment.apiUrl}/Motorcycle/getMotorcycles`);
-      if (!response.ok) {
-        throw new Error("Failed to fetch motorcycles");
-      }
-      const data = await response.json();
-      this.setMotos(data as IMotorcycle[]);
+      const data = await this.motoService.getMotorCycles();
+      this.setMotos(data);
     } catch (error) {
       console.error("Error fetching motorcycles:", error);
+      throw error;
+    }
+  }
+
+  async getMotorcycleByID(id: number) {
+    try {
+      const data = await this.motoService.getMotorcycleByID(id);
+      this.motoSubject.next(data);
+    } catch (error) {
+      console.error("Error fetching motorcycle:", error);
       throw error;
     }
   }
