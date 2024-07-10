@@ -11,5 +11,4 @@ import { CarrouselForMotorcyclesComponent } from '../../components/motorcycles/c
   styleUrl: './motorcycle-detail.component.css'
 })
 export class MotorcycleDetailComponent {
-
 }

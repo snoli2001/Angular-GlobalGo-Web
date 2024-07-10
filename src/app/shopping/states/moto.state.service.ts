@@ -19,8 +19,7 @@ export class MotoStateService {
 
   async getMotorCyclesFromAPI() {
     try {
-      const response = await fetch("https://localhost:7092/api/Motorcycle/getMotorcycles");
-      // const response = await fetch(`${environment.apiUrl}/motorcycles`);
+      const response = await fetch(`${environment.apiUrl}/Motorcycle/getMotorcycles`);
       if (!response.ok) {
         throw new Error("Failed to fetch motorcycles");
       }
