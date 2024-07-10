@@ -6,6 +6,6 @@ import { MotorcycleDetailComponent } from './shopping/pages/motorcycle-detail/mo
 export const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     {path:'catalogo-motos',component: MotorcycleCatalougeComponent},
-    {path:'moto-detail',component:MotorcycleDetailComponent},
+    {path:'moto-detail/:id',component:MotorcycleDetailComponent},
     {path:'**', component:NotFoundPageComponent}
 ];

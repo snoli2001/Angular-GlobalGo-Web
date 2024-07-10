@@ -5,8 +5,8 @@ import { ChispaInformationComponent } from '../../components/motorcycles/chispa-
 import { CarrouselForMotorcyclesComponent } from '../../components/motorcycles/carrousel-for-motorcycles/carrousel-for-motorcycles.component';
 import { IMotorcycle } from '../../models/Motorcycle';
 import { MotoStateService } from '../../states/moto.state.service';
-import { error } from 'console';
 import { CommonModule } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-motorcycle-detail',
   standalone: true,
@@ -16,16 +16,21 @@ import { CommonModule } from '@angular/common';
 })
 export class MotorcycleDetailComponent {
   motorCycle: IMotorcycle | null = null;
-  constructor(private serviceState: MotoStateService){}
+  constructor(private serviceState: MotoStateService, private route: ActivatedRoute){}
 
   ngOnInit(): void {
-    this.serviceState.getMotorcycleByID(20);
+    this.route.params.subscribe(params => {
+      const motoId = +params['id']; 
+      this.serviceState.getMotorcycleByID(motoId);
+    });
+
     this.serviceState.moto$.subscribe({
-      next: (moto) => { this.motorCycle = moto; },
+      next: (moto) => {
+        this.motorCycle = moto;
+      },
       error: (error) => {
         console.log('Error fetching this motorcycle', error);
       }
     });
   }
-
 }

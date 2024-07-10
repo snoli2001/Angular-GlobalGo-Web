@@ -36,7 +36,6 @@ export class MotoStateService {
     try {
       const data = await this.motoService.getMotorcycleByID(id);
       this.motoSubject.next(data);
-      // console.log(this.motoSubject);
     } catch (error) {
       console.error("Error fetching motorcycle:", error);
       throw error;
