@@ -4,7 +4,7 @@
             <p-slider [(ngModel)]="performace" class="w-full" [min]="65" [max]="270" (onChange)="handleFilter()"/>
             <span class=" text-xs">Rendimiento Minimo: {{ performace }} Km/gl</span>
             <div class="flex flex-row justify-between">
-                <app-clear-filter/>
+                <app-clear-filter custom_style="font-bold Primary-font text-xs hover:text-blue-500"></app-clear-filter>
             </div>
         </div>
     </p-accordionTab>
