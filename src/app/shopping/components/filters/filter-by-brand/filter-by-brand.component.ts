@@ -19,11 +19,9 @@ export class FilterByBrandComponent {
     this.getBrandFromAPI();
   }
   orderByBrand(event: any){    
-    if (event.value && event.value.name) {
-      console.log('Selected brand:', event.value.name);
-      this.motoSerivceState.orderByBrand(event.value.name)
+    if (event.value && event.value.marca) {
+      this.motoSerivceState.orderByBrand(event.value.marca)
     } else {
-      console.log(this.selectedBrand);
       this.motoSerivceState.resetFilters();  
     }
   }
@@ -36,7 +34,6 @@ export class FilterByBrandComponent {
       }
       const data = await response.json();
       this.brands = data;
-      console.log(this.brands);
     } catch (error) {
       console.error("Error fetching motorcycles:", error);
       throw error;
