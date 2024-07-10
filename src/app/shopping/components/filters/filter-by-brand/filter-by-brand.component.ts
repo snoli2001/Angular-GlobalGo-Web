@@ -12,14 +12,8 @@ import { MotoStateService } from '../../../states/moto.state.service';
   styleUrl: './filter-by-brand.component.css'
 })
 export class FilterByBrandComponent {
-  public selectedBrand:any = null;
-  // public brands: any[] = [
-  //   { name: 'Yamaha', code: 'YM' },
-  //   { name: 'Patagonia', code: 'PG' },
-  //   { name: 'Tvs', code: 'TV' },
-  //   { name: 'Honda', code: 'HN' },
-  //   { name: 'Toyota', code: 'TY' }
-  // ];
+  public selectedBrand:any = {} as object;
+  
   public brands: any[] = [];
   constructor(private motoSerivceState:MotoStateService){
     this.getBrandFromAPI();
@@ -29,7 +23,7 @@ export class FilterByBrandComponent {
       console.log('Selected brand:', event.value.name);
       this.motoSerivceState.orderByBrand(event.value.name)
     } else {
-      console.log('No brand selected');
+      console.log(this.selectedBrand);
       this.motoSerivceState.resetFilters();  
     }
   }
