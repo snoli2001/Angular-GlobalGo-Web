@@ -75,12 +75,15 @@ export interface IMotorcycle {
     transmision: string;
     velocidad: string;
     suspension_delantero: string;
+    suspension_posterior: string; 
     peso: string;
     carga: string;
     largo: string;
     ancho: string;
     alto: string;
-    texto:string;
-    categoria:string;
-    icono:string;  
+    texto: string;
+    categoria: string;
+    icono: string;
+    freno_delantero: string;
+    freno_posterior: string;
 }

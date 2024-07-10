@@ -3,7 +3,7 @@
         <header class="relative p-2 bg-gray-200 rounded-t-sm flex justify-center">
             <div class="relative">
                 <!-- <p-image [src]="data?.imagen" class="w-full pointer-events-none" [preview]="true"></p-image> -->
-                <p-image src="https://flux.somosmoto.pe/r/https://somosmoto.pe/images/models/thumbnails/colors/royal-enfield-hunter-350-rebel-2024-negro-63d022.png?width=336" class="w-full pointer-events-none" [preview]="true"></p-image>
+                <p-image src="https://flux.somosmoto.pe/r/https://somosmoto.pe/images/models/thumbnails/colors/royal-enfield-hunter-350-rebel-2024-negro-63d022.png?width=336" class="w-full" [preview]="true"></p-image>
                 <div class="Primary-font font-semibold absolute flex flex-row items-center gap-4 top-0 right-0">
                     <p>{{ data?.cilindrada }} cc</p>
                 </div>
@@ -15,7 +15,8 @@
                     </a>
                 </div>
             </div>
-            <p-tag severity="info" value="Cafe Racer" class=" absolute right-2 pointer-events-none" />
+            <p-tag severity="info" value="{{data?.categoria}}" class=" absolute right-2 pointer-events-none" />
+            <!-- <span class=" rounded-lg bg-red-400 text-white absolute right-2 pointer-events-none">{{data?.categoria}}</span>     -->
         </header>
         <main
             class="p-4 bg-white flex flex-col gap-7 transition-transform transform translate-y-0 hover:translate-y-[-60px]">
