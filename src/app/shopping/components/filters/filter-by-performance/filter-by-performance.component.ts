@@ -3,6 +3,7 @@ import { AccordionModule } from 'primeng/accordion';
 import { SliderModule } from 'primeng/slider';
 import { ClearFilterComponent } from '../clear-filter/clear-filter.component';
 import { FormsModule } from '@angular/forms';
+import { MotoStateService } from '../../../states/moto.state.service';
 @Component({
   selector: 'app-filter-by-performance',
   standalone: true,
@@ -11,5 +12,10 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './filter-by-performance.component.css'
 })
 export class FilterByPerformanceComponent {
-  public performace:number=10;
+  public performace:number=0;
+  constructor(private serviceState:MotoStateService){}
+
+  handleFilter(){
+    this.serviceState.orderByPerformance(this.performace);
+  }
 }

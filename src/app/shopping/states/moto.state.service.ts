@@ -46,6 +46,7 @@ export class MotoStateService {
     this.motosSubject.next(filteredMotos);
   }
 
+
   orderbyLowestOrHighestPrice(orderBy: string) {
     const sortedMotos = [...this.motosSubject.getValue()];
     if (orderBy === 'priceHigh') {
@@ -68,12 +69,12 @@ export class MotoStateService {
     this.motosSubject.next(sortedMotos);
   }
 
-  // orderByColors(colors: string[]) {
-  //   const filteredMotorcycles = this.originalMotos.filter((moto) =>
-  //     moto.colors.some((motoColor) => colors.includes(motoColor.color))
-  //   );
-  //   this.motosSubject.next(filteredMotorcycles);
-  // }
+  orderByPerformance(performance: number){
+    const filteredMotorcycles = this.originalMotos.filter(
+      (moto) => parseInt(moto.rendimiento) < performance
+    );
+    this.motosSubject.next(filteredMotorcycles);
+  }
 
   orderByPrice(min: number, max: number) {
     const filteredMotorcycles = this.originalMotos.filter(
