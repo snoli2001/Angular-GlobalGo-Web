@@ -1,6 +1,10 @@
-<section class="fade-in">  
+<section class="fade-in" *ngIf="motorCycle">  
     <app-moto-header-detail/>
     <app-moto-technical-specification/>
     <app-chispa-information/>
     <app-carrousel-for-motorcycles/>
 </section>
+
+<div *ngIf="!motorCycle">
+    <p>Cargando detalles de la motocicleta...</p>
+</div>
