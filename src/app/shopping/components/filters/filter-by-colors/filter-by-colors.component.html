@@ -3,11 +3,11 @@
         <div class="p-4 flex flex-col gap-4">
 
             <div class="flex gap-3">
-                <app-button-check [_background]="'green'" />
-                <app-button-check [_background]="'lightblue'" />
-                <app-button-check [_background]="'red'"  />
-                <app-button-check [_background]="'black'" />
-                <app-button-check [_background]="'orange'" />
+                <app-button-check [_background]="'green'" (click)="handleFilter('green')"/>
+                <app-button-check [_background]="'lightblue'" (click)="handleFilter('lightblue')" />
+                <app-button-check [_background]="'red'"  (click)="handleFilter('red')" />
+                <app-button-check [_background]="'black'" (click)="handleFilter('black')"/>
+                <app-button-check [_background]="'orange'" (click)="handleFilter('orange')"/>
             </div>                 
 
         </div>

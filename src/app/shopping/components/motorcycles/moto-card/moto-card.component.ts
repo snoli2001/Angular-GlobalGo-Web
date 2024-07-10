@@ -15,4 +15,17 @@ import { RouterLink } from '@angular/router';
 export class MotoCardComponent {
   @Input() data: IMotorcycle | undefined;
   @Input() option: number | undefined;
+
+  getImagePath(imageName: string | undefined): string {
+    return `../../../../../assets/imgs/motorcycles/${imageName}`;
+  }
+  
+  getbrandPath(imageName: string | undefined):string{
+    return `../../../../../assets/imgs/logos/${imageName}`;
+  }
+
+  prueba(img:any){
+    console.log(typeof(img));
+    console.log(`../../../../../assets/imgs/motorcycles/${img}`)  
+  }
 }

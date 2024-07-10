@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { IMotorcycle } from '../../../models/Motorcycle';
 
 @Component({
   selector: 'app-chispa-information',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './chispa-information.component.css'
 })
 export class ChispaInformationComponent {
-
+  @Input() motorcycle:IMotorcycle | undefined;
 }

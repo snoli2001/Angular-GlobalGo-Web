@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { MotoStateService } from '../../../states/moto.state.service';
 
 @Component({
   selector: 'app-clear-filter',
@@ -10,5 +11,12 @@ import { Component, Input } from '@angular/core';
 export class ClearFilterComponent {
   @Input() custom_style: string|undefined;
 
+  constructor(private motoStateService: MotoStateService){
+
+  }
+
+  resetFilter(){
+    this.motoStateService.resetFilters();
+  }
 
 }

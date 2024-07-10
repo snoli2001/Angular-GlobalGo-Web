@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { GalleriaModule } from 'primeng/galleria';
 import { TabViewModule } from 'primeng/tabview';
+import { IMotorcycle } from '../../../models/Motorcycle';
 
 @Component({
   selector: 'app-carrousel-for-motorcycles',
@@ -10,6 +11,8 @@ import { TabViewModule } from 'primeng/tabview';
   styleUrl: './carrousel-for-motorcycles.component.css',
 })
 export class CarrouselForMotorcyclesComponent {
+  @Input() motorcycle: IMotorcycle | undefined;
+
   public images: any[] = [
     {
       itemImageSrc: 'https://tomodachimotors.com/wp-content/uploads/2022/07/ssenda-patagonia-169-2022-negro-534e54.png',

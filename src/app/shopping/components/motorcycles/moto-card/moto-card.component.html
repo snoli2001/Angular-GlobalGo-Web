@@ -1,96 +1,75 @@
 <ng-container *ngIf="option === 1; else showAlternative">
-    <div class="shadow-xl rounded-2xl max-w-xs relative Primary-font overflow-hidden max-h-[400px]">
-        <header class="relative p-2 bg-gray-200 rounded-t-xl flex justify-center">
+    <div class="shadow-xl rounded-sm max-w-xs relative Primary-font overflow-hidden max-h-[430px]">
+        <header class="relative p-2 rounded-t-sm flex justify-center">
             <div class="relative">
-                <p-image [src]="data?.url" class="w-full pointer-events-none" [preview]="true"></p-image>
+                <p-image [src]="getImagePath(data?.imagen)" class="w-full pointer-events-none" [preview]="true"></p-image>
                 <div class="Primary-font font-semibold absolute flex flex-row items-center gap-4 top-0 right-0">
-                    <p>{{ data?.engine?.displacement }} cc</p>
+                    <p>{{ data?.cilindrada }} cc</p>
                 </div>
                 <div class="absolute flex flex-row gap-4 top-0 left-0">
                     <a href="#">
                         <button class="font-sans font-bold">
-                            <p>$ {{ data?.price }}</p>
+                            <p>$ {{ data?.precio }}</p>
                         </button>
                     </a>
                 </div>
             </div>
-            <p-tag severity="info" value="Cafe Racer" class=" absolute right-2 pointer-events-none" />
+            <p-tag severity="info" value="{{data?.categoria}}" class=" absolute right-2 pointer-events-none" />
         </header>
         <main
             class="p-4 bg-white flex flex-col gap-7 transition-transform transform translate-y-0 hover:translate-y-[-60px]">
             <div>
                 <div class="flex gap-4 justify-between items-center">
                     <section class="flex flex-col gap-0">
-                        <h4 class="font-bold font-sans">{{ data?.model }}</h4>
-                        <span class="font-bold text-slate-600">{{ data?.year }}</span>
+                        <h4 class="font-bold font-sans">{{ data?.modelo }}</h4>
+                        <span class="font-bold text-slate-600">{{ data?.velocidad }} KM/H</span>
                     </section>
-                    <img src="../../../../../assets/imgs/logos/benelli.svg" class="max-w-20" alt="">
+                    <img [src]="getbrandPath(data?.logo)" class="max-w-20" alt="">
                 </div>
                 <div
                     class="flex justify-between items-center mt-1 border-t-2 Primary-font font-semibold border-gray-300 pt-3">
                     <div class="flex flex-col gap-1">
                         <span>Cilindrada</span>
-                        {{ data?.engine?.displacement }}
+                        {{ data?.cilindrada }}
                     </div>
                     <div class="flex flex-col">
                         <span>Rendimiento</span>
-                        <p>{{ data?.engine?.power }}-hp</p>
+                        <p>{{ data?.rendimiento }}-hp</p>
                     </div>
                 </div>
-
             </div>
-            <a href="/moto-detail">
+            <a [href]="'/moto-detail/'+ (data?.idModelo)">
                 <button class="w-full uppercase bg-blue-600 font-semibold text-center text-white py-2 rounded-lg hover:bg-black">La Quiero</button>
             </a>
         </main>
     </div>
+
 </ng-container>
 
 <ng-template #showAlternative>
-    <div class="flex gap-4 ml-5 shadow-xl rounded-3xl max-w-5xl Primary-font overflow-hidden max-h-[400px]">
-        <header class="p-2 bg-gray-200 rounded-t-xl flex justify-center items-center">
-            
-            <p-image [src]="data?.url" class="pointer-events-none max-w-80" [preview]="true"></p-image>
-            <!-- <div class="Primary-font font-semibold absolute flex flex-row items-center gap-4 top-0 right-0">
-                <p>{{ data?.engine?.displacement }} cc</p>
-            </div> -->
-            <!-- <div class="absolute flex flex-row gap-4 top-0 left-0">
-                <a href="#">
-                    <button class="font-sans font-bold">
-                        <p>$ {{ data?.price }}</p>
-                    </button>
-                </a>
-            </div> -->
-            
-            <!-- <p-tag severity="info" value="Cafe Racer" class=" absolute right-2 pointer-events-none" /> -->
+    <div class="flex sm:flex-col md:flex-row gap-4 ml-5 shadow-xl rounded-sm max-w-5xl Primary-font overflow-hidden lg:max-h-[440px] xl:max-h-[400px]">
+        <header class="p-2 rounded-t-sm flex justify-center items-center">
+            <p-image [src]="getImagePath(data?.imagen)" class=" max-w-6xl pointer-events-none" [preview]="true"></p-image>
         </header>
         <main class="p-4 bg-white flex flex-col gap-7">
             <header class="flex gap-4 justify-between items-center">
                 <section class="flex flex-col gap-0">
-                    <h4 class="font-bold font-sans text-2xl">{{ data?.model }}</h4>
-                    <span class="font-bold text-slate-600">{{ data?.year }}</span>
+                    <h4 class="font-bold font-sans text-2xl">{{ data?.modelo }}</h4>
+                    <span class="font-bold text-slate-600">{{ data?.autonomia }}</span>
                 </section>
-                <img src="../../../../../assets/imgs/logos/benelli.svg" class=" max-w-20" alt="">
+                <img [src]="getbrandPath(data?.logo)" class="max-w-20" alt="">
             </header>
             <main class="flex justify-between items-center mt-1 border-t-2 Primary-font font-semibold border-gray-300 pt-3">
-                <p>Con un diseño clásico, reconocido por muchos, la 70 PROX es una moto que te acompañará en el día a día, destacando entre el segmento</p>
+                <p>¡Hola riders! Soy Chispa, y quiero presentarles a la estrella del asfalto: la nueva Pulsar NS200 FI UG ABS. Esta máquina deportiva combina agilidad y seguridad gracias a su sistema ABS, que evita que las ruedas se bloqueen en frenadas bruscas. Con su motor monocilíndrico de 200cc, te espera una experiencia llena de potencia y control en cada aceleración. ¡Siente la emoción de cada revolución y conquista la carretera con la Pulsar NS200!</p>
             </main>
             <footer>
-                <a href="/moto-detail">
-                    <button class="w-full uppercase bg-blue-600 font-semibold text-center text-white py-2 rounded-lg hover:bg-black">La Quiero</button>
+                <a [href]="'/moto-detail/'+ (data?.idModelo)">
+                    <button class=" p-3 max-w-60 uppercase bg-blue-600 font-semibold text-center text-white py-2 rounded-lg hover:bg-black">La Quiero</button>
                 </a>
             </footer>
         </main>
-
-        <!-- <footer class="flex flex-col gap-10 items-center justify-center">
-            <h4 class="text-2xl font-semibold Roboto-Font">$ {{data?.price}}</h4>
-            <button
-                class="Roboto-Font font-semibold text-lg rounded-md px-4 py-6 bg-yellow-500 text-white hover:bg-black hover:text-white">Ver
-                Ficha</button>
-        </footer> -->
     </div>
 </ng-template>
 
 
 
-<!--  aca CORRIGE EL tEMA DE ReSPONSIVE -->

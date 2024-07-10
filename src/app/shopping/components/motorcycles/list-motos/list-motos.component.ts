@@ -1,9 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { MotoCardComponent } from '../moto-card/moto-card.component';
 import { IMotorcycle } from '../../../models/Motorcycle';
 import { CommonModule } from '@angular/common';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
-import { MotorCycleService } from '../../../services/motorcycles.service';
 import { DataViewModule } from 'primeng/dataview';
 
 @Component({
@@ -14,25 +13,6 @@ import { DataViewModule } from 'primeng/dataview';
   styleUrl: './list-motos.component.css'
 })
 export class ListMotosComponent {
-  cardData: string = "Datos de la tarjeta"; // Aquí asigna los datos que deseas pasar al componente hijo
-  motorCycles: IMotorcycle[] = []; 
-  layout: string = 'list';
-  first = 0;
-  constructor(private service:MotorCycleService){
+  @Input() listMotorcycles: IMotorcycle[] | undefined;
 
-  }
-
-  ngOnInit(): void {
-    this.getMotorCycles();
-  }
-
-
-
-  async getMotorCycles(): Promise<void> {
-    try {
-      this.motorCycles = await this.service.getMotorCycles(); 
-    } catch (error) {
-      console.error('Error fetching motorcycles:', error); 
-    }
-  }
 }
