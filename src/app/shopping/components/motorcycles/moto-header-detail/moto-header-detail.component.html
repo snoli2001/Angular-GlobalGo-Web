@@ -1,16 +1,21 @@
 <section class="relative">
     <img [src]="getPathHeader(motorcycle?.imagen)" class="w-full pointer-events-none">
     
-    <div class="absolute hidden 2xl:flex text-black p-4 top-[7%] left-[5%] max-w-md overflow-hidden">
+    <div class="absolute hidden 2xl:flex text-black p-4 top-[20%] left-[2%] w-auto ">
         <section class="flex flex-col gap-3">
-            <img [src]="getPathLogo(motorcycle?.logo)" class=" w-auto">
+            <div class="flex flex-row gap-3 items-center">
+                <img [src]="getPathLogoHeader1(motorcycle?.logo)" class="max-w-60">
+                <img [src]="getPathLogoHeader2()" class=" w-auto">
+            </div>
+            
+            <h1 class="font-semibold text-7xl Ruso-Font text-white max-w-sm">{{motorcycle?.modelo}}</h1>
 
             <!-- <span class="text-white text-6xl Ruso-Font ">{{ motorcycle?.precio | currency: 'USD':'symbol':'1.0-0' }}</span>     -->
             <div class="flex flex-col gap-2">
-                <span class="pl-2 py-5 bg-white font-semibold text-blue-700 text-7xl text-left Ruso-Font ">
+                <span class="pl-2 py-5 bg-white font-semibold text-blue-700 text-5xl text-left Ruso-Font ">
                     {{ motorcycle?.precio | currency: 'S/':'symbol':'1.0-0' }}
                 </span>
-                <p class="text-white text-3xl Primary-font">Precio Referecial al {{today.getDate()}}/{{today.getMonth()}}/{{today.getFullYear()}} </p>
+                <p class="text-white text-xl Primary-font">Precio Referecial al {{today.getDate()}}/{{today.getMonth()}}/{{today.getFullYear()}} </p>
             </div>    
         </section>
     </div>

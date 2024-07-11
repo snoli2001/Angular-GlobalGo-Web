@@ -24,4 +24,12 @@ export class MotoHeaderDetailComponent {
   getPathLogo(img: string | undefined): string {
     return `../../../../../assets/imgs/logos/${img}`;
   }
+
+  getPathLogoHeader1(img: string | undefined): string {
+    return `../../../../../assets/imgs/negativos/${img}`;
+  }
+
+  getPathLogoHeader2(): string {
+    return `../../../../../assets/imgs/modelos/pulsar.svg`;
+  }
 }
