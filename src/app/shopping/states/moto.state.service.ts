@@ -42,6 +42,13 @@ export class MotoStateService {
     }
   }
 
+  orderByCategories(category:string){
+    const filteredMotos = this.originalMotos.filter(
+      (moto) => moto.categoria.toLowerCase() === category.toLowerCase()
+    );
+    this.motosSubject.next(filteredMotos);
+  }
+
   orderByLowestPrice() {
     const sortedMotos = [...this.motosSubject.getValue()].sort((a, b) => {
       return parseFloat(a.cilindrada) - parseFloat(b.cilindrada);

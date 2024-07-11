@@ -20,8 +20,12 @@ export class FilterByCategoriesComponent {
   public categories: ICategory[] = [];
   
   
-  constructor(private categoryService:CategoryService){
+  constructor(private categoryService:CategoryService, private motoServiceState:MotoStateService){
     this.getData();
+  }
+
+  handleFilter(){
+    this.motoServiceState.orderByCategories(this.selectedCategory.categoria);
   }
 
   async getData() {
