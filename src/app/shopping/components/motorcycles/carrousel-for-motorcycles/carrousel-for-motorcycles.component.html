@@ -1,7 +1,7 @@
 <section class="sm:px-8 py-10 w-full flex items-center justify-center bg-white mb-24 relative">
     <div class="flex sm:flex-col md:flex-row justify-center gap-4">
         <div class="card hidden xl:block">
-            <p-galleria [value]="images" [showItemNavigators]="true" [responsiveOptions]="responsiveOptions"
+            <p-galleria [value]="images" [showItemNavigators]="true" [showThumbnails]="false" [responsiveOptions]="responsiveOptions"
                 [circular]="true" [numVisible]="5" [containerStyle]="{ 'max-width': '640px' }">
                 <ng-template pTemplate="item" let-item>
                     <img [src]="item.itemImageSrc" style="width: 100%; display: block" class="pointer-events-none" />
@@ -29,8 +29,8 @@
         </div>
 
         <div class="flex flex-col justify-center gap-5 p-3">
-            <header class="flex flex-col gap-2">
-                <h4 class="Ruso-Font font-semibold text-8xl text-blue-600">8</h4>
+            <header class="flex flex-col gap-10">
+                <h4 class="Ruso-Font font-semibold text-7xl text-blue-600">{{motorcycle?.modelo}}</h4>
                 <p class="Ruso-Font font-semibold text-3xl">
                     Especificaciones Técnicas
                 </p>
