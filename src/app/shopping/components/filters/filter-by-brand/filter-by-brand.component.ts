@@ -18,12 +18,8 @@ export class FilterByBrandComponent {
   constructor(private motoSerivceState:MotoStateService){
     this.getBrandFromAPI();
   }
-  orderByBrand(event: any){    
-    if (event.value && event.value.marca) {
-      this.motoSerivceState.orderByBrand(event.value.marca)
-    } else {
-      this.motoSerivceState.resetFilters();  
-    }
+  orderByBrand(){
+    this.motoSerivceState.orderByBrand(this.selectedBrand.marca);
   }
 
   async getBrandFromAPI(){

@@ -8,12 +8,9 @@ import { MotorCycleService } from '../services/motorcycles.service';
 export class MotoStateService {
   private motosSubject = new BehaviorSubject<IMotorcycle[]>([]);
   private originalMotos: IMotorcycle[] = [];
-  motos$: Observable<IMotorcycle[]> = this.motosSubject.asObservable();
-  
+  motos$: Observable<IMotorcycle[]> = this.motosSubject.asObservable();  
   private motoSubject = new BehaviorSubject<IMotorcycle | null>(null);
   moto$: Observable<IMotorcycle | null> = this.motoSubject.asObservable();
-
-  
 
   constructor(private motoService:MotorCycleService) {}
   
@@ -95,6 +92,20 @@ export class MotoStateService {
   orderByPrice(min: number, max: number) {
     const filteredMotorcycles = this.originalMotos.filter(
       (moto) => moto.precio > min && moto.precio <= max
+    );
+    this.motosSubject.next(filteredMotorcycles);
+  }
+
+  orderByPower(power:number){
+    const filteredMotorcycles = this.originalMotos.filter(
+      (moto) => parseInt(moto.potencia) < power
+    );
+    this.motosSubject.next(filteredMotorcycles);
+  }
+
+  orderByDisplacement(displacement:number){
+    const filteredMotorcycles = this.originalMotos.filter(
+      (moto) => parseInt(moto.cilindrada) < displacement
     );
     this.motosSubject.next(filteredMotorcycles);
   }

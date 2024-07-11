@@ -5,6 +5,7 @@ import { ClearFilterComponent } from '../clear-filter/clear-filter.component';
 import { FormsModule } from '@angular/forms';
 import { BadgeModule } from 'primeng/badge';
 import { InputTextModule } from 'primeng/inputtext';
+import { MotoStateService } from '../../../states/moto.state.service';
 
 @Component({
   selector: 'app-filter-by-displacement',
@@ -15,11 +16,15 @@ import { InputTextModule } from 'primeng/inputtext';
     SliderModule,
     ClearFilterComponent,
     BadgeModule,
-    InputTextModule
+    InputTextModule,
   ],
   templateUrl: './filter-by-displacement.component.html',
   styleUrl: './filter-by-displacement.component.css',
 })
 export class FilterByDisplacementComponent {
   public displacement: number = 20;
+  constructor(private motoServiceState:MotoStateService){}
+  handleFilter(){
+    this.motoServiceState.orderByDisplacement(this.displacement);
+  }
 }

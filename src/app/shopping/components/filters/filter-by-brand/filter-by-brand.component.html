@@ -2,7 +2,7 @@
     <p-accordionTab header="Marca">
         <div class="p-4 flex flex-col gap-4">
             <p-dropdown [options]="brands" [(ngModel)]="selectedBrand" optionLabel="marca" [filter]="true" filterBy="name" [showClear]="true"  
-                placeholder="Selecciona la marca" class="w-full md:w-56" (onChange)="orderByBrand($event)"/>
+                placeholder="Selecciona la marca" class="w-full md:w-56" (onChange)="orderByBrand()"/>
         </div>
     </p-accordionTab>
 </p-accordion>
