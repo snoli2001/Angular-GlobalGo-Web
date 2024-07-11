@@ -110,6 +110,13 @@ export class MotoStateService {
     this.motosSubject.next(filteredMotorcycles);
   }
 
+  orderByTransmition(transmition:string){
+    const filteredMotorcycles = this.originalMotos.filter(
+      (moto) => moto.transmision.toLocaleLowerCase() === transmition.toLocaleLowerCase()
+    );
+    this.motosSubject.next(filteredMotorcycles);
+  }
+
   resetFilters() {
     this.motosSubject.next(this.originalMotos);
   }

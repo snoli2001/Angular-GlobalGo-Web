@@ -1,28 +1,15 @@
 <p-accordion [activeIndex]="1" class="w-full Primary-font">
-    <p-accordionTab header="Tipo de Transmición">
-        <div class="p-4 flex flex-col gap-4">
-
-            <div class="flex items-center">
-                <p-checkbox [(ngModel)]="transmition" inputId="Mecanica" name="Mecanica" value="Mecanica"/>
-                <label for="Mecanica" class="ml-2"> Mecanica </label>
-            </div>
-
-            <div class="flex items-center">
-                <p-checkbox [(ngModel)]="transmition" inputId="automatica" name="automatica" value="automatica"/>
-                <label for="automatica" class="ml-2"> Automatica </label>
-            </div>
-
-            <div class="flex items-center">
-                <p-checkbox [(ngModel)]="transmition" inputId="semi-automatica" name="semi-automatica" value="semiAutomatica" />
-                <label for="semi-automatica" class="ml-2"> SemiAutomatica </label>
-            </div>
-
-            <div class="flex flex-row justify-between">
-                <app-clear-filter custome_style=" font-bold Primary-font text-xs hover:text-blue-500"/>
-            </div>
-
-            <!-- <Button @lick="test">ACA</Button> -->
-
+  <p-accordionTab header="Tipo de Transmición">
+    <div class="p-4 grid grid-cols-2 gap-4 items-center justify-center">
+      <div *ngFor="let icon of icons" class="flex flex-col justify-center items-center">
+        <div class="icon-circle">
+          <button (click)="handleFilter(icon.label)"> <i [ngClass]="icon.class"></i> </button>
         </div>
-    </p-accordionTab>
+        <span class="icon-text Primary-font font-semibold">{{
+          icon.label
+          }}</span>
+      </div>
+    </div>
+    <app-clear-filter custom_style="font-bold Primary-font text-xs hover:text-blue-500" />
+  </p-accordionTab>
 </p-accordion>
