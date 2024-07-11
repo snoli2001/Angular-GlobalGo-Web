@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { IMotorcycle } from '../models/Motorcycle';
-// import { environment } from '../../../../enviroment';
 import { environment } from '../../../../enviroment';
+import { ICategory } from '../models/Categories';
 
 @Injectable({
   providedIn: 'root'
@@ -30,6 +30,20 @@ export class MotorCycleService {
       }
       const data = await response.json();
       return data as IMotorcycle;
+    } catch (error) {
+      console.error("Error fetching motorcycles:", error);
+      throw error;
+    }
+  }
+
+  async getCategories():Promise<ICategory>{
+    try {
+      const response = await fetch(`${environment.apiUrl}/Category/getAll`);
+      if (!response.ok) {
+        throw new Error("Failed to fetch categories");
+      }
+      const data = await response.json();
+      return data as ICategory;
     } catch (error) {
       console.error("Error fetching motorcycles:", error);
       throw error;

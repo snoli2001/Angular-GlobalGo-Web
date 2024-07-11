@@ -17,7 +17,6 @@ import { FilterByWarrantyComponent } from '../filter-by-warranty/filter-by-warra
 import { CategorySeparatorComponent } from '../../../../public/components/category-separator/category-separator.component';
 import { FilterByCategoriesComponent } from '../filter-by-categories/filter-by-categories.component';
 import { FilterSectionGroupComponent } from '../filter-section-group/filter-section-group.component';
-import { IMotorcycle } from '../../../models/Motorcycle';
 @Component({
   selector: 'app-filter-collection',
   standalone: true,
@@ -26,6 +25,4 @@ import { IMotorcycle } from '../../../models/Motorcycle';
   styleUrl: './filter-collection.component.css'
 })
 export class FilterCollectionComponent {
-  @Input() listMotorcycles: IMotorcycle[] = [];
-
 }

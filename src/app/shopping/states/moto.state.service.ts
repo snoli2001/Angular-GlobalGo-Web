@@ -56,7 +56,6 @@ export class MotoStateService {
     this.motosSubject.next(filteredMotos);
   }
 
-
   orderbyLowestOrHighestPrice(orderBy: string) {
     const sortedMotos = [...this.motosSubject.getValue()];
     if (orderBy === 'priceHigh') {

@@ -9,15 +9,30 @@ import { FilterByOriginComponent } from '../filter-by-origin/filter-by-origin.co
 import { FilterByDiameterComponent } from '../filter-by-diameter/filter-by-diameter.component';
 import { FilterByMaterialsComponent } from '../filter-by-materials/filter-by-materials.component';
 import { FilterByPerformanceComponent } from '../filter-by-performance/filter-by-performance.component';
+import { FilterByDisplacementComponent } from '../filter-by-displacement/filter-by-displacement.component';
+import { FilterByPowerComponent } from '../filter-by-power/filter-by-power.component';
 @Component({
   selector: 'app-filter-section-group',
   standalone: true,
-  imports: [FilterByPerformanceComponent,FilterByMaterialsComponent,FilterByDiameterComponent,FilterByOriginComponent,FilterByColorsComponent,FilterByManufacturesComponent,FilterByRatingComponent,FilterByBrandComponent,AccordionModule, FilterByPriceAndCoinComponent],
+  imports: [
+    FilterByPerformanceComponent,
+    FilterByMaterialsComponent,
+    FilterByDiameterComponent,
+    FilterByOriginComponent,
+    FilterByColorsComponent,
+    FilterByManufacturesComponent,
+    FilterByRatingComponent,
+    FilterByBrandComponent,
+    AccordionModule,
+    FilterByPriceAndCoinComponent,
+    FilterByDisplacementComponent,
+    FilterByPowerComponent
+  ],
   templateUrl: './filter-section-group.component.html',
-  styleUrl: './filter-section-group.component.css'
+  styleUrl: './filter-section-group.component.css',
 })
 export class FilterSectionGroupComponent {
-  quiqui(type:String){
+  quiqui(type: String) {
     console.log(type);
   }
 }

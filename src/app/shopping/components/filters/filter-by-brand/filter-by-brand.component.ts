@@ -13,8 +13,8 @@ import { MotoStateService } from '../../../states/moto.state.service';
 })
 export class FilterByBrandComponent {
   public selectedBrand:any = {} as object;
-  
   public brands: any[] = [];
+  
   constructor(private motoSerivceState:MotoStateService){
     this.getBrandFromAPI();
   }
