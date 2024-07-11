@@ -47,6 +47,11 @@ h6 {
   overflow-wrap: break-word;
 }
 
+button{
+  /* background-color: transparent; */
+  border: none;
+}
+
 /* 
   Extra resets for web apps
 */

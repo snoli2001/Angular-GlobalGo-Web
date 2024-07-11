@@ -1,0 +1,22 @@
+/* .p-accordion-header	{
+} */
+
+.p-accordion{
+    max-width: 400px;
+    font-family: roboto condensed, sans-serif;
+    
+}
+
+.p-accordion-content{
+    background-color: #f4f5f9;
+    /* background-color: aqua;     */
+}
+
+/* .p-float-label{
+    background-color: blueviolet;
+    padding: 10px;
+} */
+
+.p-tabview-panels{
+    padding: 0px;
+}

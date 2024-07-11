@@ -1,25 +1,8 @@
-/* @import url("./assets/styles/2-generic/reset.css"); */
+@import url("./assets/styles/2-generic/reset.css");
 @import url("./assets/styles/1-settings/tailwind.css");
 @import url("./assets/styles/1-settings/prime-ng.css");
 @import url("./assets/styles/1-settings/prime-icons.css");
 @import url("./assets/custom-icons/flaticon_mi_colección_de.css");
 @import url("./assets/styles/3-elements/fuentes.css");
 @import url("./assets/styles/1-settings/fontsFamilies.css");
-
-/* .p-accordion-header	{
-} */
-
-.p-accordion{
-    max-width: 350px;
-    font-family: roboto condensed, sans-serif;
-
-}
-
-/* .p-accordion-content{
-     background-color: aqua;    
-} */
-
-/* .p-float-label{
-    background-color: blueviolet;
-    padding: 10px;
-} */
+@import url("./assets/styles/1-settings/customesComponentes.css");
