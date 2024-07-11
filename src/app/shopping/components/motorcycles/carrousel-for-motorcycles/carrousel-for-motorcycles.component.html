@@ -1,4 +1,5 @@
-<section class="sm:px-8 py-10 w-full flex items-center justify-center bg-white mb-24 relative">
+<!-- <section class="sm:px-8 py-10 w-full flex items-center justify-center bg-white mb-24 relative"> -->
+<section class="sm:px-8 py-10 w-full grid grid-flow-row items-center justify-center bg-white mb-24 relative">
     <div class="flex sm:flex-col md:flex-row justify-center gap-4">
         <div class="card hidden xl:block">
             <p-galleria [value]="images" [showItemNavigators]="true" [showThumbnails]="false" [responsiveOptions]="responsiveOptions"
@@ -20,11 +21,6 @@
                 <ng-template pTemplate="item" let-item>
                     <img [src]="item.itemImageSrc" style="width: 100%; display: block" class="pointer-events-none" />
                 </ng-template>
-                <!-- <ng-template pTemplate="thumbnail" let-item>
-                    <div class="grid grid-nogutter justify-content-center">
-                        <img [src]="item.thumbnailImageSrc" style="display: block" />
-                    </div>
-                </ng-template> -->
             </p-galleria>
         </div>
 
