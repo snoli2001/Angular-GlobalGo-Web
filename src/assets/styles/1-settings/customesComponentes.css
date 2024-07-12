@@ -1,24 +1,50 @@
-/* .p-accordion-header	{
-} */
 
-.p-accordion{
-    max-width: 400px;
-    font-family: roboto condensed, sans-serif;
-    
+.p-accordion {
+  max-width: 400px;
+  font-family: roboto condensed, sans-serif;
 }
 
-.p-accordion-content{
-    background-color: #f4f5f9;
-    /* background-color: aqua;     */
+.p-accordion-content {
+  background-color: #f4f5f9;
 }
 
-/* .p-float-label{
-    background-color: blueviolet;
-    padding: 10px;
-} */
-
-.p-tabview-panels{
-    padding: 0px;
-    /* background-color: red;
+.p-tabview-panels {
+  padding: 0px;
+  /* background-color: red;
     max-width: 800px; */
 }
+
+
+/* ANIMACION DE TAB VIEW */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.p-tabview-panel {
+    animation-fill-mode: both;    
+    animation: fadeIn 0.5s;
+}
+
+/* .p-tabview-panel {
+} */
+
+
+/* .p-tabview-selected{
+    background-color: rebeccapurple;
+    padding: 40px;
+} */

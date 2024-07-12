@@ -1,7 +1,7 @@
 <!-- <section class="sm:px-8 py-10 w-full flex items-center justify-center bg-white mb-24 relative"> -->
 <section class="sm:px-8 py-10 w-full grid grid-flow-row items-center justify-center bg-white mb-24 relative">
     <div class="flex sm:flex-col md:flex-row justify-center gap-4">
-        <div class="card hidden xl:block">
+        <div class="card hidden xl:block border-2 border-slate-100 rounded-md">
             <p-galleria [value]="images" [showItemNavigators]="true" [showThumbnails]="false" [responsiveOptions]="responsiveOptions"
                 [circular]="true" [numVisible]="5" [containerStyle]="{ 'max-width': '640px' }">
                 <ng-template pTemplate="item" let-item>
@@ -126,8 +126,11 @@
                         </div>
                     </p-tabPanel>
                     <p-tabPanel header="Suspencion">
-                        <div class="flex flex-col justify-between gap-2 p-4">
-                            <div class="p-2 flex flex-row gap-5 items-center">
+
+                        <!-- <div class="flex flex-col justify-between gap-4 p-4"> -->
+                        <div class="grid grid-cols-2 justify-between gap-4 p-4">
+                        
+                            <div class="p-2 flex flex-row gap-5 items-center max-w-60">
                                 <div class="flex flex-row">
                                     <i class="flaticon-freno-de-disco sm:text-3xl xl:text-6xl"></i>
                                 </div>
@@ -139,7 +142,7 @@
                                 </div>
                             </div>
 
-                            <div class="p-2 flex flex-row gap-5 items-center">
+                            <div class="p-2 flex flex-row gap-5 items-center max-w-60">
                                 <div class="flex flex-row">
                                     <i class="flaticon-freno-de-disco sm:text-3xl xl:text-6xl"></i>
                                 </div>
@@ -151,7 +154,7 @@
                                 </div>
                             </div>
 
-                            <div class="p-2 flex flex-row gap-5 items-center">
+                            <div class="p-2 flex flex-row gap-5 items-center max-w-60">
                                 <div class="flex flex-row">
                                     <i class="flaticon-suspension sm:text-3xl xl:text-6xl"></i>
                                 </div>
@@ -163,7 +166,7 @@
                                 </div>
                             </div>
 
-                            <div class="p-2 flex flex-row gap-5 items-center">
+                            <div class="p-2 flex flex-row gap-5 items-center max-w-60">
                                 <div class="flex flex-row">
                                     <i class="flaticon-suspension sm:text-3xl xl:text-6xl"></i>
                                 </div>
