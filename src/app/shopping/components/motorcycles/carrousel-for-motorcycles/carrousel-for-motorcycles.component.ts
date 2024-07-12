@@ -15,20 +15,8 @@ export class CarrouselForMotorcyclesComponent {
 
   public images: any[] = [
     {
-      itemImageSrc: 'https://tomodachimotors.com/wp-content/uploads/2022/07/ssenda-patagonia-169-2022-negro-534e54.png',
-      thumbnailImageSrc: 'https://tomodachimotors.com/wp-content/uploads/2022/07/ssenda-patagonia-169-2022-negro-534e54.png',
-      alt: 'Description for Image 1',
-      title: 'Title 1',
-    },
-    {
-      itemImageSrc: 'https://riogo.pe/wp-content/uploads/2022/05/ssenda-patagonia-250-2021-gallery-9a1b2c-1.jpg',
-      thumbnailImageSrc: 'https://riogo.pe/wp-content/uploads/2022/05/ssenda-patagonia-250-2021-gallery-9a1b2c-1.jpg',
-      alt: 'Description for Image 1',
-      title: 'Title 1',
-    },
-    {
-      itemImageSrc: 'https://www.ssenda.com/storage/products/6zjwysDkwcVF0QTlJdKRrbP7uKhga7KZSnN6262T.png',
-      thumbnailImageSrc: 'https://www.ssenda.com/storage/products/6zjwysDkwcVF0QTlJdKRrbP7uKhga7KZSnN6262T.png',
+      itemImageSrc: '../../../../assets/imgs/motorcycles/BAJAJ_DOMINAR_400.jpg',
+      thumbnailImageSrc: '../../../../assets/imgs/motorcycles/BAJAJ_DOMINAR_400.jpg',
       alt: 'Description for Image 1',
       title: 'Title 1',
     },
