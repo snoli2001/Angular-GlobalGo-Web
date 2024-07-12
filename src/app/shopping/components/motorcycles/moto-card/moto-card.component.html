@@ -1,5 +1,5 @@
 <ng-container *ngIf="option === 1; else showAlternative">
-    <div class="shadow-xl rounded-sm max-w-xs relative Primary-font overflow-hidden max-h-[430px]">
+    <div class="shadow-xl rounded-sm max-w-xs relative Primary-font overflow-hidden sm:max-h-[410px] lg:max-h-[390px] xl:max-h-[380px] 2xl:max-h-[430px]">
         <header class="relative p-2 rounded-t-sm flex justify-center">
             <div class="relative">
                 <p-image [src]="getImagePath(data?.imagen)" class="w-full pointer-events-none" [preview]="true"></p-image>
@@ -17,7 +17,7 @@
             <p-tag severity="info" value="{{data?.categoria}}" class=" absolute right-2 pointer-events-none" />
         </header>
         <main
-            class="p-4 bg-white flex flex-col gap-7 transition-transform transform translate-y-0 hover:translate-y-[-60px]">
+            class="p-4 bg-white flex flex-col gap-7 transition-transform transform translate-y-0 sm:hover:translate-y-[-85px] hover:translate-y-[-60px]">
             <div>
                 <div class="flex gap-4 justify-between items-center">
                     <section class="flex flex-col gap-0">
