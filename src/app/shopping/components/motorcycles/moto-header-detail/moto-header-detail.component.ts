@@ -18,6 +18,7 @@ export class MotoHeaderDetailComponent {
   }
 
   getPathHeader(img: string | undefined): string {
+    console.log(img);
     return `../../../../../assets/imgs/cabeceras/${img}`;
   }
 
