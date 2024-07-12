@@ -1,7 +1,7 @@
 {
   "motorcycles": [
     {
-      "idModelo": 120,
+      "id": "120",
       "modelo": "Apache RTR 180 Race Edition",
       "rgb": "#333333",
       "precio": 15600.00,
@@ -31,7 +31,7 @@
       "freno_posterior": "Disco Ventilado y Lobulado"
     },
     {
-      "idModelo": 2,
+      "id": "2",
       "modelo": "NS200 FI UG ABS",
       "rgb": "#333333",
       "precio": 10352.00,
@@ -61,7 +61,7 @@
       "freno_posterior": "Disco Ventilado (ABS)"
     },
     {
-      "idModelo": 16,
+      "id": "16",
       "modelo": "Leoncino 500",
       "rgb": "#333333",
       "precio": 5365.00,
@@ -91,7 +91,7 @@
       "freno_posterior": "Disco Ventilado (ABS)"
     },
     {
-      "idModelo": 17,
+      "id": "17",
       "modelo": "TRK502X",
       "rgb": "#333333",
       "precio": 0,
@@ -121,7 +121,7 @@
       "freno_posterior": "Disco Ventilado y Lobulado (ABS)"
     },
     {
-      "idModelo": 18,
+      "id": "18",
       "modelo": "TNT 150I",
       "rgb": "#333333",
       "precio": 0,
@@ -151,7 +151,7 @@
       "freno_posterior": "Disco Ventilado y Lobulado"
     },
     {
-      "idModelo": 19,
+      "id": "19",
       "modelo": "GTX500",
       "rgb": "#333333",
       "precio": 0,
@@ -181,7 +181,7 @@
       "freno_posterior": "Disco Ventilado y Lobulado"
     },
     {
-      "idModelo": 20,
+      "id": "20",
       "modelo": "DEMOLITION 250X",
       "rgb": "#333333",
       "precio": 0,
@@ -211,7 +211,7 @@
       "freno_posterior": "Disco Ventilado"
     },
     {
-      "idModelo": 21,
+      "id": "21",
       "modelo": "RZ 200",
       "rgb": "#333333",
       "precio": 0,
@@ -241,7 +241,7 @@
       "freno_posterior": "Disco Ventilado"
     },
     {
-      "idModelo": 22,
+      "id": 22,
       "modelo": "TORRENTO 250",
       "rgb": "#333333",
       "precio": 0,
@@ -271,7 +271,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 23,
+      "id": "23",
       "modelo": "VOLTRA 250",
       "rgb": "#333333",
       "precio": 0,
@@ -301,7 +301,7 @@
       "freno_posterior": "Disco Ventilado"
     },
     {
-      "idModelo": 24,
+      "id": "24",
       "modelo": "VOLTRA 150 FI",
       "rgb": "#333333",
       "precio": 0,
@@ -331,7 +331,7 @@
       "freno_posterior": "Disco Ventilado y Lobulado"
     },
     {
-      "idModelo": 25,
+      "id": "25",
       "modelo": "X-TERRA 250",
       "rgb": "#333333",
       "precio": 0,
@@ -361,7 +361,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 26,
+      "id": "26",
       "modelo": "DOMINATOR 250",
       "rgb": "#333333",
       "precio": 0,
@@ -391,7 +391,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 27,
+      "id": "27",
       "modelo": "VOLTRA 200X",
       "rgb": "#333333",
       "precio": 0,
@@ -421,7 +421,7 @@
       "freno_posterior": "Disco Ventilado y Lobulado"
     },
     {
-      "idModelo": 28,
+      "id": "28",
       "modelo": "RZ250",
       "rgb": "#333333",
       "precio": 0,
@@ -451,7 +451,7 @@
       "freno_posterior": "Disco Ventilado"
     },
     {
-      "idModelo": 29,
+      "id": "29",
       "modelo": "MAGNETO 200X",
       "rgb": "#333333",
       "precio": 0,
@@ -481,7 +481,7 @@
       "freno_posterior": "Disco Ventilado y Lobulado"
     },
     {
-      "idModelo": 30,
+      "id": "30",
       "modelo": "X-PLORER 200V1",
       "rgb": "#333333",
       "precio": 0,
@@ -511,7 +511,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 31,
+      "id": "31",
       "modelo": "X-TREMO 200R",
       "rgb": "#333333",
       "precio": 0,
@@ -541,7 +541,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 32,
+      "id": "32",
       "modelo": "PANTERA 200R",
       "rgb": "#333333",
       "precio": 0,
@@ -571,7 +571,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 33,
+      "id": "33",
       "modelo": "X-PLORER 200X",
       "rgb": "#333333",
       "precio": 0,
@@ -601,7 +601,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 34,
+      "id": "34",
       "modelo": "X-TREMO C200",
       "rgb": "#333333",
       "precio": 0,
@@ -631,7 +631,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 35,
+      "id": "35",
       "modelo": "VOLTRA 200R",
       "rgb": "#333333",
       "precio": 0,
@@ -661,7 +661,7 @@
       "freno_posterior": "Disco Ventilado y Lobulado"
     },
     {
-      "idModelo": 36,
+      "id": "36",
       "modelo": "RONSKER 200R",
       "rgb": "#333333",
       "precio": 0,
@@ -691,7 +691,7 @@
       "freno_posterior": "Disco Ventilado"
     },
     {
-      "idModelo": 37,
+      "id": "37",
       "modelo": "RCO 200",
       "rgb": "#333333",
       "precio": 0,
@@ -721,7 +721,7 @@
       "freno_posterior": "Disco Ventilado"
     },
     {
-      "idModelo": 38,
+      "id": "38",
       "modelo": "DEMOLITION 250",
       "rgb": "#333333",
       "precio": 0,
@@ -751,7 +751,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 39,
+      "id": "39",
       "modelo": "RC125V",
       "rgb": "#333333",
       "precio": 0,
@@ -781,7 +781,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 40,
+      "id": "40",
       "modelo": "XTREMO A200",
       "rgb": "#333333",
       "precio": 0,
@@ -811,7 +811,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 41,
+      "id": "41",
       "modelo": "RC125ADV",
       "rgb": "#333333",
       "precio": 0,
@@ -841,7 +841,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 42,
+      "id": "42",
       "modelo": "TR150RX",
       "rgb": "#333333",
       "precio": 0,
@@ -871,7 +871,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 43,
+      "id": "43",
       "modelo": "EXPRESS B150",
       "rgb": "#333333",
       "precio": 0,
@@ -901,7 +901,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 44,
+      "id": "44",
       "modelo": "TR150W",
       "rgb": "#333333",
       "precio": 0,
@@ -931,7 +931,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 45,
+      "id": "45",
       "modelo": "XPLORER150V",
       "rgb": "#333333",
       "precio": 0,
@@ -961,7 +961,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 46,
+      "id": "46",
       "modelo": "XPLORER200R",
       "rgb": "#333333",
       "precio": 0,
@@ -991,7 +991,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 47,
+      "id": "47",
       "modelo": "PANTERA150R",
       "rgb": "#333333",
       "precio": 0,
@@ -1021,7 +1021,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 48,
+      "id": "48",
       "modelo": "PANTRO200R",
       "rgb": "#333333",
       "precio": 0,
@@ -1051,7 +1051,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 49,
+      "id": "49",
       "modelo": "RC110B",
       "rgb": "#333333",
       "precio": 0,
@@ -1081,7 +1081,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 50,
+      "id": "50",
       "modelo": "RC110C",
       "rgb": "#333333",
       "precio": 0,
@@ -1111,7 +1111,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 51,
+      "id": "51",
       "modelo": "RC110C1",
       "rgb": "#333333",
       "precio": 0,
@@ -1141,7 +1141,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 52,
+      "id": "52",
       "modelo": "RC110R",
       "rgb": "#333333",
       "precio": 0,
@@ -1171,7 +1171,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 53,
+      "id": "53",
       "modelo": "RC110V",
       "rgb": "#333333",
       "precio": 0,
@@ -1201,7 +1201,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 54,
+      "id": "54",
       "modelo": "RC125C",
       "rgb": "#333333",
       "precio": 0,
@@ -1231,7 +1231,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 55,
+      "id": "55",
       "modelo": "RC125G",
       "rgb": "#333333",
       "precio": 0,
@@ -1261,7 +1261,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 56,
+      "id": "56",
       "modelo": "RC125LED1",
       "rgb": "#333333",
       "precio": 0,
@@ -1291,7 +1291,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 57,
+      "id": "57",
       "modelo": "LEO110",
       "rgb": "#333333",
       "precio": 0,
@@ -1321,7 +1321,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 58,
+      "id": "58",
       "modelo": "PATAGONIA250",
       "rgb": "#333333",
       "precio": 0,
@@ -1351,7 +1351,7 @@
       "freno_posterior": "Disco Ventilado"
     },
     {
-      "idModelo": 59,
+      "id": "59",
       "modelo": "CHACARERA200",
       "rgb": "#333333",
       "precio": 0,
@@ -1381,7 +1381,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 60,
+      "id": "60",
       "modelo": "DURO150",
       "rgb": "#333333",
       "precio": 0,
@@ -1411,7 +1411,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 61,
+      "id": "61",
       "modelo": "DURO250TRAIL",
       "rgb": "#333333",
       "precio": 0,
@@ -1441,7 +1441,7 @@
       "freno_posterior": "Disco Ventilado y Lobulado"
     },
     {
-      "idModelo": 62,
+      "id": "62",
       "modelo": "RVS175",
       "rgb": "#333333",
       "precio": 0,
@@ -1471,7 +1471,7 @@
       "freno_posterior": "Disco Ventilado y Lobulado"
     },
     {
-      "idModelo": 63,
+      "id": "63",
       "modelo": "SANTANA200",
       "rgb": "#333333",
       "precio": 0,
@@ -1501,7 +1501,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 64,
+      "id": "64",
       "modelo": "SS200-X7V2",
       "rgb": "#333333",
       "precio": 0,
@@ -1531,7 +1531,7 @@
       "freno_posterior": "Disco Ventilado"
     },
     {
-      "idModelo": 65,
+      "id": "65",
       "modelo": "SS300-X7EFI",
       "rgb": "#333333",
       "precio": 0,
@@ -1561,7 +1561,7 @@
       "freno_posterior": "Disco Ventilado"
     },
     {
-      "idModelo": 66,
+      "id": "66",
       "modelo": "RVS150",
       "rgb": "#333333",
       "precio": 0,
@@ -1591,7 +1591,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 67,
+      "id": "67",
       "modelo": "VIPER150NKD",
       "rgb": "#333333",
       "precio": 0,
@@ -1621,7 +1621,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 68,
+      "id": 68,
       "modelo": "VIPER200NKS",
       "rgb": "#333333",
       "precio": 0,
@@ -1651,7 +1651,7 @@
       "freno_posterior": "Disco Ventilado y Lobulado"
     },
     {
-      "idModelo": 69,
+      "id": 69,
       "modelo": "VIPER250DKR",
       "rgb": "#333333",
       "precio": 0,
@@ -1681,7 +1681,7 @@
       "freno_posterior": "Disco Ventilado"
     },
     {
-      "idModelo": 70,
+      "id": 70,
       "modelo": "XTRAIL200",
       "rgb": "#333333",
       "precio": 0,
@@ -1711,7 +1711,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 71,
+      "id": 71,
       "modelo": "GSX250 GIXXER 250",
       "rgb": "#333333",
       "precio": 0,
@@ -1741,7 +1741,7 @@
       "freno_posterior": "Disco Ventilado"
     },
     {
-      "idModelo": 72,
+      "id": 72,
       "modelo": "GSX150 SF GIXXER",
       "rgb": "#333333",
       "precio": 0,
@@ -1771,7 +1771,7 @@
       "freno_posterior": "Disco Ventilado"
     },
     {
-      "idModelo": 73,
+      "id": 73,
       "modelo": "GN125",
       "rgb": "#333333",
       "precio": 0,
@@ -1801,7 +1801,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 74,
+      "id": 74,
       "modelo": "GSX150 GIXXER",
       "rgb": "#333333",
       "precio": 0,
@@ -1831,7 +1831,7 @@
       "freno_posterior": "Disco Ventilado"
     },
     {
-      "idModelo": 75,
+      "id": 75,
       "modelo": "BURGMAN UB125",
       "rgb": "#333333",
       "precio": 0,
@@ -1861,7 +1861,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 76,
+      "id": 76,
       "modelo": "RM-Z250",
       "rgb": "#333333",
       "precio": 0,
@@ -1891,7 +1891,7 @@
       "freno_posterior": "Disco Ventilado y Lobulado"
     },
     {
-      "idModelo": 77,
+      "id": 77,
       "modelo": "VSTROM 250 SX",
       "rgb": "#333333",
       "precio": 0,
@@ -1921,7 +1921,7 @@
       "freno_posterior": "Disco Ventilado"
     },
     {
-      "idModelo": 78,
+      "id": 78,
       "modelo": "GSX-R150",
       "rgb": "#333333",
       "precio": 0,
@@ -1951,7 +1951,7 @@
       "freno_posterior": "Disco Ventilado y Lobulado"
     },
     {
-      "idModelo": 79,
+      "id": 79,
       "modelo": "GSX-R150-ABS",
       "rgb": "#333333",
       "precio": 0,
@@ -1981,7 +1981,7 @@
       "freno_posterior": "Disco Ventilado y Lobulado"
     },
     {
-      "idModelo": 80,
+      "id": 80,
       "modelo": "GSX-S150-ABS",
       "rgb": "#333333",
       "precio": 0,
@@ -2011,7 +2011,7 @@
       "freno_posterior": "Disco Ventilado y Lobulado"
     },
     {
-      "idModelo": 81,
+      "id": 81,
       "modelo": "INTRUDER GL150",
       "rgb": "#333333",
       "precio": 0,
@@ -2041,7 +2041,7 @@
       "freno_posterior": "Disco Ventilado"
     },
     {
-      "idModelo": 82,
+      "id": 82,
       "modelo": "DR160 S ",
       "rgb": "#333333",
       "precio": 0,
@@ -2071,7 +2071,7 @@
       "freno_posterior": "Disco Ventilado y Lobulado"
     },
     {
-      "idModelo": 83,
+      "id": 83,
       "modelo": "KA150 ",
       "rgb": "#333333",
       "precio": 0,
@@ -2101,7 +2101,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 84,
+      "id": 84,
       "modelo": "NK150 ",
       "rgb": "#333333",
       "precio": 0,
@@ -2131,7 +2131,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 85,
+      "id": 85,
       "modelo": "250SR ",
       "rgb": "#333333",
       "precio": 0,
@@ -2161,7 +2161,7 @@
       "freno_posterior": "Disco Ventilado y Lobulado"
     },
     {
-      "idModelo": 86,
+      "id": 86,
       "modelo": "300NK ",
       "rgb": "#333333",
       "precio": 0,
@@ -2191,7 +2191,7 @@
       "freno_posterior": "Disco Ventilado"
     },
     {
-      "idModelo": 87,
+      "id": 87,
       "modelo": "250NK Standard",
       "rgb": "#333333",
       "precio": 0,
@@ -2221,7 +2221,7 @@
       "freno_posterior": "Disco Ventilado"
     },
     {
-      "idModelo": 88,
+      "id": 88,
       "modelo": "450NK ",
       "rgb": "#333333",
       "precio": 0,
@@ -2251,7 +2251,7 @@
       "freno_posterior": "Disco Ventilado"
     },
     {
-      "idModelo": 89,
+      "id": 89,
       "modelo": "700MT ",
       "rgb": "#333333",
       "precio": 0,
@@ -2281,7 +2281,7 @@
       "freno_posterior": "Disco Ventilado"
     },
     {
-      "idModelo": 90,
+      "id": 90,
       "modelo": "800NK ",
       "rgb": "#333333",
       "precio": 0,
@@ -2311,7 +2311,7 @@
       "freno_posterior": "Disco Ventilado y Lobulado"
     },
     {
-      "idModelo": 91,
+      "id": 91,
       "modelo": "300SR S ",
       "rgb": "#333333",
       "precio": 0,
@@ -2341,7 +2341,7 @@
       "freno_posterior": "Disco Ventilado"
     },
     {
-      "idModelo": 92,
+      "id": 92,
       "modelo": "Eco Deluxe 100 ",
       "rgb": "#333333",
       "precio": 0,
@@ -2371,7 +2371,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 93,
+      "id": 93,
       "modelo": "Hero Xpulse FI Advance",
       "rgb": "#333333",
       "precio": 0,
@@ -2401,7 +2401,7 @@
       "freno_posterior": "Disco Ventilado"
     },
     {
-      "idModelo": 94,
+      "id": 94,
       "modelo": "Dash 125 FI",
       "rgb": "#333333",
       "precio": 0,
@@ -2431,7 +2431,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 95,
+      "id": 95,
       "modelo": "Xpulse 200 FI ",
       "rgb": "#333333",
       "precio": 0,
@@ -2461,7 +2461,7 @@
       "freno_posterior": "Disco Ventilado"
     },
     {
-      "idModelo": 96,
+      "id": 96,
       "modelo": "Xpulse 200T",
       "rgb": "#333333",
       "precio": 0,
@@ -2491,7 +2491,7 @@
       "freno_posterior": "Disco Ventilado"
     },
     {
-      "idModelo": 97,
+      "id": 97,
       "modelo": "Hunk 150 ",
       "rgb": "#333333",
       "precio": 0,
@@ -2521,7 +2521,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 98,
+      "id": 98,
       "modelo": "Ignitor 125 5G ",
       "rgb": "#333333",
       "precio": 0,
@@ -2551,7 +2551,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 99,
+      "id": 99,
       "modelo": "CB300 TWISTER ",
       "rgb": "#333333",
       "precio": 0,
@@ -2581,7 +2581,7 @@
       "freno_posterior": "Disco Ventilado"
     },
     {
-      "idModelo": 100,
+      "id": 100,
       "modelo": "CBR500R ",
       "rgb": "#333333",
       "precio": 0,
@@ -2611,7 +2611,7 @@
       "freno_posterior": "Disco Ventilado y Lobulado"
     },
     {
-      "idModelo": 101,
+      "id": 101,
       "modelo": "CB190R 2.0 ABS ",
       "rgb": "#333333",
       "precio": 0,
@@ -2641,7 +2641,7 @@
       "freno_posterior": "Disco Ventilado y Lobulado"
     },
     {
-      "idModelo": 102,
+      "id": 102,
       "modelo": "GL125 ",
       "rgb": "#333333",
       "precio": 0,
@@ -2671,7 +2671,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 103,
+      "id": 103,
       "modelo": "NAVI 110 ",
       "rgb": "#333333",
       "precio": 0,
@@ -2701,7 +2701,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 104,
+      "id": 104,
       "modelo": "NC750X ",
       "rgb": "#333333",
       "precio": 0,
@@ -2731,7 +2731,7 @@
       "freno_posterior": "Disco Ventilado y Lobulado"
     },
     {
-      "idModelo": 105,
+      "id": 105,
       "modelo": "X-BLADE ",
       "rgb": "#333333",
       "precio": 0,
@@ -2761,7 +2761,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 106,
+      "id": 106,
       "modelo": "XR190L ",
       "rgb": "#333333",
       "precio": 0,
@@ -2791,7 +2791,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 107,
+      "id": 107,
       "modelo": "PCX160 ABS ",
       "rgb": "#333333",
       "precio": 0,
@@ -2821,7 +2821,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 108,
+      "id": 108,
       "modelo": "WAVE 110SCD ",
       "rgb": "#333333",
       "precio": 0,
@@ -2851,7 +2851,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 109,
+      "id": 109,
       "modelo": "K-Light 202 ",
       "rgb": "#333333",
       "precio": 0,
@@ -2881,7 +2881,7 @@
       "freno_posterior": "Disco Ventilado"
     },
     {
-      "idModelo": 110,
+      "id": 110,
       "modelo": "Superlight 200 ",
       "rgb": "#333333",
       "precio": 0,
@@ -2911,7 +2911,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 111,
+      "id": 111,
       "modelo": "Milano Deluxe ",
       "rgb": "#333333",
       "precio": 0,
@@ -2941,7 +2941,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 112,
+      "id": 112,
       "modelo": "RX-150 ",
       "rgb": "#333333",
       "precio": 0,
@@ -2971,7 +2971,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 113,
+      "id": 113,
       "modelo": "EVO 125 ",
       "rgb": "#333333",
       "precio": 0,
@@ -3001,7 +3001,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 114,
+      "id": 114,
       "modelo": "SPEX 150 ",
       "rgb": "#333333",
       "precio": 0,
@@ -3031,7 +3031,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 115,
+      "id": 115,
       "modelo": "Strato ",
       "rgb": "#333333",
       "precio": 0,
@@ -3061,7 +3061,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 116,
+      "id": 116,
       "modelo": "Triax 200 ",
       "rgb": "#333333",
       "precio": 0,
@@ -3091,7 +3091,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 117,
+      "id": 117,
       "modelo": "ZS150-A ",
       "rgb": "#333333",
       "precio": 0,
@@ -3121,7 +3121,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 118,
+      "id": 118,
       "modelo": "Z-WIN 150 ",
       "rgb": "#333333",
       "precio": 0,
@@ -3151,7 +3151,7 @@
       "freno_posterior": "Tambor Hidráulico"
     },
     {
-      "idModelo": 119,
+      "id": 119,
       "modelo": "Z-MAX ",
       "rgb": "#333333",
       "precio": 0,
@@ -3181,7 +3181,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 3,
+      "id": 3,
       "modelo": "150 NEON",
       "rgb": "#333333",
       "precio": 0,
@@ -3211,7 +3211,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 4,
+      "id": 4,
       "modelo": "NS160 TD - ABS UG",
       "rgb": "#333333",
       "precio": 0,
@@ -3241,7 +3241,7 @@
       "freno_posterior": "Disco Ventilado y Lobulado (ABS)"
     },
     {
-      "idModelo": 5,
+      "id": 5,
       "modelo": "150R",
       "rgb": "#333333",
       "precio": 0,
@@ -3271,7 +3271,7 @@
       "freno_posterior": "Disco Ventilado"
     },
     {
-      "idModelo": 6,
+      "id": 6,
       "modelo": "BOXER 150X UG",
       "rgb": "#333333",
       "precio": 0,
@@ -3301,7 +3301,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 7,
+      "id": 7,
       "modelo": "180 NEON FI",
       "rgb": "#333333",
       "precio": 0,
@@ -3331,7 +3331,7 @@
       "freno_posterior": "Disco Ventilado"
     },
     {
-      "idModelo": 8,
+      "id": 8,
       "modelo": "DISCOVER 125ST",
       "rgb": "#333333",
       "precio": 0,
@@ -3361,7 +3361,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 9,
+      "id": 9,
       "modelo": "CT125",
       "rgb": "#333333",
       "precio": 0,
@@ -3391,7 +3391,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 10,
+      "id": 10,
       "modelo": "DOMINAR 400 2.0",
       "rgb": "#333333",
       "precio": 0,
@@ -3421,7 +3421,7 @@
       "freno_posterior": "Disco Ventilado (ABS)"
     },
     {
-      "idModelo": 11,
+      "id": 11,
       "modelo": "TNT 180S",
       "rgb": "#333333",
       "precio": 0,
@@ -3451,7 +3451,7 @@
       "freno_posterior": "Disco Ventilado y Lobulado"
     },
     {
-      "idModelo": 12,
+      "id": 12,
       "modelo": "TNT 15",
       "rgb": "#333333",
       "precio": 0,
@@ -3481,7 +3481,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 13,
+      "id": 13,
       "modelo": "Leoncino 250",
       "rgb": "#333333",
       "precio": 0,
@@ -3511,7 +3511,7 @@
       "freno_posterior": "Disco Ventilado y Lobulado (ABS)"
     },
     {
-      "idModelo": 14,
+      "id": 14,
       "modelo": "302S",
       "rgb": "#333333",
       "precio": 0,
@@ -3541,7 +3541,7 @@
       "freno_posterior": "Disco Ventilado y Lobulado"
     },
     {
-      "idModelo": 15,
+      "id": 15,
       "modelo": "TRK251",
       "rgb": "#333333",
       "precio": 0,
@@ -3571,7 +3571,7 @@
       "freno_posterior": "Disco Ventilado y Lobulado (ABS)"
     },
     {
-      "idModelo": 121,
+      "id": 121,
       "modelo": "Apache RTR 200 FI 4V ABS ",
       "rgb": "#333333",
       "precio": 0,
@@ -3601,7 +3601,7 @@
       "freno_posterior": "Disco Ventilado y Lobulado"
     },
     {
-      "idModelo": 122,
+      "id": 122,
       "modelo": "Apache RR310",
       "rgb": "#333333",
       "precio": 0,
@@ -3631,7 +3631,7 @@
       "freno_posterior": "Disco Ventilado y Lobulado"
     },
     {
-      "idModelo": 123,
+      "id": 123,
       "modelo": "NTorq 125 2025",
       "rgb": "#333333",
       "precio": 0,
@@ -3661,7 +3661,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 124,
+      "id": 124,
       "modelo": "Raider 125 2025",
       "rgb": "#333333",
       "precio": 0,
@@ -3691,7 +3691,7 @@
       "freno_posterior": "Tambor Mecánico"
     },
     {
-      "idModelo": 125,
+      "id": 125,
       "modelo": "Ronin 2025",
       "rgb": "#333333",
       "precio": 0,
@@ -3721,7 +3721,7 @@
       "freno_posterior": "Disco Ventilado"
     },
     {
-      "idModelo": 1,
+      "id": 1,
       "modelo": "NS125",
       "rgb": "#333333",
       "precio": 0,
@@ -3765,141 +3765,141 @@
   ],
   "categories":[
     {
-      "idCategoria": 1,
+      "id": "1",
       "categoria": "Café Racer",
       "icono": "racer.svg"
     },
     {
-      "idCategoria": 2,
+      "id": "2",
       "categoria": "Cruiser - Chopper",
       "icono": "chopper.svg"
     },
     {
-      "idCategoria": 3,
+      "id": "3",
       "categoria": "Cub",
       "icono": "cub.svg"
     },
     {
-      "idCategoria": 4,
+      "id": "4",
       "categoria": "Deportiva",
       "icono": "deportiva.svg"
     },
     {
-      "idCategoria": 5,
+      "id": "5",
       "categoria": "Doble propósito - Todo Terreno",
       "icono": "terreno.svg"
     },
     {
-      "idCategoria": 6,
+      "id": "6",
       "categoria": "Enduro - Cross",
       "icono": "cross.svg"
     },
     {
-      "idCategoria": 7,
+      "id": "7",
       "categoria": "Naked",
       "icono": "naked.svg"
     },
     {
-      "idCategoria": 8,
+      "id": "8",
       "categoria": "Pistera",
       "icono": "pistera.svg"
     },
     {
-      "idCategoria": 9,
+      "id": "9",
       "categoria": "Scooter",
       "icono": "scooter.svg"
     },
     {
-      "idCategoria": 10,
+      "id": "10",
       "categoria": "Touring - Viajeras",
       "icono": "viajeras.svg"
     },
     {
-      "idCategoria": 11,
+      "id": "11",
       "categoria": "Utilitaria",
       "icono": "utilitaria.svg"
     }
   ],
   "brands":[
     {
-      "idMarca": 1,
+      "id": "1",
       "marca": "Bajaj",
       "logo": "bajaj.svg",
       "rgb": "#FFFFFF",
       "modelos": null
     },
     {
-      "idMarca": 2,
+      "id": "2",
       "marca": "Benelli",
       "logo": "benelli.svg",
       "rgb": "#FFFFFF",
       "modelos": null
     },
     {
-      "idMarca": 3,
+      "id": "3",
       "marca": "CF Moto",
       "logo": "cfmoto.svg",
       "rgb": "#FFFFFF",
       "modelos": null
     },
     {
-      "idMarca": 4,
+      "id": "4",
       "marca": "Haojue",
       "logo": "haojue.svg",
       "rgb": "#FFFFFF",
       "modelos": null
     },
     {
-      "idMarca": 5,
+      "id": "5",
       "marca": "Hero",
       "logo": "hero.svg",
       "rgb": "#FFFFFF",
       "modelos": null
     },
     {
-      "idMarca": 6,
+      "id": "6",
       "marca": "Honda",
       "logo": "honda.svg",
       "rgb": "#FFFFFF",
       "modelos": null
     },
     {
-      "idMarca": 7,
+      "id": "7",
       "marca": "Keeway",
       "logo": "keeway.svg",
       "rgb": "#FFFFFF",
       "modelos": null
     },
     {
-      "idMarca": 8,
+      "id": "8",
       "marca": "Ronco",
       "logo": "ronco.svg",
       "rgb": "#FFFFFF",
       "modelos": null
     },
     {
-      "idMarca": 9,
+      "id": "9",
       "marca": "Ssenda",
       "logo": "ssenda.svg",
       "rgb": "#FFFFFF",
       "modelos": null
     },
     {
-      "idMarca": 10,
+      "id": "10",
       "marca": "Suzuki",
       "logo": "suzuki.svg",
       "rgb": "#FFFFFF",
       "modelos": null
     },
     {
-      "idMarca": 11,
+      "id": "11",
       "marca": "TVS",
       "logo": "tvs.svg",
       "rgb": "#FFFFFF",
       "modelos": null
     },
     {
-      "idMarca": 12,
+      "id": "12",
       "marca": "Zongshen",
       "logo": "zongshen.svg",
       "rgb": "#FFFFFF",

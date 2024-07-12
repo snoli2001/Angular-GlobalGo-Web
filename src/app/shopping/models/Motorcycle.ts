@@ -1,5 +1,5 @@
 export interface IMotorcycle {
-    idModelo: number;
+    id: number;
     modelo: string;
     rgb: string;
     precio: number;

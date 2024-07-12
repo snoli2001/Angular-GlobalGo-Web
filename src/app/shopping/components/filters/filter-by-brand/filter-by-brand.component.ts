@@ -24,7 +24,7 @@ export class FilterByBrandComponent {
 
   async getBrandFromAPI(){
     try {
-      const response = await fetch("https://localhost:7092/api/Brand/getAll");
+      const response = await fetch("http://localhost:3000/brands");
       if (!response.ok) {
         throw new Error("Failed to fetch motorcycles");
       }

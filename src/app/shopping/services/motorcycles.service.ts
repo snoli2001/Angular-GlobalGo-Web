@@ -10,7 +10,8 @@ export class MotorCycleService {
 
   async getMotorCycles(): Promise<IMotorcycle[]> {
     try {
-      const response = await fetch(`${environment.apiUrl}/Motorcycle/getMotorcycles`);
+      // const response = await fetch(`${environment.apiUrl}/Motorcycle/getMotorcycles`);
+      const response = await fetch(`${environment.jsonServer}/motorcycles`);
       if (!response.ok) {
         throw new Error("Failed to fetch motorcycles");
       }
@@ -24,7 +25,8 @@ export class MotorCycleService {
 
   async getMotorcycleByID(motoId:number):Promise<IMotorcycle>{
     try {
-      const response = await fetch(`${environment.apiUrl}/Motorcycle/getMotorcycleByID/${motoId}`);
+      // const response = await fetch(`${environment.apiUrl}/Motorcycle/getMotorcycleByID/${motoId}`);
+      const response = await fetch(`http://localhost:3000/motorcycles/20`);
       if (!response.ok) {
         throw new Error("Failed to fetch motorcycles");
       }
