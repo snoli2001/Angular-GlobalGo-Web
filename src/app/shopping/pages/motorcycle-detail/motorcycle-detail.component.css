@@ -1,4 +1,4 @@
-@keyframes fadeIn {
+/* @keyframes fadeIn {
     from {
       opacity: 0;
     }
@@ -10,3 +10,18 @@
   .fade-in {
     animation: fadeIn 1s ease-in-out;
   }
+
+   */
+   
+/*    
+  @keyframes myAnim {
+    0% {
+      background-position: center bottom;
+      background-size: 100%;
+    }
+  
+    100% {
+      background-position: center bottom;
+      background-size: 150%;
+    }
+  } */

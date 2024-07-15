@@ -1,25 +1,14 @@
-
 .p-accordion {
   max-width: 400px;
-  font-family: 'Proxima Nova Light';
+  font-family: 'Proxima Nova Lt';
 }
 
-
-
-
-
-
-
-
-
-
-
 .p-dropdown-label		{
-  font-family: 'Proxima Nova Regular';
+  font-family: 'Proxima Nova Rg';
 }
 
 .p-dropdown-items	{
-  font-family: 'Proxima Nova Regular';
+  font-family: 'Proxima Nova Rg';
 }
 
 
@@ -98,7 +87,7 @@
 }
 
 .p-tabview{
-  font-family: 'Proxima Nova Regular';
+  font-family: 'Proxima Nova Rg';
 }
 
 
