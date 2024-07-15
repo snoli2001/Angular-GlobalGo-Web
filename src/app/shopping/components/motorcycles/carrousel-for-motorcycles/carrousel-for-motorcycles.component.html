@@ -1,8 +1,9 @@
 <section class="sm:px-8 py-10 w-full grid grid-flow-row items-center justify-center bg-white mb-24 relative">
     <div class="flex sm:flex-col md:flex-row justify-center gap-4">
         <div class="card hidden xl:block border-2 border-slate-100 rounded-md">
-            <p-galleria [value]="images" [showItemNavigators]="true" [showThumbnails]="false" [responsiveOptions]="responsiveOptions"
-                [circular]="true" [numVisible]="5" [containerStyle]="{ 'max-width': '640px' }">
+            <p-galleria [value]="images" [showItemNavigators]="true" [showThumbnails]="false"
+                [responsiveOptions]="responsiveOptions" [circular]="true" [numVisible]="5"
+                [containerStyle]="{ 'max-width': '640px' }">
                 <ng-template pTemplate="item" let-item>
                     <img [src]="item.itemImageSrc" style="width: 100%; display: block" class="pointer-events-none" />
                 </ng-template>
@@ -25,8 +26,8 @@
 
         <div class="flex flex-col justify-center gap-5 p-3">
             <header class="flex flex-col gap-10">
-                <h4 class="Ruso-Font font-semibold text-7xl text-blue-600">{{motorcycle?.modelo}}</h4>
-                <p class="Ruso-Font font-semibold text-3xl">
+                <h4 class="proximaNova-Bold font-semibold text-7xl text-blue-600">{{motorcycle?.modelo}}</h4>
+                <p class="proximaNova-Regular font-semibold text-3xl">
                     Especificaciones Técnicas
                 </p>
             </header>
@@ -41,10 +42,11 @@
                                     <i class="flaticon-pistons sm:text-3xl xl:text-6xl"></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
-                                    <h1 class="Ruso-Font sm:text-sm xl:text-xl font-semibold text-blue-700">
+                                    <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-blue-700">
                                         Cilindrada
                                     </h1>
-                                    <span class="sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.cilindrada}}cc</span>
+                                    <span
+                                        class="proximaNova-Light sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.cilindrada}}cc</span>
                                 </div>
                             </div>
 
@@ -53,10 +55,11 @@
                                     <i class="flaticon-motor-del-coche sm:text-3xl xl:text-6xl"></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
-                                    <h1 class="Ruso-Font sm:text-sm xl:text-xl font-semibold text-blue-700">
+                                    <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-blue-700">
                                         Potencia
                                     </h1>
-                                    <span class="sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.potencia}}HP</span>
+                                    <span
+                                        class="proximaNova-Light sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.potencia}}HP</span>
                                 </div>
                             </div>
 
@@ -65,10 +68,11 @@
                                     <i class="flaticon-velocimetro sm:text-3xl xl:text-6xl"></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
-                                    <h1 class="Ruso-Font sm:text-sm xl:text-xl font-semibold text-blue-700">
+                                    <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-blue-700">
                                         Torque
                                     </h1>
-                                    <span class="sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.torque}}Nm</span>
+                                    <span
+                                        class="proximaNova-Light sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.torque}}Nm</span>
                                 </div>
                             </div>
                         </div>
@@ -80,10 +84,11 @@
                                     <i class="flaticon-combustible sm:text-3xl xl:text-6xl"></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
-                                    <h1 class="Ruso-Font sm:text-sm xl:text-xl font-semibold text-blue-700">
+                                    <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-blue-700">
                                         Combustible
                                     </h1>
-                                    <span class="sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.combustible}}</span>
+                                    <span
+                                        class="proximaNova-Light sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.combustible}}</span>
                                 </div>
                             </div>
 
@@ -92,10 +97,12 @@
                                     <i class="flaticon-gas-tank sm:text-3xl xl:text-6xl"></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
-                                    <h1 class="Ruso-Font sm:text-sm xl:text-xl font-semibold text-blue-700">
+                                    <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-blue-700">
                                         Tanque
                                     </h1>
-                                    <span class="sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.tanque}} galon</span>
+                                    <span
+                                        class="proximaNova-Light sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.tanque}}
+                                        galon</span>
                                 </div>
                             </div>
 
@@ -104,10 +111,12 @@
                                     <i class="flaticon-bajo-rendimiento sm:text-3xl xl:text-6xl"></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
-                                    <h1 class="Ruso-Font sm:text-sm xl:text-xl font-semibold text-blue-700">
+                                    <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-blue-700">
                                         Rendimiento
                                     </h1>
-                                    <span class="sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.rendimiento}} Km/gl</span>
+                                    <span
+                                        class="proximaNova-Light sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.rendimiento}}
+                                        Km/gl</span>
                                 </div>
                             </div>
 
@@ -116,10 +125,12 @@
                                     <i class="flaticon-velocimetro-1 sm:text-3xl xl:text-6xl"></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
-                                    <h1 class="Ruso-Font sm:text-sm xl:text-xl font-semibold text-blue-700">
+                                    <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-blue-700">
                                         Autonomía
                                     </h1>
-                                    <span class="sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.autonomia}} Km</span>
+                                    <span
+                                        class="proximaNova-Light sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.autonomia}}
+                                        Km</span>
                                 </div>
                             </div>
                         </div>
@@ -128,16 +139,17 @@
 
                         <!-- <div class="flex flex-col justify-between gap-4 p-4"> -->
                         <div class="grid grid-cols-2 justify-between gap-4 p-4">
-                        
+
                             <div class="p-2 flex flex-row gap-5 items-center max-w-60">
                                 <div class="flex flex-row">
                                     <i class="flaticon-freno-de-disco sm:text-3xl xl:text-6xl"></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
-                                    <h1 class="Ruso-Font sm:text-sm xl:text-xl font-semibold text-blue-700">
+                                    <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-blue-700">
                                         Freno delantero
                                     </h1>
-                                    <span class="sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.freno_delantero}}</span>
+                                    <span
+                                        class="proximaNova-Light sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.freno_delantero}}</span>
                                 </div>
                             </div>
 
@@ -146,10 +158,11 @@
                                     <i class="flaticon-freno-de-disco sm:text-3xl xl:text-6xl"></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
-                                    <h1 class="Ruso-Font sm:text-sm xl:text-xl font-semibold text-blue-700">
+                                    <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-blue-700">
                                         Suspensión Delantera
                                     </h1>
-                                    <span class="sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.suspension_delantero}}</span>
+                                    <span
+                                        class="proximaNova-Light sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.suspension_delantero}}</span>
                                 </div>
                             </div>
 
@@ -158,10 +171,11 @@
                                     <i class="flaticon-suspension sm:text-3xl xl:text-6xl"></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
-                                    <h1 class="Ruso-Font sm:text-sm xl:text-xl font-semibold text-blue-700">
+                                    <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-blue-700">
                                         Freno Posterior
                                     </h1>
-                                    <span class="sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.freno_posterior}}</span>
+                                    <span
+                                        class="proximaNova-Light sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.freno_posterior}}</span>
                                 </div>
                             </div>
 
@@ -170,10 +184,11 @@
                                     <i class="flaticon-suspension sm:text-3xl xl:text-6xl"></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
-                                    <h1 class="Ruso-Font sm:text-sm xl:text-xl font-semibold text-blue-700">
+                                    <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-blue-700">
                                         Suspensión Posterior
                                     </h1>
-                                    <span class="sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.suspension_posterior}}</span>
+                                    <span
+                                        class="proximaNova-Light sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.suspension_posterior}}</span>
                                 </div>
                             </div>
                         </div>
@@ -185,10 +200,11 @@
                                     <i class="flaticon-caja-de-cambios sm:text-3xl xl:text-6xl"></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
-                                    <h1 class="Ruso-Font sm:text-sm xl:text-xl font-semibold text-blue-700">
+                                    <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-blue-700">
                                         Transmisión
                                     </h1>
-                                    <span class="sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.transmision}}</span>
+                                    <span
+                                        class="proximaNova-Light sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.transmision}}</span>
                                 </div>
                             </div>
 
@@ -197,10 +213,12 @@
                                     <i class="flaticon-velocimetro sm:text-3xl xl:text-6xl"></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
-                                    <h1 class="Ruso-Font sm:text-sm xl:text-xl font-semibold text-blue-700">
+                                    <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-blue-700">
                                         Velocidad
                                     </h1>
-                                    <span class="sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.velocidad}} km</span>
+                                    <span
+                                        class="proximaNova-Light sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.velocidad}}
+                                        km</span>
                                 </div>
                             </div>
                         </div>
@@ -212,10 +230,12 @@
                                     <i class="flaticon-peso sm:text-3xl xl:text-6xl"></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
-                                    <h1 class="Ruso-Font sm:text-sm xl:text-xl font-semibold text-blue-700">
+                                    <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-blue-700">
                                         Peso
                                     </h1>
-                                    <span class="sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.peso}} kg</span>
+                                    <span
+                                        class="proximaNova-Light sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.peso}}
+                                        kg</span>
                                 </div>
                             </div>
 
@@ -224,11 +244,11 @@
                                     <i class="flaticon-pistons sm:text-3xl xl:text-6xl"></i>
                                 </div>
                                 <div class="flex flex-col gap-0">
-                                    <h1 class="Ruso-Font sm:text-sm xl:text-xl font-semibold text-blue-700">
+                                    <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-blue-700">
                                         Dimensiones (CM)
                                     </h1>
-                                    <span class="sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.largo}}x{{motorcycle?.ancho}}(LXA)</span>
-                                    
+                                    <span
+                                        class="proximaNova-Light proximaNova-Light sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.largo}}x{{motorcycle?.ancho}}(LXA)</span>
                                 </div>
                             </div>
                         </div>
