@@ -97,6 +97,12 @@
     animation: fadeIn 0.5s;
 }
 
+.p-tabview{
+  font-family: 'Proxima Nova Regular';
+}
+
+
+
 /* .p-tabview-panel {
 } */
 
@@ -106,13 +112,37 @@
     padding: 40px;
 } */
 
-
-
-
-
-
-
    
 .p-scrollpanel-bar-y{
   background-color: rgb(171, 211, 250); 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* p-tabview	Container element
+p-tabview-nav	Container of headers.
+p-tabview-selected	Selected tab header.
+p-tabview-panels	Container panels.
+p-tabview-panel Content of a tab. */
+
+
+
+
+
+
+
