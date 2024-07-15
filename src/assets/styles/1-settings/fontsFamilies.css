@@ -14,10 +14,12 @@
     font-family: "Russo One", sans-serif;
 }
 
-.proximaNova-bold{
-    font-family: 'proximanova-bold';
+.proximaNova{
+    font-family: 'Proxima Nova Bold';
 }
 
-.proximaNova-regular{
-    font-family: 'proximanova-regular';
-}
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    font-display: block;
+    font-weight: 900;
+    src: url("../3-elements/Fontspring-DEMO-proximanova-bold.woff2") format("woff2"), url("../3-elements/Fontspring-DEMO-proximanova-bold.ttf") format("truetype"); }

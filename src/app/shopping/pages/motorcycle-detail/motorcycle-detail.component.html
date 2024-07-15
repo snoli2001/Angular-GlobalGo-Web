@@ -5,6 +5,7 @@
     <app-carrousel-for-motorcycles [motorcycle]="motorCycle"/>
 </section>
 
-<div *ngIf="!motorCycle">
-    <p>Cargando detalles de la motocicleta...</p>
+<div class=" w-screen flex flex-col items-center justify-center" *ngIf="!motorCycle">
+    <p class="Primary-font text-3xl text-red-600">Cargando detalles de la motocicleta...</p>
+    <img src="../../../../assets/gifs/bike.gif">
 </div>
