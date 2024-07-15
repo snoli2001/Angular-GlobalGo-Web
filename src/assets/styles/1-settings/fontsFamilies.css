@@ -30,28 +30,6 @@
     font-family: 'Proxima Nova Th';
 }
 
-/* @font-face {
-    font-family: 'Proxima Nova Bold';
-    font-display: block;
-    font-weight: 900;
-    src: url("../../font-files/Fontspring-DEMO-proximanova-bold.woff2") format("woff2"), url("../../font-files/Fontspring-DEMO-proximanova-bold.ttf") format("truetype"); 
-}
-
-@font-face {
-    font-family: 'Proxima Nova Regular';
-    font-display: block;
-    font-weight: 500;
-    src: url("../../font-files/Fontspring-DEMO-proximanova-regular.woff2") format("woff2"), url("../../font-files/Fontspring-DEMO-proximanova-regular.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: 'Proxima Nova Light';
-    font-display: block;
-    font-weight: 500;
-    src: url("../../font-files/Fontspring-DEMO-proximanovacond-light.woff2") format("woff2"), url("../../font-files/Fontspring-DEMO-proximanovacond-light.ttf") format("truetype");
-} */
-
-
 @font-face {
     font-family: 'Proxima Nova Bl';
     font-display: swap;

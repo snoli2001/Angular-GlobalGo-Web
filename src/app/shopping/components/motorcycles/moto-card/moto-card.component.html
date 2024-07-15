@@ -1,16 +1,14 @@
 <ng-container *ngIf="option === 1; else showAlternative">
-    <div class="shadow-xl rounded-sm max-w-xs proximaNova-Bold overflow-hidden sm:max-h-[410px] lg:max-h-[390px] xl:max-h-[380px] 2xl:max-h-[430px]">
+    <div class="shadow-xl rounded-sm max-w-xs overflow-hidden sm:max-h-[410px] lg:max-h-[390px] xl:max-h-[380px] 2xl:max-h-[430px]">
         <header class="relative p-2 rounded-t-sm flex justify-center">
             <div class="relative">
                 <p-image [src]="getImagePath(data?.imagen)" class="w-full pointer-events-none" [preview]="true"></p-image>
-                <div class="proximaNova-Bold font-semibold absolute flex flex-row items-center gap-4 top-0 right-0">
-                    <!-- <p>{{ data?.cilindrada }} cc</p> -->
+                <div class=" absolute flex flex-row items-center gap-4 top-0 right-0">
                     <p-tag severity="info" value="{{data?.categoria}}" class=" pointer-events-none" />
-
                 </div>
                 <div class="absolute flex flex-row gap-4 top-0 left-0">
                     <a href="#">
-                        <button class="font-bold">
+                        <button class="">
                             <p>{{ data?.precio | currency: 'S/':'symbol':'1.0-0' }}</p>
                         </button>
                     </a>
@@ -21,14 +19,14 @@
             class="p-4 bg-white flex flex-col gap-7 transition-transform transform translate-y-0 sm:hover:translate-y-[-85px] hover:translate-y-[-60px]">
             <div>
                 <div class="flex gap-4 justify-between items-center">
-                    <section class="flex flex-col gap-0">
-                        <h4 class="font-bold">{{ data?.modelo }}</h4>
-                        <span class="font-bold text-slate-600">{{ data?.velocidad }} KM/H</span>
+                    <section class="flex flex-col gap-2">
+                        <h4 class="proximaNova-Regular">{{ data?.modelo }}</h4>
+                        <span class="text-slate-600">{{ data?.velocidad }} KM/H</span>
                     </section>
                     <img [src]="getbrandPath(data?.logo)" class="max-w-20" alt="">
                 </div>
                 <div
-                    class="flex justify-between items-center mt-1 border-t-2 proximaNova-Bold font-semibold border-gray-300 pt-3">
+                    class="flex justify-between items-center mt-1 border-t-2 border-gray-300 pt-3">
                     <div class="flex flex-col gap-1">
                         <span>Cilindrada</span>
                         {{ data?.cilindrada }}
@@ -40,7 +38,7 @@
                 </div>
             </div>
             <a [href]="'/moto-detail/'+ (data?.idModelo)">
-                <button class="w-full uppercase bg-blue-600 font-semibold text-center text-white py-2 rounded-lg hover:bg-black">La Quiero</button>
+                <button class="w-full uppercase bg-blue-600 text-center text-white py-2 rounded-lg hover:bg-black">La Quiero</button>
             </a>
         </main>
     </div>
@@ -48,24 +46,24 @@
 </ng-container>
 
 <ng-template #showAlternative>
-    <div class="flex sm:flex-col md:flex-row gap-4 ml-5 shadow-xl rounded-sm max-w-5xl proximaNova-Bold overflow-hidden lg:max-h-[440px] xl:max-h-[400px]">
+    <div class="flex sm:flex-col md:flex-row gap-4 ml-5 shadow-xl rounded-sm max-w-5xl overflow-hidden lg:max-h-[440px] xl:max-h-[400px]">
         <header class="p-2 rounded-t-sm flex justify-center items-center">
             <p-image [src]="getImagePath(data?.imagen)" class=" max-w-6xl pointer-events-none" [preview]="true"></p-image>
         </header>
         <main class="p-4 bg-white flex flex-col gap-7">
             <header class="flex gap-4 justify-between items-center">
                 <section class="flex flex-col gap-0">
-                    <h4 class="font-bold font-sans text-2xl">{{ data?.modelo }}</h4>
-                    <span class="font-bold text-slate-600">{{ data?.autonomia }}</span>
+                    <h4 class="proximaNova-Regular text-2xl">{{ data?.modelo }}</h4>
+                    <span class="text-slate-600">{{ data?.rendimiento }} k/mh</span>
                 </section>
                 <img [src]="getbrandPath(data?.logo)" class="max-w-20" alt="">
             </header>
-            <main class="flex justify-between items-center mt-1 border-t-2 proximaNova-Light font-semibold border-gray-300 pt-3">
+            <main class="flex justify-between items-center mt-1 border-t-2 proximaNova-Light border-gray-300 pt-3">
                 <p>¡Hola riders! Soy Chispa, y quiero presentarles a la estrella del asfalto: la nueva Pulsar NS200 FI UG ABS. Esta máquina deportiva combina agilidad y seguridad gracias a su sistema ABS, que evita que las ruedas se bloqueen en frenadas bruscas. Con su motor monocilíndrico de 200cc, te espera una experiencia llena de potencia y control en cada aceleración. ¡Siente la emoción de cada revolución y conquista la carretera con la Pulsar NS200!</p>
             </main>
             <footer>
                 <a [href]="'/moto-detail/'+ (data?.idModelo)">
-                    <button class="proximaNova-Regular p-3 max-w-60 uppercase bg-blue-600 font-semibold text-center text-white rounded-lg hover:bg-black">La Quiero</button>
+                    <button class="proximaNova-Light p-3 max-w-60 uppercase bg-blue-600 text-center text-white rounded-lg hover:bg-black">La Quiero</button>
                 </a>
             </footer>
         </main>
