@@ -4,7 +4,7 @@
         <div class="p-4 flex flex-col gap-10">
 
             <div class="flex sm:flex-col sm:gap-5 md:gap-0 md:flex-row gap-5 justify-between">
-                <div class="flex flex-col gap-8">
+                <div class="flex sm:flex-col xl:flex-row gap-8">
                     <p-floatLabel>
                         <input class="max-w-20 px-2 py-3" id="$ min" type="number" pInputText
                             [(ngModel)]="rangeValues[0]" />
@@ -21,6 +21,7 @@
                 <button
                     class="block md:hidden bg-blue-700 hover:bg-black text-white px-5 py-4 Ruso-Font rounded-sm transition-colors duration-500 ease-in-out"
                     (click)="filterByPrice()">GO</button>
+
             </div>
             <p-slider class="hidden md:block" [(ngModel)]="rangeValues" [range]="true" [max]="18000"
                 styleClass="w-14rem" (onChange)="filterByPrice()" />

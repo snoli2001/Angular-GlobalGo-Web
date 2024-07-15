@@ -2,9 +2,9 @@
     <p-accordionTab header="Potencia">
         <div class="p-4 flex flex-col gap-4">
             <p-slider [(ngModel)]="power" [max]="150" (onChange)="handleFilter()"></p-slider>
-            <span>{{ power }} potencia</span>
+            <span class="proximaNova-Light">{{ power }} Potencia</span>
             <div class="flex flex-row justify-between">
-                <app-clear-filter custom_style="font-bold Primary-font text-xs hover:text-blue-500"/>
+                <app-clear-filter custom_style="font-bold proximaNova-Regular text-xs hover:text-blue-500"/>
             </div>
         </div>
     </p-accordionTab>

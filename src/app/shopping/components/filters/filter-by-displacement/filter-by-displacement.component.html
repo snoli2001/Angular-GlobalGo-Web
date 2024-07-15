@@ -2,10 +2,10 @@
   <p-accordionTab header="Cilindrada">
     <div class="p-4 flex flex-col gap-4">
       <p-slider [(ngModel)]="displacement" class="w-full" [max]="270" (onChange)="handleFilter()" />
-      <span>{{ displacement }} potencia</span>
+      <span class="proximaNova-Light">{{ displacement }}  Cilindrada</span>
 
       <div class="flex flex-row justify-between">
-        <app-clear-filter custom_style="font-bold Primary-font text-xs hover:text-blue-500" />
+        <app-clear-filter custom_style="font-bold proximaNova-Regular text-xs hover:text-blue-500" />
       </div>
     </div>
   </p-accordionTab>
