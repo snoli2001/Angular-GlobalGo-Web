@@ -1,13 +1,13 @@
 <p-accordion [activeIndex]="1" class="w-full">
   <p-accordionTab header="Tipo de Transmición">
     <div class="p-4 grid grid-cols-2 gap-4 items-center justify-center">
-      <div *ngFor="let icon of icons" class="flex flex-col justify-center items-center">
+      <div *ngFor="let icon of icons" class="flex flex-col justify-center gap-2 items-center">
         <div class="icon-circle">
           <button (click)="handleFilter(icon.label)"> <i [ngClass]="icon.class"></i> </button>
         </div>
         <span class="icon-text proximaNova-Light">{{ icon.label }}</span>
       </div>
     </div>
-    <app-clear-filter custom_style="proximaNova-Bold hover:text-blue-500" />
+    <app-clear-filter custom_style=" text-sm proximaNova-Bold hover:text-blue-500" />
   </p-accordionTab>
 </p-accordion>

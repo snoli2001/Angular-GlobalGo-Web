@@ -4,6 +4,63 @@
   font-family: 'Proxima Nova Light';
 }
 
+
+
+
+
+
+
+
+
+
+
+.p-dropdown-label		{
+  font-family: 'Proxima Nova Regular';
+}
+
+.p-dropdown-items	{
+  font-family: 'Proxima Nova Regular';
+}
+
+
+/* .p-dropdown	Container element.
+.p-dropdown-clearable	Container element when showClear is on.
+.p-dropdown-label	Element to display label of selected option.
+.p-dropdown-trigger	Icon element.
+.p-dropdown-panel	Icon element.
+.p-dropdown-items-wrapper	Wrapper element of items list.
+.p-dropdown-items	List element of items.
+.p-dropdown-item	An item in the list.
+.p-dropdown-filter-container	Container of filter input.
+.p-dropdown-filter	Filter element.
+.p-dropdown-open
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .p-accordion-content {
   background-color: #f4f5f9;
 }
