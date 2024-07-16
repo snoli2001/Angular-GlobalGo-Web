@@ -7,7 +7,7 @@
                     <p-tag severity="info" value="{{data?.categoria}}" class=" pointer-events-none" />
                 </div>
                 <div class="absolute flex flex-row gap-4 top-0 left-0">
-                    <a href="#">
+                    <a [href]="'/moto-detail/'+ (data?.idModelo)">
                         <button class="">
                             <p>{{ data?.precio | currency: 'S/':'symbol':'1.0-0' }}</p>
                         </button>

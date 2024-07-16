@@ -68,55 +68,14 @@
 
 .p-tabview .p-element:hover {
   background-color: blue;
-  color: rgb(229, 231, 235);;
-}
+  color: white;
+} 
 
 
 .ng-star-inserted .p-highlight a{
   background-color: black;
   color: white;
 }
-
-
-
-/* Estilos para la línea azul */
-/* .p-tabview .p-element::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background-color: blue;
-  transition: width 0.3s ease, left 0.3s ease;
-} */
-
-/* Estilos para el hover de la línea azul */
-/* .p-tabview .p-element:hover::after {
-  width: 100%;
-  left: 0;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
