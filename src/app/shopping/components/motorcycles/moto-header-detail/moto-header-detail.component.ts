@@ -29,7 +29,7 @@ export class MotoHeaderDetailComponent {
     return `../../../../../assets/imgs/negativos/${img}`;
   }
 
-  getPathLogoHeader2(): string {
-    return `../../../../../assets/imgs/modelos/pulsar.svg`;
+  getPathLogoHeader2(img: string | undefined): string {
+    return `../../../../../assets/imgs/modelos/${img}`;
   }
 }

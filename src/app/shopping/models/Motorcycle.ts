@@ -27,4 +27,6 @@ export interface IMotorcycle {
     icono: string;
     freno_delantero: string;
     freno_posterior: string;
+    ModelIcon:string;
+
 }
