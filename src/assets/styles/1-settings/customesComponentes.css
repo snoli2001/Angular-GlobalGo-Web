@@ -67,12 +67,10 @@
 }
 
 .p-tabview .p-element:hover {
-  background-color: black;
-  color: white;
+  background-color: blue;
+  color: rgb(229, 231, 235);;
 }
 
-
- 
 
 .ng-star-inserted .p-highlight a{
   background-color: black;
