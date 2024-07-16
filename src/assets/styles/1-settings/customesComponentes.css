@@ -1,7 +1,11 @@
+/* ACCORDIO */
+
 .p-accordion {
   max-width: 400px;
   font-family: 'Proxima Nova Lt';
 }
+
+/* DROPDOW */
 
 .p-dropdown-label		{
   font-family: 'Proxima Nova Rg';
@@ -11,53 +15,17 @@
   font-family: 'Proxima Nova Rg';
 }
 
-
-/* .p-dropdown	Container element.
-.p-dropdown-clearable	Container element when showClear is on.
-.p-dropdown-label	Element to display label of selected option.
-.p-dropdown-trigger	Icon element.
-.p-dropdown-panel	Icon element.
-.p-dropdown-items-wrapper	Wrapper element of items list.
-.p-dropdown-items	List element of items.
-.p-dropdown-item	An item in the list.
-.p-dropdown-filter-container	Container of filter input.
-.p-dropdown-filter	Filter element.
-.p-dropdown-open
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .p-accordion-content {
   background-color: #f4f5f9;
 }
 
+
+
+/* TABVIEW */
+
+
 .p-tabview-panels {
   padding: 0px;
-  /* background-color: red;
-    max-width: 800px; */
 }
 
 
@@ -91,23 +59,45 @@
 }
 
 
+/* Estilos para el hover */
 
-/* .p-tabview-panel {
-} */
+.p-tabview .p-element .ng-star-inserted .p-highlight a {
+  position: relative;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.p-tabview .p-element:hover {
+  background-color: black;
+  color: white;
+}
 
 
-/* .p-tabview-selected{
-    background-color: rebeccapurple;
-    padding: 40px;
-} */
+ 
 
-   
-.p-scrollpanel-bar-y{
-  background-color: rgb(171, 211, 250); 
+.ng-star-inserted .p-highlight a{
+  background-color: black;
+  color: white;
 }
 
 
 
+/* Estilos para la línea azul */
+/* .p-tabview .p-element::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: blue;
+  transition: width 0.3s ease, left 0.3s ease;
+} */
+
+/* Estilos para el hover de la línea azul */
+/* .p-tabview .p-element:hover::after {
+  width: 100%;
+  left: 0;
+} */
 
 
 
@@ -123,15 +113,18 @@
 
 
 
-/* p-tabview	Container element
-p-tabview-nav	Container of headers.
-p-tabview-selected	Selected tab header.
-p-tabview-panels	Container panels.
-p-tabview-panel Content of a tab. */
 
 
 
 
 
 
+
+
+
+/* SCROLLBAR */
+   
+.p-scrollpanel-bar-y{
+  background-color: rgb(171, 211, 250); 
+}
 
