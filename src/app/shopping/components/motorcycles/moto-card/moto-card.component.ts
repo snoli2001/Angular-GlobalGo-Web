@@ -24,8 +24,4 @@ export class MotoCardComponent {
     return `../../../../../assets/imgs/logos/${imageName}`;
   }
 
-  prueba(img:any){
-    console.log(typeof(img));
-    console.log(`../../../../../assets/imgs/motorcycles/${img}`)  
-  }
 }
