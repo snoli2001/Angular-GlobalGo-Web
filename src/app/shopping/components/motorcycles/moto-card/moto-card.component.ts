@@ -24,4 +24,8 @@ export class MotoCardComponent {
     return `../../../../../assets/imgs/logos/${imageName}`;
   }
 
+  prueba(d:string|undefined){
+    window.alert(d);
+  }
+
 }

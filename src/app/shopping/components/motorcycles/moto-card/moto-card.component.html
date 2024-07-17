@@ -2,7 +2,17 @@
     <div class="shadow-xl rounded-sm max-w-xs overflow-hidden sm:max-h-[410px] lg:max-h-[390px] xl:max-h-[380px] 2xl:max-h-[430px]">
         <header class="relative p-2 rounded-t-sm flex justify-center">
             <div class="relative">
-                <p-image [src]="getImagePath(data?.imagen)" class="w-full pointer-events-none" [preview]="true"></p-image>
+                
+                <ng-container *ngIf="data?.imagen && data?.imagen != ' '; else noImageTemplate">
+                     <p-image [src]="getImagePath(data?.imagen)" class="w-full pointer-events-none" [preview]="true"></p-image>
+                     <!-- <img [src]="getPathLogoHeader2(motorcycle?.logo)" class="max-w-md"> -->
+                    </ng-container>
+                    
+                    <ng-template #noImageTemplate>
+                    <p-image [src]="getImagePath('generica.jpg')" class="w-full pointer-events-none" [preview]="true"></p-image>
+                    <!-- <img [src]="getPathLogoHeader2()" class="max-w-md"> -->
+                </ng-template>
+
                 <div class=" absolute flex flex-row items-center gap-4 top-0 right-0">
                     <p-tag severity="info" value="{{data?.categoria}}" class=" pointer-events-none" />
                 </div>
