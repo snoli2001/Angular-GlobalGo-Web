@@ -74,6 +74,7 @@
 
 .ng-star-inserted .p-highlight a{
   background-color: black;
+  /* background-color: #334155; */
   color: white;
 }
 

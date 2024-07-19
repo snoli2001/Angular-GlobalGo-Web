@@ -15,7 +15,25 @@
                         {{motorcycle?.categoria}}
                     </span>
                 </div>
-                <button class="w-full bg-slate-700 text-white font-semibold proximaNova-Regular px-2 py-4 rounded-md transition-transform hover:bg-red-600 hover:text-white hover:scale-x-105">Financiar Ahora</button>
+                <button class="w-full text-3xl bg-slate-700 text-white font-semibold proximaNova-Regular px-2 py-4 rounded-md transition-transform hover:bg-red-600 hover:text-white hover:scale-x-105" (click)="dialogHandle()">Financiar Ahora</button>
+                
+                <p-dialog header="Edit Profile" [modal]="true" [(visible)]="visible" [style]="{ width: '25rem' }">
+                    <div class=" flex flex-col justify-center items-center">
+                        <h1>Requisitos de financiamiento</h1>
+                        <ul>
+                            <li>Ser mayor de edad</li>
+                            <li>Requisito 1</li>
+                            <li>Requisito 2</li>
+                            <li>Requisito 3</li>
+                            <li>Requisito 4</li>
+                            <li>Requisito 5</li>
+                            <li>Requisito 6</li>
+                            <li>Requisito 7</li>
+                        </ul>
+                    </div>
+                </p-dialog>
+
+
             </div>
 
 
