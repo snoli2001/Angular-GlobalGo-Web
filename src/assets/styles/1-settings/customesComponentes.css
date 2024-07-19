@@ -7,11 +7,11 @@
 
 /* DROPDOW */
 
-.p-dropdown-label		{
+.p-dropdown-label {
   font-family: 'Proxima Nova Rg';
 }
 
-.p-dropdown-items	{
+.p-dropdown-items {
   font-family: 'Proxima Nova Rg';
 }
 
@@ -35,6 +35,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -44,17 +45,18 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
 
 .p-tabview-panel {
-    animation-fill-mode: both;    
-    animation: fadeIn 0.5s;
+  animation-fill-mode: both;
+  animation: fadeIn 0.5s;
 }
 
-.p-tabview{
+.p-tabview {
   font-family: 'Proxima Nova Rg';
 }
 
@@ -66,13 +68,28 @@
   transition: background-color 0.3s, color 0.3s;
 }
 
+.p-tabview {
+  border-width: 0px;
+  /* border-radius: 2px; */
+}
+
+.p-tabview-nav {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 6px;
+}
+
+.p-tabview-panels {
+  border-width: 1px;
+  border-color: black;
+}
+
 .p-tabview .p-element:hover {
-  background-color:crimson;
+  background-color: crimson;
   color: white;
-} 
+}
 
 
-.ng-star-inserted .p-highlight a{
+.ng-star-inserted .p-highlight a {
   background-color: black;
   /* background-color: #334155; */
   color: white;
@@ -80,9 +97,20 @@
 
 
 
-/* SCROLLBAR */
-   
-.p-scrollpanel-bar-y{
-  background-color: rgb(171, 211, 250); 
-}
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* SCROLLBAR */
+.p-scrollpanel-bar-y {
+  background-color: rgb(171, 211, 250);
+}
