@@ -16,7 +16,7 @@ import { MotoStateService } from '../../../states/moto.state.service';
 export class FilterByTransmitionComponent {
   public transmition:any[]=[];
   public icons:any[]= [
-    { class: "flaticon-caja-de-cambios-automatica", label: "Semiautomática" },
+    // { class: "flaticon-caja-de-cambios-automatica", label: "Semiautomática" },
     { class: "flaticon-caja-de-cambios", label: "Mecánica" },
     { class: "flaticon-caja-de-cambios-automatica", label: "Automática" },
   ]
