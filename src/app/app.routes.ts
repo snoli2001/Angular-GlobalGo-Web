@@ -4,7 +4,7 @@ import { MotorcycleCatalougeComponent } from './shopping/pages/motorcycle-catalo
 import { MotorcycleDetailComponent } from './shopping/pages/motorcycle-detail/motorcycle-detail.component';
 
 export const routes: Routes = [
-    { path: '', redirectTo: '/home', pathMatch: 'full' },
+    { path: '', redirectTo: '/catalogo-motos', pathMatch: 'full' },
     {path:'catalogo-motos',component: MotorcycleCatalougeComponent},
     {path:'moto-detail/:id',component:MotorcycleDetailComponent},
     {path:'**', component:NotFoundPageComponent}
