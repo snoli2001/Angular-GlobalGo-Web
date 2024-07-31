@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { IMotorcycle } from '../../../models/Motorcycle';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-moto-header-detail',
@@ -12,13 +13,17 @@ import { IMotorcycle } from '../../../models/Motorcycle';
 export class MotoHeaderDetailComponent {
   @Input() motorcycle: IMotorcycle | undefined;
   public today: Date;
+  public motoId:number;
+  public financingUrl: string;
 
-  constructor() {
+  constructor(private route: ActivatedRoute) {
     this.today = new Date();
+    const id = this.route.snapshot.paramMap.get('id');
+    this.motoId = id ? parseInt(id, 10) : 0;
+    this.financingUrl = `https://globalgo-login.sis360.com.pe/solicitar-financiamiento?Id=${this.motoId}`;
   }
 
   getPathHeader(img: string | undefined): string {
-    console.log(`../../../../../assets/imgs/cabeceras/${img}`); 
     return `../../../../../assets/imgs/cabeceras/${img}`;
   }
 
@@ -33,4 +38,5 @@ export class MotoHeaderDetailComponent {
   getPathLogoHeader2(img: string | undefined): string {
     return `../../../../../assets/imgs/modelos/${img}`;
   }
+
 }
