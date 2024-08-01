@@ -22,11 +22,10 @@
 
         <footer class="flex flex-col gap-2">
             <span class="pl-2 py-4 bg-white max-w-56 text-slate-700 text-5xl proximaNova-Regular font-bold"> {{ motorcycle?.precio | currency: 'S/':'symbol':'1.0-0' }}</span>
-            <button class="w-full text-3xl bg-slate-700 text-white font-semibold proximaNova-Regular px-2 py-4 rounded-md transition-transform hover:bg-red-600 hover:text-white hover:scale-x-105">
-                <a [href]="financingUrl">
+            <a class="w-full text-3xl text-center bg-slate-700 text-white font-semibold proximaNova-Regular px-2 py-4 rounded-md transition-transform hover:bg-red-600 hover:text-white hover:scale-x-105" [href]="financingUrl">
+                 
                     Financiar Ahora
-                </a>
-            </button>
+             </a>
         </footer>
 
     </div>
