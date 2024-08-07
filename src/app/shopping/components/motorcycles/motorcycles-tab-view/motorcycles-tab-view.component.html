@@ -1,0 +1,440 @@
+<div class="hidden md:block">
+    <p-tabView>
+        <p-tabPanel header="Motor">
+            <div class="grid grid-cols-2 justify-between gap-10 p-4">
+                <div class="p-2 flex flex-row gap-5 items-center transition-transform hover:scale-y-110 hover:scale-x-110">
+                    <div class="flex flex-row">
+                        <i class=" text-slate-500 flaticon-pistons sm:text-3xl xl:text-6xl"></i>
+                    </div>
+                    <div class="flex flex-col gap-0">
+                        <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
+                            Cilindrada
+                        </h1>
+                        <span
+                            class=" text-slate-500  proximaNova-Light sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.cilindrada}}cc</span>
+                    </div>
+                </div>
+    
+                <div class="p-2 flex flex-row gap-5 items-center transition-transform hover:scale-y-110 hover:scale-x-110">
+                    <div class="flex flex-row">
+                        <i class=" text-slate-500 flaticon-motor-del-coche sm:text-3xl xl:text-6xl"></i>
+                    </div>
+                    <div class="flex flex-col gap-0">
+                        <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
+                            Potencia
+                        </h1>
+                        <span
+                            class=" text-slate-500  proximaNova-Light sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.potencia}}HP</span>
+                    </div>
+                </div>
+    
+                <div class="p-2 flex flex-row gap-5 items-center transition-transform hover:scale-y-110 hover:scale-x-110">
+                    <div class="flex flex-row">
+                        <i class=" text-slate-500 flaticon-velocimetro sm:text-3xl xl:text-6xl"></i>
+                    </div>
+                    <div class="flex flex-col gap-0">
+                        <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
+                            Torque
+                        </h1>
+                        <span
+                            class=" text-slate-500  proximaNova-Light sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.torque}}Nm</span>
+                    </div>
+                </div>
+            </div>
+        </p-tabPanel>
+        <p-tabPanel header="Combustible">
+            <div class="grid grid-cols-2 justify-between gap-2 p-4">
+                <div class="p-2 flex flex-row gap-5 items-center transition-transform hover:scale-y-110 hover:scale-x-110">
+                    <div class="flex flex-row">
+                        <i class=" text-slate-500 flaticon-combustible sm:text-3xl xl:text-6xl"></i>
+                    </div>
+                    <div class="flex flex-col gap-0">
+                        <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
+                            Combustible
+                        </h1>
+                        <span
+                            class=" text-slate-500 proximaNova-Light sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.combustible}}</span>
+                    </div>
+                </div>
+    
+                <div class="p-2 flex flex-row gap-5 items-center transition-transform hover:scale-y-110 hover:scale-x-110">
+                    <div class="flex flex-row">
+                        <i class=" text-slate-500 flaticon-gas-tank sm:text-3xl xl:text-6xl"></i>
+                    </div>
+                    <div class="flex flex-col gap-0">
+                        <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
+                            Tanque
+                        </h1>
+                        <span
+                            class=" text-slate-500 proximaNova-Light sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.tanque}}
+                            galon</span>
+                    </div>
+                </div>
+    
+                <div class="p-2 flex flex-row gap-5 items-center transition-transform hover:scale-y-110 hover:scale-x-110">
+                    <div class="flex flex-row">
+                        <i class=" text-slate-500 flaticon-bajo-rendimiento sm:text-3xl xl:text-6xl"></i>
+                    </div>
+                    <div class="flex flex-col gap-0">
+                        <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
+                            Rendimiento
+                        </h1>
+                        <span
+                            class=" text-slate-500 proximaNova-Light sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.rendimiento}}
+                            Km/gl</span>
+                    </div>
+                </div>
+    
+                <div class="p-2 flex flex-row gap-5 items-center transition-transform hover:scale-y-110 hover:scale-x-110">
+                    <div class="flex flex-row">
+                        <i class=" text-slate-500 flaticon-velocimetro-1 sm:text-3xl xl:text-6xl"></i>
+                    </div>
+                    <div class="flex flex-col gap-0">
+                        <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
+                            Autonomía
+                        </h1>
+                        <span
+                            class=" text-slate-500 proximaNova-Light sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.autonomia}}
+                            Km</span>
+                    </div>
+                </div>
+            </div>
+        </p-tabPanel>
+        <p-tabPanel header="Suspensión">
+            <div class="grid grid-cols-2 justify-between gap-4 p-4">
+    
+                <div class="p-2 flex flex-row gap-5 items-center transition-transform hover:scale-y-110 hover:scale-x-110 max-w-60">
+                    <div class="flex flex-row">
+                        <i class=" text-slate-500 flaticon-freno-de-disco sm:text-3xl xl:text-6xl"></i>
+                    </div>
+                    <div class="flex flex-col gap-0">
+                        <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
+                            Freno delantero
+                        </h1>
+                        <span
+                            class=" text-slate-500 proximaNova-Light sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.freno_delantero}}</span>
+                    </div>
+                </div>
+    
+                <div class="p-2 flex flex-row gap-5 items-center transition-transform hover:scale-y-110 hover:scale-x-110 max-w-60">
+                    <div class="flex flex-row">
+                        <i class=" text-slate-500 flaticon-freno-de-disco sm:text-3xl xl:text-6xl"></i>
+                    </div>
+                    <div class="flex flex-col gap-0">
+                        <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
+                            Suspensión Delantera
+                        </h1>
+                        <span
+                            class=" text-slate-500 proximaNova-Light sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.suspension_delantero}}</span>
+                    </div>
+                </div>
+    
+                <div class="p-2 flex flex-row gap-5 items-center transition-transform hover:scale-y-110 hover:scale-x-110 max-w-60">
+                    <div class="flex flex-row">
+                        <i class=" text-slate-500 flaticon-suspension sm:text-3xl xl:text-6xl"></i>
+                    </div>
+                    <div class="flex flex-col gap-0">
+                        <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
+                            Freno Posterior
+                        </h1>
+                        <span
+                            class=" text-slate-500 proximaNova-Light sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.freno_posterior}}</span>
+                    </div>
+                </div>
+    
+                <div class="p-2 flex flex-row gap-5 items-center transition-transform hover:scale-y-110 hover:scale-x-110 max-w-60">
+                    <div class="flex flex-row">
+                        <i class=" text-slate-500 flaticon-suspension sm:text-3xl xl:text-6xl"></i>
+                    </div>
+                    <div class="flex flex-col gap-0">
+                        <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
+                            Suspensión Posterior
+                        </h1>
+                        <span
+                            class=" text-slate-500 proximaNova-Light sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.suspension_posterior}}</span>
+                    </div>
+                </div>
+            </div>
+        </p-tabPanel>
+        <p-tabPanel header="Transmisión">
+            <div class="grid grid-cols-2 justify-between gap-2 p-4">
+                <div class="p-2 flex flex-row gap-5 items-center transition-transform hover:scale-y-110 hover:scale-x-110">
+                    <div class="flex flex-row">
+                        <i class=" text-slate-500 flaticon-caja-de-cambios sm:text-3xl xl:text-6xl"></i>
+                    </div>
+                    <div class="flex flex-col gap-0">
+                        <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
+                            transmisión
+                        </h1>
+                        <span
+                            class=" text-slate-500 proximaNova-Light sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.transmision}}</span>
+                    </div>
+                </div>
+    
+                <div class="p-2 flex flex-row gap-5 items-center transition-transform hover:scale-y-110 hover:scale-x-110">
+                    <div class="flex flex-row">
+                        <i class=" text-slate-500 flaticon-velocimetro sm:text-3xl xl:text-6xl"></i>
+                    </div>
+                    <div class="flex flex-col gap-0">
+                        <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
+                            Velocidad
+                        </h1>
+                        <span
+                            class=" text-slate-500 proximaNova-Light sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.velocidad}}
+                            km</span>
+                    </div>
+                </div>
+            </div>
+        </p-tabPanel>
+        <p-tabPanel header="Dimensiones">
+            <div class="grid grid-cols-2 justify-between gap-2 p-4">
+                <div class="p-2 flex flex-row gap-5 items-center transition-transform hover:scale-y-110 hover:scale-x-110">
+                    <div class="flex flex-row">
+                        <i class=" text-slate-500 flaticon-peso sm:text-3xl xl:text-6xl"></i>
+                    </div>
+                    <div class="flex flex-col gap-0">
+                        <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
+                            Peso
+                        </h1>
+                        <span
+                            class=" text-slate-500 proximaNova-Light sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.peso}}
+                            kg</span>
+                    </div>
+                </div>
+    
+                <div class="p-2 flex flex-row gap-5 items-center transition-transform hover:scale-y-110 hover:scale-x-110">
+                    <div class="flex flex-row">
+                        <i class=" text-slate-500 flaticon-pistons sm:text-3xl xl:text-6xl"></i>
+                    </div>
+                    <div class="flex flex-col gap-0">
+                        <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
+                            Dimensiones (CM)
+                        </h1>
+                        <span
+                            class=" text-slate-500 proximaNova-Light proximaNova-Light sm:text-xs xl:text-sm xl:font-semibold">{{motorcycle?.largo}}x{{motorcycle?.ancho}}(LXA)</span>
+                    </div>
+                </div>
+            </div>
+        </p-tabPanel>
+    </p-tabView>    
+</div>
+
+
+<div class="flex md:hidden">
+
+    <p-accordion [activeIndex]="0">
+        <p-accordionTab header="Motor">
+            <div class="flex flex-col justify-between gap-3 p-4">
+                <div class="p-2 flex flex-row gap-5 items-center transition-transform hover:scale-y-110 hover:scale-x-110">
+                    <div class="flex flex-row">
+                        <i class=" text-slate-500 flaticon-pistons text-4xl"></i>
+                    </div>
+                    <div class="flex flex-col gap-0">
+                        <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
+                            Cilindrada
+                        </h1>
+                        <span
+                            class=" text-slate-500 proximaNova-Light text-sm font-medium">{{motorcycle?.cilindrada}}cc</span>
+                    </div>
+                </div>
+    
+                <div class="p-2 flex flex-row gap-5 items-center transition-transform hover:scale-y-110 hover:scale-x-110">
+                    <div class="flex flex-row">
+                        <i class="text-slate-500 flaticon-motor-del-coche text-4xl"></i>
+                    </div>
+                    <div class="flex flex-col gap-0">
+                        <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
+                            Potencia
+                        </h1>
+                        <span
+                            class=" text-slate-500 proximaNova-Light text-sm font-medium">{{motorcycle?.potencia}}HP</span>
+                    </div>
+                </div>
+    
+                <div class="p-2 flex flex-row gap-5 items-center transition-transform hover:scale-y-110 hover:scale-x-110">
+                    <div class="flex flex-row">
+                        <i class=" text-slate-500 flaticon-velocimetro text-4xl"></i>
+                    </div>
+                    <div class="flex flex-col gap-0">
+                        <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
+                            Torque
+                        </h1>
+                        <span
+                            class=" text-slate-500 proximaNova-Light text-sm font-medium ">{{motorcycle?.torque}}Nm</span>
+                    </div>
+                </div>
+            </div>
+        </p-accordionTab>
+        <p-accordionTab header="Combustible">
+            <div class="flex flex-col justify-between gap-2 p-4">
+                <div class="p-2 flex flex-row gap-5 items-center transition-transform hover:scale-y-110 hover:scale-x-110">
+                    <div class="flex flex-row">
+                        <i class=" text-slate-500 flaticon-combustible text-3xl"></i>
+                    </div>
+                    <div class="flex flex-col gap-0">
+                        <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
+                            Combustible
+                        </h1>
+                        <span
+                            class="text-slate-500 proximaNova-Light text-sm font-semibold">{{motorcycle?.combustible}}</span>
+                    </div>
+                </div>
+    
+                <div class="p-2 flex flex-row gap-5 items-center transition-transform hover:scale-y-110 hover:scale-x-110">
+                    <div class="flex flex-row">
+                        <i class=" text-slate-500 flaticon-gas-tank text-3xl"></i>
+                    </div>
+                    <div class="flex flex-col gap-0">
+                        <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
+                            Tanque
+                        </h1>
+                        <span
+                            class="text-slate-500 proximaNova-Light text-sm font-semibold">{{motorcycle?.tanque}}
+                            galon</span>
+                    </div>
+                </div>
+    
+                <div class="p-2 flex flex-row gap-5 items-center transition-transform hover:scale-y-110 hover:scale-x-110">
+                    <div class="flex flex-row">
+                        <i class=" text-slate-500 flaticon-bajo-rendimiento text-3xl"></i>
+                    </div>
+                    <div class="flex flex-col gap-0">
+                        <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
+                            Rendimiento
+                        </h1>
+                        <span class="text-slate-500 proximaNova-Light text-sm font-semibold">{{motorcycle?.rendimiento}} Km/gl</span>
+                    </div>
+                </div>
+    
+                <div class="p-2 flex flex-row gap-5 items-center transition-transform hover:scale-y-110 hover:scale-x-110">
+                    <div class="flex flex-row">
+                        <i class=" text-slate-500 flaticon-velocimetro-1 text-3xl"></i>
+                    </div>
+                    <div class="flex flex-col gap-0">
+                        <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
+                            Autonomía
+                        </h1>
+                        <span class="text-slate-500 proximaNova-Light text-xs font-semibold">{{motorcycle?.autonomia}} KM</span>
+                    </div>
+                </div>
+            </div>
+        </p-accordionTab>
+        <p-accordionTab header="Suspensión">
+            <div class="flex flex-col justify-between gap-4 p-4">
+    
+                <div class="p-2 flex flex-row gap-5 items-center transition-transform hover:scale-y-110 hover:scale-x-110 max-w-60">
+                    <div class="flex flex-row">
+                        <i class=" text-slate-500 flaticon-freno-de-disco text-3xl"></i>
+                    </div>
+                    <div class="flex flex-col gap-0">
+                        <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
+                            Freno delantero
+                        </h1>
+                        <span
+                            class="text-slate-500 proximaNova-Light text-xs font-semibold">{{motorcycle?.freno_delantero}}</span>
+                    </div>
+                </div>
+    
+                <div class="p-2 flex flex-row gap-5 items-center transition-transform hover:scale-y-110 hover:scale-x-110 max-w-60">
+                    <div class="flex flex-row">
+                        <i class=" text-slate-500 flaticon-freno-de-disco text-3xl"></i>
+                    </div>
+                    <div class="flex flex-col gap-0">
+                        <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
+                            Suspensión Delantera
+                        </h1>
+                        <span
+                            class="text-slate-500 proximaNova-Light text-xs font-semibold">{{motorcycle?.suspension_delantero}}</span>
+                    </div>
+                </div>
+    
+                <div class="p-2 flex flex-row gap-5 items-center transition-transform hover:scale-y-110 hover:scale-x-110 max-w-60">
+                    <div class="flex flex-row">
+                        <i class=" text-slate-500 flaticon-suspension text-3xl"></i>
+                    </div>
+                    <div class="flex flex-col gap-0">
+                        <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
+                            Freno Posterior
+                        </h1>
+                        <span
+                            class="text-slate-500 proximaNova-Light text-xs font-semibold">{{motorcycle?.freno_posterior}}</span>
+                    </div>
+                </div>
+    
+                <div class="p-2 flex flex-row gap-5 items-center transition-transform hover:scale-y-110 hover:scale-x-110 max-w-60">
+                    <div class="flex flex-row">
+                        <i class=" text-slate-500 flaticon-suspension text-3xl"></i>
+                    </div>
+                    <div class="flex flex-col gap-0">
+                        <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
+                            Suspensión Posterior
+                        </h1>
+                        <span
+                            class=" text-slate-500 proximaNova-Light text-xs font-semibold">{{motorcycle?.suspension_posterior}}</span>
+                    </div>
+                </div>
+            </div>
+        </p-accordionTab>
+        <p-accordionTab header="Transmision">
+            <div class="flex flex-col justify-between gap-2 p-4">
+                <div class="p-2 flex flex-row gap-5 items-center transition-transform hover:scale-y-110 hover:scale-x-110">
+                    <div class="flex flex-row">
+                        <i class=" text-slate-500 flaticon-caja-de-cambios text-3xl"></i>
+                    </div>
+                    <div class="flex flex-col gap-0">
+                        <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
+                            transmisión
+                        </h1>
+                        <span
+                            class="text-slate-500 proximaNova-Light text-xs font-semibold">{{motorcycle?.transmision}}</span>
+                    </div>
+                </div>
+    
+                <div class="p-2 flex flex-row gap-5 items-center transition-transform hover:scale-y-110 hover:scale-x-110">
+                    <div class="flex flex-row">
+                        <i class=" text-slate-500 flaticon-velocimetro text-3xl"></i>
+                    </div>
+                    <div class="flex flex-col gap-0">
+                        <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
+                            Velocidad
+                        </h1>
+                        <span
+                            class="text-slate-500 proximaNova-Light text-xs font-semibold">{{motorcycle?.velocidad}}
+                            km</span>
+                    </div>
+                </div>
+            </div>
+        </p-accordionTab>
+        <p-accordionTab header="Dimensiones">
+            <div class="flex flex-col justify-between gap-2 p-4">
+                <div class="p-2 flex flex-row gap-5 items-center transition-transform hover:scale-y-110 hover:scale-x-110">
+                    <div class="flex flex-row">
+                        <i class=" text-slate-500 flaticon-peso text-3xl"></i>
+                    </div>
+                    <div class="flex flex-col gap-0">
+                        <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
+                            Peso
+                        </h1>
+                        <span
+                            class=" text-slate-500 proximaNova-Light text-xs font-semibold">{{motorcycle?.peso}}
+                            kg</span>
+                    </div>
+                </div>
+    
+                <div class="p-2 flex flex-row gap-5 items-center transition-transform hover:scale-y-110 hover:scale-x-110">
+                    <div class="flex flex-row">
+                        <i class=" text-slate-500 flaticon-pistons text-3xl"></i>
+                    </div>
+                    <div class="flex flex-col gap-0">
+                        <h1 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
+                            Dimensiones (CM)
+                        </h1>
+                        <span
+                            class=" text-slate-500 proximaNova-Light proximaNova-Light text-xs font-semibold">{{motorcycle?.largo}}x{{motorcycle?.ancho}}(LXA)</span>
+                    </div>
+                </div>
+            </div>
+        </p-accordionTab>
+    </p-accordion>
+
+</div>

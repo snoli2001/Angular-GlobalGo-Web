@@ -2,11 +2,12 @@ import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { GalleriaModule } from 'primeng/galleria';
 import { TabViewModule } from 'primeng/tabview';
 import { IMotorcycle } from '../../../models/Motorcycle';
+import { MotorcyclesTabViewComponent } from '../motorcycles-tab-view/motorcycles-tab-view.component';
 
 @Component({
   selector: 'app-carrousel-for-motorcycles',
   standalone: true,
-  imports: [GalleriaModule, TabViewModule],
+  imports: [GalleriaModule, TabViewModule,MotorcyclesTabViewComponent],
   templateUrl: './carrousel-for-motorcycles.component.html',
   styleUrls: ['./carrousel-for-motorcycles.component.css'],
 })

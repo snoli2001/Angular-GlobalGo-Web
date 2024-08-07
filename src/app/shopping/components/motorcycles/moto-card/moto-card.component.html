@@ -5,12 +5,10 @@
                 
                 <ng-container *ngIf="data?.imagen && data?.imagen != ' '; else noImageTemplate">
                      <p-image [src]="getImagePath(data?.imagen)" class="w-full pointer-events-none" [preview]="true"></p-image>
-                     <!-- <img [src]="getPathLogoHeader2(motorcycle?.logo)" class="max-w-md"> -->
                     </ng-container>
                     
                     <ng-template #noImageTemplate>
                     <p-image [src]="getImagePath('generica.jpg')" class="w-full pointer-events-none" [preview]="true"></p-image>
-                    <!-- <img [src]="getPathLogoHeader2()" class="max-w-md"> -->
                 </ng-template>
 
                 <div class=" absolute flex flex-row items-center gap-4 top-0 right-0">
@@ -64,7 +62,7 @@
             <header class="flex gap-4 justify-between items-center">
                 <section class="flex flex-col gap-0">
                     <h4 class="proximaNova-Regular text-2xl">{{ data?.modelo }}</h4>
-                    <span class="text-slate-600">{{ data?.rendimiento }} K/MH</span>
+                    <span class="text-slate-600">{{ data?.rendimiento }} KM/H</span>
                 </section>
                 <img [src]="getbrandPath(data?.logo)" class="max-w-20" alt="">
             </header>
