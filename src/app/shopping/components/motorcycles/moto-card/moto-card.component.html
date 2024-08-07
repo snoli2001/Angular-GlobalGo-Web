@@ -4,15 +4,17 @@
             <div class="relative">
                 
                 <ng-container *ngIf="data?.imagen && data?.imagen != ' '; else noImageTemplate">
-                     <p-image [src]="getImagePath(data?.imagen)" class="w-full pointer-events-none" [preview]="true"></p-image>
+                    <a [href]="financingUrl">
+                        <p-image [src]="getImagePath(data?.imagen)" class="w-full"></p-image>
+                    </a>
                     </ng-container>
                     
                     <ng-template #noImageTemplate>
-                    <p-image [src]="getImagePath('generica.jpg')" class="w-full pointer-events-none" [preview]="true"></p-image>
+                    <p-image [src]="getImagePath('generica.jpg')" class="w-full " [preview]="true"></p-image>
                 </ng-template>
 
                 <div class=" absolute flex flex-row items-center gap-4 top-0 right-0">
-                    <p-tag severity="info" value="{{data?.categoria}}" class=" pointer-events-none" />
+                    <p-tag severity="info" value="{{data?.categoria}}" class=" " />
                 </div>
                 <div class="absolute flex flex-row gap-4 top-0 left-0">
                     <a [href]="'/moto-detail/'+ (data?.idModelo)">
@@ -56,7 +58,7 @@
 <ng-template #showAlternative>
     <div class="flex sm:flex-col md:flex-row gap-4 ml-5 shadow-xl rounded-sm max-w-5xl overflow-hidden lg:max-h-[440px] xl:max-h-[400px]">
         <header class="p-2 rounded-t-sm flex justify-center items-center">
-            <p-image [src]="getImagePath(data?.imagen)" class=" max-w-6xl pointer-events-none" [preview]="true"></p-image>
+                <p-image [src]="getImagePath(data?.imagen)" class=" max-w-6xl " [preview]="true"></p-image>
         </header>
         <main class="p-4 bg-white flex flex-col gap-7">
             <header class="flex gap-4 justify-between items-center">

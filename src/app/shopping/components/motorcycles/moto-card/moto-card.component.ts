@@ -3,7 +3,7 @@ import { ImageModule } from 'primeng/image';
 import { IMotorcycle } from '../../../models/Motorcycle';
 import { TagModule } from 'primeng/tag';
 import { CommonModule } from '@angular/common';
-import { RouterLink } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-moto-card',
@@ -15,6 +15,14 @@ import { RouterLink } from '@angular/router';
 export class MotoCardComponent {
   @Input() data: IMotorcycle | undefined;
   @Input() option: number | undefined;
+  public financingUrl: string;
+  public motoId:number;
+
+  constructor(private route: ActivatedRoute){
+    const id = this.route.snapshot.paramMap.get('id');
+    this.motoId = id ? parseInt(id, 10) : 0;
+    this.financingUrl = `https://globalgo-login.sis360.com.pe/solicitar-financiamiento?Id=${this.motoId}`;
+  }
 
   getImagePath(imageName: string | undefined): string {
     return `../../../../../assets/imgs/motorcycles/${imageName}`;
