@@ -32,5 +32,33 @@ export class MotoCardComponent {
     return `../../../../../assets/imgs/logos/${imageName}`;
   }
 
+  getBrandColor(color:string| undefined){
+    switch (color) {
+      case 'Cafe Racer':
+          return '#8B4513'; // Marrón
+      case 'Cruiser - Chopper':
+          return '#000000'; // Negro
+      case 'Cub':
+          return '#FFD700'; // Dorado
+      case 'Deportiva':
+          return '#FF0000'; // Rojo
+      case 'Doble proposito - Todo Terreno':
+          return '#008000'; // Verde
+      case 'Enduro - Cross':
+          return '#FFA500'; // Naranja
+      case 'Naked':
+          return '#808080'; // Gris
+      case 'Pistera':
+          return '#0000FF'; // Azul
+      case 'Scooter':
+          return '#FFC0CB'; // Rosa
+      case 'Touring - Viajeras':
+          return '#4B0082'; // Índigo
+      case 'Utilitaria':
+          return '#800080'; // Púrpura
+      default:
+          return '#FFFFFF'; // Blanco por defecto si no se encuentra coincidencia
+    }
+  }
 
 }
