@@ -2,20 +2,20 @@
     <div class="flex sm:flex-col md:flex-row justify-center items-center gap-5">
         <img src="./../../../../../assets/imgs/logos/Chispa_senalando.svg" class="sm:max-w-48 xl:max-w-80">
         <div class="flex flex-col gap-4 Primary-font max-w-5xl">
-            <p class=" text-2xl proximaNova-Light">
+            <p class=" sm:text-lg md:text-2xl proximaNova-Light">
             {{motorcycle?.texto}}
             </p>
             
             <div class=" flex flex-row items-center gap-4 justify-between">
                 <div class="flex flex-col gap-3 w-full">
-                    <span class="text-blue-600 proximaNova-Regular text-3xl font-medium">
+                    <span class="text-blue-600 proximaNova-Regular sm:text-xl md:text-3xl font-medium">
                         Categoría
                     </span>
-                    <span class="proximaNova-Light text-2xl">
+                    <span class="proximaNova-Light sm:text-xl md:text-3xl">
                         {{motorcycle?.categoria}}
                     </span>
                 </div>
-                <a class="w-full text-3xl text-center bg-slate-700 text-white font-semibold proximaNova-Regular px-2 py-4 rounded-md transition-transform hover:bg-red-600 hover:text-white hover:scale-x-105" [href]="financingUrl">Financiar Ahora</a>                
+                <a class="w-full sm:text-xl md:text-3xl text-center bg-slate-700 text-white font-semibold proximaNova-Regular px-2 py-4 rounded-md transition-transform hover:bg-red-600 hover:text-white hover:scale-x-105" [href]="financingUrl">Financiar Ahora</a>                
                 <!-- <p-dialog header="Edit Profile" [modal]="true" [(visible)]="visible" [style]="{ width: '25rem' }">
                     <div class=" flex flex-col justify-center items-center">
                         <h1>Requisitos de financiamiento</h1>
