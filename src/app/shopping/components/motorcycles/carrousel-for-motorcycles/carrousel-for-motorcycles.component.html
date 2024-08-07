@@ -16,7 +16,7 @@
         </div>
 
         <div class="card sm:flex xl:hidden">
-            <p-galleria [value]="images" [showItemNavigators]="true" [responsiveOptions]="responsiveOptions"
+            <p-galleria [value]="images" [showItemNavigators]="true" [responsiveOptions]="responsiveOptions" [showThumbnails]="false"
                 [circular]="true" [numVisible]="5" [containerStyle]="{ 'max-width': '640px' }">
                 <ng-template pTemplate="item" let-item>
                     <img [src]="item.itemImageSrc" style="width: 100%; display: block" class="pointer-events-none" />

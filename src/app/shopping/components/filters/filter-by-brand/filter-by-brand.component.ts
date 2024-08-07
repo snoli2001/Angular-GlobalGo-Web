@@ -24,7 +24,7 @@ export class FilterByBrandComponent {
 
   async getBrandFromAPI(){
     try {
-      const response = await fetch("https://localhost:7092/api/Brand/getAll");
+      const response = await fetch("https://api-catalogo.sis360.com.pe/api/Brand/getAll");
       if (!response.ok) {
         throw new Error("Failed to fetch motorcycles");
       }

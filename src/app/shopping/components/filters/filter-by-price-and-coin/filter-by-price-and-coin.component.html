@@ -23,7 +23,7 @@
                     (click)="filterByPrice()">GO</button>
 
             </div>
-            <p-slider class="hidden md:block" [(ngModel)]="rangeValues" [range]="true" [max]="18000"
+            <p-slider class="hidden md:block" [(ngModel)]="rangeValues" [range]="true" [min]="3990" [max]="18000"
                 styleClass="w-14rem" (onChange)="filterByPrice()" />
 
         </div>
