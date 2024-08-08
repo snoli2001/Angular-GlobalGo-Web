@@ -14,8 +14,14 @@ import { CommonModule } from '@angular/common';
 })
 export class MotorcyclesTabViewComponent {
   @Input() motorcycle: IMotorcycle | undefined;
-
-  probar(){
-    console.log(this.motorcycle);
+  public option:number;
+  
+  constructor(){
+    this.option = 1;
   }
+
+  handleOption(option:number){
+    this.option = option;
+  }
+
 }
