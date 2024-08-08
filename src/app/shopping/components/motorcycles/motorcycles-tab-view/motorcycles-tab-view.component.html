@@ -1,234 +1,241 @@
 <div class="hidden md:block">
     <div class="flex flex-row ">
         <div class="flex flex-col justify-center">
-            <div (click)="handleOption(1)" 
-                 class="flex flex-col justify-center items-center bg-black p-4 border-l-8 border-yellow-300 hover:bg-gray-600 hover:border-yellow-200"
+            <div (click)="handleOption(1)" class="flex flex-col gap-3 justify-center items-center bg-black p-4 border-l-8 border-yellow-300 hover:bg-gray-600 hover:border-yellow-200"
                  [ngClass]="{'bg-blue-500 border-yellow-300': option === 1, 'bg-black border-yellow-300': option !== 1}"
                  >
-                 <span class="proximaNova-Regular text-white text-xl font-semibold">Motor</span>
+                <span class="proximaNova-Regular text-white text-xl font-semibold">Motor</span>
+                <i class="flaticon-motor-del-coche text-2xl text-white"></i>
+
             </div>
 
             <div (click)="handleOption(2)" 
-                class="flex flex-col justify-center items-center bg-black p-4 border-l-8 border-yellow-300 hover:bg-gray-600 hover:border-yellow-200"
+                class="flex flex-col gap-3 justify-center items-center bg-black p-4 border-l-8 border-yellow-300 hover:bg-gray-600 hover:border-yellow-200"
                 [ngClass]="{'bg-blue-500  border-yellow-300': option === 2, 'bg-black  border-yellow-300': option !== 2}"
                 >
                  <span class=" proximaNova-Regular text-white text-xl font-semibold">Combustible</span>
+                 <i class="flaticon-combustible text-2xl text-white"></i>
+
             </div>
 
             <div (click)="handleOption(3)" 
-                  class="flex flex-col justify-center items-center bg-black p-4 border-l-8 border-yellow-300 hover:bg-gray-600 hover:border-yellow-200"
+                  class="flex flex-col gap-3 justify-center items-center bg-black p-4 border-l-8 border-yellow-300 hover:bg-gray-600 hover:border-yellow-200"
                   [ngClass]="{'bg-blue-500  border-yellow-300': option === 3, 'bg-black  border-yellow-300': option !== 3}"  
                 >
                  <span class=" proximaNova-Regular text-white text-xl font-semibold">Suspensión</span>
+                 <i class="flaticon-freno-de-disco text-2xl text-white"></i>
+
             </div>
 
             <div (click)="handleOption(4)" 
-                 class="flex flex-col justify-center items-center bg-black p-4 border-l-8 border-yellow-300 hover:bg-gray-600 hover:border-yellow-200"
+                 class="flex flex-col gap-3 justify-center items-center bg-black p-4 border-l-8 border-yellow-300 hover:bg-gray-600 hover:border-yellow-200"
                  [ngClass]="{'bg-blue-500  border-yellow-300': option === 4, 'bg-black  border-yellow-300': option !== 4}"
                 >
                  <span class=" proximaNova-Regular text-white text-xl font-semibold">Transmisión</span>
+                 <i class="flaticon-caja-de-cambios text-2xl text-white"></i>
+
             </div>
 
             <div (click)="handleOption(5)" 
-                 class="flex flex-col justify-center items-center bg-black p-4 border-l-8 border-yellow-300 hover:bg-gray-600 hover:border-yellow-200"
+                 class="flex flex-col gap-3 justify-center items-center bg-black p-4 border-l-8 border-yellow-300 hover:bg-gray-600 hover:border-yellow-200"
                  [ngClass]="{'bg-blue-500 border-yellow-300': option === 5, 'bg-black border-yellow-300': option !== 5}" 
                  >
                  <span class=" proximaNova-Regular text-white text-xl font-semibold">Dimensiones</span>
+                 <i class="flaticon-expansion text-2xl text-white"></i>
+
             </div>
         </div>
 
-        <div *ngIf="option== 1" class="flex flex-col gap-10 max-w-xl px-10 bg-blue-300" [ngClass]="{'fadeIn': option == 1, 'fadeOut': option != 1}">
+        <div *ngIf="option== 1" class="flex flex-col gap-10 max-w-xl px-10 pt-8 bg-blue-300" [ngClass]="{'fadeIn': option == 1, 'fadeOut': option != 1}">
             <h3 class="proximaNova-Regular text-center text-xl font-semibold uppercase">Motor</h3>
             
             <div class="flex flex-col gap-10">
 
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row items-center gap-4">
-                    <i class="flaticon-pistons text-4xl"></i>
+                    <i class="flaticon-pistons text-8xl"></i>
                     <div class="flex flex-col">
-                        <h4>Cilindrada</h4>
-                        <p>{{motorcycle?.cilindrada}}cc</p>
+                        <h4 class="proximaNova-Regular text-4xl">Cilindrada</h4>
+                        <p class="proximaNova-Light text-4xl">{{motorcycle?.cilindrada}}cc</p>
                     </div>
                     </div>
                 </div>
 
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row items-center gap-4">
-                    <i class="flaticon-motor-del-coche text-4xl"></i>
+                    <i class="flaticon-motor-del-coche text-8xl"></i>
                     <div class="flex flex-col">
-                        <h4>Cilindrada</h4>
-                        <p>{{motorcycle?.cilindrada}}cc</p>
+                        <h4 class="proximaNova-Regular text-4xl">Potencia</h4>
+                        <p class="proximaNova-Light text-4xl">{{motorcycle?.potencia}}-HP</p>
                     </div>
                     </div>
                 </div>
                 
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row items-center gap-4">
-                    <i class="flaticon-velocimetro text-4xl"></i>
+                    <i class="flaticon-velocimetro text-8xl"></i>
                     <div class="flex flex-col">
-                        <h4>Cilindrada</h4>
-                        <p>{{motorcycle?.cilindrada}}cc</p>
+                        <h4 class="proximaNova-Regular text-4xl">Torque</h4>
+                        <p class="proximaNova-Light text-4xl">{{motorcycle?.torque}}NM</p>
                     </div>
                     </div>
                 </div>
-            
             </div>
 
         </div>
 
         
-        <div *ngIf="option== 2" class="flex flex-col gap-10 max-w-xl px-10 bg-blue-300" [ngClass]="{'fadeIn': option == 2, 'fadeOut': option != 2}">
+        <div *ngIf="option== 2" class="flex flex-col gap-10 max-w-xl px-10 pt-8 bg-blue-300" [ngClass]="{'fadeIn': option == 2, 'fadeOut': option != 2}">
             <h3 class="proximaNova-Regular text-center text-xl font-semibold uppercase">Motor</h3>
             
             <div class="flex flex-col gap-10">
 
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row items-center gap-4">
-                    <i class="flaticon-pistons text-4xl"></i>
+                    <i class="flaticon-combustible text-8xl"></i>
                     <div class="flex flex-col">
-                        <h4>Cilindrada</h4>
-                        <p>{{motorcycle?.cilindrada}}cc</p>
+                        <h4 class="proximaNova-Regular text-4xl">Combustible</h4>
+                        <p class="proximaNova-Light text-4xl">{{motorcycle?.combustible}}</p>
                     </div>
                     </div>
                 </div>
 
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row items-center gap-4">
-                    <i class="flaticon-motor-del-coche text-4xl"></i>
+                    <i class="flaticon-gas-tank text-8xl"></i>
                     <div class="flex flex-col">
-                        <h4>Cilindrada</h4>
-                        <p>{{motorcycle?.cilindrada}}cc</p>
+                        <h4 class="proximaNova-Regular text-4xl">Tanque</h4>
+                        <p class="proximaNova-Light text-4xl">{{motorcycle?.tanque}} por galon</p>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-4">
+                    <div class="flex flex-row items-center gap-4">
+                    <i class="flaticon-bajo-rendimiento text-8xl"></i>
+                    <div class="flex flex-col">
+                        <h4 class="proximaNova-Regular text-4xl">Rendimiento</h4>
+                        <p class="proximaNova-Light text-4xl">{{motorcycle?.rendimiento}}KM/GL</p>
                     </div>
                     </div>
                 </div>
                 
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row items-center gap-4">
-                    <i class="flaticon-velocimetro text-4xl"></i>
+                    <i class="flaticon-radar-de-velocidad text-8xl"></i>
                     <div class="flex flex-col">
-                        <h4>Cilindrada</h4>
-                        <p>{{motorcycle?.cilindrada}}cc</p>
+                        <h4 class="proximaNova-Regular text-4xl">Autonomía</h4>
+                        <p class="proximaNova-Light text-4xl">{{motorcycle?.autonomia}} KM</p>
                     </div>
                     </div>
                 </div>
-            
             </div>
+
         </div>
 
         
-        <div *ngIf="option== 3" class="flex flex-col gap-10 max-w-xl px-10 bg-blue-300" [ngClass]="{'fadeIn': option == 3, 'fadeOut': option != 3}">
-            <h3 class="proximaNova-Regular text-center text-xl font-semibold uppercase">Suspensión</h3>
+        <div *ngIf="option== 3" class="flex flex-col gap-10 max-w-xl px-10 pt-8 bg-blue-300" [ngClass]="{'fadeIn': option == 3, 'fadeOut': option != 3}">
+            <h3 class="proximaNova-Regular text-center text-xl font-semibold uppercase">Motor</h3>
             
             <div class="flex flex-col gap-10">
 
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row items-center gap-4">
-                    <i class="flaticon-pistons text-4xl"></i>
+                    <i class="flaticon-freno-de-disco text-8xl"></i>
                     <div class="flex flex-col">
-                        <h4>Cilindrada</h4>
-                        <p>{{motorcycle?.cilindrada}}cc</p>
+                        <h4 class="proximaNova-Regular text-4xl">Freno Delantero</h4>
+                        <p class="proximaNova-Light text-4xl">{{motorcycle?.freno_delantero}}cc</p>
                     </div>
                     </div>
                 </div>
 
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row items-center gap-4">
-                    <i class="flaticon-motor-del-coche text-4xl"></i>
+                    <i class="flaticon-freno-de-disco text-8xl"></i>
                     <div class="flex flex-col">
-                        <h4>Cilindrada</h4>
-                        <p>{{motorcycle?.cilindrada}}cc</p>
+                        <h4 class="proximaNova-Regular text-4xl">Suspensión Delantera</h4>
+                        <p class="proximaNova-Light text-4xl">{{motorcycle?.suspension_delantero}}cc</p>
                     </div>
                     </div>
                 </div>
                 
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row items-center gap-4">
-                    <i class="flaticon-velocimetro text-4xl"></i>
+                    <i class="flaticon-suspension text-8xl"></i>
                     <div class="flex flex-col">
-                        <h4>Cilindrada</h4>
-                        <p>{{motorcycle?.cilindrada}}cc</p>
+                        <h4 class="proximaNova-Regular text-4xl">Freno Posterior</h4>
+                        <p class="proximaNova-Light text-4xl">{{motorcycle?.freno_posterior}}cc</p>
                     </div>
                     </div>
                 </div>
-            
+
+                <div class="flex flex-col gap-4">
+                    <div class="flex flex-row items-center gap-4">
+                    <i class="flaticon-suspension text-8xl"></i>
+                    <div class="flex flex-col">
+                        <h4 class="proximaNova-Regular text-4xl">Suspensión Posterior</h4>
+                        <p class="proximaNova-Light text-4xl">{{motorcycle?.suspension_posterior}}cc</p>
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         
-        <div *ngIf="option== 4" class="flex flex-col gap-10 max-w-xl px-10 bg-blue-300" [ngClass]="{'fadeIn': option == 4, 'fadeOut': option != 4}">
-            <h3 class="proximaNova-Regular text-center text-xl font-semibold uppercase">Transmisión</h3>
+        <div *ngIf="option== 4" class="flex flex-col gap-10 max-w-xl px-10 pt-8 bg-blue-300" [ngClass]="{'fadeIn': option == 4, 'fadeOut': option != 4}">
+            <h3 class="proximaNova-Regular text-center text-xl font-semibold uppercase">Motor</h3>
             
             <div class="flex flex-col gap-10">
 
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row items-center gap-4">
-                    <i class="flaticon-pistons text-4xl"></i>
+                    <i class="flaticon-caja-de-cambios text-8xl"></i>
                     <div class="flex flex-col">
-                        <h4>Cilindrada</h4>
-                        <p>{{motorcycle?.cilindrada}}cc</p>
+                        <h4 class="proximaNova-Regular text-4xl">Transmisión</h4>
+                        <p class="proximaNova-Light text-4xl">{{motorcycle?.transmision}}cc</p>
                     </div>
                     </div>
                 </div>
 
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row items-center gap-4">
-                    <i class="flaticon-motor-del-coche text-4xl"></i>
+                    <i class="flaticon-radar-de-velocidad text-8xl"></i>
                     <div class="flex flex-col">
-                        <h4>Cilindrada</h4>
-                        <p>{{motorcycle?.cilindrada}}cc</p>
+                        <h4 class="proximaNova-Regular text-4xl">Velocidad Máxima</h4>
+                        <p class="proximaNova-Light text-4xl">{{motorcycle?.velocidad}}cc</p>
                     </div>
                     </div>
                 </div>
                 
-                <div class="flex flex-col gap-4">
-                    <div class="flex flex-row items-center gap-4">
-                    <i class="flaticon-velocimetro text-4xl"></i>
-                    <div class="flex flex-col">
-                        <h4>Cilindrada</h4>
-                        <p>{{motorcycle?.cilindrada}}cc</p>
-                    </div>
-                    </div>
-                </div>
-            
+             
             </div>
         </div>
 
         
-        <div *ngIf="option== 5" class="flex flex-col gap-10 max-w-xl px-10 bg-blue-300" [ngClass]="{'fadeIn': option == 5, 'fadeOut': option != 5}">
+        <div *ngIf="option== 5" class="flex flex-col gap-10 max-w-xl px-10 pt-8 bg-blue-300" [ngClass]="{'fadeIn': option == 5, 'fadeOut': option != 5}">
             <h3 class="proximaNova-Regular text-center text-xl font-semibold uppercase">Dimensiones</h3>
             
             <div class="flex flex-col gap-10">
-
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row items-center gap-4">
-                    <i class="flaticon-pistons text-4xl"></i>
+                    <i class="flaticon-peso text-8xl"></i>
                     <div class="flex flex-col">
-                        <h4>Cilindrada</h4>
-                        <p>{{motorcycle?.cilindrada}}cc</p>
+                        <h4 class="proximaNova-Regular text-4xl">Peso</h4>
+                        <p class="proximaNova-Light text-4xl">{{motorcycle?.peso}}kg</p>
                     </div>
                     </div>
                 </div>
 
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row items-center gap-4">
-                    <i class="flaticon-motor-del-coche text-4xl"></i>
+                    <i class="flaticon-expansion text-8xl"></i>
                     <div class="flex flex-col">
-                        <h4>Cilindrada</h4>
-                        <p>{{motorcycle?.cilindrada}}cc</p>
+                        <h4 class="proximaNova-Regular text-4xl">Dimensiones (CM)</h4>
+                        <p class="proximaNova-Light text-4xl">{{motorcycle?.largo}}x{{motorcycle?.ancho}}(LXA)</p>
                     </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col gap-4">
-                    <div class="flex flex-row items-center gap-4">
-                    <i class="flaticon-velocimetro text-4xl"></i>
-                    <div class="flex flex-col">
-                        <h4>Cilindrada</h4>
-                        <p>{{motorcycle?.cilindrada}}cc</p>
-                    </div>
-                    </div>
-                </div>
-            
+         
             </div>
         </div>
 
