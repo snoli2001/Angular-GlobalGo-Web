@@ -6,14 +6,14 @@
                 
                 <ng-container *ngIf="data?.imagen && data?.imagen != ' '; else noImageTemplate">
                     <a class="md:hidden" [href]="financingUrl">
-                        <p-image [src]="getImagePath(data?.imagen)" class="w-full"></p-image>
+                        <p-image [src]="getImagePath(data?.imagen)" class="w-full" [alt]="data?.imagen"></p-image>
                     </a>
                     <p-image [src]="getImagePath(data?.imagen)" class="w-full sm:hidden md:block"></p-image>
 
                     </ng-container>
                     
                     <ng-template #noImageTemplate>
-                    <p-image [src]="getImagePath('generica.jpg')" class="w-full " [preview]="true"></p-image>
+                    <p-image [src]="getImagePath('generica.jpg')" class="w-full " [preview]="true" ></p-image>
                 </ng-template>
 
                 <div class=" absolute flex flex-row items-center gap-4 top-0 right-0">
@@ -36,20 +36,20 @@
             <div>
                 <div class="flex gap-4 justify-between items-center">
                     <section class="flex flex-col gap-2">
-                        <h4 class="proximaNova-Regular">{{ data?.modelo }}</h4>
-                        <span class="text-slate-600">{{ data?.categoria }}</span>
+                        <h1 class="proximaNova-Regular">{{ data?.modelo }}</h1>
+                        <h2 class="text-slate-600">{{ data?.categoria }}</h2>
                     </section>
-                    <img [src]="getbrandPath(data?.logo)" class="max-w-20" alt="">
+                    <img [src]="getbrandPath(data?.logo)" class="max-w-20" [alt]="data?.logo">
                 </div>
                 <div
                     class="flex justify-between items-center mt-1 border-t-2 border-gray-300 pt-3">
                     <div class="flex flex-col gap-1">
-                        <span>Cilindrada (CS)</span>
+                        <h3>Cilindrada (CS)</h3>
                         {{ data?.cilindrada }}
                     </div>
                     <div class="flex flex-col">
-                        <span>Rendimiento</span>
-                        <p>{{ data?.rendimiento }}-HP</p>
+                        <h3>Rendimiento</h3>
+                        <h4>{{ data?.rendimiento }}-HP</h4>
                     </div>
                 </div>
             </div>
@@ -64,15 +64,15 @@
 <ng-template #showAlternative>
     <div class="flex sm:flex-col md:flex-row gap-4 ml-5 shadow-xl rounded-sm max-w-5xl overflow-hidden lg:max-h-[440px] xl:max-h-[400px]">
         <header class="p-2 rounded-t-sm flex justify-center items-center">
-                <p-image [src]="getImagePath(data?.imagen)" class=" max-w-6xl " [preview]="true"></p-image>
+                <p-image [src]="getImagePath(data?.imagen)" class=" max-w-6xl " [preview]="true" [alt]="data?.imagen"></p-image>
         </header>
         <main class="p-4 bg-white flex flex-col gap-7">
             <header class="flex gap-4 justify-between items-center">
                 <section class="flex flex-col gap-0">
-                    <h4 class="proximaNova-Regular text-2xl">{{ data?.modelo }}</h4>
-                    <span class="text-slate-600">{{ data?.rendimiento }} KM/H</span>
+                    <h1 class="proximaNova-Regular text-2xl">{{ data?.modelo }}</h1>
+                    <h3 class="text-slate-600">{{ data?.rendimiento }} KM/H</h3>
                 </section>
-                <img [src]="getbrandPath(data?.logo)" class="max-w-20" alt="">
+                <img [src]="getbrandPath(data?.logo)" class="max-w-20" [alt]="data?.logo">
             </header>
             <main class="flex justify-between items-center mt-1 border-t-2 proximaNova-Light border-gray-300 pt-3">
                 <p>¡Hola riders! Soy Chispa, y quiero presentarles a la estrella del asfalto: la nueva Pulsar NS200 FI UG ABS. Esta máquina deportiva combina agilidad y seguridad gracias a su sistema ABS, que evita que las ruedas se bloqueen en frenadas bruscas. Con su motor monocilíndrico de 200cc, te espera una experiencia llena de potencia y control en cada aceleración. ¡Siente la emoción de cada revolución y conquista la carretera con la Pulsar NS200!</p>

@@ -4,13 +4,13 @@
         <p-galleria [value]="images" [showItemNavigators]="true" [showThumbnails]="false"
             [circular]="true" [numVisible]="5" [containerStyle]="{ 'max-width': '640px' }">
             <ng-template pTemplate="item" let-item>
-                <img [src]="item.itemImageSrc" style="width: 100%; display: block" class="pointer-events-none" />
+                <img [src]="item.itemImageSrc" style="width: 100%; display: block" class="pointer-events-none" [alt]="item.itemImageSrc" />
             </ng-template>
         </p-galleria>
 
         <div class="flex flex-col justify-center  gap-5 p-3">
             <header class="flex flex-col gap-10">
-                <h4 class="proximaNova-Bold font-semibold text-7xl text-slate-700">{{motorcycle?.modelo}}</h4>
+                <h1 class="proximaNova-Bold font-semibold text-7xl text-slate-700">{{motorcycle?.modelo}}</h1>
                 <p class="proximaNova-Regular font-semibold text-3xl text-slate-700">
                     Especificaciones Técnicas
                 </p>
