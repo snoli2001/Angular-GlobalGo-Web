@@ -4,7 +4,9 @@
         <p-galleria [value]="images" [showItemNavigators]="true" [showThumbnails]="false"
             [circular]="true" [numVisible]="5" [containerStyle]="{ 'max-width': '640px' }">
             <ng-template pTemplate="item" let-item>
-                <img [src]="item.itemImageSrc" style="width: 100%; display: block" class="pointer-events-none" [alt]="item.itemImageSrc" />
+                <img [src]="item.itemImageSrc" style="width: 100%; display: block" class="pointer-events-none" 
+                [alt]="'Financiación de motos ' + item?.marca + ' en Lima, Perú: ' + item?.modelo">
+                />
             </ng-template>
         </p-galleria>
 
