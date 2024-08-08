@@ -1,5 +1,6 @@
 <ng-container *ngIf="option === 1; else showAlternative">
-    <div class="shadow-xl rounded-sm max-w-xs overflow-hidden sm:max-h-[410px] lg:max-h-[390px] xl:max-h-[380px] 2xl:max-h-[430px]">
+    <!-- <div class="shadow-xl rounded-sm max-w-xs overflow-hidden sm:max-h-[410px] lg:max-h-[390px] xl:max-h-[380px] 2xl:max-h-[430px]"> -->
+    <div class="shadow-xl rounded-sm max-w-xs overflow-hidden sm:max-h-[410px] lg:max-h-[415px] ">
         <header class="relative p-2 rounded-t-sm flex justify-center">
             <div class="relative">
                 
@@ -15,16 +16,10 @@
                     <p-image [src]="getImagePath('generica.jpg')" class="w-full " [preview]="true"></p-image>
                 </ng-template>
 
-                <!-- <div class=" absolute flex flex-row items-center gap-4 top-0 right-0">
-                    <p-tag severity="info" value="{{data?.categoria}}" />
-                </div> -->
-
                 <div class=" absolute flex flex-row items-center gap-4 top-0 right-0">
                     <p-tag severity="info" value="{{data?.categoria}}" 
                     [style]="{ background: getBrandColor(data?.categoria) }"></p-tag>
                 </div>
-
-
 
                 <div class="absolute flex flex-row gap-4 top-0 left-0">
                     <a [href]="'/moto-detail/'+ (data?.idModelo)">
@@ -34,9 +29,10 @@
                     </a>
                 </div>
             </div>
+            
         </header>
         <main
-            class="sm:px-4 sm:pt-2 md:p-4 bg-white flex flex-col gap-7 transition-transform transform translate-y-0 sm:hover:translate-y-[-85px] hover:translate-y-[-60px]">
+            class="sm:px-4 sm:pt-2 md:p-4 2xl:mb-2 bg-white flex flex-col gap-7 transition-transform transform translate-y-0 sm:hover:translate-y-[-85px] hover:translate-y-[-60px]">
             <div>
                 <div class="flex gap-4 justify-between items-center">
                     <section class="flex flex-col gap-2">
@@ -57,7 +53,7 @@
                     </div>
                 </div>
             </div>
-            <a [href]="'/moto-detail/'+ (data?.idModelo)">
+            <a [href]="'/moto-detail/'+ (data?.idModelo)" class="lg:mt-5">
                 <button class="w-full uppercase bg-blue-600 text-center text-white py-2 rounded-lg hover:bg-black">La Quiero</button>
             </a>
         </main>
