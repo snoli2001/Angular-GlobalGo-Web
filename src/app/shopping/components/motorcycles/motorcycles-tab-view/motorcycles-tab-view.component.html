@@ -37,7 +37,7 @@
             </div>
         </div>
 
-        <div *ngIf="option == 1" class="flex flex-col gap-16 max-w-xl px-10 pt-8 bg-slate-100"
+        <div *ngIf="option == 1" class="flex flex-col sm:gap-10 xl:gap-16 max-w-xl px-10 pt-8 bg-slate-100"
             [ngClass]="{ fadeIn: option == 1, fadeOut: option != 1 }">
             <div class="flex flex-col gap-3">
                 <h3 class="proximaNova-Regular text-center text-xl font-semibold uppercase">
@@ -50,13 +50,13 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-2 gap-4">
+            <div class="sm:flex sm:flex-col sm:gap-7 xl:grid xl:grid-cols-2 xl:gap-4">
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row items-center gap-4">
-                        <i class="flaticon-pistons text-6xl"></i>
+                        <i class="flaticon-pistons sm:text-5xl xl:text-4xl"></i>
                         <div class="flex flex-col">
-                            <h4 class="proximaNova-Regular text-2xl">Cilindrada</h4>
-                            <p class="proximaNova-Light text-xl">
+                            <h4 class="proximaNova-Regular text-xl">Cilindrada</h4>
+                            <p class="proximaNova-Light sm:text-base xl:text-base">
                                 {{ motorcycle?.cilindrada }}cc
                             </p>
                         </div>
@@ -65,10 +65,10 @@
 
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row items-center gap-4">
-                        <i class="flaticon-motor-del-coche text-6xl"></i>
+                        <i class="flaticon-motor-del-coche sm:text-5xl xl:text-4xl"></i>
                         <div class="flex flex-col">
-                            <h4 class="proximaNova-Regular text-2xl">Potencia</h4>
-                            <p class="proximaNova-Light text-xl">
+                            <h4 class="proximaNova-Regular text-xl">Potencia</h4>
+                            <p class="proximaNova-Light sm:text-base xl:text-base">
                                 {{ motorcycle?.potencia }}-HP
                             </p>
                         </div>
@@ -77,10 +77,10 @@
 
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row items-center gap-4">
-                        <i class="flaticon-velocimetro text-6xl"></i>
+                        <i class="flaticon-velocimetro sm:text-5xl xl:text-4xl"></i>
                         <div class="flex flex-col">
-                            <h4 class="proximaNova-Regular text-2xl">Torque</h4>
-                            <p class="proximaNova-Light text-xl">
+                            <h4 class="proximaNova-Regular text-xl">Torque</h4>
+                            <p class="proximaNova-Light sm:text-base xl:text-xl">
                                 {{ motorcycle?.torque }}NM
                             </p>
                         </div>
@@ -89,28 +89,28 @@
             </div>
         </div>
 
-        <div *ngIf="option == 2" class="flex flex-col gap-10 max-w-xl px-10 pt-8 bg-slate-100"
+        <div *ngIf="option == 2" class="flex flex-col sm:gap-10 xl:gap-16 max-w-xl px-10 pt-8 bg-slate-100"
             [ngClass]="{ fadeIn: option == 2, fadeOut: option != 2 }">
             <div class="flex flex-col gap-3">
                 <h3 class="proximaNova-Regular text-center text-xl font-semibold uppercase">
                     Motor
                 </h3>
-                <p class="proximaNova-Light">
+                <p class="hidden xl:block proximaNova-Light">
                     Eficiente motor de 4 tiempos, monocilíndrico de construcción OHC. La
                     RC110V tiene una cilindrada de 110 cc y una potencia de 7.37 caballos
                     de fuerza, refrigeración por aire y un arranque eléctrico y a patada.
                 </p>
             </div>
 
-            <div class="grid grid-cols-2 gap-4">
+            <div class="sm:flex sm:flex-col sm:gap-7 xl:grid xl:grid-cols-2 xl:gap-4">
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row items-center gap-4">
-                        <i class="flaticon-combustible text-6xl"></i>
+                        <i class="flaticon-combustible text-4xl"></i>
                         <div class="flex flex-col">
-                            <h4 class="proximaNova-Regular text-2xl">
+                            <h4 class="proximaNova-Regular sm:text-sm xl:text-xl">
                                 Combustible y Rendimiento
                             </h4>
-                            <p class="proximaNova-Light text-xl">
+                            <p class="proximaNova-Light text-base">
                                 {{ motorcycle?.combustible }}
                             </p>
                         </div>
@@ -119,10 +119,10 @@
 
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row items-center gap-4">
-                        <i class="flaticon-gas-tank text-6xl"></i>
+                        <i class="flaticon-gas-tank text-4xl"></i>
                         <div class="flex flex-col">
-                            <h4 class="proximaNova-Regular text-2xl">Tanque</h4>
-                            <p class="proximaNova-Light text-xl">
+                            <h4 class="proximaNova-Regular sm:text-sm xl:text-xl">Tanque</h4>
+                            <p class="proximaNova-Light text-base">
                                 {{ motorcycle?.tanque }} por galon
                             </p>
                         </div>
@@ -131,10 +131,10 @@
 
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row items-center gap-4">
-                        <i class="flaticon-bajo-rendimiento text-6xl"></i>
+                        <i class="flaticon-bajo-rendimiento text-4xl"></i>
                         <div class="flex flex-col">
-                            <h4 class="proximaNova-Regular text-2xl">Rendimiento</h4>
-                            <p class="proximaNova-Light text-xl">
+                            <h4 class="proximaNova-Regular sm:text-sm xl:text-xl">Rendimiento</h4>
+                            <p class="proximaNova-Light text-base">
                                 {{ motorcycle?.rendimiento }}KM/GL
                             </p>
                         </div>
@@ -143,10 +143,10 @@
 
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row items-center gap-4">
-                        <i class="flaticon-radar-de-velocidad text-6xl"></i>
+                        <i class="flaticon-radar-de-velocidad text-4xl"></i>
                         <div class="flex flex-col">
-                            <h4 class="proximaNova-Regular text-2xl">Autonomía</h4>
-                            <p class="proximaNova-Light text-xl">
+                            <h4 class="proximaNova-Regular sm:text-sm xl:text-xl">Autonomía</h4>
+                            <p class="proximaNova-Light text-base">
                                 {{ motorcycle?.autonomia }} KM
                             </p>
                         </div>
@@ -155,26 +155,26 @@
             </div>
         </div>
 
-        <div *ngIf="option == 3" class="flex flex-col gap-10 max-w-xl px-10 pt-8 bg-slate-100"
+        <div *ngIf="option == 3" class="flex flex-col sm:gap-10 xl:gap-16 max-w-xl px-10 pt-8 bg-slate-100"
             [ngClass]="{ fadeIn: option == 3, fadeOut: option != 3 }">
             <div class="flex flex-col gap-3">
                 <h3 class="proximaNova-Regular text-center text-xl font-semibold uppercase">
-                    Suspension y Sistema de Frenado
+                    Suspension
                 </h3>
-                <p class="proximaNova-Light">
+                <p class="hidden xl:block proximaNova-Light">
                     La 70 PROX cuenta con frenos de tambor en ambas ruedas, ideales para
                     este tipo de cilindra y que en combinación con el bajo peso otorga una
                     frenada muy eficiente
                 </p>
             </div>
 
-            <div class="grid grid-cols-2 gap-4">
+            <div class="sm:flex sm:flex-col sm:gap-7 xl:grid xl:grid-cols-2 xl:gap-4">
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row gap-4">
                         <i class="flaticon-freno-de-disco text-4xl"></i>
                         <div class="flex flex-col">
-                            <h4 class="proximaNova-Regular text-xl">Freno Delantero</h4>
-                            <p class="proximaNova-Light text-base">
+                            <h4 class="proximaNova-Regular sm:text-sm xl:text-xl">Freno Delantero</h4>
+                            <p class="hidden xl:block proximaNova-Light text-base">
                                 {{ motorcycle?.freno_delantero }}cc
                             </p>
                         </div>
@@ -185,8 +185,8 @@
                     <div class="flex flex-row gap-4">
                         <i class="flaticon-freno-de-disco text-4xl"></i>
                         <div class="flex flex-col">
-                            <h4 class="proximaNova-Regular text-xl">Suspensión Delantera</h4>
-                            <p class="proximaNova-Light text-base">
+                            <h4 class="proximaNova-Regular sm:text-sm xl:text-xl">Suspensión Delantera</h4>
+                            <p class="hidden xl:block proximaNova-Light text-base">
                                 {{ motorcycle?.suspension_delantero }}cc
                             </p>
                         </div>
@@ -197,8 +197,8 @@
                     <div class="flex flex-row gap-4">
                         <i class="flaticon-suspension text-4xl"></i>
                         <div class="flex flex-col">
-                            <h4 class="proximaNova-Regular text-xl">Freno Posterior</h4>
-                            <p class="proximaNova-Light text-base">
+                            <h4 class="proximaNova-Regular sm:text-sm xl:text-xl">Freno Posterior</h4>
+                            <p class="hidden xl:block proximaNova-Light text-base">
                                 {{ motorcycle?.freno_posterior }}cc
                             </p>
                         </div>
@@ -209,8 +209,8 @@
                     <div class="flex flex-row gap-4">
                         <i class="flaticon-suspension text-4xl"></i>
                         <div class="flex flex-col">
-                            <h4 class="proximaNova-Regular text-xl">Suspensión Posterior</h4>
-                            <p class="proximaNova-Light text-base">
+                            <h4 class="proximaNova-Regular sm:text-sm xl:text-xl">Suspensión Posterior</h4>
+                            <p class="hidden xl:block proximaNova-Light text-base">
                                 {{ motorcycle?.suspension_posterior }}cc
                             </p>
                         </div>
@@ -219,7 +219,7 @@
             </div>
         </div>
 
-        <div *ngIf="option == 4" class="flex flex-col gap-10 max-w-xl px-10 pt-8 bg-slate-100"
+        <div *ngIf="option == 4" class="flex flex-col sm:gap-10 xl:gap-16 max-w-xl px-10 pt-8 bg-slate-100"
             [ngClass]="{ fadeIn: option == 4, fadeOut: option != 4 }">
             <div class="flex flex-col gap-3">
                 <h3 class="proximaNova-Regular text-center text-xl font-semibold uppercase">
@@ -231,13 +231,13 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-2 gap-4 mt-10">
+            <div class="sm:flex sm:flex-col sm:gap-7 xl:grid xl:grid-cols-2 xl:gap-4">
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row items-center gap-4">
-                        <i class="flaticon-caja-de-cambios text-6xl"></i>
+                        <i class="flaticon-caja-de-cambios text-4xl"></i>
                         <div class="flex flex-col">
                             <h4 class="proximaNova-Regular text-xl">Transmisión</h4>
-                            <p class="proximaNova-Light text-lg">
+                            <p class="proximaNova-Light text-base">
                                 {{ motorcycle?.transmision }}cc
                             </p>
                         </div>
@@ -246,10 +246,10 @@
 
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row items-center gap-4">
-                        <i class="flaticon-radar-de-velocidad text-6xl"></i>
+                        <i class="flaticon-radar-de-velocidad text-4xl"></i>
                         <div class="flex flex-col">
                             <h4 class="proximaNova-Regular text-xl">Velocidad Máxima</h4>
-                            <p class="proximaNova-Light text-lg">
+                            <p class="proximaNova-Light text-base">
                                 {{ motorcycle?.velocidad }}cc
                             </p>
                         </div>
@@ -258,7 +258,7 @@
             </div>
         </div>
 
-        <div *ngIf="option == 5" class="flex flex-col gap-10 max-w-xl px-10 pt-8 bg-slate-100"
+        <div *ngIf="option == 5" class="flex flex-col sm:gap-10 xl:gap-16 max-w-xl px-10 pt-8 bg-slate-100"
             [ngClass]="{ fadeIn: option == 5, fadeOut: option != 5 }">
             <div class="flex flex-col gap-3">
                 <h3 class="proximaNova-Regular text-center text-xl font-semibold uppercase">
@@ -271,23 +271,23 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-2 gap-4">
+            <div class="sm:flex sm:flex-col sm:gap-7 xl:grid xl:grid-cols-2 xl:gap-4">
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row items-center gap-4">
-                        <i class="flaticon-peso text-5xl"></i>
+                        <i class="flaticon-peso text-4xl"></i>
                         <div class="flex flex-col">
                             <h4 class="proximaNova-Regular text-xl">Peso</h4>
-                            <p class="proximaNova-Light text-lg">{{ motorcycle?.peso }}kg</p>
+                            <p class="proximaNova-Light text-base">{{ motorcycle?.peso }}kg</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row items-center gap-4">
-                        <i class="flaticon-expansion text-5xl"></i>
+                        <i class="flaticon-expansion text-4xl"></i>
                         <div class="flex flex-col">
                             <h4 class="proximaNova-Regular text-xl">Dimensiones (CM)</h4>
-                            <p class="proximaNova-Light text-lg">
+                            <p class="proximaNova-Light text-base">
                                 {{ motorcycle?.largo }}x{{ motorcycle?.ancho }}(LXA)
                             </p>
                         </div>
