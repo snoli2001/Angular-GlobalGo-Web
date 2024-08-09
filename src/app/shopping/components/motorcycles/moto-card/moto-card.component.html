@@ -64,8 +64,11 @@
 <ng-template #showAlternative>
     <div class="flex sm:flex-col md:flex-row gap-4 ml-5 shadow-xl rounded-sm max-w-5xl overflow-hidden lg:max-h-[440px] xl:max-h-[400px]">
         <header class="p-2 rounded-t-sm flex justify-center items-center">
-                <p-image [src]="getImagePath(data?.imagen)" class=" max-w-6xl " [preview]="true" [alt]="'Financiación de motos ' + data?.marca + ' en Lima, Perú: ' + data?.modelo"></p-image>
+                <a class="md:hidden" [href]="financingUrl">
+                    <p-image [src]="getImagePath(data?.imagen)" class=" max-w-6xl " [alt]="'Financiación de motos ' + data?.marca + ' en Lima, Perú: ' + data?.modelo"></p-image>
+                </a>
         </header>
+        
         <main class="p-4 bg-white flex flex-col gap-7">
             <header class="flex gap-4 justify-between items-center">
                 <section class="flex flex-col gap-0">
