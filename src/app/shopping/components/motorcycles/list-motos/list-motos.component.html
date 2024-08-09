@@ -4,7 +4,7 @@
         <p-dataView #dv 
                     [value]="listMotorcycles" [rows]="25" [paginator]="true" 
                     [rowsPerPageOptions]="[25, 50, 75]" 
-                    currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+                    currentPageReportTemplate="{totalRecords} resultados"
                     [showCurrentPageReport]="true">
             <ng-template pTemplate="header">
                 <div class="flex justify-content-end">
@@ -26,7 +26,7 @@
                 </div>
             </ng-template>
         </p-dataView>
-        
+        <br> <br> <br> <br><br>  <!-- SOLUCION MOMENtANEA-->
     </p-scrollPanel>
 
 

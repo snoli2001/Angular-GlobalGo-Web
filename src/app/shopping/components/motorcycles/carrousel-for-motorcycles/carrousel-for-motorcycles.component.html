@@ -1,5 +1,5 @@
 <section class="sm:px-8 py-10 w-full grid grid-flow-row items-center justify-center bg-white mb-24 relative">
-    <div class="flex sm:flex-col md:flex-row items-center justify-center gap-4">
+    <div class="flex sm:flex-col md:flex-row items-center justify-center gap-2">
         
         <p-galleria [value]="images" [showItemNavigators]="true" [showThumbnails]="false"
             [circular]="true" [numVisible]="5" [containerStyle]="{ 'max-width': '840px' }">
@@ -9,15 +9,15 @@
             </ng-template>
         </p-galleria>
 
-        <div class="flex flex-col justify-center  gap-5 p-3">
-            <header class="flex flex-col gap-10">
+        <div class="flex flex-col justify-center gap-4 p-3">
+            <header class="flex flex-col gap-2">
                 <h1 class="proximaNova-Bold font-semibold text-7xl text-slate-700">{{motorcycle?.modelo}}</h1>
                 <p class="proximaNova-Regular font-semibold text-3xl text-slate-700">
                     Especificaciones Técnicas
                 </p>
             </header>
 
-            <footer class="md:p-3 sm:max-w-xs md:max-w-sm lg:max-w-5xl xl:max-w-6xl">
+            <footer class="sm:max-w-xs md:max-w-sm lg:max-w-5xl xl:max-w-6xl">
                     <app-motorcycles-tab-view [motorcycle]="motorcycle"></app-motorcycles-tab-view>
             </footer>
         </div>        
