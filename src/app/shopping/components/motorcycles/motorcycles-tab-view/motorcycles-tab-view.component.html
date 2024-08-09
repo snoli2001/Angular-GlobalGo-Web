@@ -3,56 +3,41 @@
         <div class="flex flex-col justify-center">
             <div (click)="handleOption(1)"
                 class="flex flex-col gap-3 justify-center items-center bg-black p-4 border-l-8 border-yellow-300 hover:bg-gray-600 hover:border-yellow-200"
-                [ngClass]="{
-          'bg-blue-500 border-yellow-300': option === 1,
-          'bg-black border-yellow-300': option !== 1
-        }">
+                [ngClass]="{'bg-gray-600 border-yellow-300': option === 1,'bg-black border-yellow-300': option !== 1}">
                 <span class="proximaNova-Regular text-white text-xl font-semibold">Motor</span>
                 <i class="flaticon-motor-del-coche text-3xl text-white"></i>
             </div>
 
             <div (click)="handleOption(2)"
                 class="flex flex-col gap-3 justify-center items-center bg-black p-4 border-l-8 border-yellow-300 hover:bg-gray-600 hover:border-yellow-200"
-                [ngClass]="{
-          'bg-blue-500  border-yellow-300': option === 2,
-          'bg-black  border-yellow-300': option !== 2
-        }">
+                [ngClass]="{'bg-gray-600  border-yellow-300': option === 2, 'bg-black  border-yellow-300': option !== 2 }">
                 <span class="proximaNova-Regular text-white text-xl font-semibold">Combustible</span>
                 <i class="flaticon-combustible text-3xl text-white"></i>
             </div>
 
             <div (click)="handleOption(3)"
                 class="flex flex-col gap-3 justify-center items-center bg-black p-4 border-l-8 border-yellow-300 hover:bg-gray-600 hover:border-yellow-200"
-                [ngClass]="{
-          'bg-blue-500  border-yellow-300': option === 3,
-          'bg-black  border-yellow-300': option !== 3
-        }">
+                [ngClass]="{'bg-gray-600  border-yellow-300': option === 3, 'bg-black  border-yellow-300': option !== 3 }">
                 <span class="proximaNova-Regular text-white text-xl font-semibold">Suspensión</span>
                 <i class="flaticon-freno-de-disco text-3xl text-white"></i>
             </div>
 
             <div (click)="handleOption(4)"
                 class="flex flex-col gap-3 justify-center items-center bg-black p-4 border-l-8 border-yellow-300 hover:bg-gray-600 hover:border-yellow-200"
-                [ngClass]="{
-          'bg-blue-500  border-yellow-300': option === 4,
-          'bg-black  border-yellow-300': option !== 4
-        }">
+                [ngClass]="{'bg-gray-600  border-yellow-300': option === 4,'bg-black  border-yellow-300': option !== 4}">
                 <span class="proximaNova-Regular text-white text-xl font-semibold">Transmisión</span>
                 <i class="flaticon-caja-de-cambios text-3xl text-white"></i>
             </div>
 
             <div (click)="handleOption(5)"
                 class="flex flex-col gap-3 justify-center items-center bg-black p-4 border-l-8 border-yellow-300 hover:bg-gray-600 hover:border-yellow-200"
-                [ngClass]="{
-          'bg-blue-500 border-yellow-300': option === 5,
-          'bg-black border-yellow-300': option !== 5
-        }">
+                [ngClass]="{'bg-gray-600 border-yellow-300': option === 5,'bg-black border-yellow-300': option !== 5}">
                 <span class="proximaNova-Regular text-white text-xl font-semibold">Dimensiones</span>
                 <i class="flaticon-expansion text-3xl text-white"></i>
             </div>
         </div>
 
-        <div *ngIf="option == 1" class="flex flex-col gap-16 max-w-xl px-10 pt-8 bg-blue-300"
+        <div *ngIf="option == 1" class="flex flex-col gap-16 max-w-xl px-10 pt-8 bg-slate-100"
             [ngClass]="{ fadeIn: option == 1, fadeOut: option != 1 }">
             <div class="flex flex-col gap-3">
                 <h3 class="proximaNova-Regular text-center text-xl font-semibold uppercase">
