@@ -1,37 +1,37 @@
 <div class="flex items-center justify-between w-full shadow-xl sm:py-4 sm:px-3 xl:p-0">
-    
-    <h1 class="ml-3 font-semibold proximaNova-Regular"> {{motorcycles.length}} motos encontradas </h1>
+
+    <h1 class="ml-3 font-semibold proximaNova-Regular"> {{motorcycles.length}} Motos Encontradas </h1>
 
     <div class="hidden sm:flex justify-center card">
-        <p-sidebar [(visible)]="visible" >
-            <app-filter-collection/>
-           
+        <p-sidebar [(visible)]="visible">
+            <app-filter-collection />
+
         </p-sidebar>
         <button (click)="toggleSideBard()">
-            <div
-                class="sm:flex gap-4 md:hidden border-2 border-black p-1 hover:text-slate-400 hover:border-slate-400">
+            <div class="sm:flex gap-4 md:hidden hover:text-slate-400 hover:border-slate-400">
                 <i class="pi pi-sliders-h "></i>
-                <span class="Primary-font text-sm font-bold">Filters</span>
-            </div> 
+                <span class="Primary-font text-sm font-bold">Filtros</span>
+            </div>
         </button>
     </div>
 
     <button class="sm:hidden xl:hidden md:flex gap-4 items-center" (click)="toggleSideBard()">
         <div class="sm:hidden gap-4 md:flex border-2 border-black p-1 hover:text-slate-400 hover:border-slate-400">
             <i class="pi pi-sliders-h"></i>
-            <span class="Primary-font text-sm font-bold">Filters</span>
+            <span class="Primary-font text-sm font-bold">Filtros</span>
         </div>
     </button>
 
 
     <div class="sm:hidden xl:flex flex-row items-center gap-4 p-3">
-    
+
         <div class="flex flex-row gap-3 items-center">
             <span class="proximaNova-Regular">Ordenar por: </span>
-            <p-dropdown [(ngModel)]="optionsSelected" [options]="orderBy" optionLabel="name" placeholder="Precios" (onChange)="onDropdownChange($event)" />
+            <p-dropdown [(ngModel)]="optionsSelected" [options]="orderBy" optionLabel="name" placeholder="Precios"
+                (onChange)="onDropdownChange($event)" />
         </div>
     </div>
-   
+
 
 
 </div>
