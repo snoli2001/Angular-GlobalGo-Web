@@ -2,7 +2,7 @@
     <div class="flex sm:flex-col md:flex-row items-center justify-center gap-4">
         
         <p-galleria [value]="images" [showItemNavigators]="true" [showThumbnails]="false"
-            [circular]="true" [numVisible]="5" [containerStyle]="{ 'max-width': '640px' }">
+            [circular]="true" [numVisible]="5" [containerStyle]="{ 'max-width': '840px' }">
             <ng-template pTemplate="item" let-item>
                 <img [src]="item.itemImageSrc" style="width: 100%; display: block" class="pointer-events-none" 
                 [alt]="'Financiación de motos ' + item?.marca + ' en Lima, Perú: ' + item?.modelo">
