@@ -67,6 +67,8 @@
                 <a class="md:hidden" [href]="financingUrl">
                     <p-image [src]="getImagePath(data?.imagen)" class=" max-w-6xl " [alt]="'Financiación de motos ' + data?.marca + ' en Lima, Perú: ' + data?.modelo"></p-image>
                 </a>
+                <p-image [src]="getImagePath(data?.imagen)" class="w-full sm:hidden md:block" [alt]="'Financiación de motos ' + data?.marca + ' en Lima, Perú: ' + data?.modelo"></p-image>
+
         </header>
         
         <main class="p-4 bg-white flex flex-col gap-7">
