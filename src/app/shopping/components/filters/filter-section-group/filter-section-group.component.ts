@@ -22,7 +22,4 @@ import { FilterByPowerComponent } from '../filter-by-power/filter-by-power.compo
   styleUrl: './filter-section-group.component.css',
 })
 export class FilterSectionGroupComponent {
-  quiqui(type: String) {
-    console.log(type);
-  }
 }

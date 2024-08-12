@@ -17,6 +17,9 @@ export class ChispaInformationComponent {
   public financingUrl: string;
 
   constructor(private route: ActivatedRoute){
+    
+    this.motorcycle = {} as IMotorcycle;
+
     const id = this.route.snapshot.paramMap.get('id');
     this.motoId = id ? parseInt(id, 10) : 0;
     this.financingUrl = `https://globalgo-login.sis360.com.pe/solicitar-financiamiento?Id=${this.motoId}`;
