@@ -1,13 +1,11 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { AccordionModule } from 'primeng/accordion';
 import { ClearFilterComponent } from '../clear-filter/clear-filter.component';
-import { IMotorcycle } from '../../../models/Motorcycle';
 import { DropdownModule } from 'primeng/dropdown';
 import { FormsModule } from '@angular/forms';
 import { MotoStateService } from '../../../states/moto.state.service';
 import { CategoryService } from '../../../services/categories.service';
 import { ICategory } from '../../../models/Categories';
-import { environment } from '../../../../../../enviroment';
 @Component({
   selector: 'app-filter-by-categories',
   standalone: true,
@@ -16,11 +14,10 @@ import { environment } from '../../../../../../enviroment';
   styleUrl: './filter-by-categories.component.css'
 })
 export class FilterByCategoriesComponent {
-  public selectedCategory:any = {} as object;
-  public categories: ICategory[] = [];
-  
-  
+  public selectedCategory:ICategory = {} as ICategory;
+  public categories: ICategory[];
   constructor(private categoryService:CategoryService, private motoServiceState:MotoStateService){
+    this.categories = [];
     this.getData();
   }
 

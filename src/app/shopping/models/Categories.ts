@@ -1,5 +1,5 @@
 export interface ICategory{
-    idCategory: string;
-    category:string;
+    idCategoria: string;
+    categoria:string;
     icono:string;
 }

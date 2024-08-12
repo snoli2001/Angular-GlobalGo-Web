@@ -14,7 +14,7 @@ export class CategoryService {
         throw new Error("Failed to fetch categories");
       }
       const data = await response.json();
-      console.log(data);
+      // console.log(data);
       
       return data as ICategory[];
     } catch (error) {
