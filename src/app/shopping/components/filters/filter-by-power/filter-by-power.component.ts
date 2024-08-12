@@ -12,8 +12,10 @@ import { MotoStateService } from '../../../states/moto.state.service';
   styleUrl: './filter-by-power.component.css'
 })
 export class FilterByPowerComponent {
-  public power:number = 30;
-  constructor(private motoServiceState:MotoStateService){}
+  public power:number;
+  constructor(private motoServiceState:MotoStateService){
+    this.power = 7;
+  }
 
   handleFilter(){
     this.motoServiceState.orderByPower(this.power);

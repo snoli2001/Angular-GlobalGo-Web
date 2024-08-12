@@ -22,8 +22,12 @@ import { MotoStateService } from '../../../states/moto.state.service';
   styleUrl: './filter-by-displacement.component.css',
 })
 export class FilterByDisplacementComponent {
-  public displacement: number = 20;
-  constructor(private motoServiceState:MotoStateService){}
+  public displacement:number;
+  
+  constructor(private motoServiceState:MotoStateService){
+    this.displacement = 98;
+  }
+
   handleFilter(){
     this.motoServiceState.orderByDisplacement(this.displacement);
   }

@@ -1,6 +1,6 @@
 <section class="flex flex-col justify-center items-center gap-5">
-    <p-scrollPanel [style]="{ width: '100%', height: '100vh'}"> 
-        <!-- solucionar el tema del scroll panel -->
+    <!-- <p-scrollPanel [style]="{ width: '100%', height: '100vh'}">  -->
+    <p-scrollPanel [style]="{ width: '100%', height: '1400px'}"> 
         <p-dataView #dv 
                     [value]="listMotorcycles" [rows]="25" [paginator]="true" 
                     [rowsPerPageOptions]="[25, 50, 75]" 
@@ -26,7 +26,7 @@
                 </div>
             </ng-template>
         </p-dataView>
-        <br> <br> <br> <br><br>  <!-- SOLUCION MOMENtANEA-->
+        <br><br>  <!-- SOLUCION MOMENtANEA-->
     </p-scrollPanel>
 
 

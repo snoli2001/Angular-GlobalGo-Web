@@ -15,8 +15,10 @@ import { MotoStateService } from '../../../states/moto.state.service';
   styleUrl: './filter-by-price-and-coin.component.css'
 })
 export class FilterByPriceAndCoinComponent {
-  public rangeValues: number[] = [5000, 18000];
-  constructor(private motoStateService:MotoStateService){}
+  public rangeValues: number[];
+  constructor(private motoStateService:MotoStateService){
+    this.rangeValues = [3990, 18000];
+  }
   
   filterByPrice(){
     this.motoStateService.orderByPrice(this.rangeValues[0],this.rangeValues[1]);

@@ -12,8 +12,10 @@ import { MotoStateService } from '../../../states/moto.state.service';
   styleUrl: './filter-by-performance.component.css'
 })
 export class FilterByPerformanceComponent {
-  public performace:number=0;
-  constructor(private serviceState:MotoStateService){}
+  public performace:number;
+  constructor(private serviceState:MotoStateService){
+    this.performace = 67;
+  }
 
   handleFilter(){
     this.serviceState.orderByPerformance(this.performace);
