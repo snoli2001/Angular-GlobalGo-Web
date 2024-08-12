@@ -1,5 +1,15 @@
-.container{
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-columns: 2;
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    position: relative;
+}
+
+@media (min-width: 1024px) {
+    .main-container {
+        display: grid;
+        grid-template-columns:  minmax(0, 388px) minmax(0, 1080px); /* Cambia 1fr por un valor fijo si quieres que la segunda columna tenga un tamaño máximo */
+        justify-content: center; 
+    }
 }
