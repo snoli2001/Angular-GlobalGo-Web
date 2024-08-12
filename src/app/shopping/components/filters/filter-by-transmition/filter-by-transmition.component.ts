@@ -14,15 +14,15 @@ import { MotoStateService } from '../../../states/moto.state.service';
   styleUrl: './filter-by-transmition.component.css'
 })
 export class FilterByTransmitionComponent {
-  public transmition:any[]=[];
-  public icons:any[]= [
-    // { class: "flaticon-caja-de-cambios-automatica", label: "Semiautomática" },
-    { class: "flaticon-caja-de-cambios", label: "Mecánica" },
-    { class: "flaticon-caja-de-cambios-automatica", label: "Automática" },
-  ]
+  public transmition:any[];
+  public icons:any[];
 
   constructor(private motoStateService:MotoStateService){
-
+    this.transmition = [];
+    this.icons = [
+      { class: "flaticon-caja-de-cambios", label: "Mecánica" },
+      { class: "flaticon-caja-de-cambios-automatica", label: "Automática" },
+    ]
   }
 
   handleFilter(transmition:string){
