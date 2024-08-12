@@ -9,8 +9,12 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./button-check.component.css'] 
 })
 export class ButtonCheckComponent {
-  @Input() _background: string | undefined; 
+  @Input() _background: string; 
   public isCheked: boolean = false; 
+
+  constructor(){
+    this._background = '';
+  }
 
   toggleCheck() {
     this.isCheked = !this.isCheked;

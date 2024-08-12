@@ -11,7 +11,10 @@ import { IMotorcycle } from '../../../models/Motorcycle';
   styleUrl: './motorcycle-section.component.css'
 })
 export class MotorcycleSectionComponent {
-  @Input() listMotos: IMotorcycle[] = [];
+  @Input() listMotos: IMotorcycle[];
 
+  constructor(){
+    this.listMotos = [];
+  }
 
 }

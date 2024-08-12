@@ -9,10 +9,10 @@ import { MotoStateService } from '../../../states/moto.state.service';
   styleUrl: './clear-filter.component.css'
 })
 export class ClearFilterComponent {
-  @Input() custom_style: string|undefined;
+  @Input() custom_style: string;
 
   constructor(private motoStateService: MotoStateService){
-
+    this.custom_style = '';
   }
 
   resetFilter(){

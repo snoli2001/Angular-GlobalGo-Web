@@ -6,25 +6,25 @@
                 
                 <ng-container *ngIf="data?.imagen && data?.imagen != ' '; else noImageTemplate">
                     <a class="md:hidden" [href]="financingUrl">
-                        <p-image [src]="getImagePath(data?.imagen)" class="w-full" [alt]="'Financiación de motos ' + data?.marca + ' en Lima, Perú: ' + data?.modelo"></p-image>
+                        <p-image [src]="getImagePath(data.imagen)" class="w-full" [alt]="'Financiación de motos ' + data.marca + ' en Lima, Perú: ' + data.modelo"></p-image>
                     </a>
-                    <p-image [src]="getImagePath(data?.imagen)" class="w-full sm:hidden md:block" [alt]="'Financiación de motos ' + data?.marca + ' en Lima, Perú: ' + data?.modelo"></p-image>
+                    <p-image [src]="getImagePath(data.imagen)" class="w-full sm:hidden md:block" [alt]="'Financiación de motos ' + data.marca + ' en Lima, Perú: ' + data.modelo"></p-image>
 
                     </ng-container>
                     
                     <ng-template #noImageTemplate>
-                    <p-image [src]="getImagePath('generica.jpg')" class="w-full " [preview]="true" [alt]="'Financiación de motos ' + data?.marca + ' en Lima, Perú: ' + data?.modelo"></p-image>
+                    <p-image [src]="getImagePath('generica.jpg')" class="w-full " [preview]="true" [alt]="'Financiación de motos ' + data.marca + ' en Lima, Perú: ' + data.modelo"></p-image>
                 </ng-template>
 
                 <div class=" absolute flex flex-row items-center gap-4 top-0 right-0">
-                    <p-tag severity="info" value="{{data?.categoria}}" 
-                    [style]="{ background: getBrandColor(data?.categoria) }"></p-tag>
+                    <p-tag severity="info" value="{{data.categoria}}" 
+                    [style]="{ background: getBrandColor(data.categoria) }"></p-tag>
                 </div>
 
                 <div class="absolute flex flex-row gap-4 top-0 left-0">
-                    <a [href]="'/moto-detail/'+ (data?.idModelo)">
+                    <a [href]="'/moto-detail/'+ (data.idModelo)">
                         <button class="">
-                            <p>{{ data?.precio | currency: 'S/':'symbol':'1.0-0' }}</p>
+                            <p>{{ data.precio | currency: 'S/':'symbol':'1.0-0' }}</p>
                         </button>
                     </a>
                 </div>
@@ -36,24 +36,24 @@
             <div>
                 <div class="flex gap-4 justify-between items-center">
                     <section class="flex flex-col gap-2">
-                        <h1 class="proximaNova-Regular">{{ data?.modelo }}</h1>
-                        <h2 class="text-slate-600">{{ data?.categoria }}</h2>
+                        <h1 class="proximaNova-Regular">{{ data.modelo }}</h1>
+                        <h2 class="text-slate-600">{{ data.categoria }}</h2>
                     </section>
-                    <img [src]="getbrandPath(data?.logo)" class="max-w-20" [alt]="data?.logo">
+                    <img [src]="getbrandPath(data.logo)" class="max-w-20" [alt]="data.logo">
                 </div>
                 <div
                     class="flex justify-between items-center mt-1 border-t-2 border-gray-300 pt-3">
                     <div class="flex flex-col gap-1">
                         <h3>Cilindrada (CS)</h3>
-                        {{ data?.cilindrada }}
+                        {{ data.cilindrada }}
                     </div>
                     <div class="flex flex-col">
                         <h3>Rendimiento</h3>
-                        <h4>{{ data?.rendimiento }}-HP</h4>
+                        <h4>{{ data.rendimiento }}-HP</h4>
                     </div>
                 </div>
             </div>
-            <a [href]="'/moto-detail/'+ (data?.idModelo)" class="lg:mt-5">
+            <a [href]="'/moto-detail/'+ (data.idModelo)" class="lg:mt-5">
                 <button class="w-full uppercase bg-blue-600 text-center text-white py-2 rounded-lg hover:bg-black">La Quiero</button>
             </a>
         </main>
@@ -65,25 +65,25 @@
     <div class="flex sm:flex-col md:flex-row gap-4 ml-5 shadow-xl rounded-sm max-w-5xl overflow-hidden lg:max-h-[440px] xl:max-h-[400px]">
         <header class="p-2 rounded-t-sm flex justify-center items-center">
                 <a class="md:hidden" [href]="financingUrl">
-                    <p-image [src]="getImagePath(data?.imagen)" class=" max-w-6xl " [alt]="'Financiación de motos ' + data?.marca + ' en Lima, Perú: ' + data?.modelo"></p-image>
+                    <p-image [src]="getImagePath(data.imagen)" class=" max-w-6xl " [alt]="'Financiación de motos ' + data.marca + ' en Lima, Perú: ' + data.modelo"></p-image>
                 </a>
-                <p-image [src]="getImagePath(data?.imagen)" class="w-full sm:hidden md:block" [alt]="'Financiación de motos ' + data?.marca + ' en Lima, Perú: ' + data?.modelo"></p-image>
+                <p-image [src]="getImagePath(data.imagen)" class="w-full sm:hidden md:block" [alt]="'Financiación de motos ' + data.marca + ' en Lima, Perú: ' + data.modelo"></p-image>
 
         </header>
         
         <main class="p-4 bg-white flex flex-col gap-7">
             <header class="flex gap-4 justify-between items-center">
                 <section class="flex flex-col gap-0">
-                    <h1 class="proximaNova-Regular text-2xl">{{ data?.modelo }}</h1>
-                    <h3 class="text-slate-600">{{ data?.rendimiento }} KM/H</h3>
+                    <h1 class="proximaNova-Regular text-2xl">{{ data.modelo }}</h1>
+                    <h3 class="text-slate-600">{{ data.rendimiento }} KM/H</h3>
                 </section>
-                <img [src]="getbrandPath(data?.logo)" class="max-w-20" [alt]="data?.logo">
+                <img [src]="getbrandPath(data.logo)" class="max-w-20" [alt]="data.logo">
             </header>
             <main class="flex justify-between items-center mt-1 border-t-2 proximaNova-Light border-gray-300 pt-3">
                 <p>¡Hola riders! Soy Chispa, y quiero presentarles a la estrella del asfalto: la nueva Pulsar NS200 FI UG ABS. Esta máquina deportiva combina agilidad y seguridad gracias a su sistema ABS, que evita que las ruedas se bloqueen en frenadas bruscas. Con su motor monocilíndrico de 200cc, te espera una experiencia llena de potencia y control en cada aceleración. ¡Siente la emoción de cada revolución y conquista la carretera con la Pulsar NS200!</p>
             </main>
             <footer>
-                <a [href]="'/moto-detail/'+ (data?.idModelo)">
+                <a [href]="'/moto-detail/'+ (data.idModelo)">
                     <button class="proximaNova-Light p-3 max-w-60 uppercase bg-blue-600 text-center text-white rounded-lg hover:bg-black">La Quiero</button>
                 </a>
             </footer>

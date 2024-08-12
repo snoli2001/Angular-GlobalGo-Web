@@ -11,7 +11,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrl: './chispa-information.component.css'
 })
 export class ChispaInformationComponent {
-  @Input() motorcycle:IMotorcycle | undefined;
+  @Input() motorcycle:IMotorcycle = {} as IMotorcycle;;
   visible: boolean = false;
   public motoId:number;
   public financingUrl: string;

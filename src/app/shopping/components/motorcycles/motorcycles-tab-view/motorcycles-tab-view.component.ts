@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './motorcycles-tab-view.component.css'
 })
 export class MotorcyclesTabViewComponent {
-  @Input() motorcycle: IMotorcycle | undefined;
+  @Input() motorcycle: IMotorcycle = {} as IMotorcycle;
   public option:number;
   
   constructor(){

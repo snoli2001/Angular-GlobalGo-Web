@@ -13,6 +13,10 @@ import { DataViewModule } from 'primeng/dataview';
   styleUrl: './list-motos.component.css'
 })
 export class ListMotosComponent {
-  @Input() listMotorcycles: IMotorcycle[] | undefined;
+  @Input() listMotorcycles: IMotorcycle[];
+
+  constructor(){
+    this.listMotorcycles = [];
+  }
 
 }

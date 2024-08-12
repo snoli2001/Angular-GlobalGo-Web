@@ -9,6 +9,6 @@ import { IMotorcycle } from '../../../models/Motorcycle';
   styleUrl: './moto-technical-specification.component.css'
 })
 export class MotoTechnicalSpecificationComponent {
-  @Input() motorcycle: IMotorcycle | undefined;
+  @Input() motorcycle: IMotorcycle = {} as IMotorcycle;;
 
 }

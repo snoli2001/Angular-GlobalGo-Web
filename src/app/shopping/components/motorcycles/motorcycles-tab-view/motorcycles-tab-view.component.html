@@ -45,7 +45,7 @@
                 </h3>
                 <p class="proximaNova-Light sm:text-xs md:text-sm lg:text-base">
                     Cargado con un eficiente motor de
-                    {{ motorcycle?.cilindrada }} centimetros cubicos, lo que te dara
+                    {{ motorcycle.cilindrada }} centimetros cubicos, lo que te dara
                     satisfacción al recorrer las pistas con esta bella motocicleta.
                 </p>
             </div>
@@ -57,7 +57,7 @@
                         <div class="flex flex-col">
                             <h4 class="proximaNova-Regular sm:text-sm md:text-xl">Cilindrada</h4>
                             <p class="proximaNova-Light sm:text-sm xl:text-base">
-                                {{ motorcycle?.cilindrada }}cc
+                                {{ motorcycle.cilindrada }}cc
                             </p>
                         </div>
                     </div>
@@ -69,7 +69,7 @@
                         <div class="flex flex-col">
                             <h4 class="proximaNova-Regular sm:text-sm md:text-xl">Potencia</h4>
                             <p class="proximaNova-Light sm:text-sm xl:text-base">
-                                {{ motorcycle?.potencia }}-HP
+                                {{ motorcycle.potencia }}-HP
                             </p>
                         </div>
                     </div>
@@ -81,7 +81,7 @@
                         <div class="flex flex-col">
                             <h4 class="proximaNova-Regular sm:text-sm md:text-xl">Torque</h4>
                             <p class="proximaNova-Light sm:text-sm xl:text-base">
-                                {{ motorcycle?.torque }}NM
+                                {{ motorcycle.torque }}NM
                             </p>
                         </div>
                     </div>
@@ -96,9 +96,9 @@
                     Combustible
                 </h3>
                 <p class="proximaNova-Light sm:text-xs md:text-sm lg:text-base">
-                    Eficiente motor con una autonomia de {{motorcycle?.autonomia}}. La
-                    {{motorcycle?.modelo}} tiene una cilindrada de {{motorcycle?.cilindrada}} cc y una potencia de
-                    {{motorcycle?.potencia}} HP.
+                    Eficiente motor con una autonomia de {{motorcycle.autonomia}}. La
+                    {{motorcycle.modelo}} tiene una cilindrada de {{motorcycle.cilindrada}} cc y una potencia de
+                    {{motorcycle.potencia}} HP.
                 </p>
             </div>
 
@@ -111,7 +111,7 @@
                                 Combustible
                             </h4>
                             <p class="proximaNova-Light sm:text-xs xl:text-base">
-                                {{ motorcycle?.combustible }}
+                                {{ motorcycle.combustible }}
                             </p>
                         </div>
                     </div>
@@ -123,7 +123,7 @@
                         <div class="flex flex-col">
                             <h4 class="proximaNova-Regular sm:text-sm md:text-xl">Tanque</h4>
                             <p class="proximaNova-Light sm:text-xs xl:text-base">
-                                {{ motorcycle?.tanque }} Litros
+                                {{ motorcycle.tanque }} Litros
                             </p>
                         </div>
                     </div>
@@ -135,7 +135,7 @@
                         <div class="flex flex-col">
                             <h4 class="proximaNova-Regular sm:text-xs xl:text-xl">Rendimiento</h4>
                             <p class="proximaNova-Light sm:text-xs xl:text-base">
-                                {{ motorcycle?.rendimiento }}KM/GL
+                                {{ motorcycle.rendimiento }}KM/GL
                             </p>
                         </div>
                     </div>
@@ -147,7 +147,7 @@
                         <div class="flex flex-col">
                             <h4 class="proximaNova-Regular sm:text-xs xl:text-xl">Autonomía</h4>
                             <p class="proximaNova-Light sm:text-xs xl:text-base">
-                                {{ motorcycle?.autonomia }} KM
+                                {{ motorcycle.autonomia }} KM
                             </p>
                         </div>
                     </div>
@@ -162,12 +162,12 @@
                     Suspension
                 </h3>   
                 <p class="proximaNova-Light sm:text-xs md:text-sm lg:text-base hidden lg:block">
-                    La {{motorcycle?.modelo}} cuenta con frenos {{motorcycle?.freno_delantero}}, ideales para
+                    La {{motorcycle.modelo}} cuenta con frenos {{motorcycle.freno_delantero}}, ideales para
                     este tipo de cilindra y que en combinación con el bajo peso otorga una frenada muy eficiente.
                 </p>
                 
                 <p class="proximaNova-Light sm:text-xs md:text-sm lg:text-base md:hidden ">
-                    La {{motorcycle?.modelo}} cuenta con frenos {{motorcycle?.freno_delantero}}, ideales para frenada muy eficiente.
+                    La {{motorcycle.modelo}} cuenta con frenos {{motorcycle.freno_delantero}}, ideales para frenada muy eficiente.
                 </p>
             </div>
 
@@ -178,7 +178,7 @@
                         <div class="flex flex-col">
                             <h4 class="proximaNova-Regular sm:text-xs xl:text-lg">Freno Delantero</h4>
                             <p class="hidden xl:block proximaNova-Light sm:text-sm xl:text-sm">
-                                {{ motorcycle?.freno_delantero }}
+                                {{ motorcycle.freno_delantero }}
                             </p>
                         </div>
                     </div>
@@ -190,7 +190,7 @@
                         <div class="flex flex-col">
                             <h4 class="proximaNova-Regular sm:text-xs xl:text-lg">Suspensión Delantera</h4>
                             <p class="hidden xl:block proximaNova-Light sm:text-sm xl:text-sm">
-                                {{ motorcycle?.suspension_delantero }}
+                                {{ motorcycle.suspension_delantero }}
                             </p>
                         </div>
                     </div>
@@ -202,7 +202,7 @@
                         <div class="flex flex-col">
                             <h4 class="proximaNova-Regular sm:text-xs xl:text-lg">Freno Posterior</h4>
                             <p class="hidden xl:block proximaNova-Light sm:text-sm xl:text-sm">
-                                {{ motorcycle?.freno_posterior }}
+                                {{ motorcycle.freno_posterior }}
                             </p>
                         </div>
                     </div>
@@ -214,7 +214,7 @@
                         <div class="flex flex-col">
                             <h4 class="proximaNova-Regular sm:text-xs xl:text-lg">Suspensión Posterior</h4>
                             <p class="hidden xl:block proximaNova-Light sm:text-sm xl:text-sm">
-                                {{ motorcycle?.suspension_posterior }}
+                                {{ motorcycle.suspension_posterior }}
                             </p>
                         </div>
                     </div>
@@ -230,8 +230,8 @@
                     Transmisión
                 </h3>
                 <p class="proximaNova-Light sm:text-xs md:text-sm lg:text-base">
-                    La {{ motorcycle?.modelo }} cuenta con una transmisión
-                    {{ motorcycle?.transmision }} asegurándonos una cómoda conducción.
+                    La {{ motorcycle.modelo }} cuenta con una transmisión
+                    {{ motorcycle.transmision }} asegurándonos una cómoda conducción.
                 </p>
             </div>
 
@@ -242,7 +242,7 @@
                         <div class="flex flex-col">
                             <h4 class="proximaNova-Regular sm:text-sm xl:text-xl">Transmisión</h4>
                             <p class="proximaNova-Light sm:text-sm xl:text-base">
-                                {{ motorcycle?.transmision }}
+                                {{ motorcycle.transmision }}
                             </p>
                         </div>
                     </div>
@@ -254,7 +254,7 @@
                         <div class="flex flex-col">
                             <h4 class="proximaNova-Regular sm:text-sm xl:text-xl">Velocidad Máxima</h4>
                             <p class="proximaNova-Light sm:text-sm xl:text-base">
-                                {{ motorcycle?.velocidad }} KM/H
+                                {{ motorcycle.velocidad }} KM/H
                             </p>
                         </div>
                     </div>
@@ -280,7 +280,7 @@
                         <i class="flaticon-peso sm:text-2xl md:text-3xl xl:text-4xl"></i>
                         <div class="flex flex-col">
                             <h4 class="proximaNova-Regular sm:text-sm xl:text-xl">Peso</h4>
-                            <p class="proximaNova-Light sm:text-sm xl:text-base">{{ motorcycle?.peso }} KG</p>
+                            <p class="proximaNova-Light sm:text-sm xl:text-base">{{ motorcycle.peso }} KG</p>
                         </div>
                     </div>
                 </div>
@@ -291,7 +291,7 @@
                         <div class="flex flex-col">
                             <h4 class="proximaNova-Regular sm:text-sm xl:text-xl">Dimensiones (CM)</h4>
                             <p class="proximaNova-Light sm:text-sm xl:text-base">
-                                {{ motorcycle?.largo }}x{{ motorcycle?.ancho }} (LxA)
+                                {{ motorcycle.largo }}x{{ motorcycle.ancho }} (LxA)
                             </p>
                         </div>
                     </div>
@@ -320,7 +320,7 @@
                         <h5 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
                             Cilindrada
                         </h5>
-                        <span class="text-slate-500 proximaNova-Light text-sm font-medium">{{ motorcycle?.cilindrada
+                        <span class="text-slate-500 proximaNova-Light text-sm font-medium">{{ motorcycle.cilindrada
                             }} cc</span>
                     </div>
                 </div>
@@ -334,7 +334,7 @@
                         <h5 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
                             Potencia
                         </h5>
-                        <span class="text-slate-500 proximaNova-Light text-sm font-medium">{{ motorcycle?.potencia
+                        <span class="text-slate-500 proximaNova-Light text-sm font-medium">{{ motorcycle.potencia
                             }} HP</span>
                     </div>
                 </div>
@@ -348,7 +348,7 @@
                         <h5 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
                             Torque
                         </h5>
-                        <span class="text-slate-500 proximaNova-Light text-sm font-medium">{{ motorcycle?.torque
+                        <span class="text-slate-500 proximaNova-Light text-sm font-medium">{{ motorcycle.torque
                             }} NM</span>
                     </div>
                 </div>
@@ -365,7 +365,7 @@
                         <h5 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
                             Combustible
                         </h5>
-                        <span class="text-slate-500 proximaNova-Light text-sm font-semibold">{{ motorcycle?.combustible
+                        <span class="text-slate-500 proximaNova-Light text-sm font-semibold">{{ motorcycle.combustible
                             }}</span>
                     </div>
                 </div>
@@ -379,7 +379,7 @@
                         <h5 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
                             Tanque
                         </h5>
-                        <span class="text-slate-500 proximaNova-Light text-sm font-semibold">{{ motorcycle?.tanque }}
+                        <span class="text-slate-500 proximaNova-Light text-sm font-semibold">{{ motorcycle.tanque }}
                             Galon</span>
                     </div>
                 </div>
@@ -393,7 +393,7 @@
                         <h5 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
                             Rendimiento
                         </h5>
-                        <span class="text-slate-500 proximaNova-Light text-sm font-semibold">{{ motorcycle?.rendimiento
+                        <span class="text-slate-500 proximaNova-Light text-sm font-semibold">{{ motorcycle.rendimiento
                             }} KM/GL</span>
                     </div>
                 </div>
@@ -407,7 +407,7 @@
                         <h5 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
                             Autonomía
                         </h5>
-                        <span class="text-slate-500 proximaNova-Light text-xs font-semibold">{{ motorcycle?.autonomia }}
+                        <span class="text-slate-500 proximaNova-Light text-xs font-semibold">{{ motorcycle.autonomia }}
                             KM</span>
                     </div>
                 </div>
@@ -425,7 +425,7 @@
                             Freno Delantero
                         </h5>
                         <span class="text-slate-500 proximaNova-Light text-xs font-semibold">{{
-                            motorcycle?.freno_delantero }}</span>
+                            motorcycle.freno_delantero }}</span>
                     </div>
                 </div>
 
@@ -439,7 +439,7 @@
                             Suspensión Delantera
                         </h5>
                         <span class="text-slate-500 proximaNova-Light text-xs font-semibold">{{
-                            motorcycle?.suspension_delantero }}</span>
+                            motorcycle.suspension_delantero }}</span>
                     </div>
                 </div>
 
@@ -453,7 +453,7 @@
                             Freno Posterior
                         </h5>
                         <span class="text-slate-500 proximaNova-Light text-xs font-semibold">{{
-                            motorcycle?.freno_posterior }}</span>
+                            motorcycle.freno_posterior }}</span>
                     </div>
                 </div>
 
@@ -467,7 +467,7 @@
                             Suspensión Posterior
                         </h5>
                         <span class="text-slate-500 proximaNova-Light text-xs font-semibold">{{
-                            motorcycle?.suspension_posterior }}</span>
+                            motorcycle.suspension_posterior }}</span>
                     </div>
                 </div>
             </div>
@@ -483,12 +483,12 @@
                         <h5 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
                             Transmisión
                         </h5>
-                        <span class="text-slate-500 proximaNova-Light text-xs font-semibold">{{ motorcycle?.transmision
+                        <span class="text-slate-500 proximaNova-Light text-xs font-semibold">{{ motorcycle.transmision
                             }}</span>
                     </div>
                 </div>
 
-                <div *ngIf="motorcycle?.velocidad != 'NE'"
+                <div *ngIf="motorcycle.velocidad != 'NE'"
                     class="p-2 flex flex-row gap-5 items-center transition-transform hover:scale-y-110 hover:scale-x-110">
                     <div class="flex flex-row">
                         <i class="text-slate-500 flaticon-velocimetro text-3xl"></i>
@@ -497,7 +497,7 @@
                         <h5 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
                             Velocidad Máxima
                         </h5>
-                        <span class="text-slate-500 proximaNova-Light text-xs font-semibold">{{ motorcycle?.velocidad }}
+                        <span class="text-slate-500 proximaNova-Light text-xs font-semibold">{{ motorcycle.velocidad }}
                             kM</span>
                     </div>
                 </div>
@@ -514,7 +514,7 @@
                         <h5 class="proximaNova-Regular sm:text-sm xl:text-xl font-semibold text-red-500">
                             Peso
                         </h5>
-                        <span class="text-slate-500 proximaNova-Light text-xs font-semibold">{{ motorcycle?.peso }}
+                        <span class="text-slate-500 proximaNova-Light text-xs font-semibold">{{ motorcycle.peso }}
                             kG</span>
                     </div>
                 </div>
@@ -529,7 +529,7 @@
                             Dimensiones (CM)
                         </h5>
                         <span class="text-slate-500 proximaNova-Light proximaNova-Light text-xs font-semibold">{{
-                            motorcycle?.largo }} x {{ motorcycle?.ancho }} (LXA)</span>
+                            motorcycle.largo }} x {{ motorcycle.ancho }} (LXA)</span>
                     </div>
                 </div>
             </div>

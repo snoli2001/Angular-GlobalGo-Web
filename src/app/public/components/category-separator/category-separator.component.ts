@@ -8,5 +8,9 @@ import { Component, Input } from '@angular/core';
   styleUrl: './category-separator.component.css'
 })
 export class CategorySeparatorComponent {
-  @Input() category:string|undefined;
+  @Input() category:string;
+
+  constructor(){
+    this.category = '';
+  }
 }

@@ -12,19 +12,8 @@ import { MotorcyclesTabViewComponent } from '../motorcycles-tab-view/motorcycles
   styleUrls: ['./carrousel-for-motorcycles.component.css'],
 })
 export class CarrouselForMotorcyclesComponent implements OnChanges {
-  @Input() motorcycle: IMotorcycle | undefined;
+  @Input() motorcycle: IMotorcycle = {} as IMotorcycle;;
   public images: any[] = [];
-
-  public responsiveOptions: any[] = [
-    {
-      breakpoint: '1300px',
-      numVisible: 4,
-    },
-    {
-      breakpoint: '575px',
-      numVisible: 1,
-    },
-  ];
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['motorcycle'] && this.motorcycle) {

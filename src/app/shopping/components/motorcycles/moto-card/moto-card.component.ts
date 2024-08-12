@@ -13,26 +13,27 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
   styleUrl: './moto-card.component.css'
 })
 export class MotoCardComponent {
-  @Input() data: IMotorcycle | undefined;
-  @Input() option: number | undefined;
+  @Input() data: IMotorcycle = {} as IMotorcycle;
+  @Input() option: number;
   public financingUrl: string;
   public motoId:number;
 
   constructor(private route: ActivatedRoute){
+    this.option = 0;
     const id = this.route.snapshot.paramMap.get('id');
     this.motoId = id ? parseInt(id, 10) : 0;
     this.financingUrl = `https://globalgo-login.sis360.com.pe/solicitar-financiamiento?Id=${this.motoId}`;
   }
 
-  getImagePath(imageName: string | undefined): string {
+  getImagePath(imageName: string): string {
     return `../../../../../assets/imgs/motorcycles/${imageName}`;
   }
   
-  getbrandPath(imageName: string | undefined):string{
+  getbrandPath(imageName: string):string{
     return `../../../../../assets/imgs/logos/${imageName}`;
   }
 
-  getBrandColor(color:string| undefined){
+  getBrandColor(color:string){
     switch (color) {
       case 'Cafe Racer':
           return '#8B4513'; // Marrón

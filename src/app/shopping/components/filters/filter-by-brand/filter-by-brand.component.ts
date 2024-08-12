@@ -21,7 +21,6 @@ export class FilterByBrandComponent {
   orderByBrand(){
     this.motoSerivceState.orderByBrand(this.selectedBrand.marca);
   }
-
   async getBrandFromAPI(){
     try {
       const response = await fetch("https://api-catalogo.sis360.com.pe/api/Brand/getAll");
