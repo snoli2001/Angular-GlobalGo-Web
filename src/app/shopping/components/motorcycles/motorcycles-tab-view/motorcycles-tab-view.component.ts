@@ -24,4 +24,23 @@ export class MotorcyclesTabViewComponent {
     this.option = option;
   }
 
+  getMotorcycleDescription(): string {
+    const largo = this.motorcycle?.largo;
+    const ancho = this.motorcycle?.ancho;
+
+    if (!largo || !ancho) {
+      return 'Dimensiones no disponibles.';
+    }
+
+    if (parseInt(ancho) < 80) {
+      return 'Una moto de reducidas dimensiones, ideal para moverse por la ciudad a cortas y medianas distancias.';
+    } else if (parseInt(largo) >= 180 && parseInt(largo) <= 220 && parseInt(ancho) >= 60 && parseInt(ancho) <= 80) {
+      return 'Una moto de tamaño mediano, versátil y adecuada para diferentes tipos de terreno.';
+    } else if (parseInt(largo) > 220 || parseInt(largo) > 80) {
+      return 'Una moto de grandes dimensiones, ideal para recorrer largas distancias con comodidad, perfecta para aventuras en carretera.';
+    } else {
+      return 'Una moto con dimensiones estándar, adaptable a cualquier uso.';
+    }
+  }
+
 }

@@ -90,10 +90,10 @@
         </div>
 
         
-        <div *ngIf="option == 2" class="flex flex-col sm:gap-10 xl:gap-16 max-w-xl sm:px-10 md:px-10 pt-8 bg-slate-100" [ngClass]="{ fadeIn: option == 2, fadeOut: option != 2 }">
+        <div *ngIf="option == 2" class="flex flex-col sm:gap-7 xl:gap-16 max-w-xl sm:px-10 md:px-10 pt-8 bg-slate-100" [ngClass]="{ fadeIn: option == 2, fadeOut: option != 2 }">
             <div class="flex flex-col gap-3">
                 <h3 class="proximaNova-Regular text-center sm:text-xs md:text-base lg:text-xl font-semibold uppercase">
-                    Motor
+                    Combustible
                 </h3>
                 <p class="proximaNova-Light sm:text-xs md:text-sm lg:text-base">
                     Eficiente motor con una autonomia de {{motorcycle?.autonomia}}. La
@@ -123,7 +123,7 @@
                         <div class="flex flex-col">
                             <h4 class="proximaNova-Regular sm:text-sm md:text-xl">Tanque</h4>
                             <p class="proximaNova-Light sm:text-xs xl:text-base">
-                                {{ motorcycle?.tanque }} por galon
+                                {{ motorcycle?.tanque }} Litros
                             </p>
                         </div>
                     </div>
@@ -178,7 +178,7 @@
                         <div class="flex flex-col">
                             <h4 class="proximaNova-Regular sm:text-xs xl:text-lg">Freno Delantero</h4>
                             <p class="hidden xl:block proximaNova-Light sm:text-sm xl:text-sm">
-                                {{ motorcycle?.freno_delantero }}cc
+                                {{ motorcycle?.freno_delantero }}
                             </p>
                         </div>
                     </div>
@@ -190,7 +190,7 @@
                         <div class="flex flex-col">
                             <h4 class="proximaNova-Regular sm:text-xs xl:text-lg">Suspensión Delantera</h4>
                             <p class="hidden xl:block proximaNova-Light sm:text-sm xl:text-sm">
-                                {{ motorcycle?.suspension_delantero }}cc
+                                {{ motorcycle?.suspension_delantero }}
                             </p>
                         </div>
                     </div>
@@ -202,7 +202,7 @@
                         <div class="flex flex-col">
                             <h4 class="proximaNova-Regular sm:text-xs xl:text-lg">Freno Posterior</h4>
                             <p class="hidden xl:block proximaNova-Light sm:text-sm xl:text-sm">
-                                {{ motorcycle?.freno_posterior }}cc
+                                {{ motorcycle?.freno_posterior }}
                             </p>
                         </div>
                     </div>
@@ -214,7 +214,7 @@
                         <div class="flex flex-col">
                             <h4 class="proximaNova-Regular sm:text-xs xl:text-lg">Suspensión Posterior</h4>
                             <p class="hidden xl:block proximaNova-Light sm:text-sm xl:text-sm">
-                                {{ motorcycle?.suspension_posterior }}cc
+                                {{ motorcycle?.suspension_posterior }}
                             </p>
                         </div>
                     </div>
@@ -242,7 +242,7 @@
                         <div class="flex flex-col">
                             <h4 class="proximaNova-Regular sm:text-sm xl:text-xl">Transmisión</h4>
                             <p class="proximaNova-Light sm:text-sm xl:text-base">
-                                {{ motorcycle?.transmision }}cc
+                                {{ motorcycle?.transmision }}
                             </p>
                         </div>
                     </div>
@@ -254,7 +254,7 @@
                         <div class="flex flex-col">
                             <h4 class="proximaNova-Regular sm:text-sm xl:text-xl">Velocidad Máxima</h4>
                             <p class="proximaNova-Light sm:text-sm xl:text-base">
-                                {{ motorcycle?.velocidad }}cc
+                                {{ motorcycle?.velocidad }} KM/H
                             </p>
                         </div>
                     </div>
@@ -270,9 +270,7 @@
                     Dimensiones
                 </h3>
                 <p class="proximaNova-Light sm:text-xs md:text-sm lg:text-base">
-                    Una moto de reducidas dimensiones, con un faro de tamaño considerable,
-                    batería de 12 voltios, grandes guardabarros y un soporte central
-                    sólido.
+                    {{ getMotorcycleDescription() }}
                 </p>
             </div>
 
@@ -282,7 +280,7 @@
                         <i class="flaticon-peso sm:text-2xl md:text-3xl xl:text-4xl"></i>
                         <div class="flex flex-col">
                             <h4 class="proximaNova-Regular sm:text-sm xl:text-xl">Peso</h4>
-                            <p class="proximaNova-Light sm:text-sm xl:text-base">{{ motorcycle?.peso }}kg</p>
+                            <p class="proximaNova-Light sm:text-sm xl:text-base">{{ motorcycle?.peso }} KG</p>
                         </div>
                     </div>
                 </div>
@@ -293,7 +291,7 @@
                         <div class="flex flex-col">
                             <h4 class="proximaNova-Regular sm:text-sm xl:text-xl">Dimensiones (CM)</h4>
                             <p class="proximaNova-Light sm:text-sm xl:text-base">
-                                {{ motorcycle?.largo }}x{{ motorcycle?.ancho }}(LXA)
+                                {{ motorcycle?.largo }}x{{ motorcycle?.ancho }} (LxA)
                             </p>
                         </div>
                     </div>
