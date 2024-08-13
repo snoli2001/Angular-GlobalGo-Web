@@ -1,8 +1,9 @@
 <section class="fade-in" *ngIf="motorCycle">  
     <app-moto-header-detail [motorcycle]="motorCycle"/>
-    <!-- <app-moto-technical-specification [motorcycle]="motorCycle" /> -->
     <app-carrousel-for-motorcycles [motorcycle]="motorCycle"/>
     <app-chispa-information [motorcycle]="motorCycle"/>
+
+    <!-- <app-dealers-stores-map/> -->
 </section>
 
 <div class=" w-screen h-screen flex flex-col justify-center items-center" *ngIf="!motorCycle">

@@ -6,10 +6,12 @@ import { IMotorcycle } from '../../models/Motorcycle';
 import { MotoStateService } from '../../states/moto.state.service';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
+import { DealersStoresMapComponent } from '../../components/motorcycles/dealers-stores-map/dealers-stores-map.component';
+
 @Component({
   selector: 'app-motorcycle-detail',
   standalone: true,
-  imports: [MotoHeaderDetailComponent,ChispaInformationComponent,CarrouselForMotorcyclesComponent, CommonModule],
+  imports: [MotoHeaderDetailComponent,ChispaInformationComponent,CarrouselForMotorcyclesComponent,DealersStoresMapComponent,CommonModule],
   templateUrl: './motorcycle-detail.component.html',
   styleUrl: './motorcycle-detail.component.css'
 })
