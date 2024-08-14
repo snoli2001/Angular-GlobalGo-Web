@@ -1,0 +1,29 @@
+@if (showVideo) {
+    <div class="my-10 flex justify-center">
+        <video id="player1" width="1280" height="590" controls>
+            <!-- <source [attr.src]="videoSrc" type="video/mp4"> -->
+            <source src="./video.mp4" type="video/mp4">
+        </video>
+    </div>
+}@else {
+
+    <section class="my-10 py-10 proximaNova-Bold min-w-full flex flex-col items-center bg-slate-800 relative">
+        <div class="flex flex-col items-center gap-5">
+            <h1 class="text-4xl text-blue-700">Global <span class="text-3xl text-red-600">GO</span></h1>
+            <h2 class="text-9xl text-white">NCR750</h2>
+        </div>
+
+
+        <button class="absolute p-2 top-1/2">
+            <i class="pi pi-play-circle text-yellow-400 hover:text- text-5xl"></i>
+        </button>
+
+        <div class="absolute top-10 right-10 max-w-24">
+            <img src="../../../../../assets/imgs/logos/globalGo.jpg" alt="Your Image" class="w-full h-auto object-cover">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+          
+
+    </section>
+    
+}

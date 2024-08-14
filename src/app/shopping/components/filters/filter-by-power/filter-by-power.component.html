@@ -2,7 +2,8 @@
     <p-accordionTab header="Potencia">
         <div class="p-4 flex flex-col gap-4">
             <p-slider [(ngModel)]="power" [min]="7" [max]="100" (onChange)="handleFilter()"></p-slider>
-            <span class="proximaNova-Light">{{ power }} kM/G</span>
+            <!-- <span class="proximaNova-Light">{{ power }} kM/G</span> -->
+            <span class="proximaNova-Light">{{ power }} HP</span>
             <div class="flex flex-row justify-between">
                 <app-clear-filter custom_style="font-bold proximaNova-Regular text-xs hover:text-blue-500"/>
             </div>

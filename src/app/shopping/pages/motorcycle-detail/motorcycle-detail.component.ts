@@ -7,11 +7,12 @@ import { MotoStateService } from '../../states/moto.state.service';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { DealersStoresMapComponent } from '../../components/motorcycles/dealers-stores-map/dealers-stores-map.component';
+import { MotorcycleVideoComponent } from '../../components/motorcycles/motorcycle-video/motorcycle-video.component';
 
 @Component({
   selector: 'app-motorcycle-detail',
   standalone: true,
-  imports: [MotoHeaderDetailComponent,ChispaInformationComponent,CarrouselForMotorcyclesComponent,DealersStoresMapComponent,CommonModule],
+  imports: [MotoHeaderDetailComponent,ChispaInformationComponent,CarrouselForMotorcyclesComponent,DealersStoresMapComponent,MotorcycleVideoComponent,CommonModule],
   templateUrl: './motorcycle-detail.component.html',
   styleUrl: './motorcycle-detail.component.css'
 })
