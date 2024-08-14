@@ -14,22 +14,60 @@ import { MotorcyclesTabViewComponent } from '../motorcycles-tab-view/motorcycles
 export class CarrouselForMotorcyclesComponent implements OnChanges {
   @Input() motorcycle: IMotorcycle;
   public images: any[];
-
   constructor(){
     this.motorcycle = {} as IMotorcycle
-    this.images = [];
+    
+    this.images = [
+      {
+        itemImageSrc: 'assets/ssenda_leo110_02.jpg',
+        thumbnailImageSrc: 'assets/ssenda_leo110_02.jpg',
+        alt: 'Imagen de ejemplo 1',
+        title: 'Título 1',
+      },
+      {
+        itemImageSrc: 'assets/ssenda_leo110_03.jpg',
+        thumbnailImageSrc: 'assets/ssenda_leo110_03.jpg',
+        alt: 'Imagen de ejemplo 2',
+        title: 'Título 2',
+      },
+      {
+        itemImageSrc: 'assets/ssenda_leo110_04.jpg',
+        thumbnailImageSrc: 'assets/ssenda_leo110_03.jpg',
+        alt: 'Imagen de ejemplo 2',
+        title: 'Título 2',
+      },
+      {
+        itemImageSrc: 'assets/ssenda_leo110_03.jpg',
+        thumbnailImageSrc: 'assets/ssenda_leo110_03.jpg',
+        alt: 'Imagen de ejemplo 2',
+        title: 'Título 2',
+      },
+      {
+        itemImageSrc: 'assets/ssenda_leo110_03.jpg',
+        thumbnailImageSrc: 'assets/ssenda_leo110_03.jpg',
+        alt: 'Imagen de ejemplo 2',
+        title: 'Título 2',
+      },
+      {
+        itemImageSrc: 'assets/ssenda_leo110_03.jpg',
+        thumbnailImageSrc: 'assets/ssenda_leo110_03.jpg',
+        alt: 'Imagen de ejemplo 2',
+        title: 'Título 2',
+      },
+    ];
+    
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    if (changes['motorcycle'] && this.motorcycle) {
-      this.images = [
-        {
-          itemImageSrc: `../../../../assets/imgs/motorcycles/${this.motorcycle.imagen}`,
-          thumbnailImageSrc: `../../../../assets/imgs/motorcycles/${this.motorcycle.imagen}`,
-          alt: 'Description for Image 1',
-          title: 'Title 1',
-        },
-      ];
-    }
+    // if (changes['motorcycle'] && this.motorcycle) {
+    //   this.images = [
+    //     {
+    //       itemImageSrc: `assets/imgs/motorcycles/${this.motorcycle.imagen}`,
+    //       thumbnailImageSrc: `assets/imgs/motorcycles/${this.motorcycle.imagen}`,
+    //       alt: `Imagen de ${this.motorcycle.modelo}`,
+    //       title: this.motorcycle.modelo,
+    //     },
+    //   ];
+    // }
   }
 }

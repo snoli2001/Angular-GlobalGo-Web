@@ -1,29 +1,28 @@
-@if (showVideo) {
-    <div class="my-10 flex justify-center">
-        <video id="player1" width="1280" height="590" controls>
-            <!-- <source [attr.src]="videoSrc" type="video/mp4"> -->
-            <source src="./video.mp4" type="video/mp4">
-        </video>
-    </div>
-}@else {
-
-    <section class="my-10 py-10 proximaNova-Bold min-w-full flex flex-col items-center bg-slate-800 relative">
-        <div class="flex flex-col items-center gap-5">
-            <h1 class="text-4xl text-blue-700">Global <span class="text-3xl text-red-600">GO</span></h1>
-            <h2 class="text-9xl text-white">NCR750</h2>
-        </div>
-
-
-        <button class="absolute p-2 top-1/2">
-            <i class="pi pi-play-circle text-yellow-400 hover:text- text-5xl"></i>
-        </button>
-
-        <div class="absolute top-10 right-10 max-w-24">
-            <img src="../../../../../assets/imgs/logos/globalGo.jpg" alt="Your Image" class="w-full h-auto object-cover">
-            <div class="absolute inset-0 bg-black opacity-50"></div>
-        </div>
-          
-
+<div class="shadow-lg rounded-sm max-w-full overflow-hidden max-h-[1550px]">
+  <header class='relative p-2 rounded-t-sm flex justify-center z-0 {{sectionClass}}'>
+    <section
+      class="py-60 proximaNova-Bold min-w-full flex flex-col items-center bg-[url('https://flux.somosmoto.pe/f/https://somosmoto.pe/assets/images/default/bike-video-bg.jpg?width=2868&height=932&quality=60')] bg-cover bg-center relative">
+      <div class="flex flex-col items-center gap-5">
+        <h1 class="text-8xl bg-gradient-to-r from-blue-700 to-red-600 bg-clip-text text-transparent">Global GO</h1>
+        <h2 class="text-9xl bg-gradient-to-r from-slate-800 via-gray-500 to-gray-200 bg-clip-text text-transparent">
+          NCR750</h2>
+      </div>
+      <button class="absolute p-2 top-1/2" (click)="handlevideo()">
+        <i class="pi pi-play-circle text-yellow-500 hover:text-yellow-200 text-7xl"></i>
+      </button>
+      <div class="absolute top-10 right-10 max-w-24">
+        <img src="../../../../../assets/imgs/logos/globalGo.jpg" alt="Your Image" class="w-full h-auto object-cover">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+      </div>
     </section>
-    
-}
+  </header>
+
+  <main class="z-10 sm:px-4 sm:pt-2 md:p-4 2xl:mb-2 bg-white flex flex-col gap-7">
+    <div [ngClass]="{'elevate-video': showVideo, 'videoPlayer': true}" class="relative">
+      <video id="player1" width="100%" height="100%" controls></video>
+      <button (click)="handlevideo()" class="absolute top-4 right-4 p-2 bg-white rounded-full shadow-lg z-20">
+        <i class="pi pi-times text-black text-4xl"></i>
+      </button>
+    </div>
+  </main>
+</div>

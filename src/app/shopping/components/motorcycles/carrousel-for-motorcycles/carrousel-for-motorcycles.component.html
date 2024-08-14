@@ -1,12 +1,22 @@
-<section class="sm:px-8 py-10 w-full grid grid-flow-row items-center justify-center bg-white mb-24 relative">
+<section class="sm:px-8 py-10 w-full grid grid-flow-row items-center justify-center bg-white relative">
     <div class="flex sm:flex-col md:flex-row items-center justify-center gap-2">
         
         <p-galleria [value]="images" [showItemNavigators]="true" [showThumbnails]="false"
             [circular]="true" [numVisible]="5" [containerStyle]="{ 'max-width': '840px' }">
             <ng-template pTemplate="item" let-item>
-                <img [src]="item.itemImageSrc" style="width: 100%; display: block" class="pointer-events-none" 
-                [alt]="'Financiación de motos ' + item?.marca + ' en Lima, Perú: ' + item?.modelo">
+                <!-- <img [src]="item.itemImageSrc" style="width: 100%; display: block" class="pointer-events-none"  -->
+                <!-- <img src="../../../../../assets/ssenda_leo110_02.jpg" style="width: 100%; display: block" class="pointer-events-none"  -->
+                
+                <!-- <img src="../../../../../assets/ssenda_leo110_02.jpg" style="width: 100%; display: block" class="pointer-events-none" 
+                [alt]="'Financiación de motos ' + item?.marca + ' en Lima, Perú: ' + item?.modelo"> -->
+
+                <img [src]="item.itemImageSrc" style="width: 100%;" />
             </ng-template>
+            <!-- <ng-template pTemplate="thumbnail" let-item>
+                <div class="grid grid-nogutter justify-content-center">
+                    <img [src]="item.itemImageSrc" />
+                </div>
+            </ng-template> -->
         </p-galleria>
 
         <div class="flex flex-col justify-center gap-4 p-3">
