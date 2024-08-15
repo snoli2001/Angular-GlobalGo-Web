@@ -41,7 +41,7 @@ export class MotorcycleVideoComponent {
       features: ['playpause', 'progress', 'volume', 'fullscreen'],
       pluginPath: 'assets/mediaelement/',
       success: (mediaElement: any) => {
-        mediaElement.setSrc(`https://www.youtube.com/watch?v=9uY6Pw36iBA`);
+        mediaElement.setSrc(`https://www.youtube.com/watch?v=zFmWey_0Asc&vq=hd1080`);
         mediaElement.load();
       }
     }); 
