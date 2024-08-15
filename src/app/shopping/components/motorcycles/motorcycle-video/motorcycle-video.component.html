@@ -1,11 +1,10 @@
-<div class=" bg-red-300 max-w-full overflow-hidden max-h-[740px] ">
+<div class="max-w-full overflow-hidden max-h-[740px] " style="background-color: #f3f3f3;">
   <header class='relative rounded-t-sm flex justify-center z-0'>
     
     <section class="py-60 proximaNova-Bold min-w-full flex flex-col items-center bg-[url('https://flux.somosmoto.pe/f/https://somosmoto.pe/assets/images/default/bike-video-bg.jpg?width=2868&height=932&quality=60')] ">
       <div class="flex flex-col items-center gap-5">
         <h1 class="text-8xl bg-gradient-to-r from-blue-700 to-red-600 bg-clip-text text-transparent uppercase">Global GO</h1>
-        <h2 class="text-9xl bg-gradient-to-r from-slate-800 via-gray-500 to-gray-200 bg-clip-text text-transparent">
-          NCR750</h2>
+        <h2 class="text-9xl bg-gradient-to-r from-slate-800 via-gray-500 to-gray-200 bg-clip-text text-transparent">NCR750</h2>
       </div>
       <button class="absolute p-2 top-1/2" (click)="handlevideo()">
         <i class="pi pi-play-circle text-yellow-500 hover:text-yellow-200 text-7xl"></i>
@@ -18,8 +17,7 @@
 
   </header>
 
-  <main class="z-10 sm:px-4 sm:pt-2 md:p-4 2xl:mb-0 bg-white flex flex-col gap-7">
-    <!-- <div [ngClass]="{'elevate-video': showVideo, 'videoPlayer': true}" class="relative"> -->
+  <main class="z-10 sm:px-4 sm:pt-2 md:p-4 flex flex-col gap-7">
     <div class='relative videoPlayer {{videoClass}}'>
       <video id="player1" width="100%" height="100%" controls></video>
       <button (click)="handlevideo()" class="absolute top-4 right-4 p-2 bg-white rounded-full shadow-lg z-20">
