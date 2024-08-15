@@ -44,7 +44,7 @@ export class MotorcycleDetailComponent {
     });
     this.timeoutId = setTimeout(() => {
       if (!this.motorCycle) {
-        this.router.navigate(['/catalogo-motos']);
+        this.router.navigate(['/not-found']);
       }
     }, 5000);
   }
