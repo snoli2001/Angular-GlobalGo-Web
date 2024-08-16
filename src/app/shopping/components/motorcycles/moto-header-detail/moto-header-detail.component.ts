@@ -23,6 +23,14 @@ export class MotoHeaderDetailComponent {
     this.financingUrl = `https://globalgo-login.sis360.com.pe/solicitar-financiamiento?Id=${this.motoId}`;
   }
 
+  getModeloLogo(){
+    const cleanedModelo = this.motorcycle.modelo.replace(/[-_\s]/g, '').toLocaleLowerCase();
+    console.log(`../../../../../assets/imgs/modelosLogos/${this.motorcycle.marca.toLocaleLowerCase()}_${cleanedModelo}_logo.svg`);
+    return `../../../../../assets/imgs/modelosLogos/${this.motorcycle.marca.toLocaleLowerCase()}_${cleanedModelo}_logo.svg`;  
+    // ../../../../../assets/imgs/modelosLogos/ronco200.svg
+  }
+  
+
   getPathHeader(img: string): string {
     return `../../../../../assets/imgs/cabeceras/${img}`;
   }

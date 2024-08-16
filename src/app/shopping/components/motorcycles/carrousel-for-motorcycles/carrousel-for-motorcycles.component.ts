@@ -34,15 +34,10 @@ export class CarrouselForMotorcyclesComponent {
   }
 
 
-  getCarruselPath(filename: string) {
-    
-    
+  getCarruselPath(filename: string) {    
     const cleanedModelo = this.motorcycle.modelo.replace(/[-_\s]/g, '').toUpperCase();
-    console.log(`../../../../../assets/imgs/carruseles/${this.motorcycle.marca.toUpperCase()}_${cleanedModelo}/${filename}.jpg`);
     return `../../../../../assets/imgs/carruseles/${this.motorcycle.marca.toUpperCase()}_${cleanedModelo}/${filename}.jpg`;  
   }
-  
-
 
   async fetchCarrusel(motoId:number): Promise<ICarrusel[]> {
     try {
