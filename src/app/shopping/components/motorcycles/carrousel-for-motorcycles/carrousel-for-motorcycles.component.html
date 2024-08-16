@@ -1,26 +1,18 @@
 <section class="sm:px-8 py-10 w-full grid grid-flow-row items-center justify-center bg-white relative">
     <div class="flex sm:flex-col md:flex-row items-center justify-center gap-2">
+    <!-- <div class="sm:flex sm:flex-col sm:gap-3 md:grid md:grid-cols-2 md:gap-10 justify-center"> -->
         
-        <p-galleria [value]="images" [showItemNavigators]="true" [showThumbnails]="false"
+        <p-galleria [value]="carruseles" [showItemNavigators]="true" [showThumbnails]="false" 
             [circular]="true" [numVisible]="5" [containerStyle]="{ 'max-width': '900px' }">
             <ng-template pTemplate="item" let-item>
-                <!-- <img [src]="item.itemImageSrc" style="width: 100%; display: block" class="pointer-events-none"  -->
-                <!-- <img src="../../../../../assets/ssenda_leo110_02.jpg" style="width: 100%; display: block" class="pointer-events-none"  -->
-                
-                <!-- <img src="../../../../../assets/ssenda_leo110_02.jpg" style="width: 100%; display: block" class="pointer-events-none" 
-                [alt]="'Financiación de motos ' + item?.marca + ' en Lima, Perú: ' + item?.modelo"> -->
-
-                <img [src]="item.itemImageSrc" style="width: 100%;" />
+              
+                <img [src]="getCarruselPath(item.imagen)" style="width: 100%;" />
             </ng-template>
-            <!-- <ng-template pTemplate="thumbnail" let-item>
-                <div class="grid grid-nogutter justify-content-center">
-                    <img [src]="item.itemImageSrc" />
-                </div>
-            </ng-template> -->
+          
         </p-galleria>
 
-        <div class="flex flex-col justify-center gap-4 p-3">
-            <header class="flex flex-col gap-2">
+        <div class="flex flex-col justify-center items-center gap-4 p-3">
+            <header class="flex flex-col gap-2 w-full sm:text-center md:text-left">
                 <h1 class="proximaNova-Bold font-semibold text-7xl text-slate-700">{{motorcycle.modelo}}</h1>
                 <p class="proximaNova-Regular font-semibold text-3xl text-slate-700">
                     Especificaciones Técnicas

@@ -3,71 +3,60 @@ import { GalleriaModule } from 'primeng/galleria';
 import { TabViewModule } from 'primeng/tabview';
 import { IMotorcycle } from '../../../models/Motorcycle';
 import { MotorcyclesTabViewComponent } from '../motorcycles-tab-view/motorcycles-tab-view.component';
+import { ICarrusel } from '../../../models/carrusel';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-carrousel-for-motorcycles',
   standalone: true,
-  imports: [GalleriaModule, TabViewModule,MotorcyclesTabViewComponent],
+  imports: [GalleriaModule, TabViewModule, MotorcyclesTabViewComponent],
   templateUrl: './carrousel-for-motorcycles.component.html',
   styleUrls: ['./carrousel-for-motorcycles.component.css'],
 })
-export class CarrouselForMotorcyclesComponent implements OnChanges {
-  @Input() motorcycle: IMotorcycle;
-  public images: any[];
-  constructor(){
-    this.motorcycle = {} as IMotorcycle
-    
-    this.images = [
-      {
-        itemImageSrc: 'assets/ssenda_leo110_02.jpg',
-        thumbnailImageSrc: 'assets/ssenda_leo110_02.jpg',
-        alt: 'Imagen de ejemplo 1',
-        title: 'Título 1',
-      },
-      {
-        itemImageSrc: 'assets/ssenda_leo110_03.jpg',
-        thumbnailImageSrc: 'assets/ssenda_leo110_03.jpg',
-        alt: 'Imagen de ejemplo 2',
-        title: 'Título 2',
-      },
-      {
-        itemImageSrc: 'assets/ssenda_leo110_04.jpg',
-        thumbnailImageSrc: 'assets/ssenda_leo110_03.jpg',
-        alt: 'Imagen de ejemplo 2',
-        title: 'Título 2',
-      },
-      {
-        itemImageSrc: 'assets/ssenda_leo110_03.jpg',
-        thumbnailImageSrc: 'assets/ssenda_leo110_03.jpg',
-        alt: 'Imagen de ejemplo 2',
-        title: 'Título 2',
-      },
-      {
-        itemImageSrc: 'assets/ssenda_leo110_03.jpg',
-        thumbnailImageSrc: 'assets/ssenda_leo110_03.jpg',
-        alt: 'Imagen de ejemplo 2',
-        title: 'Título 2',
-      },
-      {
-        itemImageSrc: 'assets/ssenda_leo110_03.jpg',
-        thumbnailImageSrc: 'assets/ssenda_leo110_03.jpg',
-        alt: 'Imagen de ejemplo 2',
-        title: 'Título 2',
-      },
-    ];
-    
+export class CarrouselForMotorcyclesComponent {
+  @Input() motorcycle: IMotorcycle = {} as IMotorcycle;
+  public carruseles: ICarrusel[] = [];
+  public motoId: number = 0;
+
+  constructor(private route: ActivatedRoute) {
   }
 
-  ngOnChanges(changes: SimpleChanges): void {
-    // if (changes['motorcycle'] && this.motorcycle) {
-    //   this.images = [
-    //     {
-    //       itemImageSrc: `assets/imgs/motorcycles/${this.motorcycle.imagen}`,
-    //       thumbnailImageSrc: `assets/imgs/motorcycles/${this.motorcycle.imagen}`,
-    //       alt: `Imagen de ${this.motorcycle.modelo}`,
-    //       title: this.motorcycle.modelo,
-    //     },
-    //   ];
-    // }
+  async ngOnInit() {
+    try {
+      this.route.params.subscribe(params => {
+        const motoId = +params['id']; 
+        this.motoId = motoId;
+      });
+      this.carruseles = await this.fetchCarrusel(this.motoId); 
+    } catch (error) {
+      console.error('Error initializing component:', error);
+    }
+  }
+
+
+  getCarruselPath(filename: string) {
+    
+    
+    const cleanedModelo = this.motorcycle.modelo.replace(/[-_\s]/g, '').toUpperCase();
+    console.log(`../../../../../assets/imgs/carruseles/${this.motorcycle.marca.toUpperCase()}_${cleanedModelo}/${filename}.jpg`);
+    return `../../../../../assets/imgs/carruseles/${this.motorcycle.marca.toUpperCase()}_${cleanedModelo}/${filename}.jpg`;  
+  }
+  
+
+
+  async fetchCarrusel(motoId:number): Promise<ICarrusel[]> {
+    try {
+      const response = await fetch(
+        `https://localhost:7092/api/Carrusel/getCarrusel/${motoId}`
+      );
+      if (!response.ok) {
+        throw new Error('Failed to fetch carrusel');
+      }
+      const data = await response.json();
+      return data as ICarrusel[];
+    } catch (error) {
+      console.error('Error fetching carrusel:', error);
+      return [];
+    }
   }
 }

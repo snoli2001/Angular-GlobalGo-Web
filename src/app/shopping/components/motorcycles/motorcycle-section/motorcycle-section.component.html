@@ -1,5 +1,40 @@
 <section class="p-3 flex flex-col gap-4">
-    <img src="../../../../../assets/imgs/advertising/motorBanner.webp">
+    <!-- <img src="../../../../../assets/imgs/advertising/motorBanner.webp"> -->
+
+
+    
+
+<!-- 
+    <p-carousel 
+    [value]="images" 
+    [numVisible]="4" 
+    [numScroll]="4" 
+    [circular]="true" 
+    autoplayInterval="3000">
+        <ng-template let-product pTemplate="item">
+                <div class="border-1 border-round">
+                    
+                    <div class="relative mx-auto">
+                        <img 
+                            src="{{ product.itemImageSrc }}" 
+                            [alt]="product.name" 
+                            class="w-full border-round" />
+                        <p-tag 
+                            value="In Stock" 
+                            severity="success" 
+                            class="absolute" 
+                            [ngStyle]="{ 'left.px': 5, 'top.px': 5 }" />
+                    </div>
+                    
+                    <div class="mb-2 font-medium text-center">
+                        {{ product.title }}
+                    </div>
+                </div>
+        </ng-template>
+</p-carousel> -->
+
+
+
     <app-filter-by-displacement-and-price [motorcycles]="listMotos"/>
-    <app-list-motos [listMotorcycles]="listMotos"></app-list-motos>
+    <app-list-motos [listMotorcycles]="listMotos"></app-list-motos> 
 </section>
