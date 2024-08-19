@@ -5,9 +5,9 @@ import { MotorcycleDetailComponent } from './shopping/pages/motorcycle-detail/mo
 import { NotMotorcycleFoundComponent } from './shopping/pages/not-motorcycle-found/not-motorcycle-found.component';
 
 export const routes: Routes = [
-    { path: '', redirectTo: '/catalogo-motos', pathMatch: 'full' },
-    {path:'catalogo-motos',component: MotorcycleCatalougeComponent},
-    {path:'moto-detail/:id',component:MotorcycleDetailComponent},
-    {path:'not-found',component:NotMotorcycleFoundComponent},
-    {path:'**', component:NotFoundPageComponent}
+    { path: '', redirectTo: 'catalogo-motos', pathMatch: 'full' },   
+    { path: 'catalogo-motos', component: MotorcycleCatalougeComponent },  
+    { path: 'moto-detail/:id', component: MotorcycleDetailComponent },
+    { path: 'not-found', component: NotMotorcycleFoundComponent },
+    { path: '**', component: NotFoundPageComponent }
 ];
