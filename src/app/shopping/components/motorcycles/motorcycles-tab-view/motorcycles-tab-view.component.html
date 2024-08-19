@@ -41,11 +41,11 @@
         <div *ngIf="option == 1" class="flex flex-col sm:gap-10 xl:gap-16 max-w-xl sm:px-10 md:px-10 pt-8 bg-slate-100" [ngClass]="{ fadeIn: option == 1, fadeOut: option != 1 }">
             <div class="flex flex-col gap-3">
                 <h3 class="proximaNova-Regular text-center sm:text-xs md:text-base lg:text-xl font-semibold uppercase">
-                    Motor y Caracteristicas
+                    Motor y Características
                 </h3>
                 <p class="proximaNova-Light sm:text-xs md:text-sm lg:text-base">
-                    Cargado con un eficiente motor de
-                    {{ motorcycle.cilindrada }} centimetros cubicos, lo que te dara
+                    Cargada con un eficiente motor de
+                    {{ motorcycle.cilindrada }} centímetros cúbicos, lo que te dará 
                     satisfacción al recorrer las pistas con esta bella motocicleta.
                 </p>
             </div>
@@ -96,8 +96,8 @@
                     Combustible
                 </h3>
                 <p class="proximaNova-Light sm:text-xs md:text-sm lg:text-base">
-                    Eficiente motor con una autonomia de {{motorcycle.autonomia}}. La
-                    {{motorcycle.modelo}} tiene una cilindrada de {{motorcycle.cilindrada}} cc y una potencia de
+                    Motor eficiente con una autonomía de {{motorcycle.autonomia}}. La
+                    {{motorcycle.modelo}} tiene una cilindrada de {{motorcycle.cilindrada}} cc y una potencia de 
                     {{motorcycle.potencia}} HP.
                 </p>
             </div>
@@ -135,7 +135,7 @@
                         <div class="flex flex-col">
                             <h4 class="proximaNova-Regular sm:text-xs xl:text-xl">Rendimiento</h4>
                             <p class="proximaNova-Light sm:text-xs xl:text-base">
-                                {{ motorcycle.rendimiento }}KM/GL
+                                {{ motorcycle.rendimiento }}KM/GAL
                             </p>
                         </div>
                     </div>
@@ -159,22 +159,21 @@
         <div *ngIf="option == 3" class="flex flex-col sm:gap-10 xl:gap-16 max-w-xl sm:px-10 md:px-10 pt-8 bg-slate-100" [ngClass]="{ fadeIn: option == 3, fadeOut: option != 3 }">
             <div class="flex flex-col gap-3">
                 <h3 class="proximaNova-Regular text-center sm:text-xs md:text-base lg:text-xl font-semibold uppercase">
-                    Suspension
-                </h3>   
+                    Suspensión
+                </h3>
                 <p class="proximaNova-Light sm:text-xs md:text-sm lg:text-base hidden lg:block">
-                    La {{motorcycle.modelo}} cuenta con frenos {{motorcycle.freno_delantero}}, ideales para
-                    este tipo de cilindra y que en combinación con el bajo peso otorga una frenada muy eficiente.
+                    La {{ motorcycle.modelo }} cuenta con frenos {{ motorcycle.freno_delantero }}, ideales para este tipo de cilindra y, en combinación con el bajo peso, otorgan una frenada muy eficiente.
                 </p>
-                
-                <p class="proximaNova-Light sm:text-xs md:text-sm lg:text-base md:hidden ">
-                    La {{motorcycle.modelo}} cuenta con frenos {{motorcycle.freno_delantero}}, ideales para frenada muy eficiente.
+        
+                <p class="proximaNova-Light sm:text-xs md:text-sm lg:text-base md:hidden">
+                    La {{ motorcycle.modelo }} cuenta con frenos {{ motorcycle.freno_delantero }}, ideales para una frenada muy eficiente.
                 </p>
             </div>
-
+        
             <div class="sm:flex sm:flex-col sm:gap-7 xl:grid xl:grid-cols-2 xl:gap-4">
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row gap-4">
-                        <i class="flaticon-freno-de-disco  sm:text-2xl md:text-3xl xl:text-4xl"></i>
+                        <i class="flaticon-freno-de-disco sm:text-2xl md:text-3xl xl:text-4xl"></i>
                         <div class="flex flex-col">
                             <h4 class="proximaNova-Regular sm:text-xs xl:text-lg">Freno Delantero</h4>
                             <p class="hidden xl:block proximaNova-Light sm:text-sm xl:text-sm">
@@ -183,7 +182,7 @@
                         </div>
                     </div>
                 </div>
-
+        
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row gap-4">
                         <i class="flaticon-freno-de-disco sm:text-2xl md:text-3xl xl:text-4xl"></i>
@@ -195,7 +194,7 @@
                         </div>
                     </div>
                 </div>
-
+        
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row gap-4">
                         <i class="flaticon-suspension sm:text-2xl md:text-3xl xl:text-4xl"></i>
@@ -207,7 +206,7 @@
                         </div>
                     </div>
                 </div>
-
+        
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row gap-4">
                         <i class="flaticon-suspension sm:text-2xl md:text-3xl xl:text-4xl"></i>
@@ -222,19 +221,16 @@
             </div>
         </div>
 
-
-        <div *ngIf="option == 4" class="flex flex-col sm:gap-8 md:gap-16 max-w-xl sm:px-10 md:px-10 pt-8 bg-slate-100"
-            [ngClass]="{ fadeIn: option == 4, fadeOut: option != 4 }">
+        <div *ngIf="option == 4" class="flex flex-col sm:gap-8 md:gap-16 max-w-xl sm:px-10 md:px-10 pt-8 bg-slate-100" [ngClass]="{ fadeIn: option == 4, fadeOut: option != 4 }">
             <div class="flex flex-col gap-3">
                 <h3 class="proximaNova-Regular text-center sm:text-xs md:text-base lg:text-xl font-semibold uppercase">
                     Transmisión
                 </h3>
                 <p class="proximaNova-Light sm:text-xs md:text-sm lg:text-base">
-                    La {{ motorcycle.modelo }} cuenta con una transmisión
-                    {{ motorcycle.transmision }} asegurándonos una cómoda conducción.
+                    La {{ motorcycle.modelo }} cuenta con una transmisión {{ motorcycle.transmision }}, asegurando una cómoda conducción.
                 </p>
             </div>
-
+        
             <div class="sm:flex sm:flex-col sm:gap-7 xl:grid xl:grid-cols-2 xl:gap-4">
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row items-center gap-4">
@@ -247,24 +243,22 @@
                         </div>
                     </div>
                 </div>
-
+        
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row items-center gap-4">
                         <i class="flaticon-radar-de-velocidad sm:text-2xl md:text-3xl xl:text-4xl"></i>
                         <div class="flex flex-col">
                             <h4 class="proximaNova-Regular sm:text-sm xl:text-xl">Velocidad Máxima</h4>
                             <p class="proximaNova-Light sm:text-sm xl:text-base">
-                                {{ motorcycle.velocidad }} KM/H
+                                {{ motorcycle.velocidad }} km/h
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
+        
         <div *ngIf="option == 5" class="flex flex-col sm:gap-10 md:gap-16 max-w-xl sm:px-8 md:px-10 pt-8 bg-slate-100" [ngClass]="{ fadeIn: option == 5, fadeOut: option != 5 }">
-            
             <div class="flex flex-col gap-3">
                 <h3 class="proximaNova-Regular text-center sm:text-xs md:text-base lg:text-xl font-semibold uppercase">
                     Dimensiones
@@ -273,31 +267,32 @@
                     {{ getMotorcycleDescription() }}
                 </p>
             </div>
-
+        
             <div class="sm:flex sm:flex-col sm:gap-7 xl:grid xl:grid-cols-2 xl:gap-4">
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row items-center gap-4">
                         <i class="flaticon-peso sm:text-2xl md:text-3xl xl:text-4xl"></i>
                         <div class="flex flex-col">
                             <h4 class="proximaNova-Regular sm:text-sm xl:text-xl">Peso</h4>
-                            <p class="proximaNova-Light sm:text-sm xl:text-base">{{ motorcycle.peso }} KG</p>
+                            <p class="proximaNova-Light sm:text-sm xl:text-base">{{ motorcycle.peso }} kg</p>
                         </div>
                     </div>
                 </div>
-
+        
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row items-center gap-4">
                         <i class="flaticon-expansion sm:text-2xl md:text-3xl xl:text-4xl"></i>
                         <div class="flex flex-col">
-                            <h4 class="proximaNova-Regular sm:text-sm xl:text-xl">Dimensiones (CM)</h4>
+                            <h4 class="proximaNova-Regular sm:text-sm xl:text-xl">Dimensiones (cm)</h4>
                             <p class="proximaNova-Light sm:text-sm xl:text-base">
-                                {{ motorcycle.largo }}x{{ motorcycle.ancho }} (LxA)
+                                {{ motorcycle.largo }} x {{ motorcycle.ancho }} (LxA)
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
     </div>
 </div>
 

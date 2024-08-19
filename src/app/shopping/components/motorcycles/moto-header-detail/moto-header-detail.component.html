@@ -1,25 +1,15 @@
 <section class="relative">
     <img [src]="getPathHeader(motorcycle.imagen)" class="hidden min-w-full md:block pointer-events-none" [alt]="motorcycle.imagen">
 
-    <div class="container absolute hidden 2xl:flex flex-col gap-3 text-slate-700 p-4 top-[15%] left-[3%]">
+    <div class="container absolute hidden 2xl:flex flex-col gap-3 text-slate-700 p-4 top-[5%] left-[3%]">
 
         <head class="flex flex-row items-center gap-2">
             <img [src]="getPathLogoHeader1(motorcycle.logo)" [alt]="'Financiación de motos Honda en Lima, Perú: CB500X'" class=" max-w-40">
-
             <img [src]="getModeloLogo()" class="max-w-60">
-            <!-- <img src="../../../../../assets/imgs/modelosLogos/bajaj_boxer150x_logo.svg" class="max-w-md"> -->
-            <!-- <ng-container *ngIf="motorcycle?.ModelIcon && motorcycle?.ModelIcon != ' '; else noImageTemplate">
-            </ng-container>../../../../../assets/imgs/honda_nc750x.svg
-
-              
-            <ng-template #noImageTemplate>
-            </ng-template> -->
-            <!-- <img [src]="getPathLogoHeader2('pulsar.svg')" class="max-w-md"> -->
-
         </head>
         
         <main>
-            <h1 class="proximaNova-Bold text-white text-8xl">{{motorcycle.modelo}}</h1>
+            <h1 class="proximaNova-Bold text-white text-7xl">{{motorcycle.modelo}}</h1>
         </main>
 
         <footer class="flex flex-col gap-2">
