@@ -5,11 +5,11 @@ import { IMotorcycle } from '../../../models/Motorcycle';
 import { MotorcyclesTabViewComponent } from '../motorcycles-tab-view/motorcycles-tab-view.component';
 import { ICarrusel } from '../../../models/carrusel';
 import { ActivatedRoute } from '@angular/router';
-
+import { ListColorsComponent } from '../list-colors/list-colors.component';
 @Component({
   selector: 'app-carrousel-for-motorcycles',
   standalone: true,
-  imports: [GalleriaModule, TabViewModule, MotorcyclesTabViewComponent],
+  imports: [GalleriaModule, TabViewModule, MotorcyclesTabViewComponent,ListColorsComponent],
   templateUrl: './carrousel-for-motorcycles.component.html',
   styleUrls: ['./carrousel-for-motorcycles.component.css'],
 })

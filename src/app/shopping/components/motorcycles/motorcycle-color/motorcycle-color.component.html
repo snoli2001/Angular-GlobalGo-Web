@@ -1,14 +1,16 @@
 <div class="relative w-12 h-12 rounded-full border border-black shadow-2xl overflow-hidden">
 
-  <div class="absolute inset-0 clip-half-diagonal-top-left" [style.background]="
-    'linear-gradient(30deg, ' + hex1 + ', #585858) '"></div>
+  @if (hex1 == hex2) {
+    <div class="absolute inset-0 clip-half-diagonal-top-left" [style.background]="'linear-gradient(30deg, ' + hex1 + ', #585858) '"></div>
+    <div class="absolute inset-0 clip-half-diagonal-bottom-right" [style.background]=" 'linear-gradient(30deg, ' + hex1 + ', #585858)'"></div> 
+  }@else {  
+    <div class="absolute inset-0 clip-half-diagonal-top-left" [style.background]="'linear-gradient(30deg, ' + hex1 + ', #585858) '"></div>
+    <div class="absolute inset-0 clip-half-diagonal-bottom-right" [style.background]=" 'linear-gradient(30deg, ' + hex2 + ', #585858)'"></div>
+    <div class="absolute inset-0 transform rotate-45">
+      <div class="absolute left-1/2 top-0 w-[1px] h-screen h-fulltransform -translate-x-1/2 bg-white "></div>
+    </div>  
+  }
 
 
-  <div class="absolute inset-0 clip-half-diagonal-bottom-right" [style.background]="
-    'linear-gradient(30deg, ' + hex2 + ', #585858)'"></div>
-
-  <div class="absolute inset-0 transform rotate-45">
-    <div class="absolute left-1/2 top-0 w-[1px] h-screen h-fulltransform -translate-x-1/2 bg-white "></div>
-  </div>
 
 </div>

@@ -1,3 +1,5 @@
+import { IColor } from "./Colors";
+
 export interface IMotorcycle {
     idModelo: number;
     modelo: string;
@@ -28,5 +30,5 @@ export interface IMotorcycle {
     freno_delantero: string;
     freno_posterior: string;
     ModelIcon:string;
-
+    colores:IColor[];
 }
