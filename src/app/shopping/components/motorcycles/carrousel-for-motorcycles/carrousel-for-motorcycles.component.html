@@ -1,5 +1,6 @@
 <section class="sm:px-8 py-10 w-full grid grid-flow-row items-center justify-center bg-white relative">
     <div class="flex sm:flex-col md:flex-row items-center justify-center gap-2">
+        
         <p-galleria [value]="carruseles" [showItemNavigators]="true" [showThumbnails]="false" 
             [circular]="true" [numVisible]="5" [containerStyle]="{ 'max-width': '900px' }">
             <ng-template pTemplate="item" let-item>
@@ -7,6 +8,8 @@
                 <img src="../../../../../assets/imgs/carruseles/BAJAJ_180NEONFI/bajaj_180neon_02.jpg" style="width: 100%;" />
             </ng-template>
         </p-galleria>
+
+
         
         <app-list-colors [Colores]="motorcycle.colores" />
             
