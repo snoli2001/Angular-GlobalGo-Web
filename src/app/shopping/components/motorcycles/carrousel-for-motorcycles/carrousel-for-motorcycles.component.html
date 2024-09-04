@@ -3,7 +3,8 @@
         <p-galleria [value]="carruseles" [showItemNavigators]="true" [showThumbnails]="false" 
             [circular]="true" [numVisible]="5" [containerStyle]="{ 'max-width': '900px' }">
             <ng-template pTemplate="item" let-item>
-                <img [src]="getCarruselPath(item.imagen)" style="width: 100%;" />
+                <!-- <img [src]="getCarruselPath(item.imagen)" style="width: 100%;" /> -->
+                <img src="../../../../../assets/imgs/carruseles/BAJAJ_180NEONFI/bajaj_180neon_02.jpg" style="width: 100%;" />
             </ng-template>
         </p-galleria>
         
@@ -16,8 +17,6 @@
                 <p class="proximaNova-Regular font-semibold text-3xl text-slate-700">
                     Especificaciones Técnicas
                 </p>
-
-                <!-- <img src="../../../../../assets/imgs/modelosLogos/bajaj_ns160tdabsug_logo.svg" alt=""> -->
             </header>
 
             <footer class="sm:max-w-xs md:max-w-sm lg:max-w-5xl xl:max-w-6xl">
