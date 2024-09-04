@@ -2,14 +2,14 @@ import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { GalleriaModule } from 'primeng/galleria';
 import { TabViewModule } from 'primeng/tabview';
 import { IMotorcycle } from '../../../models/Motorcycle';
-import { MotorcyclesTabViewComponent } from '../motorcycles-tab-view/motorcycles-tab-view.component';
 import { ICarrusel } from '../../../models/carrusel';
 import { ActivatedRoute } from '@angular/router';
 import { ListColorsComponent } from '../list-colors/list-colors.component';
+import { MotorcycyleSpecificationComponent } from '../motorcycyle-specification/motorcycyle-specification.component';
 @Component({
   selector: 'app-carrousel-for-motorcycles',
   standalone: true,
-  imports: [GalleriaModule, TabViewModule, MotorcyclesTabViewComponent,ListColorsComponent],
+  imports: [GalleriaModule, TabViewModule,ListColorsComponent, MotorcycyleSpecificationComponent],
   templateUrl: './carrousel-for-motorcycles.component.html',
   styleUrls: ['./carrousel-for-motorcycles.component.css'],
 })
