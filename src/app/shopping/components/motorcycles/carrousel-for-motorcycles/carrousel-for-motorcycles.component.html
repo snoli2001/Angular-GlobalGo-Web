@@ -1,13 +1,14 @@
 <section class="sm:px-8 py-10 w-full grid grid-flow-row items-center justify-center bg-white relative">
     <div class="flex sm:flex-col md:flex-row items-center justify-center gap-2">
-    <!-- <div class="sm:flex sm:flex-col sm:gap-3 md:grid md:grid-cols-2 md:gap-10 justify-center"> -->
         <p-galleria [value]="carruseles" [showItemNavigators]="true" [showThumbnails]="false" 
             [circular]="true" [numVisible]="5" [containerStyle]="{ 'max-width': '900px' }">
             <ng-template pTemplate="item" let-item>
                 <img [src]="getCarruselPath(item.imagen)" style="width: 100%;" />
             </ng-template>
-            
         </p-galleria>
+        
+        <app-list-colors [Colores]="motorcycle.colores" />
+            
 
         <div class="flex flex-col justify-center items-center gap-4 p-3">
             <header class="flex flex-col gap-2 w-full sm:text-center md:text-left">
@@ -25,6 +26,5 @@
         </div>        
     </div>
 
-    <app-list-colors [Colores]="motorcycle.colores"/>
     
 </section>
