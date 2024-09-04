@@ -1,6 +1,6 @@
 <section class="flex flex-col" *ngIf="motorCycle">  
     <app-moto-header-detail [motorcycle]="motorCycle"/>
-    <app-carrousel-for-motorcycles [motorcycle]="motorCycle"/>
+    <app-carrousel-for-motorcycles [motorcycle]="motorCycle" [carruseles]="motorCycle.carrusels" />
     <!-- <app-motorcycle-video/> -->
     <app-chispa-information [motorcycle]="motorCycle"/>
     <!-- <app-dealers-stores-map/> -->

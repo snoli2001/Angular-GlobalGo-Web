@@ -1,26 +1,16 @@
-<section class="">
-    <div class="">
+<section class="sm:px-8 py-10 w-full grid grid-flow-row items-center justify-center bg-white">
+    <div class="flex sm:flex-col md:flex-row items-center justify-center gap-2 relative">
+        
+        
         <p-galleria [value]="carruseles" [showItemNavigators]="true" [showThumbnails]="false" 
             [circular]="true" [numVisible]="5" [containerStyle]="{ 'max-width': '900px' }">
             <ng-template pTemplate="item" let-item>
                 <img [src]="getCarruselPath(item.imagen)" style="width: 100%;" />
             </ng-template>
         </p-galleria>
+
+
         <app-list-colors [Colores]="motorcycle.colores" />
         <app-motorcycyle-specification [motorcycle] = "motorcycle" />
     </div>    
 </section>
-
-
-<!-- <section class="sm:px-8 py-10 w-full grid grid-flow-row items-center justify-center bg-white">
-    <div class="flex sm:flex-col md:flex-row items-center justify-center gap-2 relative">
-        <p-galleria [value]="carruseles" [showItemNavigators]="true" [showThumbnails]="false" 
-            [circular]="true" [numVisible]="5" [containerStyle]="{ 'max-width': '900px' }">
-            <ng-template pTemplate="item" let-item>
-                <img [src]="getCarruselPath(item.imagen)" style="width: 100%;" />
-            </ng-template>
-        </p-galleria>
-        <app-list-colors [Colores]="motorcycle.colores" />
-        <app-motorcycyle-specification [motorcycle] = "motorcycle" />
-    </div>    
-</section> -->

@@ -1,3 +1,4 @@
+import { ICarrusel } from "./carrusel";
 import { IColor } from "./Colors";
 
 export interface IMotorcycle {
@@ -31,4 +32,5 @@ export interface IMotorcycle {
     freno_posterior: string;
     ModelIcon:string;
     colores:IColor[];
+    carrusels: ICarrusel[];
 }

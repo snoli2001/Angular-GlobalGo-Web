@@ -15,22 +15,22 @@ import { MotorcycyleSpecificationComponent } from '../motorcycyle-specification/
 })
 export class CarrouselForMotorcyclesComponent {
   @Input() motorcycle: IMotorcycle = {} as IMotorcycle;
-  public carruseles: ICarrusel[] = [];
+  @Input() carruseles: ICarrusel[] = [];
   public motoId: number = 0;
 
   constructor(private route: ActivatedRoute) {
   }
 
   async ngOnInit() {
-    try {
-      this.route.params.subscribe(params => {
-        const motoId = +params['id']; 
-        this.motoId = motoId;
-      });
-      this.carruseles = await this.fetchCarrusel(this.motoId); 
-    } catch (error) {
-      console.error('Error initializing component:', error);
-    }
+    // try {
+    //   this.route.params.subscribe(params => {
+    //     const motoId = +params['id']; 
+    //     this.motoId = motoId;
+    //   });
+    //   this.carruseles = await this.fetchCarrusel(this.motoId); 
+    // } catch (error) {
+    //   console.error('Error initializing component:', error);
+    // }
   }
 
 
@@ -39,19 +39,19 @@ export class CarrouselForMotorcyclesComponent {
     return `../../../../../assets/imgs/carruseles/${this.motorcycle.marca.toUpperCase()}_${cleanedModelo}/${filename}.jpg`;  
   }
 
-  async fetchCarrusel(motoId:number): Promise<ICarrusel[]> {
-    try {
-      const response = await fetch(
-        `https://localhost:7092/api/Carrusel/getCarrusel/${motoId}`
-      );
-      if (!response.ok) {
-        throw new Error('Failed to fetch carrusel');
-      }
-      const data = await response.json();
-      return data as ICarrusel[];
-    } catch (error) {
-      console.error('Error fetching carrusel:', error);
-      return [];
-    }
-  }
+  // async fetchCarrusel(motoId:number): Promise<ICarrusel[]> {
+  //   try {
+  //     const response = await fetch(
+  //       `https://localhost:7092/api/Carrusel/getCarrusel/${motoId}`
+  //     );
+  //     if (!response.ok) {
+  //       throw new Error('Failed to fetch carrusel');
+  //     }
+  //     const data = await response.json();
+  //     return data as ICarrusel[];
+  //   } catch (error) {
+  //     console.error('Error fetching carrusel:', error);
+  //     return [];
+  //   }
+  // }
 }
