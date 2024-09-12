@@ -9,7 +9,7 @@ export class BrandService {
 
   async fetchaBrands(): Promise<IBrand[]> {
     try {
-        const response = await fetch(`${environment.apiUrl}/Brand/getAll`);
+        const response = await fetch(`${environment.apiUrl}/Catalog/getBrands`);
         if (!response.ok) {
         throw new Error("Failed to fetch categories");
       }

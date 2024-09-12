@@ -9,7 +9,7 @@ export class CategoryService {
 
   async FetchCategories(): Promise<ICategory[]> {
     try {
-      const response = await fetch(`${environment.apiUrl}/Category/getAll`);
+      const response = await fetch(`${environment.apiUrl}/Catalog/GetCategories`);
       if (!response.ok) {
         throw new Error("Failed to fetch categories");
       }

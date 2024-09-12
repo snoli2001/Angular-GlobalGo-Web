@@ -11,7 +11,7 @@ export class MotorCycleService {
 
   async getMotorCycles(): Promise<IMotorcycle[]> {
     try {
-      const response = await fetch(`${environment.apiUrl}/Motorcycle/getMotorcycles`);
+      const response = await fetch(`${environment.apiUrl}/Catalog/getMotorcycles`);
       if (!response.ok) {
         throw new Error("Failed to fetch motorcycles");
       }
@@ -25,7 +25,7 @@ export class MotorCycleService {
 
   async getMotorcycleByID(motoId:number):Promise<IMotorcycle>{
     try {
-      const response = await fetch(`${environment.apiUrl}/Motorcycle/getMotorcycleByID/${motoId}`);
+      const response = await fetch(`${environment.apiUrl}/Catalog/getMotorcycle/${motoId}`);
       if (!response.ok) {
         throw new Error("Failed to fetch motorcycles");
       }
@@ -37,19 +37,6 @@ export class MotorCycleService {
     }
   }
 
-  async getCategories():Promise<ICategory>{
-    try {
-      const response = await fetch(`${environment.apiUrl}/Category/getAll`);
-      if (!response.ok) {
-        throw new Error("Failed to fetch categories");
-      }
-      const data = await response.json();
-      return data as ICategory;
-    } catch (error) {
-      console.error("Error fetching motorcycles:", error);
-      throw error;
-    }
-  }
 
   async getMotorcyclesColors(modeloId:number):Promise<IColor[]>{
     try {
