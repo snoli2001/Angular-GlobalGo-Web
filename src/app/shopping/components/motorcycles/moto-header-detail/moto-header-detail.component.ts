@@ -29,13 +29,11 @@ export class MotoHeaderDetailComponent {
       formato = 'png';
     }
     const cleanedModelo = this.motorcycle.modelo.replace(/[-_\s]/g, '').toLocaleLowerCase();
-    console.log(`../../../../../assets/imgs/modelosLogos/${this.motorcycle.marca.toLocaleLowerCase()}_${cleanedModelo}_logo.svg`);
-    return `../../../../../assets/imgs/modelosLogos/${this.motorcycle.marca.toLocaleLowerCase()}_${cleanedModelo}_logo.${formato}`;  
+    return `../../../../../assets/imgs/modelosLogos/${this.motorcycle.marca.toLocaleLowerCase()}_${cleanedModelo}_logo.${formato}`;
   }
-  
+
 
   getPathHeader(img: string): string {
-    // console.log(`../../../../../assets/imgs/cabeceras/${img}`);
     return `../../../../../assets/imgs/cabeceras/${img}`;
   }
 
